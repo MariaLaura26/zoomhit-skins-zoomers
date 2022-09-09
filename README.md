@@ -1,4 +1,4 @@
-# zoomhit-skins-zoomers
+# zoomhit skins-zoomers
 ## Client: Zoomhit-Skins
 ### Équipe: Zoomers
 
