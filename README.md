@@ -1,6 +1,6 @@
 # zoomhit-skins-zoomers
-## Zoomhit-Skins
-### Zoomers
+## Client: Zoomhit-Skins
+### Équipe: Zoomers
 
  Tracy Gua
  
