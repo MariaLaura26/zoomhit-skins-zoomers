@@ -3,3 +3,22 @@
 .logo img {
    width: 200px;
 }
+footer{
+   background-color: variables.$noir;
+  
+}
+.reseauxsociaux{
+   display: flex;
+   flex-direction: row;
+   &__facebook{
+      width:20px;
+   }
+}
+.facebook{
+   width:20px;
+  
+}
+.facebook, a{
+   height: 20px;
+   width:20px;
+}
