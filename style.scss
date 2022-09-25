@@ -5,20 +5,27 @@
 }
 footer{
    background-color: variables.$noir;
-  
+  height:200px;
+  width:auto;
+  padding:20px;
 }
 .reseauxsociaux{
    display: flex;
    flex-direction: row;
-   &__facebook{
-      width:20px;
-   }
+   justify-content: end;
+   align-items: center;
+   height:100%;
+ 
 }
 .facebook{
    width:20px;
   
+  
 }
-.facebook, a{
+.facebook a{
    height: 20px;
    width:20px;
+}
+.telephone a {
+   color: variables.$blanc;
 }
