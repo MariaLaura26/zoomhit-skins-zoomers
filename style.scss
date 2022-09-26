@@ -1,8 +1,50 @@
 @use 'partials/variables';
 
+* {
+   box-sizing: border-box;
+}
+
+html, body {
+   margin: 0px;
+   width: 100%;
+}
+
+.navigation {
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   margin: 25px auto; //Rendre la barre de navigation responsive
+   width: 1000px;
+}
+
 .logo img {
    width: 200px;
 }
+
+//Aligner les liens des menus au centre
+.menu-header {
+   display: flex;
+   justify-content: space-evenly;
+   background-color: variables.$noir;
+   width: 100%;
+   padding: 7px;
+   border-radius: 25px;
+   font-size: 22px;
+   font-family: variables.$menu; //Vérifier que c'est la bonne
+   margin-left: 25px;
+}
+
+//Cibler tous les liens du menus
+.menu a {
+   color: variables.$blanc;
+   text-decoration: none;
+}
+
+//Effet de survole
+.menu a:hover {
+   color: variables.$pechehover;
+}
+
 footer{
    background-color: variables.$noir;
   height:200px;

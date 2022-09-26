@@ -1,5 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0px;
+  width: 100%;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 25px auto;
+  width: 1000px;
+}
+
 .logo img {
   width: 200px;
+}
+
+.menu-header {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #000;
+  width: 100%;
+  padding: 7px;
+  border-radius: 25px;
+  font-size: 22px;
+  font-family: Ruda SemiBold;
+  margin-left: 25px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #EFA48B;
 }
 
 footer {
