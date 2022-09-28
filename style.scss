@@ -24,10 +24,9 @@ html, body {
 //Aligner les liens des menus au centre
 .menu-header {
    display: flex;
-   justify-content: space-evenly;
+   justify-content: space-around;
    background-color: variables.$noir;
    width: 100%;
-   padding: 7px;
    border-radius: 25px;
    font-size: 22px;
    font-family: variables.$menu; //Vérifier que c'est la bonne
@@ -45,12 +44,17 @@ html, body {
    color: variables.$pechehover;
 }
 
-footer{
+footer {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
    background-color: variables.$noir;
-  height:200px;
-  width:auto;
-  padding:20px;
+   height:200px;
+   width:auto;
+   padding:20px;
+   margin: 25px auto;
 }
+
 .reseauxsociaux{
    display: flex;
    flex-direction: row;
