@@ -57,6 +57,7 @@ footer {
 
 .facebook {
   width: 20px;
+  padding-bottom: 3px;
 }
 
 .facebook a {
@@ -64,6 +65,11 @@ footer {
   width: 20px;
 }
 
-.telephone a {
+.telephone, a {
   color: #fff;
 }/*# sourceMappingURL=main.css.map */
+
+.courriel{
+  margin-right:9px;
+  padding-bottom: 3px;
+}
