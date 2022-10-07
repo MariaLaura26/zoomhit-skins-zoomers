@@ -55,7 +55,10 @@ footer {
 }
 .groupePied{
    width:1000px;
-   margin: 25px auto;
+   margin:auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
 .reseauxsociaux{
    display: flex;
@@ -76,4 +79,9 @@ footer {
 }
 .telephone,a {
    color: variables.$blanc;
+}
+
+.courriel{
+   margin-right:8px;
+   margin-bottom:3px;
 }
