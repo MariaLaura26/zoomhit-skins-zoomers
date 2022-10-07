@@ -47,6 +47,14 @@ footer {
   margin: 25px auto;
 }
 
+.groupePied {
+  width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .reseauxsociaux {
   display: flex;
   flex-direction: row;
@@ -67,4 +75,9 @@ footer {
 
 .telephone, a {
   color: #fff;
+}
+
+.courriel {
+  margin-right: 8px;
+  margin-bottom: 3px;
 }/*# sourceMappingURL=main.css.map */
