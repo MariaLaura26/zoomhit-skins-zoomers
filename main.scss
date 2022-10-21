@@ -154,6 +154,10 @@ footer {
    justify-content: space-between;
    align-items: center;
 }
+.logoPartenaire img{
+   width: 80px;
+   margin-bottom: 10px;
+}
 .reseauxsociaux{
    display: flex;
    flex-direction: row;
@@ -182,11 +186,12 @@ footer {
 /*Carousel*/
 .swiper{
    width: 100%;
+   background-color: red;
 }
 .swiper-slide img {
    width: 50%;
    object-fit: contain;
- }
+}
 
 
  /*footer*/
