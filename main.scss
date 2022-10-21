@@ -137,15 +137,18 @@ body {
 .btn__envoyer {
    @include contact.btnContact;
 }
-
-footer {
+/*footer*/
+footer{
    display: flex;
    align-items: center;
    justify-content: space-between;
    background-color: variables.$noir;
    height:200px;
-   width:auto;
    padding:20px;
+   width: 100%;
+   position: absolute;
+   bottom: 0;
+   z-index: 1;
 }
 .groupePied{
    width:1000px;
@@ -185,19 +188,9 @@ footer {
 }
 /*Carousel*/
 .swiper{
-   width: 100%;
-   background-color: red;
+   width: 50%;
 }
 .swiper-slide img {
-   width: 50%;
+   width: 100%;
    object-fit: contain;
 }
-
-
- /*footer*/
-footer{
-   width: 100%;
-   position: absolute;
-   bottom: 0;
-}
-
