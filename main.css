@@ -29,6 +29,7 @@ body {
   border: 1px solid #EFA48B;
   border-radius: 20px;
   text-align: center;
+  height: 100%;
 }
 
 .row {
