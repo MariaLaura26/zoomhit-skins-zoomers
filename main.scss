@@ -1,5 +1,6 @@
-@use 'partials/variables';
+
 @use 'partials/membres';
+@use 'partials/variables';
 @use 'partials/contact';
 //@use 'partials/nav_header';
 //@use 'partials/site_footer';
@@ -40,8 +41,6 @@ body {
    border: 1px solid variables.$pechehover;
    border-radius: 20px;
    text-align: center;
-   box-shadow:  5px 5px 5px variables.$peche;
-   margin-right: 15px;
 }
 .row{
    display: flex;
@@ -62,21 +61,6 @@ body {
 .menu a {
    color: variables.$blanc;
    text-decoration: none;
-}
-
-//navbar
-
-.navbar-toggler-icon img{
-   width: 40px;
-}
-
-/*Carousel*/
-.swiper{
-   width: 50%;
-}
-.swiper-slide img {
-   width: 100%;
-   object-fit: contain;
 }
 
 //membres
@@ -104,20 +88,20 @@ body {
 .membre__nom{
    @include membres.membreNom;
 }
-.membre__text{
-   @include membres.membreText;
-}
 
 //Effet de survole
 .menu a:hover {
    color: variables.$pechehover;
 }
+
 // console
 
 .console{
-   @include console.console;
+   @include console.sousMenu;
 }
-
+.enteteIcon{
+   @include console.enteteIcon;
+}
 .imageConsole{
    @include console.imageConsole;
 }
@@ -154,18 +138,15 @@ body {
 .btn__envoyer {
    @include contact.btnContact;
 }
-/*footer*/
-footer{
+
+footer {
    display: flex;
    align-items: center;
    justify-content: space-between;
    background-color: variables.$noir;
    height:200px;
+   width:auto;
    padding:20px;
-   width: 100%;
-   position: absolute;
-   bottom: 0;
-   z-index: 1;
 }
 .groupePied{
    width:1000px;
@@ -173,10 +154,6 @@ footer{
    display: flex;
    justify-content: space-between;
    align-items: center;
-}
-.logoPartenaire img{
-   width: 80px;
-   margin-bottom: 10px;
 }
 .reseauxsociaux{
    display: flex;
@@ -203,3 +180,25 @@ footer{
    margin-right:8px;
    margin-bottom:3px;
 }
+/*Carousel*/
+.swiper{
+   width: 100%;
+}
+.swiper-slide img {
+   width: 50%;
+   object-fit: contain;
+ }
+
+
+ /*footer*/
+footer{
+   width: 100%;
+   position: absolute;
+   bottom: 0;
+}
+ 
+ /*Membres*/
+ .membre{
+   @include membres.Affichermembres;
+ }
+
