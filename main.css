@@ -52,6 +52,10 @@ body {
   text-decoration: none;
 }
 
+.navbar-toggler-icon img {
+  width: 40px;
+}
+
 .section__membres {
   margin-top: 150px;
   display: flex;
@@ -181,18 +185,11 @@ footer {
 
 /*Carousel*/
 .swiper {
-  width: 100%;
+  width: 50%;
 }
 
 .swiper-slide img {
-  width: 50%;
+  width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-}
-
-/*footer*/
-footer {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
 }/*# sourceMappingURL=main.css.map */
