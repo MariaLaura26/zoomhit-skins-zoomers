@@ -57,8 +57,9 @@ body {
 }
 
 .section__membres {
+  margin-top: 150px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -67,14 +68,15 @@ body {
 }
 
 .membre__img {
-  border-style: solid;
-  border-color: #FCC8B2;
-  overflow: hidden;
+  border-radius: 20px;
+  border: 2px solid #FCC8B2;
 }
 
 .membre__text {
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 10px;
   text-align: center;
-  margin: 10px 10px 10px 10px;
   background-color: #FCC8B2;
   border-radius: 5px 5px 5px 5px;
 }
@@ -85,20 +87,23 @@ body {
 
 .console {
   border: none;
-  border-radius: none;
   text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 0px;
+  justify-content: center;
 }
 
 .imageConsole {
-  border: none;
-  border-radius: none;
-  text-decoration: none;
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 .icon {
-  border: none;
-  border-radius: none;
-  text-decoration: none;
+  width: 10%;
 }
 
 .produits {
