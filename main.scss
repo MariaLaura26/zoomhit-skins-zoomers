@@ -97,6 +97,11 @@ select{
    @include console.console;
 }
 
+//Aligner au centre et ajouter une marge du haut
+.section__contact {
+   @include contact.sectionContact;
+}
+
 //Aligner le titre de la page de contact
 .contact__titre {
    @include contact.formTitre;
