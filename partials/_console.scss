@@ -34,7 +34,9 @@
     grid-template-columns: repeat(auto-fit, 1fr);
 }
 @mixin item{
-    
+    width:10%;
 }
-
+@mixin img{
+  width:100%;
+}
 

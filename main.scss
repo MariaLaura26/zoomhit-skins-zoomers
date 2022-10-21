@@ -115,6 +115,9 @@ body {
 .item{
    @include console.item;
 }
+.item img{
+   @include console.img; 
+}
 //Aligner au centre et ajouter une marge du haut
 .section__contact {
    @include contact.sectionContact;
