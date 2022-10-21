@@ -53,7 +53,6 @@ body {
 }
 
 .section__membres {
-  background-color: red;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -61,6 +60,12 @@ body {
 
 .membre__titre {
   text-align: center;
+}
+
+.membre__img {
+  border-style: solid;
+  border-color: #FCC8B2;
+  overflow: hidden;
 }
 
 .membre__text {
