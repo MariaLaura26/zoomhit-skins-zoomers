@@ -52,6 +52,10 @@ body {
   text-decoration: none;
 }
 
+.navbar-toggler-icon img {
+  width: 40px;
+}
+
 .section__membres {
   margin-top: 150px;
   display: flex;
@@ -82,22 +86,22 @@ body {
 }
 
 .entete__sous-menu {
-  background-color: blue;
   border: none;
   text-decoration: none;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .enteteIcon {
   display: inline-block;
   flex-direction: row;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .imageConsole {
   display: inline-block;
-  width: 50%;
-  flex-wrap: nowrap;
+  width: 80%;
+  margin-left: 20px;
 }
 
 .icon {
@@ -190,18 +194,11 @@ footer {
 
 /*Carousel*/
 .swiper {
-  width: 100%;
+  width: 50%;
 }
 
 .swiper-slide img {
-  width: 50%;
+  width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-}
-
-/*footer*/
-footer {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
 }/*# sourceMappingURL=main.css.map */
