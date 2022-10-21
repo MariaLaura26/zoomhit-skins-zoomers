@@ -29,8 +29,6 @@ body {
   border: 1px solid #EFA48B;
   border-radius: 20px;
   text-align: center;
-  box-shadow: 5px 5px 5px #FCC8B2;
-  margin-right: 15px;
 }
 
 .row {
@@ -54,21 +52,6 @@ body {
   text-decoration: none;
 }
 
-.navbar-toggler-icon img {
-  width: 40px;
-}
-
-/*Carousel*/
-.swiper {
-  width: 50%;
-}
-
-.swiper-slide img {
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 .section__membres {
   margin-top: 150px;
   display: flex;
@@ -85,23 +68,21 @@ body {
   border: 2px solid #FCC8B2;
 }
 
-.membre__text {
-  margin: 0 auto;
-  width: 100%;
-  margin-top: 10px;
-  text-align: center;
-  background-color: #FCC8B2;
-  border-radius: 5px 5px 5px 5px;
-}
-
 .menu a:hover {
   color: #EFA48B;
 }
 
-.console {
-  background-color: red;
+.entete__sous-menu {
+  background-color: blue;
   border: none;
   text-decoration: none;
+}
+
+.enteteIcon {
+  display: inline-block;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .imageConsole {
@@ -156,18 +137,14 @@ body {
   text-decoration: none;
 }
 
-/*footer*/
 footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #000;
   height: 200px;
+  width: auto;
   padding: 20px;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  z-index: 1;
 }
 
 .groupePied {
@@ -176,11 +153,6 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.logoPartenaire img {
-  width: 80px;
-  margin-bottom: 10px;
 }
 
 .reseauxsociaux {
@@ -208,4 +180,22 @@ footer {
 .courriel {
   margin-right: 8px;
   margin-bottom: 3px;
+}
+
+/*Carousel*/
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide img {
+  width: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+/*footer*/
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }/*# sourceMappingURL=main.css.map */
