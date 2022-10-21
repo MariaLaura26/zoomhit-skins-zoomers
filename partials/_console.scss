@@ -4,8 +4,25 @@
         border-radius:none;
         text-decoration:none ;
 }
-
-option{
-    width:15%;
+@mixin imageConsole{
     border:none;
+    border-radius:none;
+    text-decoration:none ;
 }
+@mixin icon{
+    border:none;
+    border-radius:none;
+    text-decoration:none ;
+}
+@mixin produits{
+    border:none;
+    border-radius:none;
+    text-decoration:none ;
+}
+@mixin item{
+    border:none;
+    border-radius:none;
+    text-decoration:none ;
+}
+
+
