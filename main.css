@@ -73,22 +73,22 @@ body {
 }
 
 .entete__sous-menu {
-  background-color: blue;
   border: none;
   text-decoration: none;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .enteteIcon {
   display: inline-block;
   flex-direction: row;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .imageConsole {
   display: inline-block;
-  width: 50%;
-  flex-wrap: nowrap;
+  width: 80%;
+  margin-left: 20px;
 }
 
 .icon {
@@ -98,10 +98,6 @@ body {
 .produits {
   display: grid;
   grid-template-columns: repeat(auto-fit, 1fr);
-}
-
-.item {
-  width: 10%;
 }
 
 .section__contact {
