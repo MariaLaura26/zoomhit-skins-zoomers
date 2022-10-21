@@ -68,15 +68,25 @@ select {
 }
 
 .section__contact {
-  text-align: center;
-  text-decoration: underline;
-}
-
-.contact__form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.contact__titre {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 25px;
+  font-family: Roboto Meduium;
+}
+
+.contact__form label {
+  text-decoration: underline;
+}
+
+.btn__envoyer {
+  text-decoration: none;
 }
 
 footer {
@@ -125,6 +135,10 @@ footer {
 }
 
 /*Carousel*/
+.swiper {
+  width: 100%;
+}
+
 .swiper-slide img {
   width: 50%;
   -o-object-fit: contain;

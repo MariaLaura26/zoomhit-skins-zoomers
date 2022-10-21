@@ -71,9 +71,15 @@ select{
    @include console.console;
 }
 
-//Aligner le titre de la page de contact
+//Aligner au centre et ajouter une marge du haut
 .section__contact {
+   @include contact.sectionContact;
+}
+
+//Aligner le titre de la page de contact
+.contact__titre {
    @include contact.formTitre;
+   font-family: variables.$titre;
 }
 
 //Inclure les styles pour aligner le contenu du formulaire de contact
@@ -131,7 +137,9 @@ footer {
    margin-bottom:3px;
 }
 /*Carousel*/
-
+.swiper{
+   width: 100%;
+}
 .swiper-slide img {
    width: 50%;
    object-fit: contain;

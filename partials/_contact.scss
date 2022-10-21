@@ -1,17 +1,26 @@
 //Utiliser les mixins pour faire les styles
 
-@mixin formTitre {
-    text-align: center;
-    text-decoration: underline;
-}
-
-@mixin formContact {
+@mixin sectionContact {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-@mixin btnContact {
+@mixin formTitre {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+@mixin formContact {
     
+}
+
+@mixin formLabel {
+    text-decoration: underline;
+}
+
+@mixin btnContact {
+    text-decoration: none;
 }
