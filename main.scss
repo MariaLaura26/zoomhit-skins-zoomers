@@ -2,6 +2,7 @@
 @use 'partials/contact';
 //@use 'partials/nav_header';
 //@use 'partials/site_footer';
+@use 'partials/console';
 
 * {
    box-sizing: border-box;
@@ -27,6 +28,19 @@ body {
 }
 
 //Aligner les liens des menus au centre
+//Header
+.heros__boite-description{
+   padding: 30px;
+   margin-top: 60px;
+   height: 400px;
+   border: 1px solid variables.$pechehover;
+   border-radius: 20px;
+   text-align: center;
+}
+.row{
+   display: flex;
+   flex-wrap: nowrap;
+}
 .menu-header {
    display: flex;
    justify-content: space-around;
@@ -48,6 +62,9 @@ body {
 .menu a:hover {
    color: variables.$pechehover;
 }
+select{
+   @include console.console;
+}
 
 //Aligner le titre de la page de contact
 .section__contact {
@@ -67,6 +84,9 @@ footer {
    height:200px;
    width:auto;
    padding:20px;
+   width: 100%;
+   position: absolute;
+   bottom: 0;
 }
 .groupePied{
    width:1000px;
@@ -103,6 +123,12 @@ footer {
 /*Carousel*/
 
 .swiper-slide img {
-   width: 100%;
+   width: 50%;
    object-fit: contain;
  }
+
+ 
+ /*Main*/
+
+ 
+ 
