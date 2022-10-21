@@ -1,9 +1,13 @@
 @mixin sectionMembres {
-    background-color: red;
+ background-color: red;
+
+ display: flex;
+justify-content: space-evenly;
+align-items: center;
 }
 
 @mixin membreTitre {
-    text-align: center;
+text-align: center;
 }
 
 @mixin membreCard{
