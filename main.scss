@@ -81,6 +81,14 @@ select{
    @include contact.formContact;
 }
 
+.contact__form label {
+   @include contact.formLabel;
+}
+
+.btn__envoyer {
+   @include contact.btnContact;
+}
+
 footer {
    display: flex;
    align-items: center;
