@@ -67,9 +67,11 @@ select {
   text-decoration: none;
 }
 
-.section__contact {
+.contact__titre {
   text-align: center;
   text-decoration: underline;
+  font-size: 25px;
+  font-family: Roboto Meduium;
 }
 
 .contact__form {
@@ -133,6 +135,10 @@ footer {
 }
 
 /*Carousel*/
+.swiper-wrapper {
+  background-color: red;
+}
+
 .swiper-slide img {
   width: 50%;
   -o-object-fit: contain;

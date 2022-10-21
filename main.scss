@@ -72,8 +72,9 @@ select{
 }
 
 //Aligner le titre de la page de contact
-.section__contact {
+.contact__titre {
    @include contact.formTitre;
+   font-family: variables.$titre;
 }
 
 //Inclure les styles pour aligner le contenu du formulaire de contact
