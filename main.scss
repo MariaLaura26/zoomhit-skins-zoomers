@@ -1,4 +1,6 @@
-@use 'partials/variables';
+
+@use  'partials/membres';
+@use   'partials/variables';
 //@use 'partials/nav_header';
 //@use 'partials/site_footer';
 
@@ -111,4 +113,8 @@ footer{
    bottom: 0;
 }
  
- 
+ /*Membres*/
+ .membres{
+
+@include membres.Affichermembres;
+}

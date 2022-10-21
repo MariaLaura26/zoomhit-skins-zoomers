@@ -1,0 +1,7 @@
+@use 'partials/variables';
+
+
+@mixin Affichermembres {
+    display:flex ;
+    background-color: red;
+}
