@@ -31,6 +31,8 @@ body {
 //Aligner les liens des menus au centre
 //Header
 .heros__boite-description{
+   overflow: hidden;
+   text-overflow: ellipsis; // This is where the magic happens
    padding: 30px;
    margin-top: 60px;
    height: 400px;
@@ -128,8 +130,12 @@ footer {
    object-fit: contain;
  }
 
+ /*footer*/
+footer{
+   width: 100%;
+   position: relative;
+}
  
- /*Main*/
 
  
  /*Membres*/
