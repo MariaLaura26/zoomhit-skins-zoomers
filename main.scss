@@ -84,3 +84,9 @@ footer {
    margin-right:8px;
    margin-bottom:3px;
 }
+/*Carousel*/
+
+.swiper-slide img {
+   width: 100%;
+   object-fit: contain;
+ }
