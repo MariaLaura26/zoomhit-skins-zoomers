@@ -31,12 +31,21 @@
 }
 @mixin produits{
     display:grid;
-    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(auto-fit,150px);
+    grid-template-rows:repeat(auto-fit);
+    gap:10px;
 }
 @mixin item{
+    margin-top:50px;
     width:10%;
+    object-fit:contain;
 }
 @mixin img{
-  width:100%;
+  width:200px;
+  object-fit:contain;
 }
 
+@mixin p{
+    display:flex;
+    align-items: center;
+}
