@@ -1,6 +1,8 @@
 @use 'partials/variables';
+@use 'partials/contact';
 //@use 'partials/nav_header';
 //@use 'partials/site_footer';
+@use 'partials/console';
 
 * {
    box-sizing: border-box;
@@ -9,6 +11,11 @@
 html, body {
    margin: 0px;
    width: 100%;
+}
+
+//Ajouter la fonte pour tout le text dans la page
+body {
+   font-family: variables.$text;
 }
 
 .navigation {
@@ -57,6 +64,19 @@ html, body {
 .menu a:hover {
    color: variables.$pechehover;
 }
+select{
+   @include console.console;
+}
+
+//Aligner le titre de la page de contact
+.section__contact {
+   @include contact.formTitre;
+}
+
+//Inclure les styles pour aligner le contenu du formulaire de contact
+.contact__form {
+   @include contact.formContact;
+}
 
 footer {
    display: flex;
@@ -66,6 +86,9 @@ footer {
    height:200px;
    width:auto;
    padding:20px;
+   width: 100%;
+   position: absolute;
+   bottom: 0;
 }
 .groupePied{
    width:1000px;

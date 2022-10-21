@@ -1,1 +1,13 @@
-@use 'partials/variables';
+//Utiliser les mixins pour faire les styles
+
+@mixin formTitre {
+    text-align: center;
+    text-decoration: underline;
+}
+
+@mixin formContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
