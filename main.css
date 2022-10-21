@@ -1,8 +1,3 @@
-option {
-  width: 15%;
-  border: none;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -72,7 +67,31 @@ body {
   color: #EFA48B;
 }
 
-select {
+.console {
+  border: none;
+  border-radius: none;
+  text-decoration: none;
+}
+
+.imageConsole {
+  border: none;
+  border-radius: none;
+  text-decoration: none;
+}
+
+.icon {
+  border: none;
+  border-radius: none;
+  text-decoration: none;
+}
+
+.produits {
+  border: none;
+  border-radius: none;
+  text-decoration: none;
+}
+
+.item {
   border: none;
   border-radius: none;
   text-decoration: none;

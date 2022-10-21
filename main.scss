@@ -93,10 +93,25 @@ body {
 .menu a:hover {
    color: variables.$pechehover;
 }
-select{
+// console
+
+.console{
    @include console.console;
 }
 
+.imageConsole{
+   @include console.imageConsole;
+}
+
+.icon{
+   @include console.icon;
+}
+.produits{
+   @include console.produits;
+}
+.item{
+   @include console.item;
+}
 //Aligner au centre et ajouter une marge du haut
 .section__contact {
    @include contact.sectionContact;
