@@ -7,6 +7,10 @@ html, body {
   width: 100%;
 }
 
+body {
+  font-family: Roboto Light;
+}
+
 .navigation {
   margin: 25px auto;
   width: 1000px;
@@ -34,6 +38,18 @@ html, body {
 
 .menu a:hover {
   color: #EFA48B;
+}
+
+.section__contact {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 footer {
@@ -79,4 +95,11 @@ footer {
 .courriel {
   margin-right: 8px;
   margin-bottom: 3px;
+}
+
+/*Carousel*/
+.swiper-slide img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }/*# sourceMappingURL=main.css.map */

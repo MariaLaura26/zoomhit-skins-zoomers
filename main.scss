@@ -1,4 +1,5 @@
 @use 'partials/variables';
+@use 'partials/contact';
 //@use 'partials/nav_header';
 //@use 'partials/site_footer';
 
@@ -9,6 +10,11 @@
 html, body {
    margin: 0px;
    width: 100%;
+}
+
+//Ajouter la fonte pour tout le text dans la page
+body {
+   font-family: variables.$text;
 }
 
 .navigation {
@@ -41,6 +47,16 @@ html, body {
 //Effet de survole
 .menu a:hover {
    color: variables.$pechehover;
+}
+
+//Aligner le titre de la page de contact
+.section__contact {
+   @include contact.formTitre;
+}
+
+//Inclure les styles pour aligner le contenu du formulaire de contact
+.contact__form {
+   @include contact.formContact;
 }
 
 footer {
