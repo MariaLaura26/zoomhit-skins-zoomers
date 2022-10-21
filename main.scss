@@ -63,6 +63,11 @@ body {
    text-decoration: none;
 }
 
+//navbar
+
+.navbar-toggler-icon img{
+   width: 40px;
+}
 
 //membres
 
@@ -88,6 +93,9 @@ body {
 
 .membre__nom{
    @include membres.membreNom;
+}
+.membre__text{
+   @include membres.membreText;
 }
 
 //Effet de survole
@@ -185,18 +193,9 @@ footer {
 }
 /*Carousel*/
 .swiper{
-   width: 100%;
+   width: 50%;
 }
 .swiper-slide img {
-   width: 50%;
-   object-fit: contain;
- }
-
-
- /*footer*/
-footer{
    width: 100%;
-   position: absolute;
-   bottom: 0;
+   object-fit: contain;
 }
- 
