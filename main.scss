@@ -88,6 +88,9 @@ body {
 .membre__nom{
    @include membres.membreNom;
 }
+.membre__text{
+   @include membres.membreText;
+}
 
 //Effet de survole
 .menu a:hover {

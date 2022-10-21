@@ -68,6 +68,15 @@ body {
   border: 2px solid #FCC8B2;
 }
 
+.membre__text {
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+  background-color: #FCC8B2;
+  border-radius: 5px 5px 5px 5px;
+}
+
 .menu a:hover {
   color: #EFA48B;
 }
@@ -96,15 +105,12 @@ body {
 }
 
 .produits {
-  border: none;
-  border-radius: none;
-  text-decoration: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 1fr);
 }
 
 .item {
-  border: none;
-  border-radius: none;
-  text-decoration: none;
+  width: 10%;
 }
 
 .section__contact {
