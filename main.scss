@@ -131,7 +131,9 @@ footer {
    margin-bottom:3px;
 }
 /*Carousel*/
-
+.swiper-wrapper{
+   background-color: red;
+}
 .swiper-slide img {
    width: 50%;
    object-fit: contain;
