@@ -29,6 +29,8 @@ body {
   border: 1px solid #EFA48B;
   border-radius: 20px;
   text-align: center;
+  box-shadow: 5px 5px 5px #FCC8B2;
+  margin-right: 15px;
 }
 
 .row {
@@ -50,6 +52,21 @@ body {
 .menu a {
   color: #fff;
   text-decoration: none;
+}
+
+.navbar-toggler-icon img {
+  width: 40px;
+}
+
+/*Carousel*/
+.swiper {
+  width: 50%;
+}
+
+.swiper-slide img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .section__membres {
@@ -191,15 +208,4 @@ footer {
 .courriel {
   margin-right: 8px;
   margin-bottom: 3px;
-}
-
-/*Carousel*/
-.swiper {
-  width: 50%;
-}
-
-.swiper-slide img {
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
 }/*# sourceMappingURL=main.css.map */

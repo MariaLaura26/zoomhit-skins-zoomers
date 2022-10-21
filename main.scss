@@ -40,6 +40,8 @@ body {
    border: 1px solid variables.$pechehover;
    border-radius: 20px;
    text-align: center;
+   box-shadow:  5px 5px 5px variables.$peche;
+   margin-right: 15px;
 }
 .row{
    display: flex;
@@ -60,6 +62,21 @@ body {
 .menu a {
    color: variables.$blanc;
    text-decoration: none;
+}
+
+//navbar
+
+.navbar-toggler-icon img{
+   width: 40px;
+}
+
+/*Carousel*/
+.swiper{
+   width: 50%;
+}
+.swiper-slide img {
+   width: 100%;
+   object-fit: contain;
 }
 
 //membres
@@ -185,12 +202,4 @@ footer{
 .courriel{
    margin-right:8px;
    margin-bottom:3px;
-}
-/*Carousel*/
-.swiper{
-   width: 50%;
-}
-.swiper-slide img {
-   width: 100%;
-   object-fit: contain;
 }
