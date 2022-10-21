@@ -1,8 +1,3 @@
-option {
-  width: 15%;
-  border: none;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -57,11 +52,43 @@ body {
   text-decoration: none;
 }
 
+.section__membres {
+  background-color: red;
+}
+
+.membre__titre {
+  text-align: center;
+}
+
 .menu a:hover {
   color: #EFA48B;
 }
 
-select {
+.console {
+  border: none;
+  border-radius: none;
+  text-decoration: none;
+}
+
+.imageConsole {
+  border: none;
+  border-radius: none;
+  text-decoration: none;
+}
+
+.icon {
+  border: none;
+  border-radius: none;
+  text-decoration: none;
+}
+
+.produits {
+  border: none;
+  border-radius: none;
+  text-decoration: none;
+}
+
+.item {
   border: none;
   border-radius: none;
   text-decoration: none;
@@ -158,10 +185,4 @@ footer {
   width: 100%;
   position: absolute;
   bottom: 0;
-}
-
-/*Membres*/
-.membre {
-  display: flex;
-  background-color: red;
 }/*# sourceMappingURL=main.css.map */
