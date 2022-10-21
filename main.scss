@@ -21,6 +21,17 @@ html, body {
 }
 
 //Aligner les liens des menus au centre
+//Header
+.heros__boite-description{
+   height: 100%;
+   border: 1px solid variables.$pechehover;
+   border-radius: 20px;
+   text-align: center;
+}
+.row{
+   display: flex;
+   flex-wrap: nowrap;
+}
 .menu-header {
    display: flex;
    justify-content: space-around;
@@ -87,6 +98,11 @@ footer {
 /*Carousel*/
 
 .swiper-slide img {
-   width: 100%;
+   width: 50%;
    object-fit: contain;
  }
+
+ /*Main*/
+
+ 
+ 

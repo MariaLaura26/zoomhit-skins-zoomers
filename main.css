@@ -16,6 +16,18 @@ html, body {
   width: 200px;
 }
 
+.heros__boite-description {
+  height: 100%;
+  border: 1px solid #EFA48B;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 .menu-header {
   display: flex;
   justify-content: space-around;
@@ -83,7 +95,9 @@ footer {
 
 /*Carousel*/
 .swiper-slide img {
-  width: 100%;
+  width: 50%;
   -o-object-fit: contain;
      object-fit: contain;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*Main*//*# sourceMappingURL=main.css.map */
