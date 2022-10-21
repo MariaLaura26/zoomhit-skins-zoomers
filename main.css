@@ -79,6 +79,14 @@ select {
   justify-content: center;
 }
 
+.contact__form label {
+  text-decoration: underline;
+}
+
+.btn__envoyer {
+  text-decoration: none;
+}
+
 footer {
   display: flex;
   align-items: center;

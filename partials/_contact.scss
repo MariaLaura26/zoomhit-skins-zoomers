@@ -12,6 +12,10 @@
     justify-content: center;
 }
 
+@mixin formLabel {
+    text-decoration: underline;
+}
+
 @mixin btnContact {
-    
+    text-decoration: none;
 }
