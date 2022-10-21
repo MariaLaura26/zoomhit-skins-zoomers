@@ -1,3 +1,8 @@
+option {
+  width: 15%;
+  border: none;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -54,6 +59,12 @@ body {
 
 .menu a:hover {
   color: #EFA48B;
+}
+
+select {
+  border: none;
+  border-radius: none;
+  text-decoration: none;
 }
 
 .section__contact {
@@ -124,4 +135,17 @@ footer {
 footer {
   width: 100%;
   position: relative;
+}
+
+/*footer*/
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+/*Membres*/
+.membres {
+  display: flex;
+  background-color: red;
 }/*# sourceMappingURL=main.css.map */
