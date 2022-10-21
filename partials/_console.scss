@@ -1,0 +1,11 @@
+@use 'partials/variables';
+
+select{
+    border:none;
+    border-radius:none;
+    text-decoration:none ;
+ option{
+    width:15%;
+    border:none;
+ }
+}
