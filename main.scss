@@ -97,6 +97,9 @@ body {
 .membre__nom{
    @include membres.membreNom;
 }
+.membre__text{
+   @include membres.membreText;
+}
 
 //Effet de survole
 .menu a:hover {
@@ -122,6 +125,9 @@ body {
 }
 .item{
    @include console.item;
+}
+.item img{
+   @include console.img; 
 }
 //Aligner au centre et ajouter une marge du haut
 .section__contact {
