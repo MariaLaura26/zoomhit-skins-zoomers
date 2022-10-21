@@ -63,6 +63,32 @@ body {
    text-decoration: none;
 }
 
+//membres
+
+.section__membres{
+   @include membres.sectionMembres;
+}
+
+.membre__titre{
+   @include membres.membreTitre;
+}
+
+.membre__card{
+   @include membres.membreCard;
+}
+
+.membre__img{
+   @include membres.membreImg;
+}
+
+.membre__role{
+   @include membres.membreRole;
+}
+
+.membre__nom{
+   @include membres.membreNom;
+}
+
 //Effet de survole
 .menu a:hover {
    color: variables.$pechehover;
