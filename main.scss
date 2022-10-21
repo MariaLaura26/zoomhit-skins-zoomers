@@ -72,6 +72,15 @@ body {
 .logoPartenaire img{
    width: 80px;
 }
+
+/*Carousel*/
+.swiper{
+   width: 50%;
+}
+.swiper-slide img {
+   width: 100%;
+   object-fit: contain;
+}
 //membres
 
 .section__membres{
@@ -186,20 +195,16 @@ body {
    margin-right:8px;
    margin-bottom:3px;
 }
-/*Carousel*/
-.swiper{
-   width: 50%;
-}
-.swiper-slide img {
-   width: 100%;
-   object-fit: contain;
-}
+
+//footer
 footer {
    display: flex;
    align-items: center;
-   justify-content: space-between;
    background-color: #000;
    height: 200px;
    width: auto;
    padding: 20px;
+   position: absolute; 
+   left: 0 ; right: 0; bottom: 0; 
+   z-index: 1;
 }
