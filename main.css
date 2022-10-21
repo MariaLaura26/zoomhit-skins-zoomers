@@ -56,6 +56,10 @@ body {
   width: 40px;
 }
 
+.logoPartenaire img {
+  width: 80px;
+}
+
 .section__membres {
   margin-top: 150px;
   display: flex;
@@ -117,6 +121,10 @@ body {
   width: 10%;
 }
 
+.item img {
+  width: 100%;
+}
+
 .section__contact {
   display: flex;
   flex-direction: column;
@@ -145,16 +153,6 @@ body {
 
 .btn__envoyer {
   text-decoration: none;
-}
-
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #000;
-  height: 200px;
-  width: auto;
-  padding: 20px;
 }
 
 .groupePied {
@@ -201,4 +199,14 @@ footer {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  height: 200px;
+  width: auto;
+  padding: 20px;
 }/*# sourceMappingURL=main.css.map */
