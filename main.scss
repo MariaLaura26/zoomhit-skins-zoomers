@@ -82,6 +82,10 @@ select{
    @include contact.formContact;
 }
 
+.contact__form label {
+   @include contact.formLabel;
+}
+
 .btn__envoyer {
    @include contact.btnContact;
 }
@@ -128,7 +132,9 @@ footer {
    margin-bottom:3px;
 }
 /*Carousel*/
-
+.swiper{
+   width: 100%;
+}
 .swiper-slide img {
    width: 50%;
    object-fit: contain;
@@ -138,6 +144,8 @@ footer {
  /*footer*/
 footer{
    width: 100%;
+   position: absolute;
+   bottom: 0;
 }
  
  /*Membres*/

@@ -81,6 +81,10 @@ select {
   justify-content: center;
 }
 
+.contact__form label {
+  text-decoration: underline;
+}
+
 .btn__envoyer {
   text-decoration: none;
 }
@@ -131,8 +135,8 @@ footer {
 }
 
 /*Carousel*/
-.swiper-wrapper {
-  background-color: red;
+.swiper {
+  width: 100%;
 }
 
 .swiper-slide img {
@@ -144,6 +148,8 @@ footer {
 /*footer*/
 footer {
   width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 /*Membres*/
