@@ -68,9 +68,6 @@ footer {
    height:200px;
    width:auto;
    padding:20px;
-   width: 100%;
-   position: absolute;
-   bottom: 0;
 }
 .groupePied{
    width:1000px;
@@ -114,5 +111,11 @@ footer {
  
  /*Main*/
 
+ /*footer*/
+footer{
+   width: 100%;
+   position: absolute;
+   bottom: 0;
+}
  
  
