@@ -96,15 +96,12 @@ body {
 }
 
 .produits {
-  border: none;
-  border-radius: none;
-  text-decoration: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 1fr);
 }
 
 .item {
-  border: none;
-  border-radius: none;
-  text-decoration: none;
+  width: 10%;
 }
 
 .section__contact {
