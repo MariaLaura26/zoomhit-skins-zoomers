@@ -72,17 +72,14 @@ select{
 }
 
 //Aligner le titre de la page de contact
-.section__contact {
+.contact__titre {
    @include contact.formTitre;
+   font-family: variables.$titre;
 }
 
 //Inclure les styles pour aligner le contenu du formulaire de contact
 .contact__form {
    @include contact.formContact;
-}
-
-.contact__form label {
-   @include contact.formLabel;
 }
 
 .btn__envoyer {
@@ -141,8 +138,6 @@ footer {
  /*footer*/
 footer{
    width: 100%;
-   position: absolute;
-   bottom: 0;
 }
  
  /*Membres*/

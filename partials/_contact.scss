@@ -3,6 +3,7 @@
 @mixin formTitre {
     text-align: center;
     text-decoration: underline;
+    font-size: 25px;
 }
 
 @mixin formContact {
@@ -12,6 +13,10 @@
     justify-content: center;
 }
 
+@mixin formLabel {
+    text-decoration: underline;
+}
+
 @mixin btnContact {
-    
+    text-decoration: none;
 }
