@@ -4,7 +4,7 @@
 @use 'partials/contact';
 //@use 'partials/nav_header';
 //@use 'partials/site_footer';
-@use 'partials/console';
+@use  'partials/console';
 
 * {
    box-sizing: border-box;
@@ -129,12 +129,6 @@ footer {
    object-fit: contain;
  }
 
- /*footer*/
-footer{
-   width: 100%;
-   position: relative;
-}
- 
 
  /*footer*/
 footer{
@@ -144,7 +138,7 @@ footer{
 }
  
  /*Membres*/
- .membres{
+ .membre{
+   @include membres.Affichermembres;
+ }
 
-@include membres.Affichermembres;
-}
