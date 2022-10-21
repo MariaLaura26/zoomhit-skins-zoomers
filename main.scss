@@ -63,6 +63,7 @@ body {
    text-decoration: none;
 }
 
+
 //membres
 
 .section__membres{
@@ -95,8 +96,7 @@ body {
 }
 
 // console
-
-.console__sous-menu{
+.entete__sous-menu{
    @include console.sousMenu;
 }
 .enteteIcon{
@@ -197,8 +197,3 @@ footer{
    bottom: 0;
 }
  
- /*Membres*/
- .membre{
-   @include membres.Affichermembres;
- }
-
