@@ -1,26 +1,35 @@
 //Utiliser les mixins pour faire les styles
 
+//Aligner au centre et padding
 @mixin sectionContact {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 25px;
 }
 
+//Centrer le titre et décoration
 @mixin formTitre {
     text-align: center;
     text-decoration: underline;
     font-size: 25px;
 }
 
+//Aligner au centre de la section
 @mixin formContact {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
+//décoration et marges
 @mixin formLabel {
     text-decoration: underline;
 }
 
+//style bouton
 @mixin btnContact {
     text-decoration: none;
 }
