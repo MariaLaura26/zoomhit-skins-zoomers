@@ -1,7 +1,7 @@
 @use 'variables';
 
 @mixin sectionMembres {
- background-color: red;
+ 
  display: flex;
 justify-content: space-evenly;
 align-items: center;
@@ -13,11 +13,13 @@ text-align: center;
 }
 
 @mixin membreCard{
-    
+
 }
 
 @mixin membreImg {
-    
+    border-style: solid;
+    border-color: variables.$peche;
+    overflow: hidden;
 }
 
 @mixin membreRole {
