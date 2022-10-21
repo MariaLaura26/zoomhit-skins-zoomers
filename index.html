@@ -49,21 +49,17 @@
         <section class="heros__carousel">
             <div class="swiper">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide no1"><img src="medias/mes_design/01.jpeg" alt="L'image est innaccessible"></div>
-                  <div class="swiper-slide no3"><img src="medias/mes_design/02.jpeg" alt="L'image est innaccessible"></div>
-                  <div class="swiper-slide no3"><img src="medias/mes_design/03.jpeg" alt="L'image est innaccessible">    </div>
-                  <div class="swiper-slide no4"><img src="medias/mes_design/04.jpeg" alt="L'image est innaccessible"></div>
-                  <div class="swiper-slide no1"><img src="medias/mes_design/05.jpeg" alt="L'image est innaccessible"></div>
-                  <div class="swiper-slide no3"><img src="medias/mes_design/06.jpeg" alt="L'image est innaccessible"></div>
-                  <div class="swiper-slide no3"><img src="medias/mes_design/07.jpeg" alt="L'image est innaccessible">    </div>
-                  <div class="swiper-slide no4"><img src="medias/mes_design/08.jpeg" alt="L'image est innaccessible"></div>
-                  <div class="swiper-slide no1"><img src="medias/mes_design/09.jpeg" alt="L'image est innaccessible"></div>
-                  <div class="swiper-slide no3"><img src="medias/mes_design/10.jpeg" alt="L'image est innaccessible"></div>
-                  <div class="swiper-slide no3"><img src="medias/mes_design/11.jpeg" alt="L'image est innaccessible">    </div>
-                  <div class="swiper-slide no4"><img src="medias/mes_design/12.jpeg" alt="L'image est innaccessible"></div>
+                  <div class="swiper-slide no1"><img src="medias/appareils/ipad/01_ipad.webp" alt="L'image est innaccessible"></div>
+                  <div class="swiper-slide no3"><img src="medias/appareils/iphone/01_iphone.webp" alt="L'image est innaccessible">    </div>
+                  <div class="swiper-slide no4"><img src="medias/appareils/iphone/02_iphone.webp" alt="L'image est innaccessible"></div>
+                  <div class="swiper-slide no1"><img src="medias/appareils/ps4/01_ps4.webp" alt="L'image est innaccessible"></div>
+                  <div class="swiper-slide no3"><img src="medias/appareils/ps4/02_ps4.webp" alt="L'image est innaccessible"></div>
+                  <div class="swiper-slide no3"><img src="medias/appareils/switch_lite/01_lite.webp" alt="L'image est innaccessible">    </div>
+                  <div class="swiper-slide no4"><img src="medias/appareils/switch_lite/02_lite.webp" alt="L'image est innaccessible"></div>
+                  <div class="swiper-slide no1"><img src="medias/appareils/ps5/01_ps5.webp" alt="L'image est innaccessible"></div>
+                  <div class="swiper-slide no3"><img src="medias/appareils/ps5/02_ps5.webp" alt="L'image est innaccessible"></div>
                 </div>
                 <div class="swiper-pagination"></div>
-                    <div class="swiper-button-next"></div>
               </div>
     
         </section>
@@ -123,6 +119,14 @@
   
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script>
+      var swiper = new Swiper(".swiper", {
+autoplay: {
+  delay: 2000,
+},
+direction: 'horizontal',
+loop: 'true',
+effect: 'flip',
+});
   </script>
 </body>
 </html>
