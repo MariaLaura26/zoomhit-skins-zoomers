@@ -134,14 +134,18 @@ body {
   text-decoration: none;
 }
 
+/*footer*/
 footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #000;
   height: 200px;
-  width: auto;
   padding: 20px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
 }
 
 .groupePied {
@@ -186,19 +190,11 @@ footer {
 
 /*Carousel*/
 .swiper {
-  width: 100%;
-  background-color: red;
+  width: 50%;
 }
 
 .swiper-slide img {
-  width: 50%;
+  width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-}
-
-/*footer*/
-footer {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
 }/*# sourceMappingURL=main.css.map */
