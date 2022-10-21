@@ -1,3 +1,5 @@
+@use 'variables';
+
 @mixin sectionMembres {
  background-color: red;
  display: flex;
@@ -6,6 +8,7 @@ align-items: center;
 }
 
 @mixin membreTitre {
+    
 text-align: center;
 }
 
@@ -25,6 +28,9 @@ text-align: center;
 }
 
 @mixin membreText {
-    background-color: variables.$peche;
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+   background-color: variables.$peche;
+   border-radius: 5px 5px 5px 5px;
 }
 

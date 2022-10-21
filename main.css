@@ -64,7 +64,10 @@ body {
 }
 
 .membre__text {
-  background-color: blue;
+  text-align: center;
+  margin: 10px 10px 10px 10px;
+  background-color: #FCC8B2;
+  border-radius: 5px 5px 5px 5px;
 }
 
 .menu a:hover {
