@@ -134,18 +134,12 @@ footer {
 /*footer*/
 footer {
   width: 100%;
-  position: relative;
-}
-
-/*footer*/
-footer {
-  width: 100%;
   position: absolute;
   bottom: 0;
 }
 
 /*Membres*/
-.membres {
+.membre {
   display: flex;
   background-color: red;
 }/*# sourceMappingURL=main.css.map */
