@@ -1,4 +1,6 @@
-@use 'partials/variables';
+
+@use  'partials/membres';
+@use   'partials/variables';
 //@use 'partials/nav_header';
 //@use 'partials/site_footer';
 @use 'partials/console';
@@ -10,6 +12,11 @@
 html, body {
    margin: 0px;
    width: 100%;
+}
+
+//Ajouter la fonte pour tout le text dans la page
+body {
+   font-family: variables.$text;
 }
 
 .navigation {
@@ -24,6 +31,8 @@ html, body {
 //Aligner les liens des menus au centre
 //Header
 .heros__boite-description{
+   overflow: hidden;
+   text-overflow: ellipsis; // This is where the magic happens
    padding: 30px;
    margin-top: 60px;
    height: 400px;
@@ -58,6 +67,16 @@ html, body {
 }
 select{
    @include console.console;
+}
+
+//Aligner le titre de la page de contact
+.section__contact {
+   @include contact.formTitre;
+}
+
+//Inclure les styles pour aligner le contenu du formulaire de contact
+.contact__form {
+   @include contact.formContact;
 }
 
 footer {
@@ -108,8 +127,12 @@ footer {
    object-fit: contain;
  }
 
+ /*footer*/
+footer{
+   width: 100%;
+   position: relative;
+}
  
- /*Main*/
 
  /*footer*/
 footer{
@@ -118,4 +141,8 @@ footer{
    bottom: 0;
 }
  
- 
+ /*Membres*/
+ .membres{
+
+@include membres.Affichermembres;
+}

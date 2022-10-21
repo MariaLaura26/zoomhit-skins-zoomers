@@ -7,6 +7,10 @@ html, body {
   width: 100%;
 }
 
+body {
+  font-family: Roboto Light;
+}
+
 .navigation {
   margin: 25px auto;
   width: 1000px;
@@ -17,6 +21,8 @@ html, body {
 }
 
 .heros__boite-description {
+  overflow: hidden;
+  text-overflow: ellipsis;
   padding: 30px;
   margin-top: 60px;
   height: 400px;
@@ -48,6 +54,18 @@ html, body {
 
 .menu a:hover {
   color: #EFA48B;
+}
+
+.section__contact {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 footer {
@@ -105,6 +123,5 @@ footer {
 /*footer*/
 footer {
   width: 100%;
-  position: absolute;
-  bottom: 0;
+  position: relative;
 }/*# sourceMappingURL=main.css.map */
