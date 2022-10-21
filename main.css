@@ -17,6 +17,8 @@ html, body {
 }
 
 .heros__boite-description {
+  overflow: hidden;
+  text-overflow: ellipsis;
   padding: 30px;
   margin-top: 60px;
   height: 400px;
@@ -105,6 +107,5 @@ footer {
 /*footer*/
 footer {
   width: 100%;
-  position: absolute;
-  bottom: 0;
+  position: relative;
 }/*# sourceMappingURL=main.css.map */
