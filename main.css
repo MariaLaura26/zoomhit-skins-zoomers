@@ -82,19 +82,14 @@ body {
 }
 
 .console {
+  background-color: red;
   border: none;
   text-decoration: none;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  margin: 0px;
-  justify-content: center;
 }
 
 .imageConsole {
-  width: 75%;
-  display: flex;
-  flex-direction: row;
+  display: inline-block;
+  width: 50%;
   flex-wrap: nowrap;
 }
 

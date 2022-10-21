@@ -1,22 +1,28 @@
 
-@mixin console{
+@mixin sousMenu{
+    background-color: red;
         border:none;
         text-decoration:none ;
-        display:flex;
-        flex-direction:row;
-        flex-wrap: nowrap;
-        margin:0px;
-        justify-content: center;
+        //display:flex;
+       // flex-direction:row;
+
+        //margin:0px;
+        //justify-content: center;
 }
 @mixin enteteIcon{
-    display:flex;
+    display:inline-block;
     flex-direction:row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 @mixin imageConsole{
-    width:75%;
-    display:flex;
-    flex-direction:row;
+    display:inline-block;
+  
+    width:50%;
+   // display:flex;
+    //flex-direction:row;
     flex-wrap: nowrap;
+    //flex-wrap: nowrap;
 }
 @mixin icon{
     width:10%;
