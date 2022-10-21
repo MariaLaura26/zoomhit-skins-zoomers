@@ -1,5 +1,6 @@
-@use 'partials/variables';
-@use 'partials/contact';
+
+@use  'partials/membres';
+@use  'partials/variables';
 //@use 'partials/nav_header';
 //@use 'partials/site_footer';
 @use 'partials/console';
@@ -30,6 +31,8 @@ body {
 //Aligner les liens des menus au centre
 //Header
 .heros__boite-description{
+   overflow: hidden;
+   text-overflow: ellipsis; // This is where the magic happens
    padding: 30px;
    margin-top: 60px;
    height: 400px;
@@ -84,9 +87,6 @@ footer {
    height:200px;
    width:auto;
    padding:20px;
-   width: 100%;
-   position: absolute;
-   bottom: 0;
 }
 .groupePied{
    width:1000px;
@@ -127,8 +127,16 @@ footer {
    object-fit: contain;
  }
 
- 
- /*Main*/
 
+ /*footer*/
+footer{
+   width: 100%;
+   position: absolute;
+   bottom: 0;
+}
  
- 
+ /*Membres*/
+ .membre{
+   @include membres.Affichermembres;
+ }
+
