@@ -81,20 +81,23 @@ body {
 
 .console {
   border: none;
-  border-radius: none;
   text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 0px;
+  justify-content: center;
 }
 
 .imageConsole {
-  border: none;
-  border-radius: none;
-  text-decoration: none;
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 .icon {
-  border: none;
-  border-radius: none;
-  text-decoration: none;
+  width: 10%;
 }
 
 .produits {
