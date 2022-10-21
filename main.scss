@@ -69,6 +69,9 @@ body {
    width: 40px;
 }
 
+.logoPartenaire img{
+   width: 80px;
+}
 //membres
 
 .section__membres{
@@ -144,15 +147,7 @@ body {
    @include contact.btnContact;
 }
 
-footer {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   background-color: variables.$noir;
-   height:200px;
-   width:auto;
-   padding:20px;
-}
+
 .groupePied{
    width:1000px;
    margin:auto;
@@ -192,4 +187,13 @@ footer {
 .swiper-slide img {
    width: 100%;
    object-fit: contain;
+}
+footer {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background-color: #000;
+   height: 200px;
+   width: auto;
+   padding: 20px;
 }
