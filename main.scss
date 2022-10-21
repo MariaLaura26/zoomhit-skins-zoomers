@@ -1,6 +1,7 @@
 @use 'partials/variables';
 //@use 'partials/nav_header';
 //@use 'partials/site_footer';
+@use 'partials/console';
 
 * {
    box-sizing: border-box;
@@ -53,6 +54,9 @@ html, body {
 .menu a:hover {
    color: variables.$pechehover;
 }
+select{
+   @include console.console;
+}
 
 footer {
    display: flex;
@@ -102,6 +106,7 @@ footer {
    object-fit: contain;
  }
 
+ 
  /*Main*/
 
  
