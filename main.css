@@ -168,6 +168,7 @@ article {
   text-align: center;
   text-decoration: underline;
   font-size: 25px;
+  margin-bottom: 25px;
   font-family: Roboto Meduium;
 }
 
@@ -180,6 +181,7 @@ article {
 
 .contact__form label {
   text-decoration: underline;
+  margin-right: 10px;
 }
 
 .btn__envoyer {
