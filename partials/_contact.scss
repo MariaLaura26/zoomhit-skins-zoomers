@@ -28,10 +28,28 @@
 //décoration et marges
 @mixin formLabel {
     text-decoration: underline;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
-//style bouton
+//Bordure input et textarea
+@mixin input {
+    border-radius: 25px;
+    padding: 5px 175px;
+}
+
+//Aligner les champs de text une par dessus de l'autre
+@mixin textarea {
+    border-radius: 25px;
+    padding: 5px 100px;
+}
+
+//Espace placeholder
+@mixin placeholder {
+    padding: 0px 100px;
+}
+
+//style bouton et ajuster le padding
 @mixin btnContact {
     text-decoration: none;
+    padding: 5px 25px;
 }

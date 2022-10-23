@@ -181,11 +181,29 @@ article {
 
 .contact__form label {
   text-decoration: underline;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
-.btn__envoyer {
+.contact__form input {
+  border-radius: 25px;
+  padding: 5px 175px;
+  border: solid 2px #FCC8B2;
+}
+
+.contact__form textarea {
+  border-radius: 25px;
+  padding: 5px 100px;
+  border: solid 2px #FCC8B2;
+}
+
+.contact__form:placeholder {
+  padding: 0px 100px;
+}
+
+.contact__form .btn__envoyer {
   text-decoration: none;
+  padding: 5px 25px;
+  background-color: #FCC8B2;
 }
 
 .groupePied {

@@ -164,12 +164,30 @@ article{
    @include contact.formContact;
 }
 
+//Marges et décorations
 .contact__form label {
    @include contact.formLabel;
 }
 
-.btn__envoyer {
+//Couleur de bordure
+.contact__form input {
+   @include contact.input;
+   border: solid 2px variables.$peche;
+}
+
+.contact__form textarea {
+   @include contact.textarea;
+   border: solid 2px variables.$peche;
+}
+
+//Mise en page du placeholder dans le champ de text
+.contact__form:placeholder {
+   @include contact.placeholder;
+}
+
+.contact__form .btn__envoyer {
    @include contact.btnContact;
+   background-color: variables.$peche;
 }
 
 
