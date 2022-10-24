@@ -1,3 +1,6 @@
+/*@mixin formPC {
+    align-self: center;
+}*/
 * {
   box-sizing: border-box;
 }
@@ -163,47 +166,48 @@ article {
   justify-content: center;
   padding-top: 25px;
 }
-
-.contact__titre {
+.section__contact .contact__titre {
   text-align: center;
   text-decoration: underline;
   font-size: 25px;
   margin-bottom: 25px;
   font-family: Roboto Meduium;
 }
-
-.contact__form {
+.section__contact .contact__form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /*& .form__prenom label, & .form__courriel label {
+     @include contact.formPC;
+  }*/
+  /*& .form__message {
+     @include contact.formMessage;
+  }*/
 }
-
-.contact__form label {
+.section__contact .contact__form label {
   text-decoration: underline;
   margin-right: 15px;
 }
-
-.contact__form input {
+.section__contact .contact__form input {
   border-radius: 25px;
   padding: 5px 175px;
   border: solid 2px #FCC8B2;
 }
-
-.contact__form textarea {
+.section__contact .contact__form textarea {
   border-radius: 25px;
   padding: 5px 100px;
   border: solid 2px #FCC8B2;
 }
+.section__contact .contact__form .btn__envoyer {
+  text-decoration: none;
+  padding: 5px 25px;
+  align-self: center;
+  background-color: #FCC8B2;
+}
 
 .contact__form:placeholder {
   padding: 0px 100px;
-}
-
-.contact__form .btn__envoyer {
-  text-decoration: none;
-  padding: 5px 25px;
-  background-color: #FCC8B2;
 }
 
 .groupePied {

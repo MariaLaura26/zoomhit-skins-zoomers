@@ -21,9 +21,13 @@
 @mixin formContact {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; //Aligner les champs de text
     justify-content: center;
 }
+
+/*@mixin formPC {
+    align-self: center;
+}*/
 
 //décoration et marges
 @mixin formLabel {
@@ -36,6 +40,7 @@
     border-radius: 25px;
     padding: 5px 175px;
 }
+
 
 //Aligner les champs de text une par dessus de l'autre
 @mixin textarea {
@@ -52,4 +57,5 @@
 @mixin btnContact {
     text-decoration: none;
     padding: 5px 25px;
+    align-self: center; //Aligner le bouton au centre
 }

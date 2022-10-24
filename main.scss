@@ -148,48 +148,59 @@ article{
 .item p{
    @include console.p; 
 }
+
 //Aligner au centre et ajouter une marge du haut
 .section__contact {
    @include contact.sectionContact;
-}
 
-//Aligner le titre de la page de contact
-.contact__titre {
-   @include contact.formTitre;
-   font-family: variables.$titre;
-}
+   //Aligner le titre de la page de contact
+   .contact__titre {
+      @include contact.formTitre;
+      font-family: variables.$titre;
+   }
 
-//Inclure les styles pour aligner le contenu du formulaire de contact
-.contact__form {
-   @include contact.formContact;
-}
+   //Inclure les styles pour aligner le contenu du formulaire de contact
+   .contact__form {
+      @include contact.formContact;
 
-//Marges et décorations
-.contact__form label {
-   @include contact.formLabel;
-}
+      //Marges et décorations
+      & label {
+         @include contact.formLabel;
+      }
 
-//Couleur de bordure
-.contact__form input {
-   @include contact.input;
-   border: solid 2px variables.$peche;
-}
+      //Couleur de bordure
+      & input {
+         @include contact.input;
+         border: solid 2px variables.$peche;
+      }
 
-.contact__form textarea {
-   @include contact.textarea;
-   border: solid 2px variables.$peche;
+      //Aligner les champs de text du prénom et du courriel avec les autres
+      /*& .form__prenom label, & .form__courriel label {
+         @include contact.formPC;
+      }*/
+
+      //Aligner le Label Message en haut de la boîte.
+      /*& .form__message {
+         @include contact.formMessage;
+      }*/
+
+      & textarea {
+         @include contact.textarea;
+         border: solid 2px variables.$peche;
+      }
+
+      & .btn__envoyer {
+         @include contact.btnContact;
+         background-color: variables.$peche;
+      }
+   }
+
 }
 
 //Mise en page du placeholder dans le champ de text
 .contact__form:placeholder {
    @include contact.placeholder;
 }
-
-.contact__form .btn__envoyer {
-   @include contact.btnContact;
-   background-color: variables.$peche;
-}
-
 
 .groupePied{
    width:1000px;
