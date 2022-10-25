@@ -50,8 +50,9 @@
     <main id="idMain">
         <section class="section__contact">
             <h1 class="contact__titre">Contactez-nous</h1>
+            <!--Manque l'action dans le div du formulaire pour que le bouton fonctionne-->
             <form class="contact__form">
-                <div class="form__nom">
+                <div class="form__nom"> 
                     <label for="nom">Nom</label>
                     <input type="text" id="nom" placeholder="Inscrire votre nom" required>
                 </div>
@@ -82,14 +83,14 @@
 
         <!--Rendre cette partie responsive et diminuer la taille de cette section ou afficher deux cartes sur deux lignes différentes-->
         <h1 class="membre__titre">Membres</h1>
-    
+        <!--Inclure le titre de la section des membres dans la balise section des membres, mais pas dans celle qui contient les cartes-->
         <section class="section__membres">
-            <div class="membre__card">
-            <img class="membre__img" src="../medias/icones/pizza.jpg">
-            <div class="membre__text"> 
-            <p class="membre__role">Rôle: Project Owner(PO) et Scrum Master</p>
-            <p class="membre__nom">Nom: Tracy Gua</p>
-            </div>
+            <div class="membre__card"> <!--Mettre la classe card pour le div qui contient tous les éléments de la cartes-->
+                <img class="membre__img" src="../medias/icones/pizza.jpg">
+                <div class="membre__text"> <!--Ajouter la classe card-body pour le div qui contient le text-->
+                    <p class="membre__role">Rôle: Project Owner(PO) et Scrum Master</p>
+                    <p class="membre__nom">Nom: Tracy Gua</p>
+                </div>
             </div>
             
            
@@ -97,35 +98,35 @@
           
         
             <div class="membre__card"> 
-            <img class="membre__img" src="../medias/icones/pizza.jpg">
-            <div class="membre__text"> 
-            <p class="membre__role">Rôle:Developper Back-end & DevOp</p>
-            <p class="membre__nom">Nom: Maria Laura Coronel</p>
-            </div>
+                <img class="membre__img" src="../medias/icones/pizza.jpg">
+                <div class="membre__text"> 
+                    <p class="membre__role">Rôle:Developper Back-end & DevOp</p>
+                    <p class="membre__nom">Nom: Maria Laura Coronel</p>
+                </div>
             </div>
             
            
     
           
             <div class="membre__card"> 
-            <img class="membre__img" src="../medias/icones/pizza.jpg">
-            <div class="membre__text"> 
-            <p class="membre__role">Rôle: Designer et Assurance Qualité(QA)</p>
-            <p class="membre__nom">Nom: Florence Lapierre</p>
-            </div>
+                <img class="membre__img" src="../medias/icones/pizza.jpg">
+                <div class="membre__text"> 
+                    <p class="membre__role">Rôle: Designer et Assurance Qualité(QA)</p>
+                    <p class="membre__nom">Nom: Florence Lapierre</p>
+                </div>
             </div>
             
            
     
             <div class="membre__card"> 
-            <img class="membre__img" src="../medias/icones/pizza.jpg">
-            <div class="membre__text"> 
-            <p class="membre__role">Rôle: Agent de promotion</p>
-            <p class="membre__nom">Nom: Natacha Abdallah</p>
-            </div>
+                <img class="membre__img" src="../medias/icones/pizza.jpg">
+                <div class="membre__text"> 
+                    <p class="membre__role">Rôle: Agent de promotion</p>
+                    <p class="membre__nom">Nom: Natacha Abdallah</p>
+                </div>
             </div>   
             
-             </section>
+        </section>
     </main>
 
     <footer>
