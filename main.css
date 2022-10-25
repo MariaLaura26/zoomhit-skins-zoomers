@@ -205,6 +205,10 @@ article {
   align-self: center;
   background-color: #FCC8B2;
 }
+.section__contact .contact__form .btn__envoyer:hover {
+  background-color: #EFA48B;
+  text-decoration: underline;
+}
 
 .contact__form:placeholder {
   padding: 0px 100px;

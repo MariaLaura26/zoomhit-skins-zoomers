@@ -193,6 +193,12 @@ article{
          @include contact.btnContact;
          background-color: variables.$peche;
       }
+
+      & .btn__envoyer:hover {
+         //@include contact.btnContact;
+         background-color: variables.$pechehover;
+         text-decoration: underline;
+      }
    }
 
 }
