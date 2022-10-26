@@ -136,6 +136,10 @@ article{
 .icon{
    @include console.icon;
 }
+.icon p{
+   @include console.p; 
+}
+
 .produits{
    @include console.produits;
 }

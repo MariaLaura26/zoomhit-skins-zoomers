@@ -137,6 +137,12 @@ article {
 
 .icon {
   width: 10%;
+  display: inline-block;
+}
+
+.icon p {
+  text-align: center;
+  margin: auto;
 }
 
 .produits {

@@ -30,6 +30,7 @@
 }
 @mixin icon{
     width:10%;
+    display:inline-block;
 }
 @mixin produits{
     display:grid;
