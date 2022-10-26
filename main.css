@@ -138,11 +138,13 @@ article {
 .icon {
   width: 10%;
   display: inline-block;
+  margin-left: 2%;
 }
 
 .icon p {
   text-align: center;
   margin: auto;
+  color: #FCC8B2;
 }
 
 .icon img {
@@ -176,6 +178,7 @@ article {
 .item p {
   text-align: center;
   margin: auto;
+  color: #FCC8B2;
 }
 
 .section__contact {

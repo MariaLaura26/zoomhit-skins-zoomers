@@ -138,6 +138,7 @@ article{
 }
 .icon p{
    @include console.p; 
+   color: variables.$peche;
 }
 .icon img{
    @include console.img; 
@@ -153,6 +154,7 @@ article{
 }
 .item p{
    @include console.p; 
+   color: variables.$peche;
 }
 
 //Aligner au centre et ajouter une marge du haut
