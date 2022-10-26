@@ -1,3 +1,7 @@
+@charset "UTF-8";
+/*@mixin formPC {
+    align-self: center;
+}*/
 * {
   box-sizing: border-box;
 }
@@ -5,6 +9,9 @@
 html, body {
   margin: 0px;
   width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 body {
@@ -20,6 +27,10 @@ body {
   width: 200px;
 }
 
+article {
+  margin-bottom: 20px;
+}
+
 .heros__boite-description {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -29,9 +40,10 @@ body {
   border: 1px solid #EFA48B;
   border-radius: 20px;
   text-align: center;
+  height: 100%;
 }
 
-.row {
+main .row {
   display: flex;
   flex-wrap: nowrap;
 }
@@ -60,6 +72,30 @@ body {
   width: 80px;
 }
 
+/*Carousel*/
+.swiper {
+  width: 50%;
+}
+
+.swiper-slide img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+/* Écran tablette*/
+@media screen and (max-width: 375px) {
+  .heros__boite-description .heros__desc {
+    display: none;
+  }
+  main .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .swiper {
+    width: 100%;
+  }
+}
 .section__membres {
   margin-top: 150px;
   display: flex;
@@ -69,6 +105,9 @@ body {
 
 .membre__titre {
   text-align: center;
+  text-decoration: underline;
+  font-size: 25px;
+  margin-bottom: 25px;
 }
 
 .membre__img {
@@ -97,9 +136,11 @@ body {
 }
 
 .enteteIcon {
-  display: inline-block;
-  flex-direction: row;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  margin-left: 10%;
+  margin-top: 5%;
 }
 
 .imageConsole {
@@ -110,19 +151,48 @@ body {
 
 .icon {
   width: 10%;
+  display: inline-block;
+  margin-left: 2%;
+}
+
+.icon p {
+  text-align: center;
+  margin: auto;
+  color: #FCC8B2;
+}
+
+.icon img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: auto;
 }
 
 .produits {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 1fr);
+  grid-template-columns: repeat(auto-fit, 150px);
+  grid-template-rows: repeat(auto-fit);
+  gap: 30px;
+  margin-left: 10%;
 }
 
 .item {
-  width: 10%;
+  margin-top: 50px;
+  width: 100%;
+  display: inline-block;
 }
 
 .item img {
   width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: auto;
+}
+
+.item p {
+  text-align: center;
+  margin: auto;
+  color: #FCC8B2;
 }
 
 .section__contact {
@@ -131,39 +201,65 @@ body {
   align-items: center;
   justify-content: center;
   padding-top: 25px;
+  margin-bottom: 175px;
 }
-
-.contact__titre {
+.section__contact .contact__titre {
   text-align: center;
   text-decoration: underline;
   font-size: 25px;
+  margin-bottom: 25px;
   font-family: Roboto Meduium;
 }
-
-.contact__form {
+.section__contact .contact__form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /*& .form__prenom label, & .form__courriel label {
+     @include contact.formPC;
+  }*/
+  /*& .form__message {
+     @include contact.formMessage;
+  }*/
 }
-
-.contact__form label {
+.section__contact .contact__form label {
+  text-decoration: underline;
+  margin-right: 15px;
+}
+.section__contact .contact__form input {
+  border-radius: 25px;
+  padding: 5px 175px;
+  border: solid 2px #FCC8B2;
+}
+.section__contact .contact__form textarea {
+  border-radius: 25px;
+  padding: 5px 100px;
+  border: solid 2px #FCC8B2;
+}
+.section__contact .contact__form .btn__envoyer {
+  text-decoration: none;
+  padding: 5px 25px;
+  align-self: center;
+  background-color: #FCC8B2;
+}
+.section__contact .contact__form .btn__envoyer:hover {
+  background-color: #EFA48B;
   text-decoration: underline;
 }
 
-.btn__envoyer {
-  text-decoration: none;
+.contact__form:placeholder {
+  padding: 0px 100px;
 }
 
 .groupePied {
-  width: 1000px;
-  margin: auto;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .reseauxsociaux {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: end;
@@ -190,23 +286,13 @@ body {
   margin-bottom: 3px;
 }
 
-/*Carousel*/
-.swiper {
-  width: 50%;
-}
-
-.swiper-slide img {
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 footer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   background-color: #000;
   height: 200px;
-  width: auto;
+  width: 100%;
   padding: 20px;
+  z-index: 1;
+  margin-top: auto;
 }/*# sourceMappingURL=main.css.map */

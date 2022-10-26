@@ -14,6 +14,9 @@
 html, body {
    margin: 0px;
    width: 100%;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
 }
 
 //Ajouter la fonte pour tout le text dans la page
@@ -32,17 +35,21 @@ body {
 
 //Aligner les liens des menus au centre
 //Header
+article{
+   margin-bottom: 20px;
+}
 .heros__boite-description{
    overflow: hidden;
-   text-overflow: ellipsis; // This is where the magic happens
+   text-overflow: ellipsis; 
    padding: 30px;
    margin-top: 60px;
    height: 400px;
    border: 1px solid variables.$pechehover;
    border-radius: 20px;
    text-align: center;
+   height: 100%;
 }
-.row{
+main .row{
    display: flex;
    flex-wrap: nowrap;
 }
@@ -72,6 +79,31 @@ body {
 .logoPartenaire img{
    width: 80px;
 }
+
+/*Carousel*/
+.swiper{
+   width: 50%;
+}
+.swiper-slide img {
+   width: 100%;
+   object-fit: contain;
+}
+
+/* Écran tablette*/
+@media screen and (max-width: 375px){
+   .heros__boite-description .heros__desc{
+      display: none;
+   }
+   main .row{
+      display: flex;
+      flex-wrap: wrap;
+   }
+   .swiper{
+      width: 100%;
+   }
+  
+}
+
 //membres
 
 .section__membres{
@@ -120,6 +152,13 @@ body {
 .icon{
    @include console.icon;
 }
+.icon p{
+   @include console.p; 
+   color: variables.$peche;
+}
+.icon img{
+   @include console.img; 
+}
 .produits{
    @include console.produits;
 }
@@ -129,39 +168,78 @@ body {
 .item img{
    @include console.img; 
 }
+.item p{
+   @include console.p; 
+   color: variables.$peche;
+}
+
 //Aligner au centre et ajouter une marge du haut
 .section__contact {
    @include contact.sectionContact;
+
+   //Aligner le titre de la page de contact
+   .contact__titre {
+      @include contact.formTitre;
+      font-family: variables.$titre;
+   }
+
+   //Inclure les styles pour aligner le contenu du formulaire de contact
+   .contact__form {
+      @include contact.formContact;
+
+      //Marges et décorations
+      & label {
+         @include contact.formLabel;
+      }
+
+      //Couleur de bordure
+      & input {
+         @include contact.input;
+         border: solid 2px variables.$peche;
+      }
+
+      //Aligner les champs de text du prénom et du courriel avec les autres
+      /*& .form__prenom label, & .form__courriel label {
+         @include contact.formPC;
+      }*/
+
+      //Aligner le Label Message en haut de la boîte.
+      /*& .form__message {
+         @include contact.formMessage;
+      }*/
+
+      & textarea {
+         @include contact.textarea;
+         border: solid 2px variables.$peche;
+      }
+
+      & .btn__envoyer {
+         @include contact.btnContact;
+         background-color: variables.$peche;
+      }
+
+      & .btn__envoyer:hover {
+         //@include contact.btnContact;
+         background-color: variables.$pechehover;
+         text-decoration: underline;
+      }
+   }
+
 }
 
-//Aligner le titre de la page de contact
-.contact__titre {
-   @include contact.formTitre;
-   font-family: variables.$titre;
+//Mise en page du placeholder dans le champ de text
+.contact__form:placeholder {
+   @include contact.placeholder;
 }
-
-//Inclure les styles pour aligner le contenu du formulaire de contact
-.contact__form {
-   @include contact.formContact;
-}
-
-.contact__form label {
-   @include contact.formLabel;
-}
-
-.btn__envoyer {
-   @include contact.btnContact;
-}
-
 
 .groupePied{
-   width:1000px;
-   margin:auto;
+   width: 100%;
    display: flex;
    justify-content: space-between;
    align-items: center;
 }
 .reseauxsociaux{
+   position: relative;
    display: flex;
    flex-direction: row;
    justify-content: end;
@@ -186,20 +264,15 @@ body {
    margin-right:8px;
    margin-bottom:3px;
 }
-/*Carousel*/
-.swiper{
-   width: 50%;
-}
-.swiper-slide img {
-   width: 100%;
-   object-fit: contain;
-}
+
+//footer
 footer {
    display: flex;
    align-items: center;
-   justify-content: space-between;
    background-color: #000;
    height: 200px;
-   width: auto;
+   width: 100%;
    padding: 20px;
+   z-index: 1;
+   margin-top: auto;
 }

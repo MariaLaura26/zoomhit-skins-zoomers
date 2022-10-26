@@ -19,6 +19,12 @@
             <div class="logo">
                 <a class="navbar-brand" href="../index.html"> <img src="../medias/icones/logo.svg"></a>
             </div>
+
+            <!-- Hamburger button -->
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Affichage/masquage de la navigation">
+                <span class="navbar-toggler-icon"><img src="medias/icones/burger_icon.png" alt=""></span>
+            </button>
+
             <!--Navigation-->
             <div id="mainNav" class="collapse navbar-collapse">
                 <ul class="navbar-nav menu-header">
@@ -41,37 +47,127 @@
             </div>
         </div>
     </nav>
-    <section class="section__contact">
-        <h1 class="contact__titre">Contactez-nous</h1>
-        <form class="contact__form">
-            <div class="form__nom">
-                <label for="nom">Nom</label>
-                <input type="text" id="nom" placeholder="Inscrire votre nom" required>
+    <main id="idMain">
+        <section class="section__contact">
+            <h1 class="contact__titre">Contactez-nous</h1>
+            <!--Manque l'action dans le div du formulaire pour que le bouton fonctionne-->
+            <form class="contact__form">
+                <div class="form__nom"> 
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" placeholder="Inscrire votre nom" required>
+                </div>
+                <br>
+                <div class="form__prenom">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" id="prenom" placeholder="Inscrire votre prénom" required>
+                </div>
+                <br>
+                <div class="form__courriel">
+                    <label for="courriel">Courriel</label>
+                    <input type="text" id="courriel" placeholder="example@gmail.com" required>
+                </div>
+                <br>
+                <div class="form__sujet">
+                    <label for="sujet">Sujet</label>
+                    <input type="text" id="sujet" placeholder="Inscrire le sujet" required>
+                </div>
+                <br>
+                <div class="form__message">
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Inscrire le contenu de votre message " required cols="45" rows="5"></textarea>
+                </div>
+                <br>
+                <input type="submit" class="btn__envoyer" value="Envoyer">
+            </form>
+        </section>
+
+        <!--Rendre cette partie responsive et diminuer la taille de cette section ou afficher deux cartes sur deux lignes différentes-->
+        <h1 class="membre__titre">Membres</h1>
+        <!--Inclure le titre de la section des membres dans la balise section des membres, mais pas dans celle qui contient les cartes-->
+        <section class="section__membres">
+            <div class="membre__card"> <!--Mettre la classe card pour le div qui contient tous les éléments de la cartes-->
+                <img class="membre__img" src="../medias/icones/pizza.jpg">
+                <div class="membre__text"> <!--Ajouter la classe card-body pour le div qui contient le text-->
+                    <p class="membre__role">Rôle: Project Owner(PO) et Scrum Master</p>
+                    <p class="membre__nom">Nom: Tracy Gua</p>
+                </div>
             </div>
-            <br>
-            <div class="form__prenom">
-                <label for="prenom">Prénom</label>
-                <input type="text" id="prenom" placeholder="Inscrire votre prénom" required>
+            
+           
+    
+          
+        
+            <div class="membre__card"> 
+                <img class="membre__img" src="../medias/icones/pizza.jpg">
+                <div class="membre__text"> 
+                    <p class="membre__role">Rôle:Developper Back-end & DevOp</p>
+                    <p class="membre__nom">Nom: Maria Laura Coronel</p>
+                </div>
             </div>
-            <br>
-            <div class="form__courriel">
-                <label for="courriel">Courriel</label>
-                <input type="text" id="courriel" placeholder="example@gmail.com" required>
+            
+           
+    
+          
+            <div class="membre__card"> 
+                <img class="membre__img" src="../medias/icones/pizza.jpg">
+                <div class="membre__text"> 
+                    <p class="membre__role">Rôle: Designer et Assurance Qualité(QA)</p>
+                    <p class="membre__nom">Nom: Florence Lapierre</p>
+                </div>
             </div>
-            <br>
-            <div class="form__sujet">
-                <label for="sujet">Sujet</label>
-                <input type="text" id="sujet" placeholder="Inscrire le sujet de votre message" required>
+            
+           
+    
+            <div class="membre__card"> 
+                <img class="membre__img" src="../medias/icones/pizza.jpg">
+                <div class="membre__text"> 
+                    <p class="membre__role">Rôle: Agent de promotion</p>
+                    <p class="membre__nom">Nom: Natacha Abdallah</p>
+                </div>
+            </div>   
+            
+        </section>
+    </main>
+
+    <footer>
+        <div class="groupePied">
+                <a class="logoPied" href="index.html"><img src="../medias\icones\logopied.png"><img></a>
+                <a class="compagnie">© 2022, ZoomHitskin, Zoomers</a>
+                <div class="logoPartenaire">
+                    <div class="shopify">
+                    <a href="https://www.facebook.com/ZoomHitSkins">
+                    <img src="../medias/icones/shopify.png"></img></a>
+                    </div>
+              
+                    <div class="nintendo">
+                    <a href="https://www.nintendo.com/fr-ca/">
+                    <img src="../medias/icones/nintendo.png"></img></a>
+                    </div>
+
+                     <div class="laSource">
+                    <a href="https://www.thesource.ca/fr-ca">
+                    <img src="../medias/icones/lasource.png"></img></a>
+                </div>
+                </div>
+            <div class="reseauxsociaux">
+                <div class="courriel">
+                    <a href="mailto:info@zoomhit.ca"><img src="../medias\icones\reseaux_sociaux\courriel.png"><img></a>
+                </div>
+                <div class="facebook">
+                    <a href="https://www.shopify.com/free-trial?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore" ><img
+                        src="../medias\icones\reseaux_sociaux\facebook.png"></img></a>
+                </div>
+                <div class="instagram">
+                    <a href="https://www.instagram.com/zoomhitskins/"><img
+                            src="../medias\icones\reseaux_sociaux\instagram.png"><img></a>
+                </div>
+                <div class="telephone">
+                    <img src="../medias\icones\reseaux_sociaux\telephone.png"><img>
+                    <a>347-746-0656</a>
+                </div>
             </div>
-            <br>
-            <div class="form__message">
-                <label for="message">Message</label>
-                <textarea id="message" placeholder="Inscrire le contenu de votre message " required cols="45" rows="5"></textarea>
-            </div>
-            <br>
-            <input type="submit" class="btn__envoyer" value="Envoyer">
-        </form>
-    </section>
+        </div>
+    </footer>
 
     <!--Bootstrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

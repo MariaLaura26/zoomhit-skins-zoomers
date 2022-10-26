@@ -1,14 +1,18 @@
 @use 'variables';
 
 @mixin sectionMembres {
- margin-top: 150px;
- display: flex;
-justify-content: space-around;
-align-items: center;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
+//Style et alignement pour le titre de la section membres
 @mixin membreTitre {  
-text-align: center;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 25px;
+    margin-bottom: 25px;
 }
 
 @mixin membreCard{

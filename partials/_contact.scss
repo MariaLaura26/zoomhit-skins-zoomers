@@ -7,6 +7,7 @@
     align-items: center;
     justify-content: center;
     padding-top: 25px;
+    margin-bottom: 175px; //Séparer la section de contact avec celle des membres 
 }
 
 //Centrer le titre et décoration
@@ -14,22 +15,48 @@
     text-align: center;
     text-decoration: underline;
     font-size: 25px;
+    margin-bottom: 25px;
 }
 
 //Aligner au centre de la section
 @mixin formContact {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; //Aligner les champs de text
     justify-content: center;
 }
+
+/*@mixin formPC {
+    align-self: center;
+}*/
 
 //décoration et marges
 @mixin formLabel {
     text-decoration: underline;
+    margin-right: 15px;
 }
 
-//style bouton
+//Bordure input et textarea
+@mixin input {
+    border-radius: 25px;
+    padding: 5px 175px;
+}
+
+
+//Aligner les champs de text une par dessus de l'autre
+@mixin textarea {
+    border-radius: 25px;
+    padding: 5px 100px;
+}
+
+//Espace placeholder
+@mixin placeholder {
+    padding: 0px 100px;
+}
+
+//style bouton et ajuster le padding
 @mixin btnContact {
     text-decoration: none;
+    padding: 5px 25px;
+    align-self: center; //Aligner le bouton au centre
 }
