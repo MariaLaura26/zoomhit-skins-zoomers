@@ -1,4 +1,4 @@
-
+@use 'variables';
 @mixin sousMenu{
         border:none;
         text-decoration:none ;
@@ -35,24 +35,37 @@
 }
 @mixin produits{
     display:grid;
-    grid-template-columns: repeat(auto-fit,150px);
+    grid-template-columns: repeat(auto-fit,300px);
     grid-template-rows:repeat(auto-fit);
-    gap:30px;
+    gap:50px;
     margin-left:10%;
 }
 @mixin item{
     margin-top:50px;
     width:100%;
     display:inline-block;
+    padding:2px;
+    border-radius: 20px;
+    border: 2px solid variables.$peche;
+    overflow: hidden;
 }
 @mixin img{
   width:100%;
   object-fit:contain;
-  margin:auto;
+  margin-left:auto;
 }
 
 @mixin p{
    // display:flex;
     text-align: center;
     margin:auto;
+    color: variables.$peche;
+}
+@mixin pItem{
+    text-align: center;
+    margin:auto;
+    color: variables.$noir;
+    background-color:variables.$peche;
+    border-radius: 20px;
+    border: 2px solid variables.$peche;
 }
