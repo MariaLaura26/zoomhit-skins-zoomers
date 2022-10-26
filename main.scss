@@ -89,8 +89,11 @@ main .row{
    object-fit: contain;
 }
 
-/* Écran tablette*/
+/* Écran telephone*/
 @media screen and (max-width: 375px){
+   .heros__boite-description{
+      margin: 0 5px ;
+   }
    .heros__boite-description .heros__desc{
       display: none;
    }
@@ -101,8 +104,6 @@ main .row{
    .swiper{
       width: 100%;
    }
- 
-  
 }
 
 //membres
