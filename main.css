@@ -204,6 +204,10 @@ main .row {
   margin: 5px;
 }
 
+.item p:first-child {
+  margin-top: 5px;
+}
+
 .section__contact {
   display: flex;
   flex-direction: column;

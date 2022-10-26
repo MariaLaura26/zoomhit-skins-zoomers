@@ -172,6 +172,9 @@ main .row{
 .itemP{
    @include console.pItem; 
 }
+.item p:first-child{
+   @include console.pItemFirst; 
+}
 
 //Aligner au centre et ajouter une marge du haut
 .section__contact {
