@@ -83,8 +83,11 @@ main .row {
      object-fit: contain;
 }
 
-/* Écran tablette*/
+/* Écran telephone*/
 @media screen and (max-width: 375px) {
+  .heros__boite-description {
+    margin: 0 5px;
+  }
   .heros__boite-description .heros__desc {
     display: none;
   }
@@ -144,7 +147,7 @@ main .row {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto;
-  margin-left: 10%;
+  margin-left: 20%;
   margin-top: 5%;
 }
 
@@ -162,7 +165,6 @@ main .row {
 
 .icon p {
   text-align: center;
-  margin: auto;
   color: #FCC8B2;
 }
 
@@ -200,12 +202,15 @@ main .row {
 
 .itemP {
   text-align: center;
-  margin: auto;
   color: #000;
   background-color: #FCC8B2;
   border: 2px solid #FCC8B2;
-  overflow: hidden;
-  padding-left: 5px;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.item p:first-child {
+  margin-top: 5px;
 }
 
 .section__contact {
