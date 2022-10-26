@@ -37,15 +37,17 @@
 }
 @mixin item{
     margin-top:50px;
-    width:10%;
-    object-fit:contain;
+    width:100%;
+    display:inline-block;
 }
 @mixin img{
-  width:200px;
+  width:100%;
   object-fit:contain;
+  margin:auto;
 }
 
 @mixin p{
-    display:flex;
-    align-items: center;
+   // display:flex;
+    text-align: center;
+    margin:auto;
 }

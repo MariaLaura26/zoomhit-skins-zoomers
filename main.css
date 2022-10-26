@@ -146,20 +146,20 @@ article {
 
 .item {
   margin-top: 50px;
-  width: 10%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  width: 100%;
+  display: inline-block;
 }
 
 .item img {
-  width: 200px;
+  width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+  margin: auto;
 }
 
 .item p {
-  display: flex;
-  align-items: center;
+  text-align: center;
+  margin: auto;
 }
 
 .section__contact {
