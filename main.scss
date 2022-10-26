@@ -164,10 +164,10 @@ main .row{
 .item{
    @include console.item;
 }
-.item img{
-   @include console.img; 
+.imgItem{
+   @include console.imgItem; 
 }
-.item p{
+.itemP{
    @include console.pItem; 
 }
 
