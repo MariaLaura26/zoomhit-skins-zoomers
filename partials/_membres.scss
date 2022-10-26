@@ -16,9 +16,11 @@
 }
 
 @mixin membreCard{
+    width: 300px;
 }
 
 @mixin membreImg {
+    width: 100%;
     border-radius: 20px;
     border: 2px solid variables.$peche;
 }
