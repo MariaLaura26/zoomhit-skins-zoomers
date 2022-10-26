@@ -139,7 +139,9 @@ article{
 .icon p{
    @include console.p; 
 }
-
+.icon img{
+   @include console.img; 
+}
 .produits{
    @include console.produits;
 }

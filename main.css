@@ -145,6 +145,13 @@ article {
   margin: auto;
 }
 
+.icon img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: auto;
+}
+
 .produits {
   display: grid;
   grid-template-columns: repeat(auto-fit, 150px);
