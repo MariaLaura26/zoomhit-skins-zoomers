@@ -71,6 +71,6 @@
     color: variables.$noir;
     background-color:variables.$peche;
     border: 2px solid variables.$peche;
-    overflow: hidden;
-    padding-left:5px
+    border-radius: 10px;
+    margin-top:10px
 }

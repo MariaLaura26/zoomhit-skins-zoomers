@@ -199,8 +199,8 @@ main .row {
   color: #000;
   background-color: #FCC8B2;
   border: 2px solid #FCC8B2;
-  overflow: hidden;
-  padding-left: 5px;
+  border-radius: 10px;
+  margin-top: 10px;
 }
 
 .section__contact {
