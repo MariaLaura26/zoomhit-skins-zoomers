@@ -165,14 +165,14 @@ main .row {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  margin: auto;
+  margin-left: auto;
 }
 
 .produits {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 150px);
+  grid-template-columns: repeat(auto-fit, 300px);
   grid-template-rows: repeat(auto-fit);
-  gap: 30px;
+  gap: 50px;
   margin-left: 10%;
 }
 
@@ -180,19 +180,26 @@ main .row {
   margin-top: 50px;
   width: 100%;
   display: inline-block;
+  padding: 2px;
+  border-radius: 20px;
+  border: 2px solid #FCC8B2;
+  overflow: hidden;
 }
 
 .item img {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  margin: auto;
+  margin-left: auto;
 }
 
 .item p {
   text-align: center;
   margin: auto;
-  color: #FCC8B2;
+  color: #000;
+  background-color: #FCC8B2;
+  border-radius: 20px;
+  border: 2px solid #FCC8B2;
 }
 
 .section__contact {
