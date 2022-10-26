@@ -11,9 +11,11 @@
         //justify-content: center;
 }
 @mixin enteteIcon{
-    display:inline-block;
-    flex-direction:row;
-    justify-content: center;
+    display:grid;
+    grid-template-columns:auto auto;
+    grid-template-rows:auto;
+    margin-left:10%;
+    margin-top: 5%;
     //flex-wrap: wrap;
 }
 @mixin imageConsole{
@@ -28,24 +30,29 @@
 }
 @mixin icon{
     width:10%;
+    display:inline-block;
+    margin-left:2%;
 }
 @mixin produits{
     display:grid;
     grid-template-columns: repeat(auto-fit,150px);
     grid-template-rows:repeat(auto-fit);
-    gap:10px;
+    gap:30px;
+    margin-left:10%;
 }
 @mixin item{
     margin-top:50px;
-    width:10%;
-    object-fit:contain;
+    width:100%;
+    display:inline-block;
 }
 @mixin img{
-  width:200px;
+  width:100%;
   object-fit:contain;
+  margin:auto;
 }
 
 @mixin p{
-    display:flex;
-    align-items: center;
+   // display:flex;
+    text-align: center;
+    margin:auto;
 }
