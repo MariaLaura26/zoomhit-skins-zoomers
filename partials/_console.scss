@@ -50,11 +50,15 @@
   width:100%;
   object-fit:contain;
   margin-left:auto;
+}
+@mixin imgItem{
+    width:100%;
+  object-fit:contain;
+  margin-left:auto;
   border-radius: 20px;
   border: 2px solid variables.$peche;
   overflow: hidden;
 }
-
 @mixin p{
    // display:flex;
     text-align: center;

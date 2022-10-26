@@ -164,8 +164,8 @@ main .row{
 .item{
    @include console.item;
 }
-.item img{
-   @include console.img; 
+.imgItem{
+   @include console.imgItem; 
 }
 .itemP{
    @include console.pItem; 

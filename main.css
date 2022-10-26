@@ -166,9 +166,6 @@ main .row {
   -o-object-fit: contain;
      object-fit: contain;
   margin-left: auto;
-  border-radius: 20px;
-  border: 2px solid #FCC8B2;
-  overflow: hidden;
 }
 
 .produits {
@@ -186,7 +183,7 @@ main .row {
   padding: 2px;
 }
 
-.item img {
+.imgItem {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
