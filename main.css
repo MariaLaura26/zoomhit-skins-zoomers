@@ -166,6 +166,9 @@ main .row {
   -o-object-fit: contain;
      object-fit: contain;
   margin-left: auto;
+  border-radius: 20px;
+  border: 2px solid #FCC8B2;
+  overflow: hidden;
 }
 
 .produits {
@@ -181,9 +184,6 @@ main .row {
   width: 100%;
   display: inline-block;
   padding: 2px;
-  border-radius: 20px;
-  border: 2px solid #FCC8B2;
-  overflow: hidden;
 }
 
 .item img {
@@ -191,15 +191,19 @@ main .row {
   -o-object-fit: contain;
      object-fit: contain;
   margin-left: auto;
+  border-radius: 20px;
+  border: 2px solid #FCC8B2;
+  overflow: hidden;
 }
 
-.item p {
+.itemP {
   text-align: center;
   margin: auto;
   color: #000;
   background-color: #FCC8B2;
-  border-radius: 20px;
   border: 2px solid #FCC8B2;
+  overflow: hidden;
+  padding-left: 5px;
 }
 
 .section__contact {
