@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*@mixin formPC {
     align-self: center;
 }*/
@@ -42,7 +43,7 @@ article {
   height: 100%;
 }
 
-.row {
+main .row {
   display: flex;
   flex-wrap: nowrap;
 }
@@ -82,6 +83,19 @@ article {
      object-fit: contain;
 }
 
+/* Écran tablette*/
+@media screen and (max-width: 375px) {
+  .heros__boite-description .heros__desc {
+    display: none;
+  }
+  main .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .swiper {
+    width: 100%;
+  }
+}
 .section__membres {
   margin-top: 150px;
   display: flex;
@@ -219,14 +233,14 @@ article {
 }
 
 .groupePied {
-  width: 1000px;
-  margin: auto;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .reseauxsociaux {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: end;
@@ -258,7 +272,7 @@ footer {
   align-items: center;
   background-color: #000;
   height: 200px;
-  width: auto;
+  width: 100%;
   padding: 20px;
   z-index: 1;
   margin-top: auto;
