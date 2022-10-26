@@ -155,7 +155,6 @@ main .row{
 }
 .icon p{
    @include console.p; 
-   color: variables.$peche;
 }
 .icon img{
    @include console.img; 
@@ -166,12 +165,11 @@ main .row{
 .item{
    @include console.item;
 }
-.item img{
-   @include console.img; 
+.imgItem{
+   @include console.imgItem; 
 }
-.item p{
-   @include console.p; 
-   color: variables.$peche;
+.itemP{
+   @include console.pItem; 
 }
 
 //Aligner au centre et ajouter une marge du haut
