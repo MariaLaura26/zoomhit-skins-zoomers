@@ -202,14 +202,14 @@ main .row{
       }
 
       //Aligner les champs de text du prénom et du courriel avec les autres
-      /*& .form__prenom label, & .form__courriel label {
+      & .form__prenom label, & .form__courriel label {
          @include contact.formPC;
-      }*/
+      }
 
       //Aligner le Label Message en haut de la boîte.
-      /*& .form__message {
+      & .form__message {
          @include contact.formMessage;
-      }*/
+      }
 
       & textarea {
          @include contact.textarea;

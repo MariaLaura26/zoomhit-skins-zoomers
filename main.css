@@ -1,7 +1,4 @@
 @charset "UTF-8";
-/*@mixin formPC {
-    align-self: center;
-}*/
 * {
   box-sizing: border-box;
 }
@@ -226,6 +223,7 @@ main .row {
   text-decoration: underline;
   font-size: 25px;
   margin-bottom: 25px;
+  width: 100%;
   font-family: Roboto Meduium;
 }
 .section__contact .contact__form {
@@ -233,21 +231,22 @@ main .row {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /*& .form__prenom label, & .form__courriel label {
-     @include contact.formPC;
-  }*/
-  /*& .form__message {
-     @include contact.formMessage;
-  }*/
+  width: 1000px;
 }
 .section__contact .contact__form label {
   text-decoration: underline;
-  margin-right: 15px;
+  margin-right: 20px;
 }
 .section__contact .contact__form input {
   border-radius: 25px;
-  padding: 5px 175px;
+  padding: 5px 200px;
   border: solid 2px #FCC8B2;
+}
+.section__contact .contact__form .form__prenom label, .section__contact .contact__form .form__courriel label {
+  margin-right: 5px;
+}
+.section__contact .contact__form .form__message {
+  display: flex;
 }
 .section__contact .contact__form textarea {
   border-radius: 25px;
