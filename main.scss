@@ -201,6 +201,14 @@ main .row{
          border: solid 2px variables.$peche;
       }
 
+      //Aligner les forms et prendre toute la taille du formulaire
+      & .form__nom, & .form__prenom, & .form__courriel, & .form__sujet, & .form__message {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 100%;
+      }
+
       //Aligner les champs de text du prénom et du courriel avec les autres
       & .form__prenom label, & .form__courriel label {
          @include contact.formPC;
