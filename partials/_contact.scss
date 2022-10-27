@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: center;
     padding-top: 25px;
-    margin-bottom: 175px; //Séparer la section de contact avec celle des membres 
+    margin-bottom: 175px; //Séparer la section de contact avec celle des membres
 }
 
 //Centrer le titre et décoration
@@ -16,6 +16,7 @@
     text-decoration: underline;
     font-size: 25px;
     margin-bottom: 25px;
+    width: 100%;
 }
 
 //Aligner au centre de la section
@@ -24,22 +25,29 @@
     flex-direction: column;
     align-items: center; //Aligner les champs de text
     justify-content: center;
+    width: 1000px; //donner une taille fixe au formulaire
 }
 
-/*@mixin formPC {
-    align-self: center;
-}*/
+@mixin formPC {
+    margin-right: 5px;
+}
+
+//Aligner le label de message en haut à gauche du champ de text
+@mixin formMessage {
+    display: flex;
+}
 
 //décoration et marges
 @mixin formLabel {
     text-decoration: underline;
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
 //Bordure input et textarea
 @mixin input {
     border-radius: 25px;
-    padding: 5px 175px;
+    padding: 5px 200px;
+    //width: 100%;
 }
 
 
@@ -52,6 +60,7 @@
 //Espace placeholder
 @mixin placeholder {
     padding: 0px 100px;
+    //width: 100%;
 }
 
 //style bouton et ajuster le padding
@@ -59,4 +68,5 @@
     text-decoration: none;
     padding: 5px 25px;
     align-self: center; //Aligner le bouton au centre
+    //width: 125px;
 }
