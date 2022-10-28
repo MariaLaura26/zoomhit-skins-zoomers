@@ -79,4 +79,7 @@
 }
 @mixin title_creation{
     text-align: center;
+    display: inline-block;
+    width:100%;
+    margin-left: 50%;
 }
