@@ -1,4 +1,7 @@
 @use 'variables';
+body {
+    font-family: variables.$text;
+ }
 @mixin sousMenu{
         border:none;
         text-decoration:none ;
@@ -45,6 +48,7 @@
     width:100%;
     display:inline-block;
     padding:2px;
+    object-fit:contain;
 }
 @mixin img{
   width:100%;
@@ -54,8 +58,8 @@
 }
 @mixin imgItem{
     width:296px;
-    height: 100%;
-  object-fit:contain;
+    height: 296px;
+ 
   margin-left:auto;
   border-radius: 20px;
   border: 2px solid variables.$peche;
