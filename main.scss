@@ -1,5 +1,6 @@
 @use 'partials/contact';
 @use 'partials/membres';
+@use 'partials/creation';
 @use 'partials/variables';
 
 //@use 'partials/nav_header';
@@ -151,6 +152,9 @@ main .row{
    @include console.imageConsole;
 }
 
+.title__creation{
+   @include creation.titleCreation;
+}
 .icon{
    @include console.icon;
 }

@@ -1,0 +1,82 @@
+@use 'variables';
+
+@mixin sousMenu{
+        border:none;
+        text-decoration:none ;
+        margin-right: 20px;
+        margin-left: 20px;
+        //display:flex;
+       // flex-direction:row;
+
+        //margin:0px;
+        //justify-content: center;
+}
+@mixin enteteIcon{
+    display:grid;
+    grid-template-columns:auto auto;
+    grid-template-rows:auto;
+    margin-left:20%;
+    margin-top: 5%;
+    //flex-wrap: wrap;
+}
+@mixin imageConsole{
+    display:inline-block;
+  
+    width:80%;
+    margin-left: 20px;
+   // display:flex;
+    //flex-direction:row;
+  //  flex-wrap: wrap;
+    //flex-wrap: nowrap;
+}
+@mixin icon{
+    width:10%;
+    display:inline-block;
+    margin-left:2%;
+}
+@mixin produits{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,300px);
+    grid-template-rows:repeat(auto-fit);
+    gap:50px;
+    margin-left:10%;
+}
+@mixin item{
+    margin-top:50px;
+    width:100%;
+    display:inline-block;
+    padding:2px;
+}
+@mixin img{
+  width:100%;
+  object-fit:contain;
+  margin-left:auto;
+}
+@mixin imgItem{
+    width:100%;
+  object-fit:contain;
+  margin-left:auto;
+  border-radius: 20px;
+  border: 2px solid variables.$peche;
+  overflow: hidden;
+}
+@mixin p{
+   // display:flex;
+    text-align: center;
+    color: variables.$peche;
+}
+@mixin pItem{
+    text-align: center;
+    color: variables.$noir;
+    background-color:variables.$peche;
+    border: 2px solid variables.$peche;
+    border-radius: 10px;
+    margin:5px;
+ 
+}
+@mixin pItemFirst{
+    margin-top:5px;
+}
+@mixin title_creation{
+    text-align: center;
+}
