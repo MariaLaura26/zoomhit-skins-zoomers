@@ -213,6 +213,7 @@ main .row {
   border: 2px solid #FCC8B2;
   border-radius: 10px;
   margin: 5px;
+  padding: 3px;
 }
 
 .item p:first-child {

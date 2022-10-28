@@ -1,5 +1,4 @@
 @use 'variables';
-
 @mixin sousMenu{
         border:none;
         text-decoration:none ;
@@ -51,9 +50,11 @@
   width:100%;
   object-fit:contain;
   margin-left:auto;
+  height: 100%;
 }
 @mixin imgItem{
-    width:100%;
+    width:296px;
+    height: 100%;
   object-fit:contain;
   margin-left:auto;
   border-radius: 20px;
