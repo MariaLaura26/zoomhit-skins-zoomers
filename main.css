@@ -12,7 +12,7 @@ html, body {
 }
 
 body {
-  font-family: Roboto Light;
+  font-family: "Roboto", thin;
 }
 
 .navigation {
@@ -233,7 +233,7 @@ main .row {
   font-size: 25px;
   margin-bottom: 25px;
   width: 100%;
-  font-family: Roboto;
+  font-family: "Roboto" Medium;
 }
 .section__contact .contact__form {
   display: flex;
