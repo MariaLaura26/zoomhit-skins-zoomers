@@ -233,7 +233,7 @@ main .row {
   font-size: 25px;
   margin-bottom: 25px;
   width: 100%;
-  font-family: Roboto Meduium;
+  font-family: Roboto;
 }
 .section__contact .contact__form {
   display: flex;
