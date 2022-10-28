@@ -24,6 +24,16 @@ body {
   width: 200px;
 }
 
+h1 {
+  font-family: "Roboto", Medium;
+  font-size: 24px;
+}
+
+h2 {
+  font-family: "Roboto", thin;
+  font-size: 25px;
+}
+
 article {
   margin-bottom: 20px;
 }
@@ -52,7 +62,7 @@ main .row {
   width: 100%;
   border-radius: 25px;
   font-size: 22px;
-  font-family: Ruda SemiBold;
+  font-family: "Ruda", SemiBold;
   margin-left: 25px;
 }
 
@@ -234,7 +244,7 @@ main .row {
   font-size: 25px;
   margin-bottom: 25px;
   width: 100%;
-  font-family: "Roboto" Medium;
+  font-family: "Roboto", Medium;
 }
 .section__contact .contact__form {
   display: flex;

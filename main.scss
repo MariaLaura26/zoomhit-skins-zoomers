@@ -33,6 +33,17 @@ body {
    width: 200px;
 }
 
+//Ajouter les typos pour les titres de chaque page
+h1 {
+   font-family: variables.$titre;
+   font-size: 24px;
+}
+
+h2 {
+   font-family: variables.$text;
+   font-size: 25px;
+}
+
 //Aligner les liens des menus au centre
 //Header
 article{
