@@ -107,9 +107,8 @@ main .row {
   }
 }
 .section__membres {
-  margin-top: 150px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -236,6 +235,7 @@ main .row {
   align-items: center;
   justify-content: center;
   padding-top: 25px;
+  margin-top: 50px;
   margin-bottom: 175px;
   width: 100%;
 }
