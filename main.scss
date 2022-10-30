@@ -221,6 +221,18 @@ main .row{
          justify-content: center;
          align-items: center;
          width: 100%;
+         
+         //Aligner les placeholder au centre du champ de text
+         & ::placeholder {
+            text-align: center;
+         }
+      }
+
+      //Prendre toute la taille du container
+      & .form__nom, & .form__prenom, & .form__courriel, & .form__sujet {
+         input {
+            width: 100%;
+         }
       }
 
       //Aligner les champs de text du prénom et du courriel avec les autres
@@ -231,11 +243,16 @@ main .row{
       //Aligner le Label Message en haut de la boîte.
       & .form__message {
          @include contact.formMessage;
-      }
 
-      & textarea {
-         @include contact.textarea;
-         border: solid 2px variables.$peche;
+         //Aligner le label du message avec les autres
+         label {
+            margin-right: 20px;
+         }
+         
+         textarea {
+            @include contact.textarea;
+            border: solid 2px variables.$peche;
+         }
       }
 
       & .btn__envoyer {
