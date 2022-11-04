@@ -107,9 +107,11 @@ main .row {
   }
 }
 .section__membres {
+  width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .membre__titre {
@@ -121,6 +123,7 @@ main .row {
 
 .membre__card {
   width: 300px;
+  height: 400px;
   margin-bottom: 100px;
 }
 
@@ -229,7 +232,11 @@ main .row {
   margin-top: 5px;
 }
 
-.section__contact {
+.contact__main .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact__main .section__contact {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -239,7 +246,7 @@ main .row {
   margin-bottom: 175px;
   width: 100%;
 }
-.section__contact .contact__titre {
+.contact__main .section__contact .contact__titre {
   text-align: center;
   text-decoration: underline;
   font-size: 25px;
@@ -247,63 +254,63 @@ main .row {
   width: 100%;
   font-family: "Roboto", Medium;
 }
-.section__contact .contact__form {
+.contact__main .section__contact .contact__form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 1000px;
 }
-.section__contact .contact__form label {
+.contact__main .section__contact .contact__form label {
   text-decoration: underline;
   margin-right: 45px;
 }
-.section__contact .contact__form input {
+.contact__main .section__contact .contact__form input {
   border-radius: 25px;
   padding: 5px 200px;
   border: solid 2px #FCC8B2;
 }
-.section__contact .contact__form .form__nom, .section__contact .contact__form .form__prenom, .section__contact .contact__form .form__courriel, .section__contact .contact__form .form__sujet, .section__contact .contact__form .form__message {
+.contact__main .section__contact .contact__form .form__nom, .contact__main .section__contact .contact__form .form__prenom, .contact__main .section__contact .contact__form .form__courriel, .contact__main .section__contact .contact__form .form__sujet, .contact__main .section__contact .contact__form .form__message {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
-.section__contact .contact__form .form__nom ::-moz-placeholder, .section__contact .contact__form .form__prenom ::-moz-placeholder, .section__contact .contact__form .form__courriel ::-moz-placeholder, .section__contact .contact__form .form__sujet ::-moz-placeholder, .section__contact .contact__form .form__message ::-moz-placeholder {
+.contact__main .section__contact .contact__form .form__nom ::-moz-placeholder, .contact__main .section__contact .contact__form .form__prenom ::-moz-placeholder, .contact__main .section__contact .contact__form .form__courriel ::-moz-placeholder, .contact__main .section__contact .contact__form .form__sujet ::-moz-placeholder, .contact__main .section__contact .contact__form .form__message ::-moz-placeholder {
   text-align: center;
 }
-.section__contact .contact__form .form__nom :-ms-input-placeholder, .section__contact .contact__form .form__prenom :-ms-input-placeholder, .section__contact .contact__form .form__courriel :-ms-input-placeholder, .section__contact .contact__form .form__sujet :-ms-input-placeholder, .section__contact .contact__form .form__message :-ms-input-placeholder {
+.contact__main .section__contact .contact__form .form__nom :-ms-input-placeholder, .contact__main .section__contact .contact__form .form__prenom :-ms-input-placeholder, .contact__main .section__contact .contact__form .form__courriel :-ms-input-placeholder, .contact__main .section__contact .contact__form .form__sujet :-ms-input-placeholder, .contact__main .section__contact .contact__form .form__message :-ms-input-placeholder {
   text-align: center;
 }
-.section__contact .contact__form .form__nom ::placeholder, .section__contact .contact__form .form__prenom ::placeholder, .section__contact .contact__form .form__courriel ::placeholder, .section__contact .contact__form .form__sujet ::placeholder, .section__contact .contact__form .form__message ::placeholder {
+.contact__main .section__contact .contact__form .form__nom ::placeholder, .contact__main .section__contact .contact__form .form__prenom ::placeholder, .contact__main .section__contact .contact__form .form__courriel ::placeholder, .contact__main .section__contact .contact__form .form__sujet ::placeholder, .contact__main .section__contact .contact__form .form__message ::placeholder {
   text-align: center;
 }
-.section__contact .contact__form .form__nom input, .section__contact .contact__form .form__prenom input, .section__contact .contact__form .form__courriel input, .section__contact .contact__form .form__sujet input {
+.contact__main .section__contact .contact__form .form__nom input, .contact__main .section__contact .contact__form .form__prenom input, .contact__main .section__contact .contact__form .form__courriel input, .contact__main .section__contact .contact__form .form__sujet input {
   width: 100%;
 }
-.section__contact .contact__form .form__prenom label, .section__contact .contact__form .form__courriel label {
+.contact__main .section__contact .contact__form .form__prenom label, .contact__main .section__contact .contact__form .form__courriel label {
   margin-right: 25px;
 }
-.section__contact .contact__form .form__message {
+.contact__main .section__contact .contact__form .form__message {
   display: flex;
   align-items: flex-start;
 }
-.section__contact .contact__form .form__message label {
+.contact__main .section__contact .contact__form .form__message label {
   margin-right: 20px;
 }
-.section__contact .contact__form .form__message textarea {
+.contact__main .section__contact .contact__form .form__message textarea {
   border-radius: 25px;
   padding: 5px 100px;
   width: 100%;
   border: solid 2px #FCC8B2;
 }
-.section__contact .contact__form .btn__envoyer {
+.contact__main .section__contact .contact__form .btn__envoyer {
   text-decoration: none;
   padding: 5px 25px;
   align-self: center;
   background-color: #FCC8B2;
 }
-.section__contact .contact__form .btn__envoyer:hover {
+.contact__main .section__contact .contact__form .btn__envoyer:hover {
   background-color: #EFA48B;
   text-decoration: underline;
 }

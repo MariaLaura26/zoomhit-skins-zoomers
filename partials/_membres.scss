@@ -1,10 +1,12 @@
 @use 'variables';
 
 @mixin sectionMembres {
+    width: 100%;
     //margin-top: 150px; //Enlever la marge qui sépare la section contact du titre contact
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap; //Mettre les cartes sur deux lignes s'il n'y a pas d'espace
 }
 
 //Style et alignement pour le titre de la section membres
@@ -17,6 +19,7 @@
 
 @mixin membreCard{
    width: 300px;
+   height: 400px; //Donner une taille fixe aux cartes
    margin-bottom: 100px;
     
 }

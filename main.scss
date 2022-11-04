@@ -190,83 +190,92 @@ main .row{
    @include console.pItemFirst; 
 }
 
-//Aligner au centre et ajouter une marge du haut
-.section__contact {
-   @include contact.sectionContact;
+.contact__main {
 
-   //Aligner le titre de la page de contact
-   .contact__titre {
-      @include contact.formTitre;
-      font-family: variables.$titre;
+   //Sauter une ligne quand il n'y a pas d'espace
+   .row {
+      display: flex;
+      flex-wrap: wrap;
    }
 
-   //Inclure les styles pour aligner le contenu du formulaire de contact
-   .contact__form {
-      @include contact.formContact;
+   //Aligner au centre et ajouter une marge du haut
+   .section__contact {
+      @include contact.sectionContact;
 
-      //Marges et décorations
-      & label {
-         @include contact.formLabel;
+      //Aligner le titre de la page de contact
+      .contact__titre {
+         @include contact.formTitre;
+         font-family: variables.$titre;
       }
 
-      //Couleur de bordure
-      & input {
-         @include contact.input;
-         border: solid 2px variables.$peche;
-      }
+      //Inclure les styles pour aligner le contenu du formulaire de contact
+      .contact__form {
+         @include contact.formContact;
 
-      //Aligner les forms et prendre toute la taille du formulaire
-      & .form__nom, & .form__prenom, & .form__courriel, & .form__sujet, & .form__message {
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         width: 100%;
-         
-         //Aligner les placeholder au centre du champ de text
-         & ::placeholder {
-            text-align: center;
+         //Marges et décorations
+         & label {
+            @include contact.formLabel;
          }
-      }
 
-      //Prendre toute la taille du container
-      & .form__nom, & .form__prenom, & .form__courriel, & .form__sujet {
-         input {
-            width: 100%;
-         }
-      }
-
-      //Aligner les champs de text du prénom et du courriel avec les autres
-      & .form__prenom label, & .form__courriel label {
-         @include contact.formPC;
-      }
-
-      //Aligner le Label Message en haut de la boîte.
-      & .form__message {
-         @include contact.formMessage;
-
-         //Aligner le label du message avec les autres
-         label {
-            margin-right: 20px;
-         }
-         
-         textarea {
-            @include contact.textarea;
+         //Couleur de bordure
+         & input {
+            @include contact.input;
             border: solid 2px variables.$peche;
          }
+
+         //Aligner les forms et prendre toute la taille du formulaire
+         & .form__nom, & .form__prenom, & .form__courriel, & .form__sujet, & .form__message {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            
+            //Aligner les placeholder au centre du champ de text
+            & ::placeholder {
+               text-align: center;
+            }
+         }
+
+         //Prendre toute la taille du container
+         & .form__nom, & .form__prenom, & .form__courriel, & .form__sujet {
+            input {
+               width: 100%;
+            }
+         }
+
+         //Aligner les champs de text du prénom et du courriel avec les autres
+         & .form__prenom label, & .form__courriel label {
+            @include contact.formPC;
+         }
+
+         //Aligner le Label Message en haut de la boîte.
+         & .form__message {
+            @include contact.formMessage;
+
+            //Aligner le label du message avec les autres
+            label {
+               margin-right: 20px;
+            }
+            
+            textarea {
+               @include contact.textarea;
+               border: solid 2px variables.$peche;
+            }
+         }
+
+         & .btn__envoyer {
+            @include contact.btnContact;
+            background-color: variables.$peche;
+         }
+
+         & .btn__envoyer:hover {
+            //@include contact.btnContact;
+            background-color: variables.$pechehover;
+            text-decoration: underline;
+         }
       }
 
-      & .btn__envoyer {
-         @include contact.btnContact;
-         background-color: variables.$peche;
-      }
-
-      & .btn__envoyer:hover {
-         //@include contact.btnContact;
-         background-color: variables.$pechehover;
-         text-decoration: underline;
-      }
    }
-
 }
 
 //Mise en page du placeholder dans le champ de text
