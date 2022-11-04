@@ -86,7 +86,9 @@ main .row{
 .navbar-toggler-icon img{
    width: 40px;
 }
-
+.logoPartenaire{
+   text-align: center;
+}
 .logoPartenaire img{
    width: 80px;
 }
@@ -114,6 +116,9 @@ main .row{
    }
    .swiper{
       width: 100%;
+   }
+   .logoPartenaire{
+      text-align: center;
    }
 }
 
