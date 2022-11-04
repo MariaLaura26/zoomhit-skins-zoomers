@@ -191,6 +191,7 @@ main .row {
 .icon p {
   text-align: center;
   color: #FCC8B2;
+  font-size: 20px;
 }
 
 .icon img {
@@ -234,6 +235,7 @@ main .row {
   border-radius: 10px;
   margin: 5px;
   padding: 3px;
+  font-size: 18px;
 }
 
 .item p:first-child {
