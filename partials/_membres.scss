@@ -4,8 +4,9 @@
     width: 100%;
     //margin-top: 150px; //Enlever la marge qui sépare la section contact du titre contact
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap; //Mettre les cartes sur deux lignes s'il n'y a pas d'espace
 }
 
@@ -30,12 +31,13 @@
     border: 2px solid variables.$peche;
 }
 
+/*
 @mixin membreRole {
     
 }
 @mixin membreNom {
     
-}
+}*/
 
 @mixin membreText {
     margin: 0 auto;

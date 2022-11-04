@@ -1,4 +1,11 @@
 @charset "UTF-8";
+/*
+@mixin membreRole {
+
+}
+@mixin membreNom {
+
+}*/
 * {
   box-sizing: border-box;
 }
@@ -110,34 +117,51 @@ main .row {
     width: 100%;
   }
 }
-.section__membres {
+.contact__main .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.contact__main .section__membres {
   width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
-}
+  /*
+  .membre__role{
+     @include membres.membreRole;
+  }
 
-.membre__titre {
+  .membre__nom{
+     @include membres.membreNom;
+  }
+  */
+}
+.contact__main .section__membres .membres__cartes {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+  width: 1000px;
+}
+.contact__main .section__membres .membre__titre {
   text-align: center;
   text-decoration: underline;
   font-size: 25px;
   margin-bottom: 25px;
 }
-
-.membre__card {
+.contact__main .section__membres .membre__card {
   width: 300px;
   height: 400px;
   margin-bottom: 100px;
 }
-
-.membre__img {
+.contact__main .section__membres .membre__img {
   width: 100%;
   border-radius: 20px;
   border: 2px solid #FCC8B2;
 }
-
-.membre__text {
+.contact__main .section__membres .membre__text {
   margin: 0 auto;
   width: 100%;
   margin-top: 10px;
@@ -245,6 +269,7 @@ main .row {
 .contact__main .row {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 auto;
 }
 .contact__main .section__contact {
   display: flex;
