@@ -32,6 +32,10 @@ body {
   width: 200px;
 }
 
+.menu-header {
+  padding-left: 25px;
+}
+
 h1 {
   font-family: "Roboto", Medium;
   font-size: 24px;
@@ -406,4 +410,9 @@ footer {
 
 .compagnie {
   margin: 25px;
+  color: #fff;
+}
+
+.compagnie:hover {
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */

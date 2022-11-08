@@ -34,6 +34,11 @@ body {
    width: 200px;
 }
 
+//Comment faire pour ne affecter que le menu affiché par le hamburger?
+.menu-header {
+   padding-left: 25px; //Donner un padding par défaut quand le menu du hamburger s'affiche sur l'écran
+}
+
 //Ajouter les typos pour les titres de chaque page
 h1 {
    font-family: variables.$titre;
@@ -349,5 +354,9 @@ footer {
 }
 .compagnie {
    margin: 25px; //Séparer du bas du footer
+   color: variables.$blanc;
+}
+.compagnie:hover {
+   color: variables.$blanc; //Le faux lien reste la même couleur
 }
 
