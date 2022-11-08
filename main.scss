@@ -26,7 +26,8 @@ body {
 
 .navigation {
    margin: 25px auto; //Rendre la barre de navigation responsive
-   width: 1000px;
+   width: 100%; //Prend toute la taille du body
+   max-width: 1000px; //Limiter la taille de la barre de navigation (Évite que le hamburger soi affiché à l'extérieur du contenu visible
 }
 
 .logo img {
@@ -135,7 +136,6 @@ main .row{
       .membres__cartes {
          display: flex;
          justify-content: space-evenly;
-         align-items: space-evenly; 
          width: 1000px;
       }
 
@@ -213,19 +213,12 @@ main .row{
 
 .contact__main {
 
-   //Sauter une ligne quand il n'y a pas d'espace
-   .row {
-      display: flex;
-      flex-wrap: wrap;
-      margin: 0 auto;
-   }
-
    //Aligner au centre et ajouter une marge du haut
    .section__contact {
       @include contact.sectionContact;
 
       //Aligner le titre de la page de contact
-      .contact__titre {
+      & .contact__titre {
          @include contact.formTitre;
          font-family: variables.$titre;
       }
@@ -305,11 +298,27 @@ main .row{
    @include contact.placeholder;
 }
 
+//footer
+footer {
+   display: flex;
+   align-items: center;
+   background-color: #000;
+   height: 100%;
+   width: 100%;
+   padding: 25px;
+   z-index: 1;
+   margin-top: auto;
+}
+
 .groupePied{
    width: 100%;
-   display: flex;
+   max-width: 1000px;
+   /*display: flex;
    justify-content: space-between;
-   align-items: center;
+   align-items: center;*/ //Problème ici, affiche les éléments du footer au début et non au centre
+}
+.logoPartenaire {
+   padding: 25px; //Séparer la section des logo des partenaires des autres sections du footer
 }
 .reseauxsociaux{
    position: relative;
@@ -318,6 +327,7 @@ main .row{
    justify-content: end;
    align-items: center;
    height:100%;
+   padding-bottom: 25px;
 }
 .facebook{
    width:20px;
@@ -337,15 +347,7 @@ main .row{
    margin-right:8px;
    margin-bottom:3px;
 }
-
-//footer
-footer {
-   display: flex;
-   align-items: center;
-   background-color: #000;
-   height: 200px;
-   width: 100%;
-   padding: 20px;
-   z-index: 1;
-   margin-top: auto;
+.compagnie {
+   margin: 25px; //Séparer du bas du footer
 }
+
