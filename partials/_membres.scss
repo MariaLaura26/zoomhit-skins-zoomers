@@ -1,7 +1,8 @@
 @use 'variables';
 
 @mixin sectionMembres {
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     //margin-top: 150px; //Enlever la marge qui sépare la section contact du titre contact
     display: flex;
     flex-direction: row;

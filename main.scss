@@ -324,7 +324,7 @@ footer {
    position: relative;
    display: flex;
    flex-direction: row;
-   justify-content: end;
+   justify-content: center; //Centrer les éléments du réseaux sociaux en bas des logo des partenaires quand il n'y a plus d'espace
    align-items: center;
    height:100%;
    padding-bottom: 25px;

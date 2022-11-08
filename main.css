@@ -124,7 +124,8 @@ main .row {
   margin: 0 auto;
 }
 .contact__main .section__membres {
-  width: 1000px;
+  width: 100%;
+  max-width: 1000px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -378,7 +379,7 @@ footer {
   position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
   height: 100%;
   padding-bottom: 25px;
