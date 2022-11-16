@@ -124,6 +124,9 @@ main .row{
    .swiper{
       width: 100%;
    }
+   .enteteIcon{
+      @include console.telephoneC;
+   }
 }
 
 .contact__main {

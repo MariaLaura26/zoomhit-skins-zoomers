@@ -19,9 +19,15 @@
     grid-template-columns:auto auto;
     grid-template-rows:auto;
     margin-left:30%;
-    margin-top: 5%;
-
-    //flex-wrap: wrap;
+    margin-top: 5%; 
+}
+@mixin telephoneC{
+    display:grid;
+      grid-template-columns:auto;
+      grid-template-rows:auto;
+      flex-wrap: wrap;
+      margin-left:30%;
+      margin-top: 5%;
 }
 @mixin imageConsole{
     display:inline-block;
