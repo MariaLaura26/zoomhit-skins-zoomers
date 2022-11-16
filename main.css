@@ -415,4 +415,22 @@ footer {
 
 .compagnie:hover {
   color: #fff;
+}
+
+.section__erreur404 {
+  background-color: #FCC8B2;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.erreur404__titre {
+  font-size: 200px;
+  margin-bottom: 50px;
+}
+
+.erreur404__titre2 {
+  font-size: 20px;
 }/*# sourceMappingURL=main.css.map */
