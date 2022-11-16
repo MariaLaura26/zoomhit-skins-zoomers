@@ -363,3 +363,14 @@ footer {
 
 //Style erreur404
 
+.section__erreur404{
+   @include erreur404.section__erreur404;
+}
+
+.erreur404__titre{
+   @include erreur404.erreur404__titre;
+}
+
+.erreur404__titre2{
+   @include erreur404.erreur404__titre2;
+}
