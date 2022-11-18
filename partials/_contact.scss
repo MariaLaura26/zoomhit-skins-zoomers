@@ -10,6 +10,7 @@
     margin-top: 50px; //Séparer la section de contact de la barre de navigation
     margin-bottom: 175px; //Séparer la section de contact avec celle des membres
     width: 100%; //Prendre toute la taille du container
+    max-width: 1000px; //Taille maximum du formulaire
 }
 
 //Centrer le titre et décoration
@@ -27,7 +28,8 @@
     flex-direction: column;
     align-items: center; //Aligner les champs de text
     justify-content: center;
-    width: 1000px; //donner une taille fixe au formulaire
+    width: 100%; //donner une taille fixe au formulaire
+    max-width: 1000px; //Taille maximum du formulaire
 }
 
 //Aligner le form du prénom et du courriel avec les autres champs de text.
@@ -63,10 +65,10 @@
 }
 
 //Espace placeholder
-@mixin placeholder {
+/*@mixin placeholder {
     padding: 0px 100px;
     width: 100%;
-}
+}*/
 
 //style bouton et ajuster le padding
 @mixin btnContact {

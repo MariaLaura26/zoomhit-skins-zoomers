@@ -1,4 +1,8 @@
 @charset "UTF-8";
+/*@mixin placeholder {
+    padding: 0px 100px;
+    width: 100%;
+}*/
 /*
 @mixin membreRole {
 
@@ -120,6 +124,14 @@ main .row {
   }
   .swiper {
     width: 100%;
+  }
+  .enteteIcon {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    flex-wrap: wrap;
+    margin-left: 30%;
+    margin-top: 5%;
   }
 }
 .contact__main .row {
@@ -298,6 +310,11 @@ main .row {
   margin-top: 5px;
 }
 
+.contact__main .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
 .contact__main .section__contact {
   display: flex;
   flex-direction: column;
@@ -307,6 +324,7 @@ main .row {
   margin-top: 50px;
   margin-bottom: 175px;
   width: 100%;
+  max-width: 1000px;
 }
 .contact__main .section__contact .contact__titre {
   width: 100%;
@@ -321,7 +339,8 @@ main .row {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 1000px;
+  width: 100%;
+  max-width: 1000px;
 }
 .contact__main .section__contact .contact__form label {
   text-decoration: underline;
@@ -337,15 +356,9 @@ main .row {
   justify-content: center;
   align-items: center;
   width: 100%;
-}
-.contact__main .section__contact .contact__form .form__nom ::-moz-placeholder, .contact__main .section__contact .contact__form .form__prenom ::-moz-placeholder, .contact__main .section__contact .contact__form .form__courriel ::-moz-placeholder, .contact__main .section__contact .contact__form .form__sujet ::-moz-placeholder, .contact__main .section__contact .contact__form .form__message ::-moz-placeholder {
-  text-align: center;
-}
-.contact__main .section__contact .contact__form .form__nom :-ms-input-placeholder, .contact__main .section__contact .contact__form .form__prenom :-ms-input-placeholder, .contact__main .section__contact .contact__form .form__courriel :-ms-input-placeholder, .contact__main .section__contact .contact__form .form__sujet :-ms-input-placeholder, .contact__main .section__contact .contact__form .form__message :-ms-input-placeholder {
-  text-align: center;
-}
-.contact__main .section__contact .contact__form .form__nom ::placeholder, .contact__main .section__contact .contact__form .form__prenom ::placeholder, .contact__main .section__contact .contact__form .form__courriel ::placeholder, .contact__main .section__contact .contact__form .form__sujet ::placeholder, .contact__main .section__contact .contact__form .form__message ::placeholder {
-  text-align: center;
+  /*& ::placeholder {
+     text-align: center;
+  }*/
 }
 .contact__main .section__contact .contact__form .form__nom input, .contact__main .section__contact .contact__form .form__prenom input, .contact__main .section__contact .contact__form .form__courriel input, .contact__main .section__contact .contact__form .form__sujet input {
   width: 100%;
@@ -377,11 +390,9 @@ main .row {
   text-decoration: underline;
 }
 
-.contact__form:placeholder {
-  padding: 0px 100px;
-  width: 100%;
-}
-
+/*.contact__form:placeholder {
+   @include contact.placeholder;
+}*/
 footer {
   display: flex;
   align-items: center;
