@@ -2,7 +2,7 @@
 
 
 @mixin section__erreur404 {
-   background-color: variables.$peche;
+   background-color: red;
    display: flex;
    justify-content: center;
    align-items: center;
