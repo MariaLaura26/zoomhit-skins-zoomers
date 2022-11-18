@@ -16,7 +16,7 @@
         //justify-content: center;
 }
 @mixin sousH{
-    display:block;
+    display:inline-block;
     //list-style-type:none;
 }
 @mixin sous{
@@ -38,11 +38,16 @@
     border-bottom:2px solid transparent;
     display:none;
 }
+@mixin deroulantM{
+    display:none;
+}
 @mixin deroulantH{
     color:variables.$peche;
     content:"▼";
     border-bottom:2px variables.$peche;
-    list-style-type:none;
+    //list-style-type:none;
+     display:block;
+    
 }
 @mixin enteteIcon{
     display:grid;
