@@ -2,8 +2,10 @@
 
 
 @mixin section__erreur404 {
-   height: 700px;
-   width: 100%;
+   background-color: variables.$peche;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 @mixin erreur404__titre {
