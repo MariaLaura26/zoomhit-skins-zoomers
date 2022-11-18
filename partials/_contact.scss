@@ -52,7 +52,7 @@
 //Bordure input et textarea
 @mixin input {
     border-radius: 25px;
-    padding: 5px 200px;
+    padding: 5px 100px; //Diminuer le padding pour éviter que le formulaire dépasse la page
     //width: 100%;
 }
 
