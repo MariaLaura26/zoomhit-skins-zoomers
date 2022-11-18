@@ -222,6 +222,13 @@ main .row{
 
 .contact__main {
 
+   //Sauter une ligne quand il n'y a pas d'espace
+   .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+   }
+
    //Aligner au centre et ajouter une marge du haut
    .section__contact {
       @include contact.sectionContact;
@@ -255,9 +262,9 @@ main .row{
             width: 100%;
             
             //Aligner les placeholder au centre du champ de text
-            & ::placeholder {
+            /*& ::placeholder {
                text-align: center;
-            }
+            }*/
          }
 
          //Prendre toute la taille du container
@@ -303,9 +310,9 @@ main .row{
 }
 
 //Mise en page du placeholder dans le champ de text
-.contact__form:placeholder {
+/*.contact__form:placeholder {
    @include contact.placeholder;
-}
+}*/
 
 //footer
 footer {
