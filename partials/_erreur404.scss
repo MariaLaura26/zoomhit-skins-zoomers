@@ -3,8 +3,7 @@
 
 @mixin section__erreur404 {
    background-color: variables.$peche;
-   height: 700px;
-   width: 700px;
+
 }
 
 @mixin erreur404__titre {
