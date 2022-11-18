@@ -2,17 +2,16 @@
 
 
 @mixin section__erreur404 {
-   background-color:variables.$peche;
-   height: 700px;
-   width: 100%;
-//    display: flex;
-// justify-content: center;
-// align-items: center;
-// flex-direction: column;
+   background-color: red;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
+
 @mixin erreur404__titre {
 font-size: 200px;
 margin-bottom: 50px;
+
 }
 
 
