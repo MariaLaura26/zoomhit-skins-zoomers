@@ -2,10 +2,8 @@
 
 
 @mixin section__erreur404 {
-   background-color: red;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+   background-color: variables.$peche;
+
 }
 
 @mixin erreur404__titre {
