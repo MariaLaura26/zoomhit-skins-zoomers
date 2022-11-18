@@ -1,3 +1,4 @@
+//https://www.pierre-giraud.com/html-css-apprendre-coder-cours/creation-menu-deroulant/
 @use 'variables';
 
 @mixin sousMenu{
@@ -13,6 +14,15 @@
        
         //margin:0px;
         //justify-content: center;
+}
+@mixin deroulant{
+    color:black;
+    content:"▼";
+}
+@mixin deroulantH{
+    color:variables.$peche;
+    content:"▼";
+    border-bottom:2px variables.$peche;
 }
 @mixin enteteIcon{
     display:grid;
