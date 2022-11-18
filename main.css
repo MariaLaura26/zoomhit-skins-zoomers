@@ -125,14 +125,6 @@ main .row {
   .swiper {
     width: 100%;
   }
-  .enteteIcon {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    flex-wrap: wrap;
-    margin-left: 30%;
-    margin-top: 5%;
-  }
 }
 .contact__main .row {
   display: flex;
@@ -227,12 +219,24 @@ main .row {
 .enteteIcon a {
   color: black;
   content: "▼";
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
 }
 
 .enteteIcon a:hover {
   color: #FCC8B2;
   content: "▼";
   border-bottom: 2px #FCC8B2;
+}
+
+.sous {
+  list-style-type: none;
+  display: none;
+}
+
+.sousA ::after {
+  list-style-type: none;
+  display: none;
 }
 
 .imageConsole {
@@ -456,17 +460,14 @@ footer {
 
 .section__erreur404 {
   background-color: #FCC8B2;
-  height: 700px;
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .erreur404__titre {
   font-size: 200px;
   margin-bottom: 50px;
-  -webkit-animation: tada;
-          animation: tada;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
 }
 
 .erreur404__titre2 {
