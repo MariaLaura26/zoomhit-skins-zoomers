@@ -13,6 +13,8 @@
 @mixin erreur404__titre {
 font-size: 200px;
 margin-bottom: 50px;
+animation: tada;
+animation-duration: 4s; 
 
 }
 
