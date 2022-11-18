@@ -60,32 +60,31 @@
                     <h1 class="contact__titre text-center">Contactez-nous</h1>
                 </div>
                 <!--Manque l'action dans le div du formulaire pour que le bouton fonctionne-->
-                
-                
-                <form class="contact__form  col-lg-12 col-md-8 col-sm-6">
+            
+                <form class="contact__form  col-lg-12 col-md-6 col-sm-3">
                     <div class="form__nom"> 
                         <label for="nom">Nom</label>
-                        <input type="text" id="nom" placeholder="" required>
+                        <input type="text" id="nom" required>
                     </div>
                     <br>
                     <div class="form__prenom">
                         <label for="prenom">Prénom</label>
-                        <input type="text" id="prenom" placeholder="" required>
+                        <input type="text" id="prenom" required>
                     </div>
                     <br>
                     <div class="form__courriel">
                         <label for="courriel">Courriel</label>
-                        <input type="text" id="courriel" placeholder="" required>
+                        <input type="text" id="courriel" required>
                     </div>
                     <br>
                     <div class="form__sujet">
                         <label for="sujet">Sujet</label>
-                        <input type="text" id="sujet" placeholder="" required>
+                        <input type="text" id="sujet" required>
                     </div>
                     <br>
                     <div class="form__message">
                         <label for="message">Message</label>
-                        <textarea id="message" placeholder="" required cols="45" rows="5"></textarea>
+                        <textarea id="message" required cols="45" rows="5"></textarea>
                     </div>
                     <br>
                     <input type="submit" class="btn__envoyer" value="Envoyer">
@@ -95,55 +94,55 @@
         </section>
 
                 
-            <!--Inclure le titre de la section des membres dans la balise section des membres, mais pas dans celle qui contient les cartes-->
-            <h1 class="membre__titre text-center">Membres</h1>
             
-            <section class="container section__membres">
-                <div class="row membres__cartes">
-                    <!--Rendre cette partie responsive et diminuer la taille de cette section ou afficher deux cartes sur deux lignes différentes-->
+            
+        <section class="container section__membres">
+            <div class="row membres__cartes">
+                <!--Inclure le titre de la section des membres dans la balise section des membres, mais pas dans celle qui contient les cartes-->
+                <h1 class="membre__titre text-center">Membres</h1>
+                <!--Rendre cette partie responsive et diminuer la taille de cette section ou afficher deux cartes sur deux lignes différentes-->
                     
-                     
-                        <div class="col-sm-12 col-md-6 col-lg-3">
-                            <div class="card membre__card"> <!--Mettre la classe card pour le div qui contient tous les éléments de la cartes-->
-                                <img class="card-img-top membre__img" src="../medias/images_membres/tracy.png">
-                                <div class="card-body membre__text"> <!--Ajouter la classe card-body pour le div qui contient le text-->
-                                    <p class="card-text membre__role">Rôle: Project Owner(PO) et Scrum Master</p>
-                                    <p class="card-text membre__nom">Nom: Tracy Gua</p>
-                                </div>
-                            </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card membre__card"> <!--Mettre la classe card pour le div qui contient tous les éléments de la cartes-->
+                        <img class="card-img-top membre__img" src="../medias/images_membres/tracy.png">
+                        <div class="card-body membre__text"> <!--Ajouter la classe card-body pour le div qui contient le text-->
+                            <p class="card-text membre__role">Rôle: Project Owner(PO) et Scrum Master</p>
+                            <p class="card-text membre__nom">Nom: Tracy Gua</p>
                         </div>
-                        <div class="col-sm-12 col-md-6 col-lg-3">
-                            <div class="card membre__card"> 
-                                <img class="card-img-top membre__img" src="../medias/images_membres/mariaLaura.png">
-                                <div class="card-body membre__text"> 
-                                    <p class="card-text membre__role">Rôle:Developper Back-end & DevOp</p>
-                                    <p class="card-text membre__nom">Nom: Maria Laura Coronel</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-12 col-md-6 col-lg-3">
-                            <div class="card membre__card"> 
-                                <img class="card-img-top membre__img" src="../medias/images_membres/florence.png">
-                                <div class="card-body membre__text"> 
-                                    <p class="card-text membre__role">Rôle: Designer et Assurance Qualité(QA)</p>
-                                    <p class="card-text membre__nom">Nom: Florence Lapierre</p>
-                                </div>
-                            </div>
-                        </div>
-                                
-                        <div class="col-sm-12 col-md-6 col-lg-3">
-                            <div class="card membre__card"> 
-                                <img class="card-img-top membre__img" src="../medias/images_membres/natacha.png">
-                                <div class="card-body membre__text"> 
-                                    <p class="card-text membre__role">Rôle: Agent de promotion</p>
-                                    <p class="card-text membre__nom">Nom: Natacha Abdallah</p>                            
-                                </div>
-                            </div>   
-                        </div>
-                   
                     </div>
-                </section>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card membre__card"> 
+                        <img class="card-img-top membre__img" src="../medias/images_membres/mariaLaura.png">
+                        <div class="card-body membre__text"> 
+                            <p class="card-text membre__role">Rôle:Developper Back-end & DevOp</p>
+                            <p class="card-text membre__nom">Nom: Maria Laura Coronel</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card membre__card"> 
+                            <img class="card-img-top membre__img" src="../medias/images_membres/florence.png">
+                        <div class="card-body membre__text"> 
+                            <p class="card-text membre__role">Rôle: Designer et Assurance Qualité(QA)</p>                                    
+                            <p class="card-text membre__nom">Nom: Florence Lapierre</p>
+                        </div>
+                    </div>
+                </div>
+                                
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card membre__card"> 
+                        <img class="card-img-top membre__img" src="../medias/images_membres/natacha.png">
+                        <div class="card-body membre__text"> 
+                            <p class="card-text membre__role">Rôle: Agent de promotion</p>
+                            <p class="card-text membre__nom">Nom: Natacha Abdallah</p>                            
+                        </div>
+                    </div>   
+                </div>
+                   
+            </div>
+        </section>
      
     </main>
 
