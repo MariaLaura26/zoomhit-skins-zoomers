@@ -40,6 +40,7 @@
     color:variables.$peche;
     border-bottom:2px variables.$peche;
     list-style-type:none;
+    text-decoration: none;
 }
 @mixin enteteIcon{
     display:grid;
