@@ -206,14 +206,10 @@ main .row{
 .sous ::after{
    @include console.sous;
 }
- li:hover{
-   @include console.deroulantH;
-}
-li{
+.sousA ::after{
    @include console.sous;
 }
-//hover titre dispo console
-.enteteIcon a:hover .sous{
+.enteteIcon ul{
    @include console.sousH;
 }
 .imageConsole{

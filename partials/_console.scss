@@ -17,8 +17,7 @@
 }
 @mixin sousH{
     display:block;
-    list-style-type:none;
-    text-decoration: none;
+    //list-style-type:none;
 }
 @mixin sous{
     list-style-type:none;
@@ -35,15 +34,12 @@
     color:black;
     list-style-type:none;
     border-bottom:2px solid transparent;
-    display:block;
+    display:none;
 }
-
 @mixin deroulantH{
     color:variables.$peche;
     border-bottom:2px variables.$peche;
     list-style-type:none;
-    display:block;
-    //text-decoration: none;
 }
 @mixin enteteIcon{
     display:grid;
