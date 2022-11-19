@@ -16,12 +16,13 @@
         //justify-content: center;
 }
 @mixin sousH{
-    display:inline-block;
-    //list-style-type:none;
+    display:block;
+    list-style-type:none;
+    text-decoration: none;
 }
 @mixin sous{
     list-style-type:none;
-    display:none;
+    display:inline-block;
     background-color: variables.$white;
     box-shadow:variables.$peche;
 }
@@ -38,16 +39,13 @@
     border-bottom:2px solid transparent;
     display:none;
 }
-@mixin deroulantM{
-    display:none;
-}
+
 @mixin deroulantH{
     color:variables.$peche;
-    content:"▼";
     border-bottom:2px variables.$peche;
-    //list-style-type:none;
-     display:block;
-    
+    list-style-type:none;
+    display:block;
+    //text-decoration: none;
 }
 @mixin enteteIcon{
     display:grid;
