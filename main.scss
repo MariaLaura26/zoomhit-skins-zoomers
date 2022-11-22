@@ -204,7 +204,7 @@ main .row{
 .enteteIcon a{
    @include console.deroulant;
 }
-.invisible ::after{
+ ul .invisible{
    @include console.sous;
 }
 .invisible ::after{
