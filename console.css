@@ -1,6 +1,21 @@
 .sm{
     list-style-type:none;
     display:inline-block;
-    background-color: #EFA48B;
+    background-color:#EFA48B ;
     box-shadow: #EFA48B;
+    display:block;
+    text-align: center;
+    width:100%;
+    padding:0px;
+}
+.enteteIcon a {
+    border-bottom:3px solid #EFA48B;
+}
+ ul {
+    text-decoration: none;
+    list-style-type:none;
+}
+/*.enteteIcon a:hover {
+    display:block;
+  
 }
