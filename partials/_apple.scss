@@ -13,6 +13,10 @@ body {
         //margin:0px;
         //justify-content: center;
 }
+@mixin ul{
+    text-decoration: none;
+    list-style-type:none;
+}
 @mixin enteteIcon{
     display:grid;
     grid-template-columns:auto auto;
