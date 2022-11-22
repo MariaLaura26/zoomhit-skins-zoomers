@@ -15,6 +15,16 @@
         //margin:0px;
         //justify-content: center;
 }
+@mixin sm{
+    list-style-type:none;
+    display:inline-block;
+    background-color:#EFA48B ;
+    box-shadow: #EFA48B;
+    display:block;
+    text-align: center;
+    width:100%;
+    padding:0px;
+}
 @mixin sousH{
     display:block;
     //list-style-type:none;
@@ -33,14 +43,16 @@
 @mixin deroulant{
     color:black;
     list-style-type:none;
-    border-bottom:2px solid variables.$peche;
+    border-bottom:3px solid variables.$peche;
     display:block;
 }
+    
 @mixin deroulantH{
     color:variables.$peche;
     border-bottom:2px variables.$peche;
     list-style-type:none;
     text-decoration: none;
+    background-color: variables.$peche;
 }
 @mixin enteteIcon{
     display:grid;
