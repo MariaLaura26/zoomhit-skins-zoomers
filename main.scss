@@ -156,6 +156,7 @@ main .row{
       
       .membre__img{
          @include membres.membreImg;
+         border: 2px solid variables.$peche;
       }
       
       /*
@@ -169,6 +170,7 @@ main .row{
       */
       .membre__text{
          @include membres.membreText;
+         background-color: variables.$peche;
       }
    }
 }
