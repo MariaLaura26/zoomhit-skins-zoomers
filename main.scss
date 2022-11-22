@@ -215,9 +215,9 @@ main .row{
 .enteteIcon ul{
    @include console.sousH;
 }
-ul{
+/*ul{
    @include console.ul;
-}
+}*/
 li {
    @include console.deroulantH;
 }
@@ -225,6 +225,7 @@ li {
    @include console.imageConsole;
 }
 
+//Création
 .title__creation{
    @include creation.title_creation;
 }
@@ -232,7 +233,8 @@ li {
    @include console.icon;
 }
 .icon p{
-   @include console.p; 
+   @include console.p;
+   color: variables.$peche; 
 }
 .icon img{
    @include console.img; 
@@ -244,10 +246,14 @@ li {
    @include console.item;
 }
 .imgItem{
-   @include console.imgItem; 
+   @include console.imgItem;
+   border: 2px solid variables.$peche; 
 }
 .itemP{
-   @include console.pItem; 
+   @include console.pItem;
+   color: variables.$noir;
+    background-color:variables.$peche;
+    border: 2px solid variables.$peche; 
 }
 .item p:first-child{
    @include console.pItemFirst; 

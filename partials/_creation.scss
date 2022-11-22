@@ -1,4 +1,3 @@
-@use 'variables';
 
 @mixin sousMenu{
         border:none;
@@ -57,19 +56,14 @@
   object-fit:contain;
   margin-left:auto;
   border-radius: 20px;
-  border: 2px solid variables.$peche;
   overflow: hidden;
 }
 @mixin p{
    // display:flex;
     text-align: center;
-    color: variables.$peche;
 }
 @mixin pItem{
     text-align: center;
-    color: variables.$noir;
-    background-color:variables.$peche;
-    border: 2px solid variables.$peche;
     border-radius: 10px;
     margin:5px;
  

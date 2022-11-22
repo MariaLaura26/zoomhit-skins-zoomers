@@ -171,8 +171,8 @@ main .row {
   width: 100%;
   margin-top: 10px;
   text-align: center;
-  background-color: #FCC8B2;
   border-radius: 5px 5px 5px 5px;
+  background-color: #FCC8B2;
 }
 
 .menu a:hover {
@@ -218,25 +218,36 @@ main .row {
 }
 .enteteIcon a {
   color: black;
-  content: "▼";
-  text-decoration: none;
-  border-bottom: 2px solid transparent;
+  list-style-type: none;
+  border-bottom: 2px solid #FCC8B2;
+  display: block;
 }
 
-.enteteIcon a:hover {
+ul .invisible {
+  list-style-type: none;
+  display: inline-block;
+  background-color: #fff;
+  box-shadow: #FCC8B2;
+}
+
+.invisible ::after {
+  display: table;
+  clear: both;
+  list-style-type: none;
+}
+
+.enteteIcon ul {
+  display: block;
+}
+
+/*ul{
+   @include console.ul;
+}*/
+li {
   color: #FCC8B2;
-  content: "▼";
   border-bottom: 2px #FCC8B2;
-}
-
-.sous {
   list-style-type: none;
-  display: none;
-}
-
-.sousA ::after {
-  list-style-type: none;
-  display: none;
+  text-decoration: none;
 }
 
 .imageConsole {
@@ -264,6 +275,7 @@ main .row {
   text-align: center;
   color: #FCC8B2;
   font-size: 20px;
+  color: #FCC8B2;
 }
 
 .icon img {
@@ -297,17 +309,18 @@ main .row {
   border-radius: 20px;
   border: 2px solid #FCC8B2;
   overflow: hidden;
+  border: 2px solid #FCC8B2;
 }
 
 .itemP {
   text-align: center;
-  color: #fff;
-  background-color: #FCC8B2;
-  border: 2px solid #FCC8B2;
   border-radius: 10px;
   margin: 5px;
   padding: 3px;
   font-size: 18px;
+  color: #000;
+  background-color: #FCC8B2;
+  border: 2px solid #FCC8B2;
 }
 
 .item p:first-child {
@@ -353,6 +366,7 @@ main .row {
 .contact__main .section__contact .contact__form input {
   border-radius: 25px;
   padding: 5px 100px;
+  text-align: center;
   border: solid 2px #FCC8B2;
 }
 .contact__main .section__contact .contact__form .form__nom, .contact__main .section__contact .contact__form .form__prenom, .contact__main .section__contact .contact__form .form__courriel, .contact__main .section__contact .contact__form .form__sujet, .contact__main .section__contact .contact__form .form__message {
@@ -459,15 +473,14 @@ footer {
 }
 
 .section__erreur404 {
-  background-color: #FCC8B2;
   height: 700px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .erreur404__titre {
-  font-size: 200px;
   margin-bottom: 50px;
 }
 

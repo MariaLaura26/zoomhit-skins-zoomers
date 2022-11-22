@@ -22,7 +22,7 @@
 @mixin sous{
     list-style-type:none;
     display:inline-block;
-    background-color: variables.$white;
+    background-color: variables.$blanc;
     box-shadow:variables.$peche;
 }
 @mixin sousA{
@@ -107,9 +107,6 @@
 }
 @mixin pItem{
     text-align: center;
-    color: variables.$blanc;
-    background-color:variables.$peche;
-    border: 2px solid variables.$peche;
     border-radius: 10px;
     margin:5px;
     padding:3px;
@@ -118,5 +115,3 @@
 @mixin pItemFirst{
     margin-top:5px;
 }
-
-@use 'partials/variables';
