@@ -28,7 +28,7 @@
     flex-direction: column;
     align-items: center; //Aligner les champs de text
     justify-content: center;
-    width: 100%; //donner une taille fixe au formulaire
+    width: 100%; //Prendre toute l'espace disponible
     max-width: 1000px; //Taille maximum du formulaire
 }
 
@@ -54,6 +54,7 @@
     border-radius: 25px;
     padding: 5px 100px; //Diminuer le padding pour éviter que le formulaire dépasse la page
     //width: 100%;
+    text-align: center;
 }
 
 
