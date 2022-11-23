@@ -505,6 +505,7 @@ footer {
 }
 
 .section__erreur404 {
+  background-color: #EFA48B;
   height: 700px;
   display: flex;
   align-items: center;
@@ -514,6 +515,7 @@ footer {
 
 .erreur404__titre {
   margin-bottom: 50px;
+  font-size: 200px;
 }
 
 .erreur404__titre2 {
