@@ -3,6 +3,10 @@
     padding: 0px 100px;
     width: 100%;
 }*/
+body {
+  font-family: "Roboto", thin;
+}
+
 /*
 @mixin membreRole {
 
@@ -217,37 +221,40 @@ main .row {
   }
 }
 .enteteIcon a {
-  color: black;
-  list-style-type: none;
-  border-bottom: 2px solid #FCC8B2;
-  display: block;
-}
-
-ul .invisible {
   list-style-type: none;
   display: inline-block;
-  background-color: #fff;
-  box-shadow: #FCC8B2;
+  background-color: #EFA48B;
+  box-shadow: #EFA48B;
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 0px;
 }
 
-.invisible ::after {
-  display: table;
-  clear: both;
+.enteteIcon a:hover {
+  color: black;
   list-style-type: none;
+  display: block;
 }
 
 .enteteIcon ul {
   display: block;
 }
 
-/*ul{
-   @include console.ul;
-}*/
-li {
-  color: #FCC8B2;
-  border-bottom: 2px #FCC8B2;
+ul .sm {
   list-style-type: none;
+  display: inline-block;
+  background-color: #EFA48B;
+  box-shadow: #EFA48B;
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 0px;
+}
+
+ul {
   text-decoration: none;
+  list-style-type: none;
 }
 
 .imageConsole {
