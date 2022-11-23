@@ -58,20 +58,22 @@
     display:grid;
     grid-template-columns:auto auto;
     grid-template-rows:auto;
-    margin-left:30%;
+    margin-left:10%;
+    margin-right:10%;
     margin-top: 5%; 
+    align-items: center;
+    text-align: center;
 }
 @mixin telephoneC{
     display:grid;
       grid-template-columns:auto;
       grid-template-rows:auto;
       flex-wrap: wrap;
-      margin-left:30%;
-      margin-top: 5%;
 }
 @mixin imageConsole{
-    display:inline-block;
+    display:block;
     align-items: center;
+    text-align: center;
     width:100%;
     margin-left: 20px;
    // display:flex;
@@ -79,6 +81,9 @@
     flex-wrap: wrap;
     color: variables.$peche;
     //flex-wrap: nowrap;
+}
+@mixin marginImg{
+    margin:5px;
 }
 @mixin icon{
     width:10%;

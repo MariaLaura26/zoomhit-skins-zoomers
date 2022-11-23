@@ -189,20 +189,22 @@ main .row{
 @media screen and (min-width: 900px){
    .enteteIcon{
       @include console.enteteIcon;
-   }
-  
+   }  
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 900px){
+   .icon{
+      @include console.marginImg;
+   }
+}
+@media screen and (min-width: 600px){
    .enteteIcon{
       @include console.enteteIcon;
    }
-  
 }
 @media screen and (max-width: 375px){
    .enteteIcon{
-      @include console.telephoneC;
+      @include console.telephoneC;  
    }
-  
 }
 .enteteIcon a{
    @include console.sm;
@@ -236,7 +238,7 @@ ul{
    }
   
 }
-@media screen and (max-width: 600px){
+@media screen and (min-width: 600px){
    .icon p{
       @include console.pmoyen;
    }
