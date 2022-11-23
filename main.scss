@@ -257,17 +257,11 @@ ul{
    .icon p {
       @include console.p;
    }
-   .produits{
-      @include console.produits;
-   }
   
 }
 @media screen and (min-width: 600px){
    .icon p{
       @include console.pmoyen;
-   }
-   .produits{
-      @include console.produits;
    }
   
 }
@@ -275,17 +269,14 @@ ul{
    .icon p{
       @include console.petit;
    }
-   .produits{
-      @include console.produits6;
-   }
   
 }
 .icon img{
    @include console.img; 
 }
-//.produits{
- //  @include console.produits;
-//}
+.produits{
+   @include console.produits;
+}
 .item{
    @include console.item;
 }
