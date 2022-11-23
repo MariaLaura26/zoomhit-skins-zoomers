@@ -55,20 +55,18 @@
             </div>
         </div>
     </nav>
-
-    <div class='enteteIcon'>
-        <ul>
-            <li class="deroulant entete__sous-menu"><a href="#">Console disponible ▼</a></li>
-            <ul class="sm">
-                <li><a href="#">Ps4</a></li>
-                <li><a href="#">Ps5</a></li>
-                <li><a href="#">Switch</a></li>
-                <li><a href="#">Switch lite</a></li>
-                <li><a href="#">Switch oled</a></li>
-                <li><a href="#">Xbox one</a></li>
-            </ul>
-        </ul>
-
+   <!-- enteteIcon-->
+    <div class='enteteIcon dropdown show'>
+        
+            <a class="deroulant entete__sous-menu btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Console disponible
+              </a>
+              <div class="dropdown-menu sm" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Ps4</a>
+                <a class="dropdown-item" href="#">Ps5</a>
+                <a class="dropdown-item" href="#">Switch</a>
+              </div>
+    
         <div class='imageConsole'>
             <div class="icon Ps4"><img src='\medias\icones\playstation.svg'>
                 <p>Ps4</p>
@@ -228,6 +226,10 @@
     </footer>
 
     <!--Bootstrap JS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
