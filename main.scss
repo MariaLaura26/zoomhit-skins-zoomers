@@ -110,6 +110,12 @@ main .row{
    width: 100%;
    object-fit: contain;
 }
+/* Écran tablette */
+@media screen and (max-width: 768px){
+   .menu-header {
+      background-color: variables.$blanc;
+   }
+}
 
 /* Écran telephone*/
 @media screen and (max-width: 375px){
