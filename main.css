@@ -1,4 +1,9 @@
 @charset "UTF-8";
+@media screen and (max-width: 576px) {
+  .section__erreur404 {
+    background-color: red;
+  }
+}
 /*@mixin placeholder {
     padding: 0px 100px;
     width: 100%;
