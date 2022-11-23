@@ -189,32 +189,40 @@ main .row{
 @media screen and (min-width: 900px){
    .enteteIcon{
       @include console.enteteIcon;
-   }
-  
+   }  
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 900px){
+   .icon{
+      @include console.marginImg;
+   }
+}
+@media screen and (min-width: 600px){
    .enteteIcon{
       @include console.enteteIcon;
    }
-  
 }
 @media screen and (max-width: 375px){
    .enteteIcon{
-      @include console.telephoneC;
+      @include console.telephoneC;  
    }
-  
 }
 .enteteIcon a{
    @include console.sm;
 }
 .enteteIcon a:hover{
    @include console.deroulant;
+  
 }
-.enteteIcon ul{
+//.enteteIcon ul{
+//   @include console.sousH;
+//}
+
+//ajoutet classe smH pour faire disparaitre sous menu
+.sm{
    @include console.sousH;
 }
-ul .sm{
-   @include console.sm;
+ul .sm:hover{
+   @include console.sousH;
 }
 ul{
    @include apple.ul;
@@ -236,7 +244,7 @@ ul{
    }
   
 }
-@media screen and (max-width: 600px){
+@media screen and (min-width: 600px){
    .icon p{
       @include console.pmoyen;
    }
