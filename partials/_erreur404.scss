@@ -1,5 +1,6 @@
 
 @mixin section__erreur404 {
+   background-color: variables.$peche;
    height: 700px;
    display: flex;
    align-items: center;
