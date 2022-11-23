@@ -110,11 +110,20 @@ main .row{
    width: 100%;
    object-fit: contain;
 }
-/* Écran tablette */
-@media screen and (max-width: 768px){
+/* Menu hamburger*/
+@media screen and (max-width: 992px ){
    .menu-header {
       background-color: variables.$blanc;
    }
+   .menu a {
+      color: variables.$noir;
+   }
+   .menu-header li{
+      border: 1px solid variables.$noir;
+      border-radius: 20px;
+      padding-left: 5px;
+      margin-bottom: 5px;
+    }
 }
 
 /* Écran telephone*/
