@@ -293,6 +293,14 @@ ul {
     -o-object-fit: contain;
        object-fit: contain;
   }
+  .produits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-rows: repeat(auto-fit);
+    gap: 50px;
+    margin-left: 10%;
+    align-items: center;
+  }
 }
 @media screen and (min-width: 600px) {
   .icon p {
@@ -302,6 +310,14 @@ ul {
     width: 100%;
     -o-object-fit: contain;
        object-fit: contain;
+  }
+  .produits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-rows: repeat(auto-fit);
+    gap: 50px;
+    margin-left: 10%;
+    align-items: center;
   }
 }
 @media screen and (max-width: 375px) {
@@ -313,6 +329,13 @@ ul {
     -o-object-fit: contain;
        object-fit: contain;
   }
+  .produits {
+    display: grid;
+    grid-template-rows: repeat(auto-fit);
+    gap: 50px;
+    margin-left: 20%;
+    align-items: center;
+  }
 }
 .icon img {
   width: 100%;
@@ -322,19 +345,11 @@ ul {
   margin-left: auto;
 }
 
-.produits {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 300px);
-  grid-template-rows: repeat(auto-fit);
-  gap: 50px;
-  margin-left: 10%;
-}
-
 .item {
   margin-top: 50px;
   width: 100%;
   display: inline-block;
-  padding: 2px;
+  padding: 20px;
 }
 
 .imgItem {

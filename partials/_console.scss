@@ -110,12 +110,21 @@
     grid-template-rows:repeat(auto-fit);
     gap:50px;
     margin-left:10%;
+    align-items: center;
+}
+@mixin produits6{
+    display:grid;
+  //  grid-template-columns: repeat(auto-fit,300px);
+    grid-template-rows:repeat(auto-fit);
+    gap:50px;
+    margin-left:20%;
+    align-items: center;
 }
 @mixin item{
     margin-top:50px;
     width:100%;
     display:inline-block;
-    padding:2px;
+    padding:20px;
 }
 @mixin img{
   width:100%;
