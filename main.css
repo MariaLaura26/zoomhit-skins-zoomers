@@ -167,17 +167,23 @@ main .row {
   margin-bottom: 50px;
 }
 .contact__main .section__membres .membre__card {
+  width: 100%;
   height: 400px;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
+  border: none;
 }
 .contact__main .section__membres .membre__img {
   width: 100%;
+  max-width: 400px;
+  align-self: center;
   border-radius: 20px;
   border: 2px solid #FCC8B2;
 }
 .contact__main .section__membres .membre__text {
   margin: 0 auto;
   width: 100%;
+  max-width: 400px;
+  height: 100%;
   margin-top: 10px;
   text-align: center;
   border-radius: 5px 5px 5px 5px;
@@ -236,7 +242,6 @@ main .row {
 }
 .enteteIcon a {
   list-style-type: none;
-  display: inline-block;
   background-color: #EFA48B;
   box-shadow: #EFA48B;
   display: block;
@@ -251,18 +256,13 @@ main .row {
   display: block;
 }
 
-.enteteIcon ul {
+.sm {
   display: block;
+  padding: 0px;
 }
 
-ul .sm {
-  list-style-type: none;
-  display: inline-block;
-  background-color: #EFA48B;
-  box-shadow: #EFA48B;
+ul .sm:hover {
   display: block;
-  text-align: center;
-  width: 100%;
   padding: 0px;
 }
 

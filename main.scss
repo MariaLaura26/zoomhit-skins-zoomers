@@ -110,6 +110,12 @@ main .row{
    width: 100%;
    object-fit: contain;
 }
+/* Écran tablette */
+@media screen and (max-width: 768px){
+   .menu-header {
+      background-color: variables.$blanc;
+   }
+}
 
 /* Écran telephone*/
 @media screen and (max-width: 375px){
@@ -211,12 +217,18 @@ main .row{
 }
 .enteteIcon a:hover{
    @include console.deroulant;
+  
 }
-.enteteIcon ul{
+//.enteteIcon ul{
+//   @include console.sousH;
+//}
+
+//ajoutet classe smH pour faire disparaitre sous menu
+.sm{
    @include console.sousH;
 }
-ul .sm{
-   @include console.sm;
+ul .sm:hover{
+   @include console.sousH;
 }
 ul{
    @include apple.ul;
@@ -321,7 +333,7 @@ ul{
          }
 
          //Prendre toute la taille du container
-         & .form__nom, & .form__prenom, & .form__courriel, & .form__sujet {
+         & .form__nom , & .form__prenom, & .form__courriel, & .form__sujet {
             input {
                width: 100%;
             }
