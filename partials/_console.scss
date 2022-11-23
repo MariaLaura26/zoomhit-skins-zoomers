@@ -71,12 +71,13 @@
 }
 @mixin imageConsole{
     display:inline-block;
-  
-    width:80%;
+    align-items: center;
+    width:100%;
     margin-left: 20px;
    // display:flex;
     //flex-direction:row;
     flex-wrap: wrap;
+    color: variables.$peche;
     //flex-wrap: nowrap;
 }
 @mixin icon{
@@ -116,7 +117,25 @@
     text-align: center;
     color: variables.$peche;
     font-size: 20px;
+    width:100%;
+    object-fit: contain;
 }
+@mixin pmoyen{
+    // display:flex;
+     text-align: center;
+     color: variables.$peche;
+     font-size: 18px;
+     width:100%;
+     object-fit: contain;
+ }
+ @mixin petit{
+    // display:flex;
+     text-align: center;
+     color: variables.$peche;
+     font-size: 12px;
+     width:100%;
+     object-fit: contain;
+ }
 @mixin pItem{
     text-align: center;
     border-radius: 10px;

@@ -230,9 +230,23 @@ ul{
 .icon{
    @include console.icon;
 }
-.icon p{
-   @include console.p;
-   color: variables.$peche; 
+@media screen and (min-width: 900px){
+   .icon p {
+      @include console.p;
+   }
+  
+}
+@media screen and (max-width: 600px){
+   .icon p{
+      @include console.pmoyen;
+   }
+  
+}
+@media screen and (max-width: 375px){
+   .icon p{
+      @include console.petit;
+   }
+  
 }
 .icon img{
    @include console.img; 
