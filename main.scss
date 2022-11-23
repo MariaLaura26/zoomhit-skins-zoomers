@@ -90,6 +90,11 @@ main .row{
    text-decoration: none;
 }
 
+//Effet de survole
+.menu a:hover {
+   color: variables.$pechehover;
+}
+
 //navbar
 
 .navbar-toggler-icon img{
@@ -160,7 +165,11 @@ main .row{
          border: 2px solid variables.$peche;
       }
       
-      /*
+      .membre__text{
+         @include membres.membreText;
+         background-color: variables.$peche;
+      }
+
       .membre__role{
          @include membres.membreRole;
       }
@@ -168,19 +177,16 @@ main .row{
       .membre__nom{
          @include membres.membreNom;
       }
-      */
-      .membre__text{
-         @include membres.membreText;
-         background-color: variables.$peche;
-      }
    }
 }
 
-
-//Effet de survole
-.menu a:hover {
-   color: variables.$pechehover;
-}
+//Changer la hauteur du text des membres pour qu'ils soient tous aligné.
+/*
+@media (min-width: 768px) {
+   .membre__text {
+      height: 500px;
+   }
+}*/
 
 // console
 .entete__sous-menu{
