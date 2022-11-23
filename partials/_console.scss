@@ -17,7 +17,6 @@
 }
 @mixin sm{
     list-style-type:none;
-    display:inline-block;
     background-color:#EFA48B ;
     box-shadow: #EFA48B;
     display:block;
@@ -25,8 +24,18 @@
     width:100%;
     padding:0px;
 }
+@mixin smH{
+    list-style-type:none;
+    background-color:#EFA48B ;
+    box-shadow: #EFA48B;
+    display:none;
+    text-align: center;
+    width:100%;
+    padding:0px;
+}
 @mixin sousH{
     display:block;
+    padding:0px;
     //list-style-type:none;
 }
 @mixin sous{
@@ -63,6 +72,11 @@
     margin-top: 5%; 
     align-items: center;
     text-align: center;
+}
+@mixin entete6{
+    width:100%;
+    margin-left:5%;
+    margin-right:5%;
 }
 @mixin telephoneC{
     display:grid;

@@ -231,7 +231,6 @@ main .row {
 }
 .enteteIcon a {
   list-style-type: none;
-  display: inline-block;
   background-color: #EFA48B;
   box-shadow: #EFA48B;
   display: block;
@@ -246,18 +245,13 @@ main .row {
   display: block;
 }
 
-.enteteIcon ul {
+.sm {
   display: block;
+  padding: 0px;
 }
 
-ul .sm {
-  list-style-type: none;
-  display: inline-block;
-  background-color: #EFA48B;
-  box-shadow: #EFA48B;
+ul .sm:hover {
   display: block;
-  text-align: center;
-  width: 100%;
   padding: 0px;
 }
 
