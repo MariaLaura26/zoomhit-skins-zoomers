@@ -319,7 +319,7 @@ ul{
          }
 
          //Prendre toute la taille du container
-         & .form__nom, & .form__prenom, & .form__courriel, & .form__sujet {
+         & .form__nom , & .form__prenom, & .form__courriel, & .form__sujet {
             input {
                width: 100%;
             }
