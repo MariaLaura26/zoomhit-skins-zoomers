@@ -42,15 +42,21 @@ body {
    padding-left: 25px; //Donner un padding par défaut quand le menu du hamburger s'affiche sur l'écran
 }
 
-//Ajouter les typos pour les titres de chaque page
+//Ajouter les typos pour les titres de chaque page et afficher la sourri par défault
 h1 {
    font-family: variables.$titre;
    font-size: 24px;
+   cursor: default;
 }
 
 h2 {
    font-family: variables.$text;
    font-size: 25px;
+   cursor: default;
+}
+
+p {
+   cursor: default;
 }
 
 //Aligner les liens des menus au centre
