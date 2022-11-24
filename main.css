@@ -31,6 +31,7 @@ body {
 
 .logo img {
   width: 200px;
+  transition: transform 0.5s;
 }
 
 .menu-header {
@@ -96,22 +97,20 @@ main .row {
 
 .navbar-toggler-icon img {
   width: 40px;
-}
-
-.logoPartenaire {
-  text-align: center;
-}
-
-.logoPartenaire img {
-  width: 80px;
+  transition: transform 0.5s;
 }
 
 .panier, .lang {
   margin: 10px;
 }
 
-.logo:hover, .navbar-toggler-icon:hover, .panier img:hover, .lang:hover {
+.panier img, .lang img {
+  transition: transform 0.5s;
+}
+
+.logo img:hover, .navbar-toggler-icon img:hover, .panier img:hover, .lang img:hover {
   transform: scale(1.1);
+  transition: transform 0.5s;
 }
 
 /*Carousel*/
@@ -390,10 +389,7 @@ ul {
   border: 2px solid #FCC8B2;
   overflow: hidden;
   border: 2px solid #FCC8B2;
-}
-
-.imgItem:hover, .itemP:hover {
-  transform: scale(0.9);
+  transition: transform 0.5s;
 }
 
 .lienItemP {
@@ -409,10 +405,13 @@ ul {
   color: #fff;
   background-color: #FCC8B2;
   border: 2px solid #FCC8B2;
+  transition: transform 0.5s;
 }
 
-.itemP:hover {
+.imgItem:hover, .itemP:hover {
   color: #000;
+  transform: scale(0.9);
+  transition: transform 0.5s;
 }
 
 .itemP p {
@@ -528,6 +527,11 @@ footer {
 
 .logoPartenaire {
   padding: 25px;
+  text-align: center;
+}
+
+.logoPartenaire img {
+  width: 80px;
 }
 
 .reseauxsociaux {
@@ -573,12 +577,22 @@ footer {
   color: #fff;
 }
 
-.shopify img:hover, .nintendo img:hover, .laSource img:hover {
-  transform: scale(1.5);
+.shopify img, .nintendo img, .laSource img {
+  transition: transform 0.5s;
 }
 
-.logoPied img:hover, .courriel img:hover, .facebook img:hover, .instagram img:hover, .laSource img:hover {
+.shopify img:hover, .nintendo img:hover, .laSource img:hover {
+  transform: scale(1.5);
+  transition: transform 0.5s;
+}
+
+.logoPied img, .courriel img, .facebook img, .instagram img {
+  transition: transform 0.5s;
+}
+
+.logoPied img:hover, .courriel img:hover, .facebook img:hover, .instagram img:hover {
   transform: scale(1.1);
+  transition: transform 0.5s;
 }
 
 .section__erreur404 {

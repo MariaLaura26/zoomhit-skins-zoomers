@@ -35,6 +35,7 @@ body {
 
 .logo img {
    width: 200px;
+   transition: transform 0.5s;
 }
 
 //Comment faire pour ne affecter que le menu affiché par le hamburger?
@@ -105,12 +106,7 @@ main .row{
 
 .navbar-toggler-icon img{
    width: 40px;
-}
-.logoPartenaire{
-   text-align: center;
-}
-.logoPartenaire img{
-   width: 80px;
+   transition: transform 0.5s;
 }
 
 //Séparer les icones de la barre de navigation
@@ -118,9 +114,14 @@ main .row{
    margin: 10px;
 }
 
+.panier img, .lang img {
+   transition: transform 0.5s;
+}
+
 //État hover img logo, img hamburger du header, icone du panier et du languages
-.logo:hover, .navbar-toggler-icon:hover, .panier img:hover, .lang:hover {
+.logo img:hover, .navbar-toggler-icon img:hover, .panier img:hover, .lang img:hover {
    transform: scale(1.1);
+   transition: transform 0.5s;
 }
 
 /*Carousel*/
@@ -307,13 +308,9 @@ ul{
 }
 .imgItem{
    @include console.imgItem;
-   border: 2px solid variables.$peche; 
+   border: 2px solid variables.$peche;
+   transition: transform 0.5s; //Faire une transition entre l'état défault et le hover
 }
-//Diminuer l'img des produits sur le survole de la sourri
-.imgItem:hover, .itemP:hover {
-   transform: scale(0.9);
-}
-
 .lienItemP {
    text-decoration: none; //Retirer le underline du lien du text
 }
@@ -322,9 +319,13 @@ ul{
    color: variables.$blanc;
     background-color:variables.$peche;
     border: 2px solid variables.$peche;
+    transition: transform 0.5s;
 }
-.itemP:hover {
+//Diminuer l'img des produits sur le survole de la sourri
+.imgItem:hover, .itemP:hover {
    color: variables.$noir; //Hover text boutons produits
+   transform: scale(0.9);
+   transition: transform 0.5s;
 }
 .itemP p {
    cursor: pointer; //Style pour le text des produits
@@ -448,6 +449,11 @@ footer {
 }
 .logoPartenaire {
    padding: 25px; //Séparer la section des logo des partenaires des autres sections du footer
+   text-align: center;
+}
+
+.logoPartenaire img {
+   width: 80px;
 }
 
 .reseauxsociaux{
@@ -462,7 +468,6 @@ footer {
 .facebook{
    width:20px;
    padding-bottom: 3px;
-  
 }
 .facebook a{
    height: 20px;
@@ -491,14 +496,23 @@ footer {
    color: variables.$blanc; //Le faux lien reste la même couleur
 }
 
+//Transition sur l'état par défault des éléments clickable du footer
+.shopify img, .nintendo img, .laSource img {
+   transition: transform 0.5s;
+}
 //État hover sur les éléments clicable du footer
 .shopify img:hover, .nintendo img:hover, .laSource img:hover { 
    transform: scale(1.5);
+   transition: transform 0.5s;
 }
 
+.logoPied img, .courriel img, .facebook img, .instagram img {
+   transition: transform 0.5s;
+}
 //Exporter une img de meilleur qualité pour le logo du pied
-.logoPied img:hover, .courriel img:hover, .facebook img:hover, .instagram img:hover, .laSource img:hover { 
+.logoPied img:hover, .courriel img:hover, .facebook img:hover, .instagram img:hover { 
    transform: scale(1.1);
+   transition: transform 0.5s;
 }
 
 //Style erreur404
