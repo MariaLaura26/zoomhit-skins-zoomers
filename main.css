@@ -392,15 +392,23 @@ ul {
   border: 2px solid #FCC8B2;
 }
 
+.imgItem:hover, .itemP:hover {
+  transform: scale(0.9);
+}
+
 .itemP {
   text-align: center;
   border-radius: 10px;
   margin: 5px;
   padding: 3px;
   font-size: 18px;
-  color: #000;
+  color: #fff;
   background-color: #FCC8B2;
   border: 2px solid #FCC8B2;
+}
+
+.itemP:hover {
+  color: #000;
 }
 
 .item p:first-child {
