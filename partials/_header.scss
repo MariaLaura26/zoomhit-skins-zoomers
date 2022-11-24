@@ -1,12 +1,9 @@
 
 //Mettre des mixins
-.navigation {
-    margin: 25px auto; //Rendre la barre de navigation responsive
-    width: 1000px;
- }
- 
- .logo img {
-    width: 200px;
+@mixin navigation {
+   margin: 25px auto; //Rendre la barre de navigation responsive
+   width: 100%; //Prend toute la taille du body
+   max-width: 1000px; //Limiter la taille de la barre de navigation (Évite que le hamburger soi affiché à l'extérieur du contenu visible
  }
  
  //Aligner les liens des menus au centre
