@@ -113,6 +113,11 @@ main .row{
    width: 80px;
 }
 
+//Séparer les icones de la barre de navigation
+.panier, .lang {
+   margin: 10px;
+}
+
 //État hover img logo, img hamburger du header, icone du panier et du languages
 .logo:hover, .navbar-toggler-icon:hover, .panier img:hover, .lang:hover {
    transform: scale(1.1);

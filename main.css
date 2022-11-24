@@ -106,6 +106,10 @@ main .row {
   width: 80px;
 }
 
+.panier, .lang {
+  margin: 10px;
+}
+
 .logo:hover, .navbar-toggler-icon:hover, .panier img:hover, .lang:hover {
   transform: scale(1.1);
 }
