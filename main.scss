@@ -6,8 +6,8 @@
 @use 'partials/variables';
 
 
-//@use 'partials/nav_header';
-//@use 'partials/site_footer';
+@use 'partials/header';
+//@use 'partials/footer';
 @use  'partials/console';
 
 * {
@@ -27,6 +27,7 @@ body {
   font-family: variables.$text;
 }
 
+//inclure le mixin de la navigation dans le partials header
 .navigation {
    @include header.navigation;
 }
@@ -36,9 +37,10 @@ body {
    transition: transform 0.5s;
 }
 
-//Comment faire pour ne affecter que le menu affiché par le hamburger?
 .menu-header {
-   padding-left: 25px; //Donner un padding par défaut quand le menu du hamburger s'affiche sur l'écran
+   @include header.menu-header;
+   background-color: variables.$noir;
+   font-family: variables.$menu; //Vérifier que c'est la bonne
 }
 
 //Ajouter les typos pour les titres de chaque page et afficher la sourri par défault
@@ -77,16 +79,6 @@ article{
 main .row{
    display: flex;
    flex-wrap: nowrap;
-}
-.menu-header {
-   display: flex;
-   justify-content: space-around;
-   background-color: variables.$noir;
-   width: 100%;
-   border-radius: 25px;
-   font-size: 22px;
-   font-family: variables.$menu; //Vérifier que c'est la bonne
-   margin-left: 25px;
 }
 
 //Cibler tous les liens du menus
