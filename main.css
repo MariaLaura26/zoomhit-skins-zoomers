@@ -1,9 +1,4 @@
 @charset "UTF-8";
-@media screen and (max-width: 576px) {
-  .section__erreur404 {
-    background-color: red;
-  }
-}
 /*@mixin placeholder {
     padding: 0px 100px;
     width: 100%;
@@ -264,9 +259,15 @@ main .row {
 }
 
 .enteteIcon a:hover {
-  color: black;
+  color: black !important;
   list-style-type: none;
   display: block;
+}
+
+.deroulant {
+  background-color: #FCC8B2 !important;
+  border-color: #FCC8B2 !important;
+  width: 90% !important;
 }
 
 .sm {
@@ -290,6 +291,8 @@ ul {
   text-align: center;
   width: 100%;
   margin-left: 20px;
+  position: absolute !important;
+  transform: translate3d(400px, 0px, 0px) !important;
   flex-wrap: wrap;
   color: #FCC8B2;
 }

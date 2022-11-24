@@ -15,6 +15,11 @@
         //margin:0px;
         //justify-content: center;
 }
+@mixin btn{
+    background-color:variables.$peche !important;
+    border-color:variables.$peche !important;
+    width:90% !important;
+}
 @mixin sm{
     list-style-type:none;
     background-color:#EFA48B ;
@@ -50,7 +55,7 @@
     list-style-type:none;
 }
 @mixin deroulant{
-    color:black;
+    color:black !important;
     list-style-type:none;
    // border-bottom:3px solid variables.$peche;
     display:block;
@@ -90,6 +95,8 @@
     text-align: center;
     width:100%;
     margin-left: 20px;
+    position:absolute !important;
+    transform:translate3d(400px, 0px, 0px) !important;
    // display:flex;
     //flex-direction:row;
     flex-wrap: wrap;
