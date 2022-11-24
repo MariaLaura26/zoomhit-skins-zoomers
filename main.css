@@ -236,10 +236,40 @@ main .row {
     align-items: center;
     text-align: center;
   }
+  .imageConsole {
+    display: block;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    border-color: #fff !important;
+    margin-left: 20px;
+    position: absolute !important;
+    transform: translate3d(60%, 175%, 0px) !important;
+    flex-wrap: wrap;
+    color: #FCC8B2;
+    margin-left: 30px !important;
+    -o-object-fit: contain !important;
+       object-fit: contain !important;
+  }
 }
 @media screen and (max-width: 900px) {
   .icon {
     margin: 5px;
+  }
+  .imageConsole {
+    display: block;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    border-color: #fff !important;
+    margin-left: 20px;
+    position: absolute !important;
+    transform: translate3d(60%, 160%, 0px) !important;
+    flex-wrap: wrap;
+    color: #FCC8B2;
+    margin-left: 30px !important;
+    -o-object-fit: contain !important;
+       object-fit: contain !important;
   }
 }
 @media screen and (min-width: 600px) {
@@ -254,12 +284,52 @@ main .row {
     text-align: center;
   }
 }
+@media screen and (max-width: 600px) {
+  .icon p {
+    text-align: center;
+    color: #FCC8B2;
+    font-size: 18px;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .imageConsole {
+    display: block;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    border-color: #fff !important;
+    margin-left: 20px;
+    position: absolute !important;
+    transform: translate3d(60%, 160%, 0px) !important;
+    flex-wrap: wrap;
+    color: #FCC8B2;
+    margin-left: 30px !important;
+    -o-object-fit: contain !important;
+       object-fit: contain !important;
+  }
+}
 @media screen and (max-width: 375px) {
   .enteteIcon {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
     flex-wrap: wrap;
+  }
+  .imageConsole {
+    display: block;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    border-color: #fff !important;
+    margin-left: 20px;
+    position: absolute !important;
+    transform: translate3d(60%, 160%, 0px) !important;
+    flex-wrap: wrap;
+    color: #FCC8B2;
+    margin-left: 30px !important;
+    -o-object-fit: contain !important;
+       object-fit: contain !important;
   }
 }
 .enteteIcon a {
@@ -268,7 +338,6 @@ main .row {
   box-shadow: #EFA48B;
   display: block;
   text-align: center;
-  width: 100%;
   padding: 0px;
   width: 50% !important;
 }
@@ -298,19 +367,6 @@ ul .sm:hover {
 ul {
   text-decoration: none;
   list-style-type: none;
-}
-
-.imageConsole {
-  display: block;
-  align-items: center;
-  text-align: center;
-  width: 60%;
-  border-color: #fff !important;
-  margin-left: 20px;
-  position: absolute !important;
-  transform: translate3d(55%, 145%, 0px) !important;
-  flex-wrap: wrap;
-  color: #FCC8B2;
 }
 
 .title__creation {

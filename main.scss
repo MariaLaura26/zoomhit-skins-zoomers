@@ -227,10 +227,16 @@ main .row{
    .enteteIcon{
       @include console.enteteIcon;
    }  
+   .imageConsole{
+      @include console.imageConsole;
+   }
 }
 @media screen and (max-width: 900px){
    .icon{
       @include console.marginImg;
+   }
+   .imageConsole{
+      @include console.imageConsole6;
    }
 }
 @media screen and (min-width: 600px){
@@ -238,9 +244,20 @@ main .row{
       @include console.enteteIcon;
    }
 }
+@media screen and (max-width: 600px){
+   .icon p{
+      @include console.pmoyen;
+   }
+   .imageConsole{
+      @include console.imageConsole6;
+   }
+}
 @media screen and (max-width: 375px){
    .enteteIcon{
       @include console.telephoneC;  
+   }
+   .imageConsole{
+      @include console.imageConsole6;
    }
 }
 .enteteIcon a{
@@ -267,9 +284,9 @@ ul .sm:hover{
 ul{
    @include apple.ul;
 }
-.imageConsole{
-   @include console.imageConsole;
-}
+//.imageConsole{
+  // @include console.imageConsole;
+//}
 
 //Création
 .title__creation{

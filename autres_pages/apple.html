@@ -53,7 +53,7 @@
                 </ul>
                 <div class="panier">
                     <a href="../autres_pages/console.html">
-                    <img src="../medias/icones/panier.png" alt=""></a>
+                        <img src="../medias/icones/panier.png" alt=""></a>
 
                 </div>
                 <div class="lang">
@@ -62,28 +62,39 @@
             </div>
         </div>
     </nav>
-    <div class='enteteIcon'>
-        <ul>
-            <li class="deroulant entete__sous-menu"><a href="#">Appareils disponible ▼</a></li>
-            <ul class="sm">
-                <li><a href="#">Ipad</a></li>
-                <li><a href="#">Iphone</a></li>
-                <li><a href="#">Macbook</a></li>
-            </ul>
-        </ul>
+    <div class='enteteIcon dropright show'>
 
-        <div class='imageConsole'>
-            <div class="icon Ipad"><img src='\medias\icones\ipad.jfif'>
+        <a class="deroulant entete__sous-menu btn btn-secondary dropdown-toggle" href="#" role="button"
+            id="dropdownMenuLink" data-bs-toggle="dropdown" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Appareils disponible
+        </a>
+        <div class=' imageConsole dropdown-menu sm ' x-placement="right-start" aria-labelledby="dropdownMenuLink">
+            <div class="icon Ipad dropright-item" href="#"><img src='\medias\icones\ipad.jfif'>
                 <p>Ipad</p>
             </div>
-            <div class="icon phone"><img src='\medias\icones\smartphone.png'>
+            <div class="icon phone dropright-item" href="#"><img src='\medias\icones\smartphone.png'>
                 <p>Iphone</p>
             </div>
-            <div class="icon Macbook"><img src='\medias\icones\macbook.png'>
+            <div class="icon Macbook lite dropright-item" href="#"><img src='\medias\icones\macbook.png'>
                 <p>Macbook</p>
             </div>
         </div>
     </div>
+
+
+    <!--<div class='imageConsole'>
+        <div class="icon Ipad"><img src='\medias\icones\ipad.jfif'>
+            <p>Ipad</p>
+        </div>
+        <div class="icon phone"><img src='\medias\icones\smartphone.png'>
+            <p>Iphone</p>
+        </div>
+        <div class="icon Macbook"><img src='\medias\icones\macbook.png'>
+            <p>Macbook</p>
+        </div>
+    </div>
+    </div>-->
     <div class="produits">
         <div class=" item ipad_1">
             <a href="#" class="lienItem"><img class='imgItem' src='\medias\appareils\ipad\01_ipad.webp'></a>
