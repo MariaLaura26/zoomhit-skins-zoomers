@@ -256,6 +256,7 @@ main .row {
   text-align: center;
   width: 100%;
   padding: 0px;
+  width: 50% !important;
 }
 
 .enteteIcon a:hover {
@@ -289,10 +290,11 @@ ul {
   display: block;
   align-items: center;
   text-align: center;
-  width: 100%;
+  width: 60%;
+  border-color: white;
   margin-left: 20px;
   position: absolute !important;
-  transform: translate3d(400px, 0px, 0px) !important;
+  transform: translate3d(55%, 145%, 0px) !important;
   flex-wrap: wrap;
   color: #FCC8B2;
 }
