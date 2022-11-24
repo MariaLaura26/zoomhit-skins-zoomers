@@ -530,6 +530,10 @@ footer {
   color: #fff;
 }
 
+.telephone a {
+  cursor: default;
+}
+
 .courriel {
   margin-right: 8px;
   margin-bottom: 3px;
@@ -538,6 +542,7 @@ footer {
 .compagnie {
   margin: 25px;
   color: #fff;
+  cursor: default;
 }
 
 .compagnie:hover {

@@ -448,6 +448,11 @@ footer {
    color: variables.$blanc;
 }
 
+//Style défault sourri
+.telephone a {
+   cursor: default;
+}
+
 .courriel{
    margin-right:8px;
    margin-bottom:3px;
@@ -455,6 +460,7 @@ footer {
 .compagnie {
    margin: 25px; //Séparer du bas du footer
    color: variables.$blanc;
+   cursor: default;
 }
 .compagnie:hover {
    color: variables.$blanc; //Le faux lien reste la même couleur
