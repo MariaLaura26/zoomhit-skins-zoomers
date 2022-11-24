@@ -452,6 +452,10 @@ ul {
   transform: scale(0.9);
 }
 
+.lienItemP {
+  text-decoration: none;
+}
+
 .itemP {
   text-align: center;
   border-radius: 10px;
@@ -465,6 +469,10 @@ ul {
 
 .itemP:hover {
   color: #000;
+}
+
+.itemP p {
+  cursor: pointer;
 }
 
 .item p:first-child {

@@ -331,14 +331,20 @@ ul{
    transform: scale(0.9);
 }
 
+.lienItemP {
+   text-decoration: none; //Retirer le underline du lien du text
+}
 .itemP{
    @include console.pItem;
    color: variables.$blanc;
     background-color:variables.$peche;
-    border: 2px solid variables.$peche; 
+    border: 2px solid variables.$peche;
 }
 .itemP:hover {
    color: variables.$noir; //Hover text boutons produits
+}
+.itemP p {
+   cursor: pointer; //Style pour le text des produits
 }
 .item p:first-child{
    @include console.pItemFirst; 
