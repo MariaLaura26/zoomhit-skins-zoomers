@@ -549,6 +549,14 @@ footer {
   color: #fff;
 }
 
+.shopify img:hover, .nintendo img:hover, .laSource img:hover {
+  transform: scale(1.5);
+}
+
+.logoPied img:hover, .courriel img:hover, .facebook img:hover, .instagram img:hover, .laSource img:hover {
+  transform: scale(1.1);
+}
+
 .section__erreur404 {
   background-color: #EFA48B;
   height: 700px;

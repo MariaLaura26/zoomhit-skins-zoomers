@@ -425,6 +425,7 @@ footer {
 .logoPartenaire {
    padding: 25px; //Séparer la section des logo des partenaires des autres sections du footer
 }
+
 .reseauxsociaux{
    position: relative;
    display: flex;
@@ -465,6 +466,17 @@ footer {
 .compagnie:hover {
    color: variables.$blanc; //Le faux lien reste la même couleur
 }
+
+//État hover sur les éléments clicable du footer
+.shopify img:hover, .nintendo img:hover, .laSource img:hover { 
+   transform: scale(1.5);
+}
+
+//Exporter une img de meilleur qualité pour le logo du pied
+.logoPied img:hover, .courriel img:hover, .facebook img:hover, .instagram img:hover, .laSource img:hover { 
+   transform: scale(1.1);
+}
+
 
 //Style erreur404
 
