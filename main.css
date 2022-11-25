@@ -1,8 +1,5 @@
 @charset "UTF-8";
-/*@mixin placeholder {
-    padding: 0px 100px;
-    width: 100%;
-}*/
+
 body {
   font-family: "Roboto", thin;
 }
