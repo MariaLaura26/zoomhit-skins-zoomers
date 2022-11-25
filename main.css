@@ -232,11 +232,17 @@ main .row {
     margin-top: 5%;
     align-items: center;
     text-align: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    margin-left: 20%;
+    margin-top: 5%;
+    align-items: center;
+    text-align: center;
   }
   .imageConsole {
     display: block;
     align-items: center;
-    text-align: center;
     width: 60%;
     border-color: #fff !important;
     margin-left: 20px;
@@ -667,4 +673,15 @@ footer {
 
 .erreur404__titre2 {
   font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .erreur404__titre {
+    font-size: 100px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .erreur404__titre {
+    font-size: 50px;
+  }
 }/*# sourceMappingURL=main.css.map */

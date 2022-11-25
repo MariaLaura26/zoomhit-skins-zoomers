@@ -217,6 +217,7 @@ main .row{
 @media screen and (min-width: 900px){
    .enteteIcon{
       @include console.enteteIcon;
+      @include apple.enteteIcon;
    }  
    .imageConsole{
       @include console.imageConsole;
