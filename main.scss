@@ -96,7 +96,7 @@ main .row{
 
 .navbar-toggler-icon img{
    width: 40px;
-   transition: transform 0.5s;
+   @include footer.transition;
 }
 
 //Séparer les icones de la barre de navigation
@@ -105,13 +105,13 @@ main .row{
 }
 
 .panier img, .lang img {
-   transition: transform 0.5s;
+   @include footer.transition;
 }
 
 //État hover img logo, img hamburger du header, icone du panier et du languages
 .logo img:hover, .navbar-toggler-icon img:hover, .panier img:hover, .lang img:hover {
    transform: scale(1.1);
-   transition: transform 0.5s;
+   @include footer.transition;
 }
 
 /*Carousel*/
