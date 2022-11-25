@@ -17,3 +17,10 @@ font-size: 200px;
 @mixin erreur404__titre2 {
    font-size: 20px;
 }
+
+@mixin erreur404__tablette {
+   font-size: 100px;
+}
+@mixin erreur404__tlf {
+   font-size: 50px;
+}

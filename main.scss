@@ -512,6 +512,15 @@ footer {
 .erreur404__titre2{
    @include erreur404.erreur404__titre2;
 }
+@media screen and (min-width:768px) {
+   .erreur404__titre{
+      @include erreur404.erreur404__tablette;
+   }
+}
 
-
+@media screen and (min-width:576px) {
+   .erreur404__titre{
+      @include erreur404.erreur404__tlf;
+   }
+}
 
