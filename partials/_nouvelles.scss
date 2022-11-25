@@ -1,0 +1,44 @@
+@mixin hero__nouvelles {
+    position: relative;
+    margin: 0px;
+    width: 100%;
+  }
+
+@mixin imgHero {
+  width: 100%;
+  height: 100%;
+}
+
+@mixin contraste {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+/*Mettre le filtre de couleur par dessus de la balise picture*/
+@mixin accueilContraste {
+    opacity: 50%;
+    z-index: 1;
+}
+  
+/*Couvrir la section avec l'image en portrait sans la déformer et ajuster sa position*/
+@mixin imgPortrait {
+    object-fit: cover;
+    object-position: 0% 100%;
+}
+  
+/*Cacher l'image landscape par défaut*/
+@mixin imgLandscape {
+    object-fit: cover;
+    object-position: 0% 100%;
+}
+
+/*Centrer la colonne verticalement et horizontalement*/
+/*Aligner le title-1 et la présentation du groupe au milieu de la colonne*/
+@mixin h1Nouvelles {
+  margin: 0px auto;
+  margin-top: 25px;
+  text-align: center;
+}
