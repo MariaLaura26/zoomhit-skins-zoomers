@@ -269,6 +269,9 @@ main .row{
    .enteteIcon{
       @include console.enteteIcon;
    }  
+   .enteteIcon a{
+      @include console.sm;
+   }
    .imageConsole{
       @include console.imageConsole9;
    }
@@ -280,6 +283,9 @@ main .row{
    .enteteIcon{
       @include console.enteteIcon;
    }  
+   .enteteIcon a{
+      @include console.sm;
+   }
    .imageConsole{
       @include console.imageConsole6;
    }
@@ -288,13 +294,16 @@ main .row{
    .enteteIcon{
       @include console.enteteIcon;  
    }
+   .enteteIcon a{
+      @include console.enteteIcon3;  
+   }
    .imageConsole{
       @include console.imageConsole6;
    }
 }
-.enteteIcon a{
-   @include console.sm;
-}
+//.enteteIcon a{
+  // @include console.sm;
+//}
 .enteteIcon a:hover{
    @include console.deroulant;
   
