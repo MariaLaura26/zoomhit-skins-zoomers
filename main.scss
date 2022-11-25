@@ -227,25 +227,31 @@ main .row{
       @include console.marginImg;
    }
    .imageConsole{
-      @include console.imageConsole6;
+      @include console.imageConsole9;
    }
 }
 @media screen and (min-width: 600px){
    .enteteIcon{
       @include console.enteteIcon;
+   }  
+   .imageConsole{
+      @include console.imageConsole9;
    }
 }
 @media screen and (max-width: 600px){
    .icon p{
       @include console.pmoyen;
    }
+   .enteteIcon{
+      @include console.enteteIcon;
+   }  
    .imageConsole{
       @include console.imageConsole6;
    }
 }
 @media screen and (max-width: 375px){
    .enteteIcon{
-      @include console.telephoneC;  
+      @include console.enteteIcon;  
    }
    .imageConsole{
       @include console.imageConsole6;

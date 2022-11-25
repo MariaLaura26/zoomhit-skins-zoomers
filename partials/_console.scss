@@ -26,8 +26,7 @@
     box-shadow: #EFA48B;
     display:block;
     text-align: center;
-   // width:100%;
-    padding:0px;
+    padding:10px;
     width:50% !important;
 }
 @mixin smH{
@@ -75,9 +74,10 @@
     grid-template-rows:auto;
     margin-left:10%;
     margin-right:10%;
-    margin-top: 5%; 
+    margin-top: 2%; 
     align-items: center;
     text-align: center;
+    object-fit:contain;
 }
 @mixin entete6{
     width:100%;
@@ -97,7 +97,23 @@
     border-color:variables.$blanc !important;
     margin-left: 20px;
     position:absolute !important;
-    transform:translate3d(60%, 175%, 0px) !important;
+    transform:translate3d(55%, 120%, 0px) !important;
+   // display:flex;
+    //flex-direction:row;
+    flex-wrap: wrap;
+    color: variables.$peche;
+    margin-left: 30px !important;
+    object-fit:contain !important;
+    //flex-wrap: nowrap;
+}
+@mixin imageConsole9{
+    display:block;
+    align-items: center;
+    width:60%;
+    border-color:variables.$blanc !important;
+    margin-left: 20px;
+    position:absolute !important;
+    transform:translate3d(55%, 90%, 0px) !important;
    // display:flex;
     //flex-direction:row;
     flex-wrap: wrap;
@@ -114,10 +130,10 @@
     border-color:variables.$blanc !important;
     margin-left: 20px;
     position:absolute !important;
-    transform:translate3d(60%, 160%, 0px) !important;
+    transform:translate3d(0%, 150%, 0px) !important;
    // display:flex;
     //flex-direction:row;
-    flex-wrap: wrap;
+   // flex-wrap: wrap;
     color: variables.$peche;
     margin-left: 30px !important;
     object-fit:contain !important;
@@ -179,7 +195,7 @@
      text-align: center;
      color: variables.$peche;
      font-size: 18px;
-     width:100%;
+     //width:100%;
      object-fit: contain;
  }
  @mixin petit{
