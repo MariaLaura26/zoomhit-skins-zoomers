@@ -7,7 +7,7 @@
 
 
 @use 'partials/header';
-//@use 'partials/footer';
+@use 'partials/footer';
 @use  'partials/console';
 
 * {
@@ -437,49 +437,28 @@ ul{
 
 //footer
 footer {
-   display: flex;
-   align-items: center;
-   background-color: #000;
-   height: 100%;
-   width: 100%;
-   padding: 25px;
-   z-index: 1;
-   margin-top: auto;
+   @include footer.footer;
 }
 
 .groupePied{
-   width: 100%;
-   max-width: 1000px;
-   /*display: flex;
-   justify-content: space-between;
-   align-items: center;*/ //Problème ici, affiche les éléments du footer au début et non au centre
+   @include footer.groupePied;
 }
 .logoPartenaire {
-   padding: 25px; //Séparer la section des logo des partenaires des autres sections du footer
-   text-align: center;
+   @include footer.logoPartenaire;
 }
 
 .logoPartenaire img {
-   width: 80px;
+   @include footer.logoPartenaireImg;
 }
 
 .reseauxsociaux{
-   position: relative;
-   display: flex;
-   flex-direction: row;
-   justify-content: center; //Centrer les éléments du réseaux sociaux en bas des logo des partenaires quand il n'y a plus d'espace
-   align-items: center;
-   height:100%;
-   padding-bottom: 25px;
+   @include footer.reseauxsociaux;
 }
 .facebook{
-   width:20px;
-   padding-bottom: 3px;
+   @include footer.facebook;
 }
 .facebook a{
-   height: 20px;
-   width:20px;
- 
+   @include footer.facebookA;
 }
 .telephone,a {
    color: variables.$blanc;
@@ -487,17 +466,15 @@ footer {
 
 //Style défault sourri
 .telephone a {
-   cursor: default;
+   @include footer.telephoneA;
 }
 
 .courriel{
-   margin-right:8px;
-   margin-bottom:3px;
+   @include footer.courriel;
 }
 .compagnie {
-   margin: 25px; //Séparer du bas du footer
+   @include footer.compagnie;
    color: variables.$blanc;
-   cursor: default;
 }
 .compagnie:hover {
    color: variables.$blanc; //Le faux lien reste la même couleur
@@ -505,21 +482,21 @@ footer {
 
 //Transition sur l'état par défault des éléments clickable du footer
 .shopify img, .nintendo img, .laSource img {
-   transition: transform 0.5s;
+   @include footer.transition;
 }
 //État hover sur les éléments clicable du footer
 .shopify img:hover, .nintendo img:hover, .laSource img:hover { 
    transform: scale(1.5);
-   transition: transform 0.5s;
+   @include footer.transition;
 }
 
 .logoPied img, .courriel img, .facebook img, .instagram img {
-   transition: transform 0.5s;
+   @include footer.transition;
 }
 //Exporter une img de meilleur qualité pour le logo du pied
-.logoPied img:hover, .courriel img:hover, .facebook img:hover, .instagram img:hover { 
+.logoPied img:hover, .courriel img:hover, .facebook img:hover, .instagram img:hover {
+   @include footer.transition;
    transform: scale(1.1);
-   transition: transform 0.5s;
 }
 
 //Style erreur404

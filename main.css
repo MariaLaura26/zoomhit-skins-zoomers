@@ -623,8 +623,8 @@ footer {
 
 .compagnie {
   margin: 25px;
-  color: #fff;
   cursor: default;
+  color: #fff;
 }
 
 .compagnie:hover {
@@ -645,8 +645,8 @@ footer {
 }
 
 .logoPied img:hover, .courriel img:hover, .facebook img:hover, .instagram img:hover {
-  transform: scale(1.1);
   transition: transform 0.5s;
+  transform: scale(1.1);
 }
 
 .section__erreur404 {
