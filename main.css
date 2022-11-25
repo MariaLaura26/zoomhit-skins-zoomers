@@ -7,6 +7,11 @@ body {
   font-family: "Roboto", thin;
 }
 
+/*Mettre le filtre de couleur par dessus de la balise picture*/
+/*Couvrir la section avec l'image en portrait sans la déformer et ajuster sa position*/
+/*Cacher l'image landscape par défaut*/
+/*Centrer la colonne verticalement et horizontalement*/
+/*Aligner le title-1 et la présentation du groupe au milieu de la colonne*/
 * {
   box-sizing: border-box;
 }
@@ -51,6 +56,13 @@ h1 {
   font-family: "Roboto", Medium;
   font-size: 24px;
   cursor: default;
+  text-decoration: underline;
+}
+
+.title-1 {
+  margin: 0px auto;
+  margin-top: 25px;
+  text-align: center;
 }
 
 h2 {
@@ -79,6 +91,43 @@ article {
   height: 100%;
 }
 
+.hero__nouvelles {
+  position: relative;
+  margin: 0px;
+  width: 100%;
+}
+
+.imgLandscape, .imgPortrait {
+  width: 100%;
+  height: 100%;
+}
+
+.imgPortrait {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0% 100%;
+     object-position: 0% 100%;
+}
+
+.imgLandscape {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0% 100%;
+     object-position: 0% 100%;
+}
+
+/*.contraste {
+   @include nouvelles.contraste;
+}
+.accueilContraste {
+   @include nouvelles.accueilContraste;
+   background-color: variables.$peche;
+}*/
+@media (orientation: landscape) {
+  .hero__nouvelles {
+    height: 56.25vw;
+  }
+}
 main .row {
   display: flex;
   flex-wrap: nowrap;
