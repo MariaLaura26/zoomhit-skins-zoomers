@@ -367,6 +367,7 @@ main .row {
   display: block;
   text-align: center;
   padding: 10px;
+  padding-top: 20px;
   width: 50% !important;
 }
 
