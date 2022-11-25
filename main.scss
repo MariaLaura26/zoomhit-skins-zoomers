@@ -9,6 +9,7 @@
 @use 'partials/header';
 @use 'partials/footer';
 @use  'partials/console';
+@use 'partials/nouvelles';
 
 * {
    box-sizing: border-box;
@@ -48,6 +49,11 @@ h1 {
    font-family: variables.$titre;
    font-size: 24px;
    cursor: default;
+   text-decoration: underline;
+}
+
+.title-1 {
+   @include nouvelles.h1Nouvelles;
 }
 
 h2 {
@@ -76,6 +82,35 @@ article{
    text-align: center;
    height: 100%;
 }
+
+//Hero nouvelle
+.hero__nouvelles {
+   @include nouvelles.hero__nouvelles;
+}
+.imgLandscape, .imgPortrait {
+   @include nouvelles.imgHero;
+}
+.imgPortrait {
+   @include nouvelles.imgPortrait;
+}
+.imgLandscape {
+   @include nouvelles.imgLandscape;
+}
+
+/*.contraste {
+   @include nouvelles.contraste;
+}
+.accueilContraste {
+   @include nouvelles.accueilContraste;
+   background-color: variables.$peche;
+}*/
+
+@media (orientation: landscape) {
+   .hero__nouvelles {
+     height: 56.25vw;
+   }
+ }
+
 main .row{
    display: flex;
    flex-wrap: nowrap;
@@ -227,25 +262,31 @@ main .row{
       @include console.marginImg;
    }
    .imageConsole{
-      @include console.imageConsole6;
+      @include console.imageConsole9;
    }
 }
 @media screen and (min-width: 600px){
    .enteteIcon{
       @include console.enteteIcon;
+   }  
+   .imageConsole{
+      @include console.imageConsole9;
    }
 }
 @media screen and (max-width: 600px){
    .icon p{
       @include console.pmoyen;
    }
+   .enteteIcon{
+      @include console.enteteIcon;
+   }  
    .imageConsole{
       @include console.imageConsole6;
    }
 }
 @media screen and (max-width: 375px){
    .enteteIcon{
-      @include console.telephoneC;  
+      @include console.enteteIcon;  
    }
    .imageConsole{
       @include console.imageConsole6;
