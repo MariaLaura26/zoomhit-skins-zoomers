@@ -11,7 +11,7 @@ nouvelles.forEach((nouvelle) => {
   });
 }); */
 
-//code pour page single product
+//code pour page console, single product
 //arrays
 let productsArr = document.querySelectorAll(".item");
 let namesArr = document.querySelectorAll(".item__name");
@@ -35,16 +35,26 @@ imgItem.forEach(function (img) {
   localStorage.setItem(`img${num2}`, img.src);
 });
 
+let num3 = -1;
+prixArr.forEach(function (prix) {
+  num3++;
+  localStorage.setItem(`prix${num3}`, prix.textContent);
+});
+
 productsArr.forEach(function (product, index) {
   product.addEventListener("click", function () {
     localStorage.setItem("index", index);
     window.location.href = "single-product.html";
   });
 });
-
+//innerHTML page single
 nomSingle.innerHTML = localStorage.getItem(
   `name${localStorage.getItem("index")}`
 );
 imgSingle.innerHTML = `<img class="single-product__image" src="${localStorage.getItem(
   `img${localStorage.getItem("index")}`
 )}">`;
+
+prixSingle.innerHTML = localStorage.getItem(
+  `prix${localStorage.getItem("index")}`
+);
