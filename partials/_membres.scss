@@ -48,3 +48,11 @@
 @mixin membreNom {
     padding: 10px 0px;
 }
+
+
+@mixin maps__carte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
