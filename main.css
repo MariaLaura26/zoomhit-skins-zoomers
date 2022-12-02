@@ -262,6 +262,13 @@ main .row {
       height: 500px;
    }
 }*/
+.imgPortraitContain {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0% 100%;
+     object-position: 0% 100%;
+}
+
 .entete__sous-menu {
   border-width: 2px;
   text-decoration: none;
@@ -611,7 +618,7 @@ ul {
   text-align: center;
   text-decoration: underline;
   font-size: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 90px;
   font-family: "Roboto", Medium;
 }
 .contact__main .section__contact .contact__form {
@@ -810,5 +817,9 @@ footer {
 }
 
 .maps__titre3-carte {
+  text-align: center;
+}
+
+.maps__titre1-carte {
   text-align: center;
 }/*# sourceMappingURL=main.css.map */
