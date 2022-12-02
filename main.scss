@@ -5,7 +5,6 @@
 @use 'partials/creation';
 @use 'partials/variables';
 
-
 @use 'partials/header';
 @use 'partials/footer';
 @use  'partials/console';
@@ -582,4 +581,11 @@ footer {
 
 .maps__carte{
    @include membres.maps__carte;
+}
+
+.maps__titre-carte{
+   @include membres.maps__titre-carte;
+}
+.maps__titre2-carte{
+   @include membres.maps__titre2-carte;
 }
