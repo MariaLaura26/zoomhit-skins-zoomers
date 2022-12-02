@@ -51,5 +51,11 @@
 
 
 @mixin maps__carte {
-background-color: red;
+    padding: 20px;
+    margin-bottom: 100px;
+    border-radius:20px;
+    background-color: #EFA48B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

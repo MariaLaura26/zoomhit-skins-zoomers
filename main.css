@@ -560,7 +560,7 @@ ul {
   transition: transform 0.5s;
 }
 
-.lienItemP, .lienItem {
+.lienItem, .lienItemP {
   text-decoration: none;
 }
 
@@ -792,5 +792,11 @@ footer {
   }
 }
 .maps__carte {
-  background-color: red;
+  padding: 20px;
+  margin-bottom: 100px;
+  border-radius: 20px;
+  background-color: #EFA48B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */
