@@ -59,3 +59,13 @@
     align-items: center;
     justify-content: center;
 }
+@mixin maps__titre-carte {
+    text-align: center
+}
+@mixin maps__titre2-carte {
+    text-align: center;
+}
+
+@mixin maps__titre3-carte {
+    text-align: center;
+}

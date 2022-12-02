@@ -560,7 +560,7 @@ ul {
   transition: transform 0.5s;
 }
 
-.lienItem, .lienItemP {
+.lienItemP, .lienItem {
   text-decoration: none;
 }
 
@@ -799,4 +799,16 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.maps__titre-carte {
+  text-align: center;
+}
+
+.maps__titre2-carte {
+  text-align: center;
+}
+
+.maps__titre3-carte {
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
