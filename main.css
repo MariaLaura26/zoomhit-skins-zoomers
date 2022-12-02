@@ -641,7 +641,7 @@ ul {
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
-.lienItemP {
+.lienItem {
   text-decoration: none;
 }
 
