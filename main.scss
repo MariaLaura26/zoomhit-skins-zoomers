@@ -336,6 +336,9 @@ ul{
 .icon{
    @include console.icon;
 }
+.icon:hover{
+   @include console.iconHover;
+}
 @media screen and (min-width: 900px){
    .icon p {
       @include console.p;
@@ -574,3 +577,8 @@ footer {
    }
 }
 
+//style google maps
+
+.maps__carte{
+   @include contact.maps__carte;
+}
