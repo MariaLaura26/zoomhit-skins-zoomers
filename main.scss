@@ -1,13 +1,15 @@
 @use 'partials/erreur404';
 @use 'partials/contact';
+@use 'partials/apple';
 @use 'partials/membres';
 @use 'partials/creation';
 @use 'partials/variables';
 
 
-//@use 'partials/nav_header';
-//@use 'partials/site_footer';
+@use 'partials/header';
+@use 'partials/footer';
 @use  'partials/console';
+@use 'partials/nouvelles';
 
 * {
    box-sizing: border-box;
@@ -23,33 +25,45 @@ html, body {
 
 //Ajouter la fonte pour tout le text dans la page
 body {
-   font-family: variables.$text;
+  font-family: variables.$text;
 }
 
+//inclure le mixin de la navigation dans le partials header
 .navigation {
-   margin: 25px auto; //Rendre la barre de navigation responsive
-   width: 100%; //Prend toute la taille du body
-   max-width: 1000px; //Limiter la taille de la barre de navigation (Évite que le hamburger soi affiché à l'extérieur du contenu visible
+   @include header.navigation;
 }
 
 .logo img {
    width: 200px;
+   transition: transform 0.5s;
 }
 
-//Comment faire pour ne affecter que le menu affiché par le hamburger?
 .menu-header {
-   padding-left: 25px; //Donner un padding par défaut quand le menu du hamburger s'affiche sur l'écran
+   @include header.menu-header;
+   background-color: variables.$noir;
+   font-family: variables.$menu; //Vérifier que c'est la bonne
 }
 
-//Ajouter les typos pour les titres de chaque page
+//Ajouter les typos pour les titres de chaque page et afficher la sourri par défault
 h1 {
    font-family: variables.$titre;
    font-size: 24px;
+   cursor: default;
+   text-decoration: underline;
+}
+
+.title-1 {
+   @include nouvelles.h1Nouvelles;
 }
 
 h2 {
    font-family: variables.$text;
    font-size: 25px;
+   cursor: default;
+}
+
+p {
+   cursor: default;
 }
 
 //Aligner les liens des menus au centre
@@ -68,19 +82,38 @@ article{
    text-align: center;
    height: 100%;
 }
+
+//Hero nouvelle
+.hero__nouvelles {
+   @include nouvelles.hero__nouvelles;
+}
+.imgLandscape, .imgPortrait {
+   @include nouvelles.imgHero;
+}
+.imgPortrait {
+   @include nouvelles.imgPortrait;
+}
+.imgLandscape {
+   @include nouvelles.imgLandscape;
+}
+
+/*.contraste {
+   @include nouvelles.contraste;
+}
+.accueilContraste {
+   @include nouvelles.accueilContraste;
+   background-color: variables.$peche;
+}*/
+
+@media (orientation: landscape) {
+   .hero__nouvelles {
+     height: 56.25vw;
+   }
+ }
+
 main .row{
    display: flex;
    flex-wrap: nowrap;
-}
-.menu-header {
-   display: flex;
-   justify-content: space-around;
-   background-color: variables.$noir;
-   width: 100%;
-   border-radius: 25px;
-   font-size: 22px;
-   font-family: variables.$menu; //Vérifier que c'est la bonne
-   margin-left: 25px;
 }
 
 //Cibler tous les liens du menus
@@ -89,16 +122,31 @@ main .row{
    text-decoration: none;
 }
 
+//Effet de survole
+.menu a:hover {
+   color: variables.$pechehover;
+}
+
 //navbar
 
 .navbar-toggler-icon img{
    width: 40px;
+   @include footer.transition;
 }
-.logoPartenaire{
-   text-align: center;
+
+//Séparer les icones de la barre de navigation
+.panier, .lang {
+   margin: 10px;
 }
-.logoPartenaire img{
-   width: 80px;
+
+.panier img, .lang img {
+   @include footer.transition;
+}
+
+//État hover img logo, img hamburger du header, icone du panier et du languages
+.logo img:hover, .navbar-toggler-icon img:hover, .panier img:hover, .lang img:hover {
+   transform: scale(1.1);
+   @include footer.transition;
 }
 
 /*Carousel*/
@@ -108,6 +156,21 @@ main .row{
 .swiper-slide img {
    width: 100%;
    object-fit: contain;
+}
+/* Menu hamburger*/
+@media screen and (max-width: 992px ){
+   .menu-header {
+      background-color: variables.$blanc;
+   }
+   .menu a {
+      color: variables.$noir;
+   }
+   .menu-header li{
+      border: 1px solid variables.$noir;
+      border-radius: 20px;
+      padding-left: 5px;
+      margin-bottom: 5px;
+    }
 }
 
 /* Écran telephone*/
@@ -156,9 +219,14 @@ main .row{
       
       .membre__img{
          @include membres.membreImg;
+         border: 2px solid variables.$peche;
       }
       
-      /*
+      .membre__text{
+         @include membres.membreText;
+         background-color: variables.$peche;
+      }
+
       .membre__role{
          @include membres.membreRole;
       }
@@ -166,18 +234,16 @@ main .row{
       .membre__nom{
          @include membres.membreNom;
       }
-      */
-      .membre__text{
-         @include membres.membreText;
-      }
    }
 }
 
-
-//Effet de survole
-.menu a:hover {
-   color: variables.$pechehover;
-}
+//Changer la hauteur du text des membres pour qu'ils soient tous aligné.
+/*
+@media (min-width: 768px) {
+   .membre__text {
+      height: 500px;
+   }
+}*/
 
 // console
 .entete__sous-menu{
@@ -186,48 +252,107 @@ main .row{
 @media screen and (min-width: 900px){
    .enteteIcon{
       @include console.enteteIcon;
+   }  
+   .imageConsole{
+      @include console.imageConsole;
    }
-  
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 900px){
+   .icon{
+      @include console.marginImg;
+   }
+   .imageConsole{
+      @include console.imageConsole9;
+   }
+}
+@media screen and (min-width: 600px){
    .enteteIcon{
       @include console.enteteIcon;
+   }  
+   .enteteIcon a{
+      @include console.sm;
    }
-  
+   .imageConsole{
+      @include console.imageConsole9;
+   }
+}
+@media screen and (max-width: 600px){
+   .icon p{
+      @include console.pmoyen;
+   }
+   .enteteIcon{
+      @include console.enteteIcon;
+   }  
+   .enteteIcon a{
+      @include console.sm;
+   }
+   .imageConsole{
+      @include console.imageConsole6;
+   }
 }
 @media screen and (max-width: 375px){
    .enteteIcon{
-      @include console.telephoneC;
+      @include console.enteteIcon;  
    }
+   .enteteIcon a{
+      @include console.enteteIcon3;  
+   }
+   .imageConsole{
+      @include console.imageConsole6;
+   }
+}
+//.enteteIcon a{
+  // @include console.sm;
+//}
+.enteteIcon a:hover{
+   @include console.deroulant;
   
 }
-.enteteIcon a{
-   @include console.deroulant;
+.deroulant{
+   @include console.btn;
 }
-.sous ::after{
-   @include console.sous;
-}
-.sousA ::after{
-   @include console.sous;
-}
-.enteteIcon ul{
+//.enteteIcon ul{
+//   @include console.sousH;
+//}
+
+//ajoutet classe smH pour faire disparaitre sous menu
+.sm{
    @include console.sousH;
 }
-li {
-   @include console.deroulantH;
+ul .sm:hover{
+   @include console.sousH;
 }
-.imageConsole{
-   @include console.imageConsole;
+ul{
+   @include apple.ul;
 }
+//.imageConsole{
+  // @include console.imageConsole;
+//}
 
+//Création
 .title__creation{
    @include creation.title_creation;
 }
 .icon{
    @include console.icon;
 }
-.icon p{
-   @include console.p; 
+@media screen and (min-width: 900px){
+   .icon p {
+      @include console.p;
+   }
+  
+}
+@media screen and (min-width: 600px){
+   .icon p{
+      @include console.pmoyen;
+   }
+  
+}
+@media screen and (max-width: 375px){
+   .icon p{
+      @include console.petit;
+   }
+  
 }
 .icon img{
    @include console.img; 
@@ -239,10 +364,28 @@ li {
    @include console.item;
 }
 .imgItem{
-   @include console.imgItem; 
+   @include console.imgItem;
+   border: 2px solid variables.$peche;
+   transition: transform 0.5s; //Faire une transition entre l'état défault et le hover
+}
+.lienItemP {
+   text-decoration: none; //Retirer le underline du lien du text
 }
 .itemP{
-   @include console.pItem; 
+   @include console.pItem;
+   color: variables.$blanc;
+    background-color:variables.$peche;
+    border: 2px solid variables.$peche;
+    transition: transform 0.5s;
+}
+//Diminuer l'img des produits sur le survole de la sourri
+.imgItem:hover, .itemP:hover {
+   color: variables.$noir; //Hover text boutons produits
+   transform: scale(0.9);
+   transition: transform 0.5s;
+}
+.itemP p {
+   cursor: pointer; //Style pour le text des produits
 }
 .item p:first-child{
    @include console.pItemFirst; 
@@ -296,7 +439,7 @@ li {
          }
 
          //Prendre toute la taille du container
-         & .form__nom, & .form__prenom, & .form__courriel, & .form__sujet {
+         & .form__nom , & .form__prenom, & .form__courriel, & .form__sujet {
             input {
                width: 100%;
             }
@@ -344,59 +487,66 @@ li {
 
 //footer
 footer {
-   display: flex;
-   align-items: center;
-   background-color: #000;
-   height: 100%;
-   width: 100%;
-   padding: 25px;
-   z-index: 1;
-   margin-top: auto;
+   @include footer.footer;
 }
 
 .groupePied{
-   width: 100%;
-   max-width: 1000px;
-   /*display: flex;
-   justify-content: space-between;
-   align-items: center;*/ //Problème ici, affiche les éléments du footer au début et non au centre
+   @include footer.groupePied;
 }
 .logoPartenaire {
-   padding: 25px; //Séparer la section des logo des partenaires des autres sections du footer
+   @include footer.logoPartenaire;
 }
+
+.logoPartenaire img {
+   @include footer.logoPartenaireImg;
+}
+
 .reseauxsociaux{
-   position: relative;
-   display: flex;
-   flex-direction: row;
-   justify-content: center; //Centrer les éléments du réseaux sociaux en bas des logo des partenaires quand il n'y a plus d'espace
-   align-items: center;
-   height:100%;
-   padding-bottom: 25px;
+   @include footer.reseauxsociaux;
 }
 .facebook{
-   width:20px;
-   padding-bottom: 3px;
-  
+   @include footer.facebook;
 }
 .facebook a{
-   height: 20px;
-   width:20px;
- 
+   @include footer.facebookA;
 }
 .telephone,a {
    color: variables.$blanc;
 }
 
+//Style défault sourri
+.telephone a {
+   @include footer.telephoneA;
+}
+
 .courriel{
-   margin-right:8px;
-   margin-bottom:3px;
+   @include footer.courriel;
 }
 .compagnie {
-   margin: 25px; //Séparer du bas du footer
+   @include footer.compagnie;
    color: variables.$blanc;
 }
 .compagnie:hover {
    color: variables.$blanc; //Le faux lien reste la même couleur
+}
+
+//Transition sur l'état par défault des éléments clickable du footer
+.shopify img, .nintendo img, .laSource img {
+   @include footer.transition;
+}
+//État hover sur les éléments clicable du footer
+.shopify img:hover, .nintendo img:hover, .laSource img:hover { 
+   transform: scale(1.5);
+   @include footer.transition;
+}
+
+.logoPied img, .courriel img, .facebook img, .instagram img {
+   @include footer.transition;
+}
+//Exporter une img de meilleur qualité pour le logo du pied
+.logoPied img:hover, .courriel img:hover, .facebook img:hover, .instagram img:hover {
+   @include footer.transition;
+   transform: scale(1.1);
 }
 
 //Style erreur404
@@ -412,6 +562,15 @@ footer {
 .erreur404__titre2{
    @include erreur404.erreur404__titre2;
 }
+@media screen and (min-width:768px) {
+   .erreur404__titre{
+      @include erreur404.erreur404__tablette;
+   }
+}
 
-
+@media screen and (min-width:576px) {
+   .erreur404__titre{
+      @include erreur404.erreur404__tlf;
+   }
+}
 

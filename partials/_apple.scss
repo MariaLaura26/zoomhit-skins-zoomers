@@ -13,6 +13,10 @@ body {
         //margin:0px;
         //justify-content: center;
 }
+@mixin ul{
+    text-decoration: none;
+    list-style-type:none;
+}
 @mixin enteteIcon{
     display:grid;
     grid-template-columns:auto auto;
@@ -20,11 +24,24 @@ body {
     margin-left:20%;
     margin-top: 5%;
     //flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
 }
 @mixin imageConsole{
-    display:inline-block;
-  
-    width:80%;
+    display:block;
+    align-items: center;
+    text-align: center;
+    width:20%  !important;
+    border-color:variables.$blanc !important;
+    margin-left: 20px;
+    position:absolute !important;
+    transform:translate3d(20%, 60%, 0px) !important;
+   // display:flex;
+    //flex-direction:row;
+    flex-wrap: wrap;
+    color: variables.$peche;
+    margin-left: 30px !important;
+    object-fit:contain !important;
     margin-left: 20px;
    // display:flex;
     //flex-direction:row;

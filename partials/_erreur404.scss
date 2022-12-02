@@ -1,6 +1,6 @@
-@use 'variables';
 
 @mixin section__erreur404 {
+   background-color: #EFA48B;
    height: 700px;
    display: flex;
    align-items: center;
@@ -11,8 +11,16 @@
 
 @mixin erreur404__titre {
 margin-bottom: 50px;
+font-size: 200px;
 }
 
 @mixin erreur404__titre2 {
    font-size: 20px;
+}
+
+@mixin erreur404__tablette {
+   font-size: 100px;
+}
+@mixin erreur404__tlf {
+   font-size: 50px;
 }

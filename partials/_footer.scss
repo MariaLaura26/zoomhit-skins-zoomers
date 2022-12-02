@@ -1,0 +1,68 @@
+//Mettre des mixins
+@mixin footer {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    height: 100%;
+    width: 100%;
+    padding: 25px;
+    z-index: 1;
+    margin-top: auto;
+}
+
+@mixin groupePied{
+    width: 100%;
+    max-width: 1000px;
+    /*display: flex;
+    justify-content: space-between;
+    align-items: center;*/ //Problème ici, affiche les éléments du footer au début et non au centre
+}
+
+@mixin logoPartenaire {
+    padding: 25px; //Séparer la section des logo des partenaires des autres sections du footer
+    text-align: center;
+}
+ 
+@mixin logoPartenaireImg {
+    width: 80px;
+}
+
+@mixin reseauxsociaux{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; //Centrer les éléments du réseaux sociaux en bas des logo des partenaires quand il n'y a plus d'espace
+    align-items: center;
+    height:100%;
+    padding-bottom: 25px;
+}
+
+@mixin facebook{
+    width:20px;
+    padding-bottom: 3px;
+}
+
+@mixin facebookA{
+    height: 20px;
+    width:20px;
+  
+}
+ 
+//Style défault sourri
+@mixin telephoneA {
+    cursor: default;
+}
+
+@mixin courriel{
+    margin-right:8px;
+    margin-bottom:3px;
+}
+
+@mixin compagnie {
+    margin: 25px; //Séparer du bas du footer
+    cursor: default;
+}
+
+@mixin transition {
+    transition: transform 0.5s;
+}

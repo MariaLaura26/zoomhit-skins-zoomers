@@ -16,6 +16,8 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Ruda:wght@600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="../console.css" />
+    
 </head>
 
 <body>
@@ -51,139 +53,182 @@
                         <a href="../autres_pages/contact.html" class="nav-link">Contact</a>
                     </li>
                 </ul>
+                <div class="panier">
+                    <a href="../autres_pages/console.html">
+                        <img src="../medias/icones/panier.png" alt=""></a>
+
+                </div>
+                <div class="lang">
+                    <img src="../medias/icones/langues.png" alt="">
+                </div>
             </div>
         </div>
     </nav>
+    <!-- enteteIcon-->
+    <div class='enteteIcon dropright show'>
 
-    <div class='enteteIcon'>
-        <ul>
-            <li class="deroulant entete__sous-menu"><a href="#">Console disponible ▼</a></li>
-            <ul class="sous">
-                <li><a href="#">Ps4</a></li>
-                <li><a href="#">Ps5</a></li>
-                <li><a href="#">Switch</a></li>
-                <li><a href="#">Switch lite</a></li>
-                <li><a href="#">Switch oled</a></li>
-                <li><a href="#">Xbox one</a></li>
-            </ul>
-        </ul>
-        <select class="entete__sous-menu">
-            <option value='Ps4'>Ps4</option>
-            <option value='Ps5'>Ps5</option>
-            <option value='Switch'>Switch</option>
-            <option value='Switch lite'>Switch lite</option>
-            <option value='Switch oled'>Switch oled</option>
-            <option value='Xbox one'>Xbox one</option>
-        </select>
-
-        <div class='imageConsole'>
-            <div class="icon Ps4"><img src='\medias\icones\playstation.svg'>
+        <a class="deroulant entete__sous-menu btn btn-secondary dropdown-toggle" href="#" role="button"
+            id="dropdownMenuLink" data-bs-toggle="dropdown" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Console disponible
+        </a>
+        <div class="imageConsole dropdown-menu sm" x-placement="right-start" aria-labelledby="dropdownMenuLink">
+            <div class="icon Ps4 dropright-item" href="#"><img src='\medias\icones\playstation.svg'>
                 <p>Ps4</p>
             </div>
-            <div class="icon Ps5"><img src='\medias\icones\playstation.svg'>
+            <div class="icon Ps5 dropright-item" href="#"><img src='\medias\icones\playstation.svg'>
                 <p>Ps5</p>
             </div>
-            <div class="icon Switch"><img src='\medias\icones\nintendo switch.png'>
+            <div class="icon Switch dropright-item" href="#"><img src='\medias\icones\nintendo switch.png'>
                 <p>Switch</p>
             </div>
-            <div class="icon Switche lite"><img src='\medias\icones\switch lite.png'>
+            <div class="icon Switche lite dropright-item" href="#"><img src='\medias\icones\switch lite.png'>
                 <p>Switche lite</p>
             </div>
-            <div class="icon Switch oled"><img src='\medias\icones\nintendo switch.png'>
+            <div class="icon Switch oled dropright-item" href="#"><img src='\medias\icones\nintendo switch.png'>
                 <p>Switch oled</p>
             </div>
-            <div class="icon Xbox one"><img src='\medias\icones\xbox.png'>
+            <div class="icon Xbox one dropright-item" href="#"><img src='\medias\icones\xbox.png'>
                 <p>Xbox one</p>
             </div>
         </div>
     </div>
     <div class="produits">
+        <div class="item ps4_1">
+            <a href="#" class="lienItem"><img class='imgItem' src='\medias\appareils\ps4\01_ps4.webp'></a>
+            <a href="#" class="lienItemP">
+                <div class="itemP">
+                    <p class="item__name">Ps4 Skin Decals: Ultramarine</p>
+                    <p class="item__prix">$26</p>
+                </div>
+            </a>
+        </div>
+        <div class="item ps4_2">
+            <a href="#" class="lienItem"><img class='imgItem' src='\medias\appareils\ps4\02_ps4.webp'></a>
+            <a href="#" class="lienItemP">
+                <div class="itemP">
+                    <p class="item__name">Ps4 Skin Decals: Magical Pinky</p>
+                    <p class="item__prix">$26</p>
+                </div>
+            </a>
+        </div>
+        <div class="item ps5_1">
+            <a href="#" class="lienItem"><img class='imgItem' src='\medias\appareils\ps5\01_ps5.webp'></a>
+            <a href="#" class="lienItemP">
+                <div class="itemP">
+                    <p class="item__name">Ps5 Skin Decals: Oriental</p>
+                    <p class="item__prix">$12</p>
+                </div>
+            </a>
+        </div>
+        <div class="item ps5_2">
+            <a href="#" class="lienItem"><img class='imgItem' src='\medias\appareils\ps5\02_ps5.webp'></a>
+            <a href="#" class="lienItemP">
+                <div class="itemP">
+                    <p class="item__name">Ps5 Skin Decals: Shiba Inu</p>
+                    <p class="item__prix">$12</p>
+                </div>
+            </a>
+        </div>
+        <div class="item Switch_1">
+            <a href="#" class="lienItem"><img class='imgItem' src='\medias\appareils\switch_lite\01_lite.webp'></a>
+            <a href="#" class="lienItemP">
+                <div class="itemP">
+                    <p class="item__name">Nintendo Switch lite Skin Decals: Miss Cloud</p>
+                    <p class="item__prix">$18</p>
+                </div>
+            </a>    
+        </div>
+        <div class="item Switch_2">
+            <a href="#" class="lienItem"><img class='imgItem' src='\medias\appareils\switch_lite\02_lite.webp'></a>
+            <a href="#" class="lienItemP">
+                <div class="itemP">
+                    <p class="item__name">Nintendo Switch lite Skin Decals: Mining</p>
+                    <p class="item__prix">$18</p>
+                </div>
+            </a>
+        </div>
+        <div class="item Switch_3">
+            <a href="#" class="lienItem"><img class='imgItem' src='\medias\appareils\switch_oled\01_oled.webp'></a>
+            <a href="#" class="lienItemP">
+                <div class="itemP">
+                    <p class="item__name">Nintendo Switch Skin Decals: Game Over</p>
+                    <p class="item__prix">$24</p>
+                </div>
+            </a>
+        </div>
+        <div class="item Switch_4">
+            <a href="#" class="lienItem"><img class='imgItem' src='\medias\appareils\switch_oled\02_oled.webp'></a>
+            <a href="#" class="lienItemP">
+                <div class="itemP">
+                    <p class="item__name">Nintendo Switch Skin Decals: Unicorn</p>
+                    <p class="item__prix">$22</p>
+                </div>
+            </a>
+        </div>
+        <div class="item Switch_lite_1">
+            <a href="#" class="lienItem"><img class='imgItem' src='\medias\appareils\switch_lite\01_lite.webp'></a>
+            <a href="#" class="lienItemP">
+                <div class="itemP">
+                    <p class="item__name">Nintendo Switch Skin Decals: Miss Cloud</p>
+                    <p class="item__prix">$18</p>
+                </div>
+            </a>
+        </div>
+        <div class="item Switch_lite_1">
+            <a href="#" class="lienItem"><img class='imgItem' src='\medias\appareils\switch_lite\02_lite.webp'></a>
+            <a href="#" class="lienItemP">
+                <div class="itemP">
+                    <p class="item__name">Nintendo Switch Skin Decals: Mining</p>
+                    <p class="item__prix">$18</p>
+                </div>
+            </a>
+        </div>
+        <div class="item Switch_oled_1">
+            <a href="#" class="lienItem"><img class='imgItem' src='\medias\appareils\switch_oled\01_oled.webp'></a>
+            <a href="#" class="lienItemP">
+                <div class="itemP">
+                    <p class="item__name">Nintendo Switch oled Skin Decals: Game Over</p>
+                    <p class="item__prix">$24</p>
+                </div>
+            </a>
+        </div>
+        <div class="item Switch_oled_2">
+            <a href="#" class="lienItem"><img class='imgItem' src='\medias\appareils\switch_oled\02_oled.webp'></a>
+            <a href="#" class="lienItemP">
+                <div class="itemP">
+                    <p class="item__name">Nintendo Switch oled Skin Decals: Unicorn</p>
+                    <p class="item__prix">$22</p>
+                </div>
+            </a>
+        </div>
+        <div class="item Xbox_one_1">
+            <a href="#" class="lienItem"><img class='imgItem' src='\medias\appareils\xbox_one\01_one.webp'></a>
+            <a href="#" class="lienItemP">
+                <div class="itemP">
+                    <p class="item__name">Xbox one Skin Decals: Kawaii Drink</p>
+                    <p class="item__prix">$26</p>
+                </div>
+            </a>
+        </div>
+        <div class="item Xbox_one_2">
+            <a href="#" class="lienItem"><img class='imgItem' src='\medias\appareils\xbox_one\02_one.webp'></a>
+            <a href="#" class="lienItemP">
+                <div class="itemP">
+                    <p class="item__name">Xbox one Skin Decals: Romantic Blooming</p>
+                    <p class="item__prix">$26</p>
+                </div>
+            </a>
+        </div>
         <div class=" item ps4_1">
-            <img class='imgItem' src='\medias\appareils\ps4\01_ps4.webp'>
-            <div class="itemP">
-                <p>Ps4 Skin Decals: Ultramarine</p>
-                <p>$26</p>
-            </div>
+            <a href="#" class="lienItem"><img class='imgItem' src='\medias\appareils\ps4\01_ps4.webp'></a>
+            <a href="#" class="lienItemP">
+                <div class="itemP">
+                    <p class="item__name">Ps4 Skin Decals: Ultramarine</p>
+                    <p class="item__prix">$26</p>
+                </div>
+            </a>
         </div>
-        <div class="item ps4_2"><img class='imgItem' src='\medias\appareils\ps4\02_ps4.webp'>
-            <div class="itemP">
-                <p>Ps4 Skin Decals: Magical Pinky</p>
-                <p>$26</p>
-            </div>
-        </div>
-        <div class="item ps5_1"><img class='imgItem' src='\medias\appareils\ps5\01_ps5.webp'>
-            <div class="itemP">
-                <p>Ps5 Skin Decals: Oriental</p>
-                <p>$12</p>
-            </div>
-        </div>
-        <div class="item ps5_2"><img class='imgItem' src='\medias\appareils\ps5\02_ps5.webp'>
-            <div class="itemP">
-                <p>Ps5 Skin Decals: Shiba Inu</p>
-                <p>$12</p>
-            </div>
-        </div>
-        <div class="item Switch_1"><img class='imgItem' src='\medias\appareils\switch_lite\01_lite.webp'>
-            <div class="itemP">
-                <p>Nintendo Switch lite Skin Decals: Miss Cloud</p>
-                <p>$18</p>
-            </div>
-        </div>
-        <div class="item Switch_2"><img class='imgItem' src='\medias\appareils\switch_lite\02_lite.webp'>
-            <div class="itemP">
-                <p>Nintendo Switch lite Skin Decals: Mining</p>
-                <p>$18</p>
-            </div>
-        </div>
-        <div class="item Switch_3"><img class='imgItem' src='\medias\appareils\switch_oled\01_oled.webp'>
-            <div class="itemP">
-                <p>Nintendo Switch Skin Decals: Game Over</p>
-                <p>$24</p>
-            </div>
-        </div>
-        <div class="item Switch_4"><img class='imgItem' src='\medias\appareils\switch_oled\02_oled.webp'>
-            <div class="itemP">
-                <p>Nintendo Switch Skin Decals: Unicorn</p>
-                <p>$22</p>
-            </div>
-        </div>
-        <div class="item Switch_lite_1"><img class='imgItem' src='\medias\appareils\switch_lite\01_lite.webp'>
-            <div class="itemP">
-                <p>Nintendo Switch Skin Decals: Miss Cloud</p>
-                <p>$18</p>
-            </div>
-        </div>
-        <div class="item Switch_lite_1"><img class='imgItem' src='\medias\appareils\switch_lite\02_lite.webp'>
-            <div class="itemP">
-                <p>Nintendo Switch Skin Decals: Mining</p>
-                <p>$18</p>
-            </div>
-        </div>
-        <div class="item Switch_oled_1"><img class='imgItem' src='\medias\appareils\switch_oled\01_oled.webp'>
-            <div class="itemP">
-                <p>Nintendo Switch oled Skin Decals: Game Over</p>
-                <p>$24</p>
-            </div>
-        </div>
-        <div class="item Switch_oled_2"><img class='imgItem' src='\medias\appareils\switch_oled\02_oled.webp'>
-            <div class="itemP">
-                <p>Nintendo Switch oled Skin Decals: Unicorn</p>
-                <p>$22</p>
-            </div>
-        </div>
-        <div class="item Xbox_one_1"><img class='imgItem' src='\medias\appareils\xbox_one\01_one.webp'>
-            <div class="itemP">
-                <p>Xbox one Skin Decals: Kawaii Drink</p>
-                <p>$26</p>
-            </div>
-        </div>
-        <div class="item Xbox_one_2"><img class='imgItem' src='\medias\appareils\xbox_one\02_one.webp'>
-            <div class="itemP">
-                <p>Xbox one Skin Decals: Romantic Blooming</p>
-                <p>$26</p>
-            </div>
-        </div>
-
     </div>
     <footer>
         <div class="groupePied container mx-auto">
@@ -235,12 +280,18 @@
     </footer>
 
     <!--Bootstrap JS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <!--GSAP 3-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-
+    <script src="../script/main.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,19 @@
+
+//Mettre des mixins
+@mixin navigation {
+   margin: 25px auto; //Rendre la barre de navigation responsive
+   width: 100%; //Prend toute la taille du body
+   max-width: 1000px; //Limiter la taille de la barre de navigation (Évite que le hamburger soi affiché à l'extérieur du contenu visible
+ }
+ 
+ //Aligner les liens des menus au centre
+ @mixin menu-header {
+   display: flex;
+   justify-content: space-around;
+   width: 100%;
+   border-radius: 25px;
+   font-size: 22px;
+   margin-left: 25px;
+   padding-left: 25px; //Donner un padding par défaut quand le menu du hamburger s'affiche sur l'écran
+   padding-right: 25px;
+ }

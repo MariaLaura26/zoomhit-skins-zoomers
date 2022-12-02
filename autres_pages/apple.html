@@ -12,7 +12,9 @@
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Ruda:wght@600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Ruda:wght@600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../main.css" />
 </head>
 
@@ -25,7 +27,8 @@
             </div>
 
             <!-- Hamburger button -->
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Affichage/masquage de la navigation">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav"
+                aria-expanded="false" aria-label="Affichage/masquage de la navigation">
                 <span class="navbar-toggler-icon"><img src="../medias/icones/burger_icon.png" alt=""></span>
             </button>
 
@@ -48,73 +51,185 @@
                         <a href="../autres_pages/contact.html" class="nav-link">Contact</a>
                     </li>
                 </ul>
+                <div class="panier">
+                    <a href="../autres_pages/console.html">
+                        <img src="../medias/icones/panier.png" alt=""></a>
+
+                </div>
+                <div class="lang">
+                    <img src="../medias/icones/langues.png" alt="">
+                </div>
             </div>
         </div>
     </nav>
-    <div class='enteteIcon'>
-        <select class="entete__sous-menu">
-            <option value='Ipad'>Ipad</option>
-            <option value='Iphone'>Iphone</option>
-            <option value='Macbook'>Macbook</option>
-        </select>
+    <div class='enteteIcon dropright show'>
 
-        <div class='imageConsole'>
-            <div class="icon Ipad"><img src='\medias\icones\ipad.jfif'>
+        <a class="deroulant entete__sous-menu btn btn-secondary dropdown-toggle" href="#" role="button"
+            id="dropdownMenuLink" data-bs-toggle="dropdown" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Appareils disponible
+        </a>
+        <div class="imageConsole dropdown-menu sm" x-placement="right-start" aria-labelledby="dropdownMenuLink">
+            <div class="icon Ipad dropright-item" href="#"><img src='\medias\icones\ipad.jfif'>
                 <p>Ipad</p>
             </div>
-            <div class="icon phone"><img src='\medias\icones\smartphone.png'>
+            <div class="icon phone dropright-item" href="#"><img src='\medias\icones\smartphone.png'>
                 <p>Iphone</p>
             </div>
-            <div class="icon Macbook"><img src='\medias\icones\macbook.png'>
+            <div class="icon  Macbook lite dropright-item" href="#"><img src='\medias\icones\macbook.png'>
                 <p>Macbook</p>
             </div>
         </div>
     </div>
+
+    <!--<div class='imageConsole'>
+        <div class="icon Ipad"><img src='\medias\icones\ipad.jfif'>
+            <p>Ipad</p>
+        </div>
+        <div class="icon phone"><img src='\medias\icones\smartphone.png'>
+            <p>Iphone</p>
+        </div>
+        <div class="icon Macbook"><img src='\medias\icones\macbook.png'>
+            <p>Macbook</p>
+        </div>
+    </div>
+    </div>-->
     <div class="produits">
         <div class=" item ipad_1">
-            <img class='imgItem' src='\medias\appareils\ipad\01_ipad.webp'>
-            <div class="itemP">
-                <p>Ipad Skin:Astral - Wrap Vinyl Sticker</p>
-                <p>$24</p>
-            </div>
+            <a href="#" class="lienItem"><img class='imgItem' src='\medias\appareils\ipad\01_ipad.webp'></a>
+            <a href="#" class="lienItemP">
+                <div class="itemP">
+                    <p>Ipad Skin:Astral - Wrap Vinyl Sticker</p>
+                    <p>$24</p>
+                </div>
+            </a>
         </div>
-        <div class="item ipad_2"><img class='imgItem' src='\medias\appareils\ipad\02_ipad.webp'>
-            <div class="itemP">
-                <p>Ipad Skin: Dreama - Wrap Vinyl Sticker</p>
-                <p>$24</p>
-            </div>
+        <div class="item ipad_2">
+            <a href="#" class="lienItem"><img class='imgItem' src='\medias\appareils\ipad\02_ipad.webp'></a>
+            <a href="#" class="lienItemP">
+                <div class="itemP">
+                    <p>Ipad Skin: Dreama - Wrap Vinyl Sticker</p>
+                    <p>$24</p>
+                </div>
+            </a>
         </div>
-        <div class="item iphone_1"><img class='imgItem' src='\medias\appareils\iphone\01_iphone.webp'>
-            <div class="itemP">
-                <p>Iphone Case TPU: Boho</p>
-                <p>$18.95</p>
-            </div>
+        <div class="item iphone_1">
+            <a href="#" class="lienItem"><img class='imgItem' src='\medias\appareils\iphone\01_iphone.webp'></a>
+            <a href="#" class="lienItemP">
+                <div class="itemP">
+                    <p>Iphone Case TPU: Boho</p>
+                    <p>$18.95</p>
+                </div>
+            </a>
         </div>
-        <div class="item iphone_2"><img class='imgItem' src='\medias\appareils\iphone\02_iphone.webp'>
-            <div class="itemP">
-                <p>Iphone Case TPU: Happy Spring</p>
-                <p>$18.95</p>
-            </div>
+        <div class="item iphone_2">
+            <a href="#" class="lienItem"><img class='imgItem' src='\medias\appareils\iphone\02_iphone.webp'></a>
+            <a href="#" class="lienItemP">
+                <div class="itemP">
+                    <p>Iphone Case TPU: Happy Spring</p>
+                    <p>$18.95</p>
+                </div>
+            </a>
         </div>
-        <div class="item iphone_3"><img class='imgItem' src='\medias\appareils\iphone\03_iphone.webp'>
-            <div class="itemP">
-                <p>Iphone Case TPU: Cat</p>
-                <p>$18.95</p>
-            </div>
+        <div class="item iphone_3">
+            <a href="#" class="lienItem"><img class='imgItem' src='\medias\appareils\iphone\03_iphone.webp'></a>
+            <a href="#" class="lienItemP">
+                <div class="itemP">
+                    <p>Iphone Case TPU: Cat</p>
+                    <p>$18.95</p>
+                </div>
+            </a>
         </div>
-        <div class="item macbook_1"><img class='imgItem' src='\medias\appareils\macbook\01_mac.webp'>
-            <div class="itemP">
-                <p>Macbook Skin Decals: Flora Fashion</p>
-                <p>$28</p>
-            </div>
+        <div class="item macbook_1">
+            <a href="#" class="lienItem"><img class='imgItem' src='\medias\appareils\macbook\01_mac.webp'></a>
+            <a href="#" class="lienItemP">
+                <div class="itemP">
+                    <p>Macbook Skin Decals: Flora Fashion</p>
+                    <p>$28</p>
+                </div>
+            </a>
         </div>
-        <div class="item macbook_2"><img class='imgItem' src='\medias\appareils\macbook\02_mac.webp'>
-            <div class="itemP">
-                <p>Macbook Skin Decals: Flora Fashion</p>
-                <p>$28</p>
-            </div>
+        <div class="item macbook_2">
+            <a href="#" class="lienItem"><img class='imgItem' src='\medias\appareils\macbook\02_mac.webp'></a>
+            <a href="#" class="lienItemP">
+                <div class="itemP">
+                    <p>Macbook Skin Decals: Flora Fashion</p>
+                    <p>$28</p>
+                </div>
+            </a>
         </div>
-
+        <div class=" item ipad_1">
+            <a href="#" class="lienItem"><img class='imgItem' src='\medias\appareils\ipad\01_ipad.webp'></a>
+            <a href="#" class="lienItemP">
+                <div class="itemP">
+                    <p>Ipad Skin:Astral - Wrap Vinyl Sticker</p>
+                    <p>$24</p>
+                </div>
+            </a>
+        </div>
+        <div class="item ipad_2">
+            <a href="#" class="lienItem"><img class='imgItem' src='\medias\appareils\ipad\02_ipad.webp'></a>
+            <a href="#" class="lienItemP">
+                <div class="itemP">
+                    <p>Ipad Skin: Dreama - Wrap Vinyl Sticker</p>
+                    <p>$24</p>
+                </div>
+            </a>
+        </div>
+        <div class="item iphone_1">
+            <a href="#" class="lienItem"><img class='imgItem' src='\medias\appareils\iphone\01_iphone.webp'></a>
+            <a href="#" class="lienItemP">
+                <div class="itemP">
+                    <p>Iphone Case TPU: Boho</p>
+                    <p>$18.95</p>
+                </div>
+            </a>
+        </div>
+        <div class="item iphone_2">
+            <a href="#" class="lienItem"><img class='imgItem' src='\medias\appareils\iphone\02_iphone.webp'></a>
+            <a href="#" class="lienItemP">
+                <div class="itemP">
+                    <p>Iphone Case TPU: Happy Spring</p>
+                    <p>$18.95</p>
+                </div>
+            </a>
+        </div>
+        <div class="item iphone_3">
+            <a href="#" class="lienItem"><img class='imgItem' src='\medias\appareils\iphone\03_iphone.webp'></a>
+            <a href="#" class="lienItemP">
+                <div class="itemP">
+                    <p>Iphone Case TPU: Cat</p>
+                    <p>$18.95</p>
+                </div>
+            </a>
+        </div>
+        <div class="item macbook_1">
+            <a href="#" class="lienItem"><img class='imgItem' src='\medias\appareils\macbook\01_mac.webp'></a>
+            <a href="#" class="lienItemP">
+                <div class="itemP">
+                    <p>Macbook Skin Decals: Flora Fashion</p>
+                    <p>$28</p>
+                </div>
+            </a>
+        </div>
+        <div class="item macbook_2">
+            <a href="#" class="lienItem"><img class='imgItem' src='\medias\appareils\macbook\02_mac.webp'></a>
+            <a href="#" class="lienItemP">
+                <div class="itemP">
+                    <p>Macbook Skin Decals: Flora Fashion</p>
+                    <p>$28</p>
+                </div>
+            </a>
+        </div>
+        <div class=" item ipad_1">
+            <a href="#" class="lienItem"><img class='imgItem' src='\medias\appareils\ipad\01_ipad.webp'></a>
+            <a href="#" class="lienItemP">
+                <div class="itemP">
+                    <p>Ipad Skin:Astral - Wrap Vinyl Sticker</p>
+                    <p>$24</p>
+                </div>
+            </a>
+        </div>
     </div>
     <footer>
         <div class="groupePied container mx-auto">
@@ -125,27 +240,29 @@
                 <div class="logoPartenaire col-12 col-md-4 text-center">
                     <div class="shopify text-lg-start">
                         <a href="https://www.facebook.com/ZoomHitSkins">
-                        <img src="..\medias/icones/shopify.png"></img></a>
+                            <img src="..\medias/icones/shopify.png"></img></a>
                     </div>
-                
+
                     <div class="nintendo text-lg-center">
                         <a href="https://www.nintendo.com/fr-ca/">
-                        <img src="..\medias/icones/nintendo.png"></img></a>
+                            <img src="..\medias/icones/nintendo.png"></img></a>
                     </div>
 
                     <div class="laSource text-lg-end">
                         <a href="https://www.thesource.ca/fr-ca">
-                        <img src="..\medias/icones/lasource.png"></img></a>
+                            <img src="..\medias/icones/lasource.png"></img></a>
                     </div>
                 </div>
 
                 <div class="reseauxsociaux col-12 col-md-4 text-center text-lg-end">
                     <div class="courriel text-center">
-                        <a href="mailto:info@zoomhit.ca"><img src="..\medias\icones\reseaux_sociaux\courriel.png"><img></a>
+                        <a href="mailto:info@zoomhit.ca"><img
+                                src="..\medias\icones\reseaux_sociaux\courriel.png"><img></a>
                     </div>
                     <div class="facebook text-center">
-                        <a href="https://www.shopify.com/free-trial?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore" ><img
-                            src="..\medias\icones\reseaux_sociaux\facebook.png"></img></a>
+                        <a
+                            href="https://www.shopify.com/free-trial?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore"><img
+                                src="..\medias\icones\reseaux_sociaux\facebook.png"></img></a>
                     </div>
                     <div class="instagram text-center">
                         <a href="https://www.instagram.com/zoomhitskins/"><img
@@ -167,6 +284,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <!--GSAP 3-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 
