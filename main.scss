@@ -5,7 +5,6 @@
 @use 'partials/creation';
 @use 'partials/variables';
 
-
 @use 'partials/header';
 @use 'partials/footer';
 @use  'partials/console';
@@ -375,7 +374,7 @@ ul{
    border: 2px solid variables.$peche;
    transition: transform 0.5s; //Faire une transition entre l'état défault et le hover
 }
-.lienItem {
+.lienItemP, .lienItem {
    text-decoration: none; //Retirer le underline du lien du text
 }
 .itemP{
@@ -584,5 +583,12 @@ footer {
 //style google maps
 
 .maps__carte{
-   @include contact.maps__carte;
+   @include membres.maps__carte;
+}
+
+.maps__titre-carte{
+   @include membres.maps__titre-carte;
+}
+.maps__titre2-carte{
+   @include membres.maps__titre2-carte;
 }
