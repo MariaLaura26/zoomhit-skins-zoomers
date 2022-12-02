@@ -3,7 +3,7 @@
 
 @mixin contain{
     object-fit: cover;
-    object-position:0% 100%;
+    object-position:0% 200%;
 }
 @mixin sousMenu{
         //border:none;
@@ -177,7 +177,6 @@
     grid-template-columns: repeat(auto-fit,300px);
     grid-template-rows:repeat(auto-fit);
     gap:50px;
-    margin-left:10%;
     align-items: center;
 }
 @mixin produits6{
