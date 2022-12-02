@@ -245,6 +245,9 @@ main .row{
 }*/
 
 // console
+.imgPortraitContain{
+   @include console.contain;
+}
 .entete__sous-menu{
    @include console.sousMenu;
 }
