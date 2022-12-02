@@ -339,6 +339,7 @@ ul{
 .icon:hover{
    @include console.iconHover;
 }
+
 @media screen and (min-width: 900px){
    .icon p {
       @include console.p;
