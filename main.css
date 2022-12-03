@@ -13,21 +13,15 @@ body {
 /*Centrer la colonne verticalement et horizontalement*/
 /*Aligner le title-1 et la présentation du groupe au milieu de la colonne*/
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html, body {
   margin: 0px;
   width: 100%;
   min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 body {
@@ -42,18 +36,12 @@ body {
 
 .logo img {
   width: 200px;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .menu-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   width: 100%;
   border-radius: 25px;
   font-size: 22px;
@@ -141,11 +129,8 @@ article {
   }
 }
 main .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
 }
 
 .menu a {
@@ -159,10 +144,7 @@ main .row {
 
 .navbar-toggler-icon img {
   width: 40px;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .panier, .lang {
@@ -170,19 +152,12 @@ main .row {
 }
 
 .panier img, .lang img {
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .logo img:hover, .navbar-toggler-icon img:hover, .panier img:hover, .lang img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
+  transform: scale(1.1);
   transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 /*Carousel*/
@@ -220,43 +195,27 @@ main .row {
     display: none;
   }
   main .row {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .swiper {
     width: 100%;
   }
 }
 .contact__main .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: 0 auto;
 }
 .contact__main .section__membres {
   margin-top: 150px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .contact__main .section__membres .membres__cartes {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
   width: 1000px;
 }
 .contact__main .section__membres .membre__titre {
@@ -276,8 +235,7 @@ main .row {
   width: 100%;
   height: 100%;
   max-width: 400px;
-  -ms-flex-item-align: center;
-      align-self: center;
+  align-self: center;
   border-radius: 20px;
   border: 2px solid #FCC8B2;
 }
@@ -330,26 +288,20 @@ main .row {
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 2%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     text-align: center;
     -o-object-fit: contain;
        object-fit: contain;
   }
   .imageConsole {
     display: block;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     width: 60%;
     border-color: #fff !important;
     margin-left: 20px;
     position: absolute !important;
-    -webkit-transform: translate3d(55%, 120%, 0px) !important;
-            transform: translate3d(55%, 120%, 0px) !important;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    transform: translate3d(55%, 120%, 0px) !important;
+    flex-wrap: wrap;
     color: #FCC8B2;
     margin-left: 30px !important;
     -o-object-fit: contain !important;
@@ -362,17 +314,13 @@ main .row {
   }
   .imageConsole {
     display: block;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     width: 60%;
     border-color: #fff !important;
     margin-left: 20px;
     position: absolute !important;
-    -webkit-transform: translate3d(55%, 90%, 0px) !important;
-            transform: translate3d(55%, 90%, 0px) !important;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    transform: translate3d(55%, 90%, 0px) !important;
+    flex-wrap: wrap;
     color: #FCC8B2;
     margin-left: 30px !important;
     -o-object-fit: contain !important;
@@ -387,9 +335,7 @@ main .row {
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 2%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     text-align: center;
     -o-object-fit: contain;
        object-fit: contain;
@@ -397,8 +343,7 @@ main .row {
   .enteteIcon a {
     list-style-type: none;
     background-color: #EFA48B;
-    -webkit-box-shadow: #EFA48B;
-            box-shadow: #EFA48B;
+    box-shadow: #EFA48B;
     display: block;
     text-align: center;
     padding: 10px;
@@ -407,17 +352,13 @@ main .row {
   }
   .imageConsole {
     display: block;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     width: 60%;
     border-color: #fff !important;
     margin-left: 20px;
     position: absolute !important;
-    -webkit-transform: translate3d(55%, 90%, 0px) !important;
-            transform: translate3d(55%, 90%, 0px) !important;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    transform: translate3d(55%, 90%, 0px) !important;
+    flex-wrap: wrap;
     color: #FCC8B2;
     margin-left: 30px !important;
     -o-object-fit: contain !important;
@@ -439,9 +380,7 @@ main .row {
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 2%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     text-align: center;
     -o-object-fit: contain;
        object-fit: contain;
@@ -449,8 +388,7 @@ main .row {
   .enteteIcon a {
     list-style-type: none;
     background-color: #EFA48B;
-    -webkit-box-shadow: #EFA48B;
-            box-shadow: #EFA48B;
+    box-shadow: #EFA48B;
     display: block;
     text-align: center;
     padding: 10px;
@@ -459,16 +397,13 @@ main .row {
   }
   .imageConsole {
     display: block;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     text-align: center;
     width: 60%;
     border-color: #fff !important;
     margin-left: 20px;
     position: absolute !important;
-    -webkit-transform: translate3d(0%, 90%, 0px) !important;
-            transform: translate3d(0%, 90%, 0px) !important;
+    transform: translate3d(0%, 90%, 0px) !important;
     color: #FCC8B2;
     margin-left: 30px !important;
     -o-object-fit: contain !important;
@@ -483,9 +418,7 @@ main .row {
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 2%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     text-align: center;
     -o-object-fit: contain;
        object-fit: contain;
@@ -497,9 +430,7 @@ main .row {
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 2%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     text-align: center;
     -o-object-fit: contain;
        object-fit: contain;
@@ -508,16 +439,13 @@ main .row {
   }
   .imageConsole {
     display: block;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     text-align: center;
     width: 60%;
     border-color: #fff !important;
     margin-left: 20px;
     position: absolute !important;
-    -webkit-transform: translate3d(0%, 90%, 0px) !important;
-            transform: translate3d(0%, 90%, 0px) !important;
+    transform: translate3d(0%, 90%, 0px) !important;
     color: #FCC8B2;
     margin-left: 30px !important;
     -o-object-fit: contain !important;
@@ -572,12 +500,8 @@ ul {
   width: 10%;
   display: inline-block;
   margin-left: 2%;
-  -webkit-transform: scale(0.8) !important;
-          transform: scale(0.8) !important;
-  -webkit-transition: -webkit-transform 0.7s;
-  transition: -webkit-transform 0.7s;
+  transform: scale(0.8) !important;
   transition: transform 0.7s;
-  transition: transform 0.7s, -webkit-transform 0.7s;
 }
 
 @media screen and (min-width: 900px) {
@@ -622,9 +546,7 @@ ul {
   grid-template-columns: repeat(auto-fit, 300px);
   grid-template-rows: repeat(auto-fit);
   gap: 50px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-left: 10%;
 }
 
@@ -644,10 +566,7 @@ ul {
   border: 2px solid #FCC8B2;
   overflow: hidden;
   border: 2px solid #FCC8B2;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .lienItemP, .lienItem {
@@ -663,20 +582,13 @@ ul {
   color: #fff;
   background-color: #FCC8B2;
   border: 2px solid #FCC8B2;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .imgItem:hover, .itemP:hover {
   color: #000;
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
+  transform: scale(0.9);
   transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .itemP p {
@@ -688,27 +600,15 @@ ul {
 }
 
 .contact__main .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: 0 auto;
 }
 .contact__main .section__contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding-top: 25px;
   margin-top: 50px;
   margin-bottom: 175px;
@@ -724,19 +624,10 @@ ul {
   font-family: "Roboto", Medium;
 }
 .contact__main .section__contact .contact__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   max-width: 1000px;
 }
@@ -751,15 +642,9 @@ ul {
   border: solid 2px #FCC8B2;
 }
 .contact__main .section__contact .contact__form .form__nom, .contact__main .section__contact .contact__form .form__prenom, .contact__main .section__contact .contact__form .form__courriel, .contact__main .section__contact .contact__form .form__sujet, .contact__main .section__contact .contact__form .form__message {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   /*& ::placeholder {
      text-align: center;
@@ -772,12 +657,8 @@ ul {
   margin-right: 25px;
 }
 .contact__main .section__contact .contact__form .form__message {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  align-items: flex-start;
 }
 .contact__main .section__contact .contact__form .form__message label {
   margin-right: 20px;
@@ -791,8 +672,7 @@ ul {
 .contact__main .section__contact .contact__form .btn__envoyer {
   text-decoration: none;
   padding: 5px 25px;
-  -ms-flex-item-align: center;
-      align-self: center;
+  align-self: center;
   background-color: #FCC8B2;
 }
 .contact__main .section__contact .contact__form .btn__envoyer:hover {
@@ -804,12 +684,8 @@ ul {
    @include contact.placeholder;
 }*/
 footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   background-color: #000;
   height: 100%;
   width: 100%;
@@ -837,19 +713,10 @@ footer {
 
 .reseauxsociaux {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   padding-bottom: 25px;
 }
@@ -888,53 +755,30 @@ footer {
 }
 
 .shopify img, .nintendo img, .laSource img {
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .shopify img:hover, .nintendo img:hover, .laSource img:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
+  transform: scale(1.5);
   transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .logoPied img, .courriel img, .facebook img, .instagram img {
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .logoPied img:hover, .courriel img:hover, .facebook img:hover, .instagram img:hover {
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .section__erreur404 {
   background-color: #EFA48B;
   height: 700px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .erreur404__titre {
@@ -961,15 +805,9 @@ footer {
   margin-bottom: 100px;
   border-radius: 20px;
   background-color: #EFA48B;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .maps__titre-carte {
