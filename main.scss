@@ -28,6 +28,9 @@ body {
 //Ajouter la fonte pour tout le text dans la page
 body {
   font-family: variables.$text;
+  background-image: url('medias/icones/rectangle_backg.png');
+  background-position: bottom;
+  background-size: 100px;
 }
 
 //inclure le mixin de la navigation dans le partials header

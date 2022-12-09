@@ -27,6 +27,9 @@ body {
 
 body {
   font-family: "Roboto", thin;
+  background-image: url("medias/icones/rectangle_backg.png");
+  background-position: bottom;
+  background-size: 100px;
 }
 
 .navigation {
