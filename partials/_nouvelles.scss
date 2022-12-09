@@ -38,15 +38,16 @@
 /*Centrer la colonne verticalement et horizontalement*/
 /*Aligner le title-1 et la présentation du groupe au milieu de la colonne*/
 @mixin h1Nouvelles {
-    z-index: 1;
-    margin: 0px auto;
-    margin-top: 25px;
-    text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    margin-top: 25px;
+    text-align: center;
     font-weight: bold;
     font-size: 40px;
+    color: white;
 }
 
 @mixin sectionNouvelles {
