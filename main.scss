@@ -248,6 +248,9 @@ main .row{
 .imgPortraitContain{
    @include console.contain;
 }
+.hero__nouvelles{
+   @include console.hero;
+}
 .entete__sous-menu{
    @include console.sousMenu;
 }
@@ -599,10 +602,4 @@ footer {
 
 .maps__titre1-carte{
    @include membres.maps__titre1-carte;
-}
-
-
-// Style modal
-.modal__modalbody{
-   @include membres.modal__modalbody;
 }

@@ -7,6 +7,9 @@
     width:100%;
     //height: 130%;
 }
+@mixin hero{
+    height:70%;
+}
 @mixin sousMenu{
         //border:none;
         border-width:2px;
