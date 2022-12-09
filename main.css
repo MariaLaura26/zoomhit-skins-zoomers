@@ -256,6 +256,16 @@ main .row {
   font-size: 40px;
 }
 
+@media screen and (max-width: 992px) {
+  .titrea {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  .titreh {
+    text-align: center;
+  }
+}
 .contact__main .row {
   display: flex;
   flex-wrap: wrap;
@@ -275,7 +285,6 @@ main .row {
 }
 .section__membres .membre__titre {
   text-align: center;
-  text-decoration: underline;
   font-size: 25px;
   margin-bottom: 25px;
 }
