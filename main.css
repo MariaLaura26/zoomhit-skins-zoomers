@@ -240,31 +240,32 @@ main .row {
   flex-wrap: wrap;
   margin: 0 auto;
 }
-.contact__main .section__membres {
+
+.section__membres {
   margin-top: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.contact__main .section__membres .membres__cartes {
+.section__membres .membres__cartes {
   display: flex;
   justify-content: space-evenly;
   width: 1000px;
 }
-.contact__main .section__membres .membre__titre {
+.section__membres .membre__titre {
   text-align: center;
   text-decoration: underline;
   font-size: 25px;
   margin-bottom: 25px;
 }
-.contact__main .section__membres .membre__card {
+.section__membres .membre__card {
   width: 100%;
   height: 100%;
   max-height: 400px;
   margin-bottom: 200px;
   border: none;
 }
-.contact__main .section__membres .membre__img {
+.section__membres .membre__img {
   width: 100%;
   height: 100%;
   max-width: 400px;
@@ -272,11 +273,11 @@ main .row {
   border-radius: 20px;
   border: 2px solid #FCC8B2;
 }
-.contact__main .section__membres .membre__img:hover {
+.section__membres .membre__img:hover {
   transition: 0.5s;
   transform: scale(0.9);
 }
-.contact__main .section__membres .membre__text {
+.section__membres .membre__text {
   margin: 0 auto;
   width: 100%;
   height: 100%;
@@ -287,14 +288,14 @@ main .row {
   background-color: #FCC8B2;
   transition: transform 0.5s;
 }
-.contact__main .section__membres .membre__text:hover {
+.section__membres .membre__text:hover {
   transition: 0.5s;
   transform: scale(0.9);
 }
-.contact__main .section__membres .membre__role {
+.section__membres .membre__role {
   padding: 10px 0px;
 }
-.contact__main .section__membres .membre__nom {
+.section__membres .membre__nom {
   padding: 10px 0px;
 }
 
@@ -940,10 +941,8 @@ a {
   }
 }
 .maps__carte {
-  padding: 20px;
   margin-bottom: 100px;
   border-radius: 20px;
-  background-color: #EFA48B;
   display: flex;
   align-items: center;
   justify-content: center;

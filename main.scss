@@ -219,57 +219,58 @@ main .row {
     flex-wrap: wrap;
     margin: 0 auto;
   }
-  //membres
+}
+
+//membres
   //Indentation du code des membres
   .section__membres {
-    @include membres.sectionMembres;
+   @include membres.sectionMembres;
 
 
-   // background-color: tomato;
-    .membres__cartes {
-      display: flex;
-      justify-content: space-evenly;
-      width: 1000px;
-    }
+  // background-color: tomato;
+   .membres__cartes {
+     display: flex;
+     justify-content: space-evenly;
+     width: 1000px;
+   }
 
-    .membre__titre {
-      @include membres.membreTitre;
-    }
+   .membre__titre {
+     @include membres.membreTitre;
+   }
 
-    .membre__card {
-      @include membres.membreCard;
-    }
+   .membre__card {
+     @include membres.membreCard;
+   }
 
-    .membre__img {
-      @include membres.membreImg;
-      border: 2px solid variables.$peche;
-    }
+   .membre__img {
+     @include membres.membreImg;
+     border: 2px solid variables.$peche;
+   }
 
-    .membre__img:hover{
+   .membre__img:hover{
+    transition: 0.5s;
+    transform: scale(0.9);
+   }
+
+   .membre__text {
+     @include membres.membreText;
+     background-color: variables.$peche;
+     transition: transform 0.5s;
+   }
+
+   .membre__text:hover {
      transition: 0.5s;
-     transform: scale(0.9);
-    }
+    transform: scale(0.9);
+   }
 
-    .membre__text {
-      @include membres.membreText;
-      background-color: variables.$peche;
-      transition: transform 0.5s;
-    }
+   .membre__role {
+     @include membres.membreRole;
+   }
 
-    .membre__text:hover {
-      transition: 0.5s;
-     transform: scale(0.9);
-    }
-
-    .membre__role {
-      @include membres.membreRole;
-    }
-
-    .membre__nom {
-      @include membres.membreNom;
-    }
-  }
-}
+   .membre__nom {
+     @include membres.membreNom;
+   }
+ }
 
 //Changer la hauteur du text des membres pour qu'ils soient tous aligné.
 /*
