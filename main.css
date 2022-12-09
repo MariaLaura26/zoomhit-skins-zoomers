@@ -60,6 +60,7 @@ h1 {
 }
 
 .title-1 {
+  z-index: 1;
   margin: 0px auto;
   margin-top: 25px;
   text-align: center;
@@ -824,6 +825,7 @@ ul {
 }
 
 .itemP__nouvelle {
+  z-index: 1;
   position: absolute;
   top: 0px;
   left: 0px;
