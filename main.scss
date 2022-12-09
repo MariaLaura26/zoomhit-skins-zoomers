@@ -299,19 +299,20 @@ main .row {
     @include console.imageConsole9;
   }
 }
-@media screen and (max-width: 600px) {
-  .icon p {
-    @include console.pmoyen;
-  }
-  .enteteIcon {
-    @include console.enteteIcon;
-  }
-  .enteteIcon a {
-    @include console.sm;
-  }
-  .imageConsole {
-    @include console.imageConsole6;
-  }
+@media screen and (max-width: 600px){
+   .icon p{
+      @include console.pmoyen;
+   }
+   .enteteIcon{
+      @include console.enteteIcon;
+   }  
+   .enteteIcon a{
+      @include console.sm;
+      @include console.telephoneC;
+   }
+   .imageConsole{
+      @include console.imageConsole6;
+   }
 }
 @media screen and (max-width: 375px) {
   .enteteIcon {
@@ -401,13 +402,15 @@ ul {
   background-color: variables.$peche;
   border: 2px solid variables.$peche;
   transition: transform 0.5s;
+  opacity: 0;
 }
 //Diminuer l'img des produits sur le survole de la sourri
 .imgItem:hover,
 .itemP:hover {
-  color: variables.$noir; //Hover text boutons produits
+  //color: variables.$noir; //Hover text boutons produits
   transform: scale(0.9);
   transition: transform 0.5s;
+  opacity: 1;
 }
 .itemP p {
   cursor: pointer; //Style pour le text des produits
