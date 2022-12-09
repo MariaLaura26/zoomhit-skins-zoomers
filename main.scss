@@ -3,7 +3,9 @@
 @use "partials/apple";
 @use "partials/membres";
 @use "partials/creation";
+@use "partials/apropos";
 @use "partials/variables";
+
 
 @use "partials/header";
 @use "partials/footer";
@@ -209,6 +211,8 @@ main .row {
   .section__membres {
     @include membres.sectionMembres;
 
+
+   // background-color: tomato;
     .membres__cartes {
       display: flex;
       justify-content: space-evenly;
