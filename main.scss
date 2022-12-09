@@ -3,7 +3,9 @@
 @use "partials/apple";
 @use "partials/membres";
 @use "partials/creation";
+@use "partials/apropos";
 @use "partials/variables";
+
 
 @use "partials/header";
 @use "partials/footer";
@@ -197,6 +199,19 @@ main .row {
   }
 }
 
+//a propos
+.texteA{
+  @include apropos.apercue;
+}
+.texteH{
+  @include apropos.histoire;
+}
+.Apropos{
+  @include apropos.histoire;
+}
+.Histoire{
+  @include apropos.histoire;
+}
 .contact__main {
   //Sauter une ligne quand il n'y a pas d'espace
   .row {
@@ -209,6 +224,8 @@ main .row {
   .section__membres {
     @include membres.sectionMembres;
 
+
+   // background-color: tomato;
     .membres__cartes {
       display: flex;
       justify-content: space-evenly;
@@ -518,6 +535,10 @@ ul {
   @include nouvelles.sectionNouvelles;
 }
 
+.lienItem__nouvelle, .lienItemP__nouvelle {
+  text-decoration: none; //Retirer le underline du lien du text
+}
+
 .item__nouvelle {
   @include nouvelles.itemNouvelle;
 }
@@ -525,10 +546,28 @@ ul {
 .imgItem__nouvelle {
   @include nouvelles.imgNouvelle;
   border: 2px solid variables.$peche;
+  transition: transform 0.5s; //Faire une transition entre l'état défault et le hover
 }
 
 .itemP__nouvelle {
   @include nouvelles.itemPNouvelle;
+  color: variables.$blanc;
+  font-weight: bold;
+  background-color: variables.$pecheopacity;
+  transition: transform 0.5s;
+}
+
+.itemP__nouvelle p {
+  cursor: pointer; //Style pour le text des produits
+  position: relative;
+  top: 75px;
+}
+
+//Diminuer l'img des produits sur le survole de la sourri
+.item__nouvelle:hover {
+  //color: variables.$noir; //Hover text boutons produits
+  transform: scale(1.2);
+  transition: transform 0.5s;
 }
 
 //Mise en page du placeholder dans le champ de text
@@ -675,9 +714,14 @@ a {
    height: 100%;
    object-fit: contain;
  }
+ .heros{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
 
  .heros .container {
-   top: 60%;
+   top:60%;
    position: absolute;
    z-index: 3;
    top: 60%;
@@ -687,11 +731,15 @@ a {
    height: 100%;
  }
 
- .contraste {
-   background: linear-gradient(
-     to bottom,
-     rgba(0, 0, 0, 0),
-     rgb(168, 52, 62, 0.3)
-   );
- }
+//  .contraste {
+//     background: linear-gradient(
+//        to top,
+//       #ffffff, variables.$peche, #ffffff
+//     );
+//  }
+
+ 
+
+
+
 
