@@ -1,25 +1,26 @@
-@use 'partials/erreur404';
-@use 'partials/contact';
-@use 'partials/apple';
-@use 'partials/membres';
-@use 'partials/creation';
-@use 'partials/variables';
+@use "partials/erreur404";
+@use "partials/contact";
+@use "partials/apple";
+@use "partials/membres";
+@use "partials/creation";
+@use "partials/variables";
 
-@use 'partials/header';
-@use 'partials/footer';
-@use  'partials/console';
-@use 'partials/nouvelles';
+@use "partials/header";
+@use "partials/footer";
+@use "partials/console";
+@use "partials/nouvelles";
 
 * {
-   box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-   margin: 0px;
-   width: 100%;
-   min-height: 100vh;
-   display: flex;
-   flex-direction: column;
+html,
+body {
+  margin: 0px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 //Ajouter la fonte pour tout le text dans la page
@@ -29,71 +30,72 @@ body {
 
 //inclure le mixin de la navigation dans le partials header
 .navigation {
-   @include header.navigation;
+  @include header.navigation;
 }
 
 .logo img {
-   width: 200px;
-   transition: transform 0.5s;
+  width: 200px;
+  transition: transform 0.5s;
 }
 
 .menu-header {
-   @include header.menu-header;
-   background-color: variables.$noir;
-   font-family: variables.$menu; //Vérifier que c'est la bonne
+  @include header.menu-header;
+  background-color: variables.$noir;
+  font-family: variables.$menu; //Vérifier que c'est la bonne
 }
 
 //Ajouter les typos pour les titres de chaque page et afficher la sourri par défault
 h1 {
-   font-family: variables.$titre;
-   font-size: 24px;
-   cursor: default;
-   text-decoration: underline;
+  font-family: variables.$titre;
+  font-size: 24px;
+  cursor: default;
+  text-decoration: underline;
 }
 
 .title-1 {
-   @include nouvelles.h1Nouvelles;
+  @include nouvelles.h1Nouvelles;
 }
 
 h2 {
-   font-family: variables.$text;
-   font-size: 25px;
-   cursor: default;
+  font-family: variables.$text;
+  font-size: 25px;
+  cursor: default;
 }
 
 p {
-   cursor: default;
+  cursor: default;
 }
 
 //Aligner les liens des menus au centre
 //Header
-article{
-   margin-bottom: 20px;
+article {
+  margin-bottom: 20px;
 }
-.heros__boite-description{
-   overflow: hidden;
-   text-overflow: ellipsis; 
-   padding: 30px;
-   margin-top: 60px;
-   height: 400px;
-   border: 1px solid variables.$pechehover;
-   border-radius: 20px;
-   text-align: center;
-   height: 100%;
+.heros__boite-description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 30px;
+  margin-top: 60px;
+  height: 400px;
+  border: 1px solid variables.$pechehover;
+  border-radius: 20px;
+  text-align: center;
+  height: 100%;
 }
 
 //Hero nouvelle
 .hero__nouvelles {
-   @include nouvelles.hero__nouvelles;
+  @include nouvelles.hero__nouvelles;
 }
-.imgLandscape, .imgPortrait {
-   @include nouvelles.imgHero;
+.imgLandscape,
+.imgPortrait {
+  @include nouvelles.imgHero;
 }
 .imgPortrait {
-   @include nouvelles.imgPortrait;
+  @include nouvelles.imgPortrait;
 }
 .imgLandscape {
-   @include nouvelles.imgLandscape;
+  @include nouvelles.imgLandscape;
 }
 
 /*.contraste {
@@ -105,135 +107,140 @@ article{
 }*/
 
 @media (orientation: landscape) {
-   .hero__nouvelles {
-     height: 56.25vw;
-   }
- }
+  .hero__nouvelles {
+    height: 56.25vw;
+  }
+}
 
-main .row{
-   display: flex;
-   flex-wrap: nowrap;
+main .row {
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 //Cibler tous les liens du menus
 .menu a {
-   color: variables.$blanc;
-   text-decoration: none;
+  color: variables.$blanc;
+  text-decoration: none;
 }
 
 //Effet de survole
 .menu a:hover {
-   color: variables.$pechehover;
+  color: variables.$pechehover;
 }
 
 //navbar
 
-.navbar-toggler-icon img{
-   width: 40px;
-   @include footer.transition;
+.navbar-toggler-icon img {
+  width: 40px;
+  @include footer.transition;
 }
 
 //Séparer les icones de la barre de navigation
-.panier, .lang {
-   margin: 10px;
+.panier,
+.lang {
+  margin: 10px;
 }
 
-.panier img, .lang img {
-   @include footer.transition;
+.panier img,
+.lang img {
+  @include footer.transition;
 }
 
 //État hover img logo, img hamburger du header, icone du panier et du languages
-.logo img:hover, .navbar-toggler-icon img:hover, .panier img:hover, .lang img:hover {
-   transform: scale(1.1);
-   @include footer.transition;
+.logo img:hover,
+.navbar-toggler-icon img:hover,
+.panier img:hover,
+.lang img:hover {
+  transform: scale(1.1);
+  @include footer.transition;
 }
 
 /*Carousel*/
-.swiper{
-   width: 50%;
+.swiper {
+  width: 50%;
+  z-index: 3;
 }
 .swiper-slide img {
-   width: 100%;
-   object-fit: contain;
+  width: 100%;
+  object-fit: contain;
 }
 /* Menu hamburger*/
-@media screen and (max-width: 992px ){
-   .menu-header {
-      background-color: variables.$blanc;
-   }
-   .menu a {
-      color: variables.$noir;
-   }
-   .menu-header li{
-      border: 1px solid variables.$noir;
-      border-radius: 20px;
-      padding-left: 5px;
-      margin-bottom: 5px;
-    }
+@media screen and (max-width: 992px) {
+  .menu-header {
+    background-color: variables.$blanc;
+  }
+  .menu a {
+    color: variables.$noir;
+  }
+  .menu-header li {
+    border: 1px solid variables.$noir;
+    border-radius: 20px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+  }
 }
 
 /* Écran telephone*/
-@media screen and (max-width: 375px){
-   .heros__boite-description{
-      margin: 0 5px ;
-   }
-   .heros__boite-description .heros__desc{
-      display: none;
-   }
-   main .row{
-      display: flex;
-      flex-wrap: wrap;
-   }
-   .swiper{
-      width: 100%;
-   }
+@media screen and (max-width: 375px) {
+  .heros__boite-description {
+    margin: 0 5px;
+  }
+  .heros__boite-description .heros__desc {
+    display: none;
+  }
+  main .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .swiper {
+    width: 100%;
+  }
 }
 
 .contact__main {
-   
-   //Sauter une ligne quand il n'y a pas d'espace
-   .row {
+  //Sauter une ligne quand il n'y a pas d'espace
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  //membres
+  //Indentation du code des membres
+  .section__membres {
+    @include membres.sectionMembres;
+
+    .membres__cartes {
       display: flex;
-      flex-wrap: wrap;
-      margin: 0 auto;
-   }
-   //membres
-   //Indentation du code des membres
-   .section__membres{
-      @include membres.sectionMembres;
+      justify-content: space-evenly;
+      width: 1000px;
+    }
 
-      .membres__cartes {
-         display: flex;
-         justify-content: space-evenly;
-         width: 1000px;
-      }
+    .membre__titre {
+      @include membres.membreTitre;
+    }
 
-      .membre__titre{
-         @include membres.membreTitre;
-      }
-      
-      .membre__card{
-         @include membres.membreCard;
-      }
-      
-      .membre__img{
-         @include membres.membreImg;
-         border: 2px solid variables.$peche;
-      }
-      
-      .membre__text{
-         @include membres.membreText;
-         background-color: variables.$peche;
-      }
+    .membre__card {
+      @include membres.membreCard;
+    }
 
-      .membre__role{
-         @include membres.membreRole;
-      }
-      
-      .membre__nom{
-         @include membres.membreNom;
-      }
-   }
+    .membre__img {
+      @include membres.membreImg;
+      border: 2px solid variables.$peche;
+    }
+
+    .membre__text {
+      @include membres.membreText;
+      background-color: variables.$peche;
+    }
+
+    .membre__role {
+      @include membres.membreRole;
+    }
+
+    .membre__nom {
+      @include membres.membreNom;
+    }
+  }
 }
 
 //Changer la hauteur du text des membres pour qu'ils soient tous aligné.
@@ -245,245 +252,249 @@ main .row{
 }*/
 
 // console
-.imgPortraitContain{
-   @include console.contain;
+.imgPortraitContain {
+  @include console.contain;
 }
-.entete__sous-menu{
-   @include console.sousMenu;
+.entete__sous-menu {
+  @include console.sousMenu;
 }
-@media screen and (min-width: 900px){
-   .enteteIcon{
-      @include console.enteteIcon;
-   }  
-   .imageConsole{
-      @include console.imageConsole;
-   }
+@media screen and (min-width: 900px) {
+  .enteteIcon {
+    @include console.enteteIcon;
+  }
+  .imageConsole {
+    @include console.imageConsole;
+  }
 }
-@media screen and (max-width: 900px){
-   .icon{
-      @include console.marginImg;
-   }
-   .imageConsole{
-      @include console.imageConsole9;
-   }
+@media screen and (max-width: 900px) {
+  .icon {
+    @include console.marginImg;
+  }
+  .imageConsole {
+    @include console.imageConsole9;
+  }
 }
-@media screen and (min-width: 600px){
-   .enteteIcon{
-      @include console.enteteIcon;
-   }  
-   .enteteIcon a{
-      @include console.sm;
-   }
-   .imageConsole{
-      @include console.imageConsole9;
-   }
+@media screen and (min-width: 600px) {
+  .enteteIcon {
+    @include console.enteteIcon;
+  }
+  .enteteIcon a {
+    @include console.sm;
+  }
+  .imageConsole {
+    @include console.imageConsole9;
+  }
 }
-@media screen and (max-width: 600px){
-   .icon p{
-      @include console.pmoyen;
-   }
-   .enteteIcon{
-      @include console.enteteIcon;
-   }  
-   .enteteIcon a{
-      @include console.sm;
-   }
-   .imageConsole{
-      @include console.imageConsole6;
-   }
+@media screen and (max-width: 600px) {
+  .icon p {
+    @include console.pmoyen;
+  }
+  .enteteIcon {
+    @include console.enteteIcon;
+  }
+  .enteteIcon a {
+    @include console.sm;
+  }
+  .imageConsole {
+    @include console.imageConsole6;
+  }
 }
-@media screen and (max-width: 375px){
-   .enteteIcon{
-      @include console.enteteIcon;  
-   }
-   .enteteIcon a{
-      @include console.enteteIcon3;  
-   }
-   .imageConsole{
-      @include console.imageConsole6;
-   }
+@media screen and (max-width: 375px) {
+  .enteteIcon {
+    @include console.enteteIcon;
+  }
+  .enteteIcon a {
+    @include console.enteteIcon3;
+  }
+  .imageConsole {
+    @include console.imageConsole6;
+  }
 }
 //.enteteIcon a{
-  // @include console.sm;
+// @include console.sm;
 //}
-.enteteIcon a:hover{
-   @include console.deroulant;
-  
+.enteteIcon a:hover {
+  @include console.deroulant;
 }
-.deroulant{
-   @include console.btn;
+.deroulant {
+  @include console.btn;
 }
 //.enteteIcon ul{
 //   @include console.sousH;
 //}
 
 //ajoutet classe smH pour faire disparaitre sous menu
-.sm{
-   @include console.sousH;
+.sm {
+  @include console.sousH;
 }
-ul .sm:hover{
-   @include console.sousH;
+ul .sm:hover {
+  @include console.sousH;
 }
-ul{
-   @include apple.ul;
+ul {
+  @include apple.ul;
 }
 //.imageConsole{
-  // @include console.imageConsole;
+// @include console.imageConsole;
 //}
 
 //Création
-.title__creation{
-   @include creation.title_creation;
+.title__creation {
+  @include creation.title_creation;
 }
-.icon{
-   @include console.icon;
+.icon {
+  @include console.icon;
 }
-.icon:hover{
-   @include console.iconHover;
+.icon:hover {
+  @include console.iconHover;
 }
 
-@media screen and (min-width: 900px){
-   .icon p {
-      @include console.p;
-   }
-  
+@media screen and (min-width: 900px) {
+  .icon p {
+    @include console.p;
+  }
 }
-@media screen and (min-width: 600px){
-   .icon p{
-      @include console.pmoyen;
-   }
-  
+@media screen and (min-width: 600px) {
+  .icon p {
+    @include console.pmoyen;
+  }
 }
-@media screen and (max-width: 375px){
-   .icon p{
-      @include console.petit;
-   }
-  
+@media screen and (max-width: 375px) {
+  .icon p {
+    @include console.petit;
+  }
 }
-.icon img{
-   @include console.img; 
+.icon img {
+  @include console.img;
 }
-.produits{
-   @include console.produits;
+.produits {
+  @include console.produits;
 }
-.item{
-   @include console.item;
+.item {
+  @include console.item;
 }
-.imgItem{
-   @include console.imgItem;
-   border: 2px solid variables.$peche;
-   transition: transform 0.5s; //Faire une transition entre l'état défault et le hover
+.imgItem {
+  @include console.imgItem;
+  border: 2px solid variables.$peche;
+  transition: transform 0.5s; //Faire une transition entre l'état défault et le hover
 }
-.lienItemP, .lienItem {
-   text-decoration: none; //Retirer le underline du lien du text
+.lienItemP,
+.lienItem {
+  text-decoration: none; //Retirer le underline du lien du text
 }
-.itemP{
-   @include console.pItem;
-   color: variables.$blanc;
-    background-color:variables.$peche;
-    border: 2px solid variables.$peche;
-    transition: transform 0.5s;
+.itemP {
+  @include console.pItem;
+  color: variables.$blanc;
+  background-color: variables.$peche;
+  border: 2px solid variables.$peche;
+  transition: transform 0.5s;
 }
 //Diminuer l'img des produits sur le survole de la sourri
-.imgItem:hover, .itemP:hover {
-   color: variables.$noir; //Hover text boutons produits
-   transform: scale(0.9);
-   transition: transform 0.5s;
+.imgItem:hover,
+.itemP:hover {
+  color: variables.$noir; //Hover text boutons produits
+  transform: scale(0.9);
+  transition: transform 0.5s;
 }
 .itemP p {
-   cursor: pointer; //Style pour le text des produits
+  cursor: pointer; //Style pour le text des produits
 }
-.item p:first-child{
-   @include console.pItemFirst; 
+.item p:first-child {
+  @include console.pItemFirst;
 }
 
 .contact__main {
+  //Sauter une ligne quand il n'y a pas d'espace
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
 
-   //Sauter une ligne quand il n'y a pas d'espace
-   .row {
-      display: flex;
-      flex-wrap: wrap;
-      margin: 0 auto;
-   }
+  //Aligner au centre et ajouter une marge du haut
+  .section__contact {
+    @include contact.sectionContact;
 
-   //Aligner au centre et ajouter une marge du haut
-   .section__contact {
-      @include contact.sectionContact;
+    //Aligner le titre de la page de contact
+    & .contact__titre {
+      @include contact.formTitre;
+      font-family: variables.$titre;
+    }
 
-      //Aligner le titre de la page de contact
-      & .contact__titre {
-         @include contact.formTitre;
-         font-family: variables.$titre;
+    //Inclure les styles pour aligner le contenu du formulaire de contact
+    .contact__form {
+      @include contact.formContact;
+
+      //Marges et décorations
+      & label {
+        @include contact.formLabel;
       }
 
-      //Inclure les styles pour aligner le contenu du formulaire de contact
-      .contact__form {
-         @include contact.formContact;
+      //Couleur de bordure
+      & input {
+        @include contact.input;
+        border: solid 2px variables.$peche;
+      }
 
-         //Marges et décorations
-         & label {
-            @include contact.formLabel;
-         }
+      //Aligner les forms et prendre toute la taille du formulaire
+      & .form__nom,
+      & .form__prenom,
+      & .form__courriel,
+      & .form__sujet,
+      & .form__message {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
 
-         //Couleur de bordure
-         & input {
-            @include contact.input;
-            border: solid 2px variables.$peche;
-         }
-
-         //Aligner les forms et prendre toute la taille du formulaire
-         & .form__nom, & .form__prenom, & .form__courriel, & .form__sujet, & .form__message {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            
-            //Aligner les placeholder au centre du champ de text
-            /*& ::placeholder {
+        //Aligner les placeholder au centre du champ de text
+        /*& ::placeholder {
                text-align: center;
             }*/
-         }
-
-         //Prendre toute la taille du container
-         & .form__nom , & .form__prenom, & .form__courriel, & .form__sujet {
-            input {
-               width: 100%;
-            }
-         }
-
-         //Aligner les champs de text du prénom et du courriel avec les autres
-         & .form__prenom label, & .form__courriel label {
-            @include contact.formPC;
-         }
-
-         //Aligner le Label Message en haut de la boîte.
-         & .form__message {
-            @include contact.formMessage;
-
-            //Aligner le label du message avec les autres
-            label {
-               margin-right: 20px;
-            }
-            
-            textarea {
-               @include contact.textarea;
-               border: solid 2px variables.$peche;
-            }
-         }
-
-         & .btn__envoyer {
-            @include contact.btnContact;
-            background-color: variables.$peche;
-         }
-
-         & .btn__envoyer:hover {
-            //@include contact.btnContact;
-            background-color: variables.$pechehover;
-            text-decoration: underline;
-         }
       }
 
-   }
+      //Prendre toute la taille du container
+      & .form__nom,
+      & .form__prenom,
+      & .form__courriel,
+      & .form__sujet {
+        input {
+          width: 100%;
+        }
+      }
+
+      //Aligner les champs de text du prénom et du courriel avec les autres
+      & .form__prenom label,
+      & .form__courriel label {
+        @include contact.formPC;
+      }
+
+      //Aligner le Label Message en haut de la boîte.
+      & .form__message {
+        @include contact.formMessage;
+
+        //Aligner le label du message avec les autres
+        label {
+          margin-right: 20px;
+        }
+
+        textarea {
+          @include contact.textarea;
+          border: solid 2px variables.$peche;
+        }
+      }
+
+      & .btn__envoyer {
+        @include contact.btnContact;
+        background-color: variables.$peche;
+      }
+
+      & .btn__envoyer:hover {
+        //@include contact.btnContact;
+        background-color: variables.$pechehover;
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
 //Mise en page du placeholder dans le champ de text
@@ -493,116 +504,126 @@ ul{
 
 //footer
 footer {
-   @include footer.footer;
+  @include footer.footer;
 }
 
-.groupePied{
-   @include footer.groupePied;
+.groupePied {
+  @include footer.groupePied;
 }
 .logoPartenaire {
-   @include footer.logoPartenaire;
+  @include footer.logoPartenaire;
 }
 
 .logoPartenaire img {
-   @include footer.logoPartenaireImg;
+  @include footer.logoPartenaireImg;
 }
 
-.reseauxsociaux{
-   @include footer.reseauxsociaux;
+.reseauxsociaux {
+  @include footer.reseauxsociaux;
 }
-.facebook{
-   @include footer.facebook;
+.facebook {
+  @include footer.facebook;
 }
-.facebook a{
-   @include footer.facebookA;
+.facebook a {
+  @include footer.facebookA;
 }
-.telephone,a {
-   color: variables.$blanc;
+.telephone,
+a {
+  color: variables.$blanc;
 }
 
 //Style défault sourri
 .telephone a {
-   @include footer.telephoneA;
+  @include footer.telephoneA;
 }
 
-.courriel{
-   @include footer.courriel;
+.courriel {
+  @include footer.courriel;
 }
 .compagnie {
-   @include footer.compagnie;
-   color: variables.$blanc;
+  @include footer.compagnie;
+  color: variables.$blanc;
 }
 .compagnie:hover {
-   color: variables.$blanc; //Le faux lien reste la même couleur
+  color: variables.$blanc; //Le faux lien reste la même couleur
 }
 
 //Transition sur l'état par défault des éléments clickable du footer
-.shopify img, .nintendo img, .laSource img {
-   @include footer.transition;
+.shopify img,
+.nintendo img,
+.laSource img {
+  @include footer.transition;
 }
 //État hover sur les éléments clicable du footer
-.shopify img:hover, .nintendo img:hover, .laSource img:hover { 
-   transform: scale(1.5);
-   @include footer.transition;
+.shopify img:hover,
+.nintendo img:hover,
+.laSource img:hover {
+  transform: scale(1.5);
+  @include footer.transition;
 }
 
-.logoPied img, .courriel img, .facebook img, .instagram img {
-   @include footer.transition;
+.logoPied img,
+.courriel img,
+.facebook img,
+.instagram img {
+  @include footer.transition;
 }
 //Exporter une img de meilleur qualité pour le logo du pied
-.logoPied img:hover, .courriel img:hover, .facebook img:hover, .instagram img:hover {
-   @include footer.transition;
-   transform: scale(1.1);
+.logoPied img:hover,
+.courriel img:hover,
+.facebook img:hover,
+.instagram img:hover {
+  @include footer.transition;
+  transform: scale(1.1);
 }
 
 //Style erreur404
 
-.section__erreur404{
-   @include erreur404.section__erreur404;
+.section__erreur404 {
+  @include erreur404.section__erreur404;
 }
 
-.erreur404__titre{
-   @include erreur404.erreur404__titre;
+.erreur404__titre {
+  @include erreur404.erreur404__titre;
 }
 
-.erreur404__titre2{
-   @include erreur404.erreur404__titre2;
+.erreur404__titre2 {
+  @include erreur404.erreur404__titre2;
 }
-@media screen and (min-width:768px) {
-   .erreur404__titre{
-      @include erreur404.erreur404__tablette;
-   }
+@media screen and (min-width: 768px) {
+  .erreur404__titre {
+    @include erreur404.erreur404__tablette;
+  }
 }
 
-@media screen and (min-width:576px) {
-   .erreur404__titre{
-      @include erreur404.erreur404__tlf;
-   }
+@media screen and (min-width: 576px) {
+  .erreur404__titre {
+    @include erreur404.erreur404__tlf;
+  }
 }
 
 //style google maps
 
-.maps__carte{
-   @include membres.maps__carte;
+.maps__carte {
+  @include membres.maps__carte;
 }
 
-.maps__titre-carte{
-   @include membres.maps__titre-carte;
+.maps__titre-carte {
+  @include membres.maps__titre-carte;
 }
-.maps__titre2-carte{
-   @include membres.maps__titre2-carte;
-}
-
-.maps__titre3-carte{
-   @include membres.maps__titre3-carte;
+.maps__titre2-carte {
+  @include membres.maps__titre2-carte;
 }
 
-.maps__titre1-carte{
-   @include membres.maps__titre1-carte;
+.maps__titre3-carte {
+  @include membres.maps__titre3-carte;
 }
 
+.maps__titre1-carte {
+  @include membres.maps__titre1-carte;
+}
 
 // Style modal
-.modal__modalbody{
-   @include membres.modal__modalbody;
+.modal__modalbody {
+  @include membres.modal__modalbody;
 }
