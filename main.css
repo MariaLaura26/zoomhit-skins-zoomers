@@ -210,6 +210,26 @@ main .row {
     width: 100%;
   }
 }
+.texteA {
+  width: 90%;
+  margin: auto;
+}
+
+.texteH {
+  width: 90%;
+  margin: auto;
+}
+
+.Apropos {
+  width: 90%;
+  margin: auto;
+}
+
+.Histoire {
+  width: 90%;
+  margin: auto;
+}
+
 .contact__main .row {
   display: flex;
   flex-wrap: wrap;
@@ -940,6 +960,12 @@ a {
      object-fit: contain;
 }
 
+.heros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .heros .container {
   top: 60%;
   position: absolute;
@@ -952,5 +978,5 @@ a {
 }
 
 .contraste {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(168, 52, 62, 0.3));
+  background: linear-gradient(to top, #ffffff, #FCC8B2, #ffffff);
 }/*# sourceMappingURL=main.css.map */

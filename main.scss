@@ -3,7 +3,9 @@
 @use "partials/apple";
 @use "partials/membres";
 @use "partials/creation";
+@use "partials/apropos";
 @use "partials/variables";
+
 
 @use "partials/header";
 @use "partials/footer";
@@ -197,6 +199,19 @@ main .row {
   }
 }
 
+//a propos
+.texteA{
+  @include apropos.apercue;
+}
+.texteH{
+  @include apropos.histoire;
+}
+.Apropos{
+  @include apropos.histoire;
+}
+.Histoire{
+  @include apropos.histoire;
+}
 .contact__main {
   //Sauter une ligne quand il n'y a pas d'espace
   .row {
@@ -209,6 +224,8 @@ main .row {
   .section__membres {
     @include membres.sectionMembres;
 
+
+   // background-color: tomato;
     .membres__cartes {
       display: flex;
       justify-content: space-evenly;
@@ -698,6 +715,11 @@ a {
    height: 100%;
    object-fit: contain;
  }
+ .heros{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
 
  .heros .container {
    top: 60%;
@@ -711,10 +733,12 @@ a {
  }
 
  .contraste {
-   background: linear-gradient(
-     to bottom,
-     rgba(0, 0, 0, 0),
-     rgb(168, 52, 62, 0.3)
-   );
+    background: linear-gradient(
+       to top,
+      #ffffff, variables.$peche, #ffffff
+    );
  }
+
+
+
 
