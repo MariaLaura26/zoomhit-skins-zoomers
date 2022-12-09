@@ -27,9 +27,6 @@ body {
 
 body {
   font-family: "Roboto", thin;
-  background-image: url("medias/icones/rectangle_backg.png");
-  background-position: bottom;
-  background-size: 100px;
 }
 
 .navigation {
@@ -980,8 +977,8 @@ a {
 }
 
 .mySwiper {
-  width: 70%;
-  height: 70%;
+  width: 50%;
+  height: 50%;
 }
 
 .swiper-slide .img {
@@ -1005,12 +1002,16 @@ a {
 }
 
 .heros .container {
-  top: 60%;
+  top: 40%;
   position: absolute;
   z-index: 3;
-  top: 60%;
+  top: 40%;
 }
 
 .heros .row {
   height: 100%;
+}
+
+.contraste {
+  background: linear-gradient(to top, #ffffff, #FCC8B2, #ffffff);
 }/*# sourceMappingURL=main.css.map */
