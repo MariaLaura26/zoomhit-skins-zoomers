@@ -85,3 +85,13 @@
     border-radius: 20px;
     font-size: 18px;
 }
+
+@mixin nouvelleP {
+    cursor: pointer; //Style pour le text des produits
+    position: relative;
+    top: 35%;
+}
+
+@mixin titreNouvelle {
+    padding: 0px 15px;
+}
