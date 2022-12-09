@@ -270,9 +270,6 @@ main .row {
 .imgPortraitContain {
   @include console.contain;
 }
-.hero__nouvelles {
-  @include console.hero;
-}
 .entete__sous-menu {
   @include console.sousMenu;
 }
@@ -406,15 +403,13 @@ ul {
   background-color: variables.$peche;
   border: 2px solid variables.$peche;
   transition: transform 0.5s;
-  opacity: 0;
 }
 //Diminuer l'img des produits sur le survole de la sourri
 .imgItem:hover,
 .itemP:hover {
-  //color: variables.$noir; //Hover text boutons produits
+  color: variables.$noir; //Hover text boutons produits
   transform: scale(0.9);
   transition: transform 0.5s;
-  opacity: 1;
 }
 .itemP p {
   cursor: pointer; //Style pour le text des produits
@@ -516,6 +511,28 @@ ul {
       }
     }
   }
+}
+
+//Nouvelles
+.hero__nouvelles {
+  @include console.hero;
+}
+
+.section__nouvelles {
+  @include nouvelles.sectionNouvelles;
+}
+
+.item__nouvelle {
+  @include nouvelles.itemNouvelle;
+}
+
+.imgItem__nouvelle {
+  @include nouvelles.imgNouvelle;
+  border: 2px solid variables.$peche;
+}
+
+.itemP__nouvelle {
+  @include nouvelles.itemPNouvelle;
 }
 
 //Mise en page du placeholder dans le champ de text
@@ -643,3 +660,42 @@ a {
 .maps__titre1-carte {
   @include membres.maps__titre1-carte;
 }
+
+//hero-swiper
+.mySwiper {
+   width: 70%;
+   height: 70%;
+   
+ }
+
+ .swiper-slide .img {
+   object-fit: contain;
+   height: 100%;
+   width: 100%;
+ }
+
+ .img-fluid{
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+ }
+
+ .heros .container {
+   top: 60%;
+   position: absolute;
+   z-index: 3;
+   top: 60%;
+ }
+
+ .heros .row {
+   height: 100%;
+ }
+
+ .contraste {
+   background: linear-gradient(
+     to bottom,
+     rgba(0, 0, 0, 0),
+     rgb(168, 52, 62, 0.3)
+   );
+ }
+
