@@ -790,14 +790,17 @@ ul {
   border-radius: 20px;
   font-size: 18px;
   color: #fff;
-  font-weight: bold;
   background-color: rgba(239, 164, 139, 0.5);
 }
 
 .itemP__nouvelle p {
   cursor: pointer;
   position: relative;
-  top: 75px;
+  top: 35%;
+}
+
+.titre__nouvelle {
+  padding: 0px 15px;
 }
 
 .item__nouvelle:hover {

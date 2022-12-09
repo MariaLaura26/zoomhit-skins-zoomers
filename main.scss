@@ -562,14 +562,15 @@ ul {
 .itemP__nouvelle {
   @include nouvelles.itemPNouvelle;
   color: variables.$blanc;
-  font-weight: bold;
   background-color: variables.$pecheopacity;
 }
 
 .itemP__nouvelle p {
-  cursor: pointer; //Style pour le text des produits
-  position: relative;
-  top: 75px;
+  @include nouvelles.nouvelleP;
+}
+
+.titre__nouvelle {
+  @include nouvelles.titreNouvelle;
 }
 
 //Diminuer l'img des produits sur le survole de la sourri
