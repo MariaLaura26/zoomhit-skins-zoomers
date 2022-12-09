@@ -199,6 +199,19 @@ main .row {
   }
 }
 
+//a propos
+.texteA{
+  @include apropos.apercue;
+}
+.texteH{
+  @include apropos.histoire;
+}
+.Apropos{
+  @include apropos.histoire;
+}
+.Histoire{
+  @include apropos.histoire;
+}
 .contact__main {
   //Sauter une ligne quand il n'y a pas d'espace
   .row {

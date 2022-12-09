@@ -210,6 +210,26 @@ main .row {
     width: 100%;
   }
 }
+.texteA {
+  width: 90%;
+  margin: auto;
+}
+
+.texteH {
+  width: 90%;
+  margin: auto;
+}
+
+.Apropos {
+  width: 90%;
+  margin: auto;
+}
+
+.Histoire {
+  width: 90%;
+  margin: auto;
+}
+
 .contact__main .row {
   display: flex;
   flex-wrap: wrap;
