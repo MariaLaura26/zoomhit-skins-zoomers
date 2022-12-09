@@ -604,19 +604,6 @@ ul {
       }
     }
   }
-
-  .btnNouvelles {
-    @include nouvelles.btnNouvelles;
-    background-color: variables.$peche;
-    transition: transform 0.5s;
-  }
-
-  .btnNouvelles:hover {
-    background-color: variables.$pechehover;
-    border: solid 2px variables.$peche;
-    transform: scale(1.1);
-    transition: transform 0.5s;
-  }
 }
 
 .itemP__nouvelle p, .itemP__nouvelle__01 p   {
@@ -626,6 +613,19 @@ ul {
 //Diminuer l'img des produits sur le survole de la sourri
 .item__nouvelle:hover {
   //color: variables.$noir; //Hover text boutons produits
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+
+.btnNouvelles {
+  @include nouvelles.btnNouvelles;
+  background-color: variables.$peche;
+  transition: transform 0.5s;
+}
+
+.btnNouvelles:hover {
+  background-color: variables.$pechehover;
+  border: solid 2px variables.$peche;
   transform: scale(1.1);
   transition: transform 0.5s;
 }
