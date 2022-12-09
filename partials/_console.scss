@@ -2,10 +2,10 @@
 @use 'variables';
 
 @mixin contain{
-    object-fit: cover;
-    object-position:0% 100%;
+    object-fit: contain;
+   // object-position:0% 100%;
     width:100%;
-    height: 130%;
+    //height: 130%;
 }
 @mixin sousMenu{
         //border:none;
