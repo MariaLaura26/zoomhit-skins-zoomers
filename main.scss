@@ -290,6 +290,7 @@ main .row{
    }  
    .enteteIcon a{
       @include console.sm;
+      @include console.telephoneC;
    }
    .imageConsole{
       @include console.imageConsole6;
