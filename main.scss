@@ -28,6 +28,9 @@ body {
 //Ajouter la fonte pour tout le text dans la page
 body {
   font-family: variables.$text;
+  background-image: url('medias/icones/rectangle_backg.png');
+  background-position: bottom;
+  background-size: 100px;
 }
 
 //inclure le mixin de la navigation dans le partials header
@@ -532,21 +535,53 @@ ul {
   @include console.hero;
 }
 
+.accueilContraste {
+  @include nouvelles.accueilContraste;
+  background-color: variables.$pecheopacity;
+}
+
+.contraste {
+  @include nouvelles.contraste;
+}
+
 .section__nouvelles {
   @include nouvelles.sectionNouvelles;
 }
 
+.lienItem__nouvelle, .lienItemP__nouvelle {
+  text-decoration: none; //Retirer le underline du lien du text
+}
+
 .item__nouvelle {
   @include nouvelles.itemNouvelle;
+  transition: transform 0.5s;
 }
 
 .imgItem__nouvelle {
   @include nouvelles.imgNouvelle;
   border: 2px solid variables.$peche;
+  transition: transform 0.5s; //Faire une transition entre l'état défault et le hover
 }
 
 .itemP__nouvelle {
   @include nouvelles.itemPNouvelle;
+  color: variables.$blanc;
+  background-color: variables.$pecheopacity;
+}
+
+.itemP__nouvelle p {
+  @include nouvelles.nouvelleP;
+}
+
+.titre__nouvelle {
+  @include nouvelles.titreNouvelle;
+}
+
+//Diminuer l'img des produits sur le survole de la sourri
+.item__nouvelle:hover {
+  //color: variables.$noir; //Hover text boutons produits
+  transform: scale(1.1);
+  transition: transform 0.5s;
 }
 
 //Mise en page du placeholder dans le champ de text
@@ -700,7 +735,7 @@ a {
  }
 
  .heros .container {
-   top: 60%;
+   top:60%;
    position: absolute;
    z-index: 3;
    top: 60%;
@@ -710,12 +745,14 @@ a {
    height: 100%;
  }
 
- .contraste {
-    background: linear-gradient(
-       to top,
-      #ffffff, variables.$peche, #ffffff
-    );
- }
+//  .contraste {
+//     background: linear-gradient(
+//        to top,
+//       #ffffff, variables.$peche, #ffffff
+//     );
+//  }
+
+ 
 
 
 
