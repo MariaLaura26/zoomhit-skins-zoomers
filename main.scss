@@ -111,7 +111,7 @@ article {
 
 @media (orientation: landscape) {
   .hero__nouvelles {
-   height: 100vh;
+   height: 100vh !important;
   }
 }
 
@@ -202,13 +202,21 @@ main .row {
 
 //a propos
 .Apropos{
-  @include apropos.apercue;
+  @include apropos.apercueT;
+}
+.Apropos:hover{
+  transform: scale(0.9);
+  transition: transform 0.5s;
 }
 .texteA{
   @include apropos.apercue;
 }
 .Histoire{
-  @include apropos.histoire;
+  @include apropos.histoireT;
+}
+.Histoire:hover{ 
+  transform: scale(0.9);
+  transition: transform 0.5s;
 }
 .texteH{
   @include apropos.histoire;
@@ -216,16 +224,15 @@ main .row {
 .title-a{
   @include apropos.titre;
 }
-@media screen and (max-width: 992px) {
-  .titrea {
+
+.titrea {
     @include apropos.titrea;
   }
-}
-@media screen and (max-width: 992px) {
-  .titreh{
+
+.titreh{
     @include apropos.titrea;
   }
-}
+
 
 .contact__main {
   //Sauter une ligne quand il n'y a pas d'espace
