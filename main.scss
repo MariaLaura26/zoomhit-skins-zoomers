@@ -567,6 +567,10 @@ ul {
   @include nouvelles.sectionNouvelles;
 }
 
+.titre__nouvelle {
+  @include nouvelles.titreNouvelle;
+}
+
 .lienItem__nouvelle, .lienItemP__nouvelle {
   text-decoration: none; //Retirer le underline du lien du text
 }
@@ -588,12 +592,15 @@ ul {
   background-color: variables.$pecheopacity;
 }
 
-.itemP__nouvelle p {
-  @include nouvelles.nouvelleP;
+//Changer la couleur de fond de la première nouvelle
+.itemP__nouvelle__01 {
+  @include nouvelles.itemPNouvelle01;
+  color: variables.$blanc;
+  background-color: variables.$pecheopacity01;
 }
 
-.titre__nouvelle {
-  @include nouvelles.titreNouvelle;
+.itemP__nouvelle p, .itemP__nouvelle__01 p {
+  @include nouvelles.nouvelleP;
 }
 
 //Diminuer l'img des produits sur le survole de la sourri

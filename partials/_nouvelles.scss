@@ -90,6 +90,19 @@
     font-size: 18px;
 }
 
+//Changer taille de la typo pour la première nouvelle
+@mixin itemPNouvelle01 {
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
 @mixin nouvelleP {
     cursor: pointer; //Style pour le text des produits
     position: relative;
