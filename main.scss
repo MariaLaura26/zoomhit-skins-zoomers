@@ -212,6 +212,9 @@ main .row {
 .texteH{
   @include apropos.histoire;
 }
+.title-a{
+  @include apropos.titre;
+}
 
 .contact__main {
   //Sauter une ligne quand il n'y a pas d'espace
