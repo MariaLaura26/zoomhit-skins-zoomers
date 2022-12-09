@@ -636,8 +636,8 @@ ul {
   grid-template-columns: repeat(auto-fit, 300px);
   grid-template-rows: repeat(auto-fit);
   gap: 50px;
+  justify-content: center;
   align-items: center;
-  margin-left: 10%;
 }
 
 .item {
@@ -791,7 +791,7 @@ ul {
   grid-template-rows: repeat(auto-fit);
   gap: 50px;
   align-items: center;
-  margin-left: 10%;
+  justify-content: center;
   margin-bottom: 50px;
 }
 .section__nouvelles .item__nouvelle {

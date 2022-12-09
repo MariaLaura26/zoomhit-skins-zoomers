@@ -182,8 +182,8 @@
     grid-template-columns: repeat(auto-fit,300px);
     grid-template-rows:repeat(auto-fit);
     gap:50px;
+    justify-content: center;
     align-items: center;
-    margin-left: 10%;
 }
 @mixin produits6{
     display:grid;
