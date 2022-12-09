@@ -112,3 +112,12 @@
 @mixin titreNouvelle {
     padding: 0px 15px;
 }
+
+@mixin btnNouvelles {
+    text-decoration: none;
+    padding: 5px 25px;
+    align-self: center; //Aligner le bouton au centre
+    border-radius: 20px;
+    font-size: 20px;
+    border: none;
+}

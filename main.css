@@ -771,25 +771,20 @@ ul {
 }
 .contact__main .section__contact .contact__form .btn__envoyer:hover {
   background-color: #EFA48B;
-  text-decoration: underline;
 }
 
 .hero__nouvelles {
   height: 70%;
 }
 
-.accueilContraste {
-  background-color: rgba(239, 164, 139, 0.5);
+/*.accueilContraste {
+  @include nouvelles.accueilContraste;
+  background-color: variables.$pecheopacity;
 }
 
 .contraste {
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-}
-
+  @include nouvelles.contraste;
+}*/
 .section__nouvelles {
   display: grid;
   grid-template-columns: repeat(auto-fit, 300px);
@@ -799,16 +794,7 @@ ul {
   margin-left: 10%;
   margin-bottom: 50px;
 }
-
-.titre__nouvelle {
-  padding: 0px 15px;
-}
-
-.lienItem__nouvelle, .lienItemP__nouvelle {
-  text-decoration: none;
-}
-
-.item__nouvelle {
+.section__nouvelles .item__nouvelle {
   position: relative;
   margin-top: 50px;
   width: 300px;
@@ -816,8 +802,10 @@ ul {
   display: inline-block;
   transition: transform 0.5s;
 }
-
-.imgItem__nouvelle {
+.section__nouvelles .item__nouvelle .lienItem__nouvelle {
+  text-decoration: none;
+}
+.section__nouvelles .item__nouvelle .lienItem__nouvelle .imgItem__nouvelle {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -828,8 +816,10 @@ ul {
   border: 2px solid #FCC8B2;
   transition: transform 0.5s;
 }
-
-.itemP__nouvelle {
+.section__nouvelles .item__nouvelle .lienItemP__nouvelle {
+  text-decoration: none;
+}
+.section__nouvelles .item__nouvelle .lienItemP__nouvelle .itemP__nouvelle {
   z-index: 1;
   position: absolute;
   top: 0px;
@@ -842,8 +832,10 @@ ul {
   color: #fff;
   background-color: rgba(239, 164, 139, 0.5);
 }
-
-.itemP__nouvelle__01 {
+.section__nouvelles .item__nouvelle .lienItemP__nouvelle .itemP__nouvelle .titre__nouvelle {
+  padding: 0px 15px;
+}
+.section__nouvelles .item__nouvelle .lienItemP__nouvelle .itemP__nouvelle__01 {
   z-index: 1;
   position: absolute;
   top: 0px;
@@ -855,6 +847,25 @@ ul {
   font-size: 20px;
   color: #fff;
   background-color: rgba(233, 116, 77, 0.5);
+}
+.section__nouvelles .item__nouvelle .lienItemP__nouvelle .itemP__nouvelle__01 .titre__nouvelle {
+  padding: 0px 15px;
+}
+.section__nouvelles .btnNouvelles {
+  text-decoration: none;
+  padding: 5px 25px;
+  align-self: center;
+  border-radius: 20px;
+  font-size: 20px;
+  border: none;
+  background-color: #FCC8B2;
+  transition: transform 0.5s;
+}
+.section__nouvelles .btnNouvelles:hover {
+  background-color: #EFA48B;
+  border: solid 2px #FCC8B2;
+  transform: scale(1.1);
+  transition: transform 0.5s;
 }
 
 .itemP__nouvelle p, .itemP__nouvelle__01 p {

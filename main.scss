@@ -543,7 +543,6 @@ ul {
       & .btn__envoyer:hover {
         //@include contact.btnContact;
         background-color: variables.$pechehover;
-        text-decoration: underline;
       }
     }
   }
@@ -554,52 +553,73 @@ ul {
   @include console.hero;
 }
 
-.accueilContraste {
+/*.accueilContraste {
   @include nouvelles.accueilContraste;
   background-color: variables.$pecheopacity;
 }
 
 .contraste {
   @include nouvelles.contraste;
-}
+}*/
 
 .section__nouvelles {
   @include nouvelles.sectionNouvelles;
+
+  .item__nouvelle {
+    @include nouvelles.itemNouvelle;
+    transition: transform 0.5s;
+
+    .lienItem__nouvelle {
+      text-decoration: none; //Retirer le underline du lien du text
+
+      .imgItem__nouvelle {
+        @include nouvelles.imgNouvelle;
+        border: 2px solid variables.$peche;
+        transition: transform 0.5s; //Faire une transition entre l'état défault et le hover
+      }
+    }
+
+    .lienItemP__nouvelle {
+      text-decoration: none; //Retirer le underline du lien du text
+
+      .itemP__nouvelle {
+        @include nouvelles.itemPNouvelle;
+        color: variables.$blanc;
+        background-color: variables.$pecheopacity;
+
+        .titre__nouvelle {
+          @include nouvelles.titreNouvelle;
+        }
+      }
+
+      //Changer la couleur de fond de la première nouvelle
+      .itemP__nouvelle__01 {
+        @include nouvelles.itemPNouvelle01;
+        color: variables.$blanc;
+        background-color: variables.$pecheopacity01;
+
+        .titre__nouvelle {
+          @include nouvelles.titreNouvelle;
+        }
+      }
+    }
+  }
+
+  .btnNouvelles {
+    @include nouvelles.btnNouvelles;
+    background-color: variables.$peche;
+    transition: transform 0.5s;
+  }
+
+  .btnNouvelles:hover {
+    background-color: variables.$pechehover;
+    border: solid 2px variables.$peche;
+    transform: scale(1.1);
+    transition: transform 0.5s;
+  }
 }
 
-.titre__nouvelle {
-  @include nouvelles.titreNouvelle;
-}
-
-.lienItem__nouvelle, .lienItemP__nouvelle {
-  text-decoration: none; //Retirer le underline du lien du text
-}
-
-.item__nouvelle {
-  @include nouvelles.itemNouvelle;
-  transition: transform 0.5s;
-}
-
-.imgItem__nouvelle {
-  @include nouvelles.imgNouvelle;
-  border: 2px solid variables.$peche;
-  transition: transform 0.5s; //Faire une transition entre l'état défault et le hover
-}
-
-.itemP__nouvelle {
-  @include nouvelles.itemPNouvelle;
-  color: variables.$blanc;
-  background-color: variables.$pecheopacity;
-}
-
-//Changer la couleur de fond de la première nouvelle
-.itemP__nouvelle__01 {
-  @include nouvelles.itemPNouvelle01;
-  color: variables.$blanc;
-  background-color: variables.$pecheopacity01;
-}
-
-.itemP__nouvelle p, .itemP__nouvelle__01 p {
+.itemP__nouvelle p, .itemP__nouvelle__01 p   {
   @include nouvelles.nouvelleP;
 }
 
