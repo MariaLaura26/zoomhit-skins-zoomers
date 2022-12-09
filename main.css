@@ -99,13 +99,13 @@ article {
 .hero__nouvelles {
   position: relative;
   margin: 0px;
-  width: 100%;
+  width: 100vw;
 }
 
 .imgLandscape,
 .imgPortrait {
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
 .imgPortrait {
@@ -131,7 +131,7 @@ article {
 }*/
 @media (orientation: landscape) {
   .hero__nouvelles {
-    height: 56.25vw;
+    height: 100vh;
   }
 }
 main .row {
@@ -777,8 +777,6 @@ ul {
 }
 
 .accueilContraste {
-  opacity: 50%;
-  z-index: 1;
   background-color: rgba(239, 164, 139, 0.5);
 }
 
@@ -1009,8 +1007,8 @@ a {
 }
 
 .mySwiper {
-  width: 50%;
-  height: 50%;
+  width: 60%;
+  height: 60%;
 }
 
 .swiper-slide .img {
@@ -1031,6 +1029,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
+  width: 100%;
 }
 
 .heros .container {
@@ -1044,6 +1044,7 @@ a {
   height: 100%;
 }
 
-.contraste {
-  background: linear-gradient(to top, #ffffff, #FCC8B2, #ffffff);
+.accueil__nouvelles {
+  display: flex;
+  justify-content: space-around;
 }/*# sourceMappingURL=main.css.map */
