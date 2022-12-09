@@ -55,7 +55,6 @@ body {
 
 h1 {
   font-family: "Roboto", Medium;
-  font-size: 24px;
   cursor: default;
   text-decoration: underline;
 }
@@ -215,24 +214,46 @@ main .row {
     width: 100%;
   }
 }
-.texteA {
-  width: 90%;
-  margin: auto;
-}
-
-.texteH {
-  width: 90%;
-  margin: auto;
-}
-
 .Apropos {
-  width: 90%;
+  width: 60%;
+  text-align: justify;
   margin: auto;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.texteA {
+  width: 60%;
+  text-align: justify;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 5%;
 }
 
 .Histoire {
-  width: 90%;
+  width: 60%;
+  text-align: justify;
   margin: auto;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.texteH {
+  width: 60%;
+  text-align: justify;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.title-a {
+  margin: 0px auto;
+  margin-top: 25px;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  font-weight: bold;
+  font-size: 40px;
 }
 
 .contact__main .row {

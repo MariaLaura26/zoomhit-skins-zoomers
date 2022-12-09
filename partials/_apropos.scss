@@ -1,11 +1,26 @@
 @mixin apercue{
-width:90%;
-//text-align: center;
+width:60%;
+text-align: justify;
 margin:auto;
+margin-top:10%;
+margin-bottom:5%;
+
 }
 
-
 @mixin histoire{
-    width:90%;
+    width:60%;
+    text-align: justify;
     margin:auto;
+    margin-top:10%;
+    margin-bottom:5%;
+}
+
+@mixin titre{
+    margin: 0px auto;
+    margin-top: 25px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    font-weight: bold;
+    font-size: 40px;
 }
