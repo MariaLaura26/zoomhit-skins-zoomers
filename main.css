@@ -824,4 +824,11 @@ footer {
 
 .maps__titre1-carte {
   text-align: center;
+}
+
+.modal__modalbody {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }/*# sourceMappingURL=main.css.map */
