@@ -248,6 +248,9 @@ main .row{
 .imgPortraitContain{
    @include console.contain;
 }
+.hero__nouvelles{
+   @include console.hero;
+}
 .entete__sous-menu{
    @include console.sousMenu;
 }
