@@ -125,6 +125,49 @@
         </div>
 </div>
 
+
+
+
+
+<section class="section__temoignages container">
+
+<div class="section__temoignages__titre">Témoignages</div>
+<div class="mySwiper__temoignages container">
+    <div class="swiper-wrapper ">
+      <div class="swiper-slide temoignage"><div class="accueil__temoignages">
+        <div class="accueil__temoignages__nom">
+            Mel
+        </div>
+    <div class="accueil__temoignages__text">
+        J'aime beaucoup! Il est assez rigide, mais il est 
+        quand même confortable. Par contre, la switch avec 
+        la protection n'entre pas dans le deck.
+    </div>
+    </div></div>
+      <div class="swiper-slide temoignage"><div class="accueil__temoignages">
+        <div class="accueil__temoignages__nom">
+            Mel
+        </div>
+    <div class="accueil__temoignages__text">
+        J'aime beaucoup! Il est assez rigide, mais il est 
+        quand même confortable. Par contre, la switch avec 
+        la protection n'entre pas dans le deck.
+    </div>
+    </div></div>
+      <div class="swiper-slide temoignage"><div class="accueil__temoignages">
+        <div class="accueil__temoignages__nom">
+            Mel
+        </div>
+    <div class="accueil__temoignages__text">
+        J'aime beaucoup! Il est assez rigide, mais il est 
+        quand même confortable. Par contre, la switch avec 
+        la protection n'entre pas dans le deck.
+    </div>
+    </div></div>
+    </div>
+  </div>
+</section>
+
 </main>
 
         <!-- <article class="row">
@@ -219,10 +262,16 @@
       loop: 'true',
       effect: 'flip',
     });
+    var swiper = new Swiper(".mySwiper__temoignages", {
+      autoplay: {
+        delay: 5000,
+      },
+      direction: 'horizontal',
+      loop: 'true',
+      effect: 'flip',
+    });
+   
   </script>
-  <script>
-    gsap.timeline() 
-    .from('.heros__boite-description',{opacity:0, duration:1, scale:0, ease:'bounce'})  
-    </script>
+
 </body>
 </html>
