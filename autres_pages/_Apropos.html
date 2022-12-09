@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Création</title>
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Ruda:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../main.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navigation">
+        <div class="container">
+            <!--Logo-->
+            <div class="logo">
+                <a class="navbar-brand" href="../index.html"> <img src="../medias/icones/logo.svg"></a>
+            </div>
+
+            <!-- Hamburger button -->
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Affichage/masquage de la navigation">
+                <span class="navbar-toggler-icon"><img src="../medias/icones/burger_icon.png" alt=""></span>
+            </button>
+
+            <!--Navigation-->
+            <div id="mainNav" class="collapse navbar-collapse">
+                <ul class="navbar-nav menu-header">
+                    <li class="nav-item menu console">
+                        <a href="../autres_pages/console.html" class="nav-link">Console</a>
+                    </li>
+                    <li class="nav-item menu apple">
+                        <a href="../autres_pages/apple.html" class="nav-link">Apple</a>
+                    </li>
+                    <li class="nav-item menu creation">
+                        <a href="../autres_pages/creation.html" class="nav-link">À Propos</a>
+                    </li>
+                    <li class="nav-item menu nouvelles">
+                        <a href="../autres_pages/nouvelles.html" class="nav-link">Nouvelles</a>
+                    </li>
+                    <li class="nav-item menu contact">
+                        <a href="../autres_pages/contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="panier">
+                    <a href="../autres_pages/console.html">
+                    <img src="../medias/icones/panier.png" alt=""></a>
+
+                </div>
+                <div class="lang">
+                    <img src="../medias/icones/langues.png" alt="">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="hero__nouvelles">
+        <picture>
+            <source class="imgLandscape" srcset="../medias\appareils\macbook\01_mac.webp" media="(orientation: landscape)" />
+            <img class="imgPortrait" src="../medias\appareils\iphone\iphone_hero.webp" />
+        </picture>
+        <div class="accueilContraste contraste"></div>
+        <div class="container-fluid mx-auto">
+            <div class="row align-items-center justify-content-center sectionImageGroupe">
+                <div class="colonne align-self-center col-12 col-md-6 col-xxl-4 text-center">
+                    <h1 class="title-1">À Propos</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <div class='Apropos'>
+        <h2>Aperçue</h2>
+        <div class='texteA'>
+        <p>Ce site Web est exploité par ZoomHitskin. Sur ce site, les termes "nous", "notre" et "nos" font référence à ZoomHitskin. ZoomHitskin propose ce site Web, y compris toutes les informations, outils et services disponibles sur ce site pour vous, l'utilisateur, sous réserve de votre acceptation de tous les termes, conditions, politiques et avis énoncés ici.</p>
+        </div>
+      </div>
+      <div class='Histoire'>
+        <h2>Histoire</h2>
+        <div class='texteH'>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      
+      <section class="container mx-auto section__membres">
+        <div class="row membres__cartes">
+            <!--Inclure le titre de la section des membres dans la balise section des membres, mais pas dans celle qui contient les cartes-->
+            <h1 class="membre__titre text-center">Membres</h1>
+            <!--Rendre cette partie responsive et diminuer la taille de cette section ou afficher deux cartes sur deux lignes différentes-->
+                
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card membre__card"> <!--Mettre la classe card pour le div qui contient tous les éléments de la cartes-->
+                    <img class="card-img-top membre__img" data-bs-toggle="modal" data-bs-target="#Tracy" src="../medias/images_membres/tracy.png">
+                    <div class="card-body membre__text"> <!--Ajouter la classe card-body pour le div qui contient le text-->
+                        <p class="card-text membre__role Tracy">Rôle: Project Owner(PO) et Scrum Master</p>
+                        <p class="card-text membre__nom Tracy">Nom: Tracy Gua</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card membre__card"> 
+                    <img class="card-img-top membre__img" data-bs-toggle="modal" data-bs-target="#Maria" src="../medias/images_membres/mariaLaura.png">
+                    <div class="card-body membre__text"> 
+                        <p class="card-text membre__role Maria">Rôle:Developper Back-end & DevOp</p>
+                        <p class="card-text membre__nom Maria">Nom: Maria Laura Coronel</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card membre__card"> 
+                        <img class="card-img-top membre__img" data-bs-toggle="modal" data-bs-target="#Florence" src="../medias/images_membres/florence.png">
+                    <div class="card-body membre__text"> 
+                        <p class="card-text membre__role Flo">Rôle: Designer et Assurance Qualité(QA)</p>                                    
+                        <p class="card-text membre__nom Flo">Nom: Florence Lapierre</p>
+                    </div>
+                </div>
+            </div>
+                            
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div href="#" class="card membre__card"> 
+                    <img class="card-img-top membre__img" data-bs-toggle="modal" data-bs-target="#Natacha" src="../medias/images_membres/natacha.png">
+                    <div class="card-body membre__text"> 
+                        <p class="card-text membre__role Nat">Rôle: Agent de promotion</p>
+                        <p class="card-text membre__nom Nat">Nom: Natacha Abdallah</p>                            
+                    </div>
+                </div>   
+            </div>
+               
+        </div>
+    </section>
+
+    <footer>
+        <div class="groupePied container mx-auto">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-md-4 text-center text-lg-start">
+                    <a class="logoPied" href="..\index.html"><img src="..\medias\icones\logopied.png"><img></a>
+                </div>
+                <div class="logoPartenaire col-12 col-md-4 text-center">
+                    <div class="shopify text-lg-start">
+                        <a href="https://www.facebook.com/ZoomHitSkins">
+                        <img src="..\medias/icones/shopify.png"></img></a>
+                    </div>
+                    
+                    <div class="nintendo text-lg-center">
+                        <a href="https://www.nintendo.com/fr-ca/">
+                        <img src="..\medias/icones/nintendo.png"></img></a>
+                    </div>
+    
+                    <div class="laSource text-lg-end">
+                        <a href="https://www.thesource.ca/fr-ca">
+                        <img src="..\medias/icones/lasource.png"></img></a>
+                    </div>
+                </div>
+    
+                <div class="reseauxsociaux col-12 col-md-4 text-center text-lg-end">
+                    <div class="courriel text-center">                            <a href="mailto:info@zoomhit.ca"><img src="..\medias\icones\reseaux_sociaux\courriel.png"><img></a>
+                        </div>
+                    <div class="facebook text-center">
+                        <a href="https://www.shopify.com/free-trial?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore" ><img
+                             src="..\medias\icones\reseaux_sociaux\facebook.png"></img></a>
+                    </div>
+                    <div class="instagram text-center">
+                        <a href="https://www.instagram.com/zoomhitskins/"><img
+                                src="..\medias\icones\reseaux_sociaux\instagram.png"><img></a>
+                    </div>
+                    <div class="telephone text-center">
+                        <img src="..\medias\icones\reseaux_sociaux\telephone.png"><img>
+                        <a>347-746-0656</a>
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                    <a class="compagnie">© 2022, ZoomHitskin, Zoomers</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!--GSAP 3-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="../script/main.js"></script>
+
+</body>
+
+</html>
