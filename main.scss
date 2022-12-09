@@ -199,6 +199,19 @@ main .row {
   }
 }
 
+//a propos
+.texteA{
+  @include apropos.apercue;
+}
+.texteH{
+  @include apropos.histoire;
+}
+.Apropos{
+  @include apropos.histoire;
+}
+.Histoire{
+  @include apropos.histoire;
+}
 .contact__main {
   //Sauter une ligne quand il n'y a pas d'espace
   .row {
@@ -522,6 +535,10 @@ ul {
   @include nouvelles.sectionNouvelles;
 }
 
+.lienItem__nouvelle, .lienItemP__nouvelle {
+  text-decoration: none; //Retirer le underline du lien du text
+}
+
 .item__nouvelle {
   @include nouvelles.itemNouvelle;
 }
@@ -529,10 +546,29 @@ ul {
 .imgItem__nouvelle {
   @include nouvelles.imgNouvelle;
   border: 2px solid variables.$peche;
+  transition: transform 0.5s; //Faire une transition entre l'état défault et le hover
 }
 
 .itemP__nouvelle {
   @include nouvelles.itemPNouvelle;
+  color: variables.$blanc;
+  background-color: variables.$peche;
+  border: 2px solid variables.$peche;
+  transition: transform 0.5s;
+  opacity: 0.75;
+}
+
+.itemP__nouvelle p {
+  cursor: pointer; //Style pour le text des produits
+  position: relative;
+  top: 75px;
+}
+
+//Diminuer l'img des produits sur le survole de la sourri
+.imgItem__nouvelle:hover, .itemP__nouvelle:hover {
+  //color: variables.$noir; //Hover text boutons produits
+  transform: scale(1.2);
+  transition: transform 0.5s;
 }
 
 //Mise en page du placeholder dans le champ de text

@@ -1,7 +1,11 @@
 @mixin apercue{
-width:70%;
+width:90%;
+//text-align: center;
+margin:auto;
 }
 
-@mixin histoire{
 
+@mixin histoire{
+    width:90%;
+    margin:auto;
 }
