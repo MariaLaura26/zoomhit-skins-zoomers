@@ -16,7 +16,8 @@ body {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 0px;
   width: 100%;
   min-height: 100vh;
@@ -97,7 +98,8 @@ article {
   width: 100%;
 }
 
-.imgLandscape, .imgPortrait {
+.imgLandscape,
+.imgPortrait {
   width: 100%;
   height: 100%;
 }
@@ -147,15 +149,20 @@ main .row {
   transition: transform 0.5s;
 }
 
-.panier, .lang {
+.panier,
+.lang {
   margin: 10px;
 }
 
-.panier img, .lang img {
+.panier img,
+.lang img {
   transition: transform 0.5s;
 }
 
-.logo img:hover, .navbar-toggler-icon img:hover, .panier img:hover, .lang img:hover {
+.logo img:hover,
+.navbar-toggler-icon img:hover,
+.panier img:hover,
+.lang img:hover {
   transform: scale(1.1);
   transition: transform 0.5s;
 }
@@ -163,6 +170,7 @@ main .row {
 /*Carousel*/
 .swiper {
   width: 50%;
+  z-index: 3;
 }
 
 .swiper-slide img {
@@ -570,7 +578,8 @@ ul {
   transition: transform 0.5s;
 }
 
-.lienItemP, .lienItem {
+.lienItemP,
+.lienItem {
   text-decoration: none;
 }
 
@@ -586,7 +595,8 @@ ul {
   transition: transform 0.5s;
 }
 
-.imgItem:hover, .itemP:hover {
+.imgItem:hover,
+.itemP:hover {
   color: #000;
   transform: scale(0.9);
   transition: transform 0.5s;
@@ -648,8 +658,8 @@ ul {
   align-items: center;
   width: 100%;
   /*& ::placeholder {
-     text-align: center;
-  }*/
+         text-align: center;
+      }*/
 }
 .contact__main .section__contact .contact__form .form__nom input, .contact__main .section__contact .contact__form .form__prenom input, .contact__main .section__contact .contact__form .form__courriel input, .contact__main .section__contact .contact__form .form__sujet input {
   width: 100%;
@@ -732,7 +742,8 @@ footer {
   width: 20px;
 }
 
-.telephone, a {
+.telephone,
+a {
   color: #fff;
 }
 
@@ -755,20 +766,30 @@ footer {
   color: #fff;
 }
 
-.shopify img, .nintendo img, .laSource img {
+.shopify img,
+.nintendo img,
+.laSource img {
   transition: transform 0.5s;
 }
 
-.shopify img:hover, .nintendo img:hover, .laSource img:hover {
+.shopify img:hover,
+.nintendo img:hover,
+.laSource img:hover {
   transform: scale(1.5);
   transition: transform 0.5s;
 }
 
-.logoPied img, .courriel img, .facebook img, .instagram img {
+.logoPied img,
+.courriel img,
+.facebook img,
+.instagram img {
   transition: transform 0.5s;
 }
 
-.logoPied img:hover, .courriel img:hover, .facebook img:hover, .instagram img:hover {
+.logoPied img:hover,
+.courriel img:hover,
+.facebook img:hover,
+.instagram img:hover {
   transition: transform 0.5s;
   transform: scale(1.1);
 }
