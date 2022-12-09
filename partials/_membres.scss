@@ -8,8 +8,8 @@
 
 //Style et alignement pour le titre de la section membres
 @mixin membreTitre {  
-    text-align: center;
-    text-decoration: underline;
+     text-align: center;
+ //   text-decoration: underline;
     font-size: 25px;
     margin-bottom: 25px;
 }
@@ -52,10 +52,10 @@
 
 
 @mixin maps__carte {
-    padding: 20px;
+    
     margin-bottom: 100px;
     border-radius:20px;
-    background-color: #EFA48B;
+   
     display: flex;
     align-items: center;
     justify-content: center;
