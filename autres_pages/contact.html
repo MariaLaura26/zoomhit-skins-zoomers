@@ -126,7 +126,7 @@
                     
                 <div class="col-sm-12 col-md-6 col-lg-3">
                     <div class="card membre__card"> <!--Mettre la classe card pour le div qui contient tous les éléments de la cartes-->
-                        <img class="card-img-top membre__img" src="../medias/images_membres/tracy.png">
+                        <img class="card-img-top membre__img" data-bs-toggle="modal" data-bs-target="#Tracy" src="../medias/images_membres/tracy.png">
                         <div class="card-body membre__text"> <!--Ajouter la classe card-body pour le div qui contient le text-->
                             <p class="card-text membre__role Tracy">Rôle: Project Owner(PO) et Scrum Master</p>
                             <p class="card-text membre__nom Tracy">Nom: Tracy Gua</p>
@@ -135,7 +135,7 @@
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-3">
                     <div class="card membre__card"> 
-                        <img class="card-img-top membre__img" src="../medias/images_membres/mariaLaura.png">
+                        <img class="card-img-top membre__img" data-bs-toggle="modal" data-bs-target="#Maria" src="../medias/images_membres/mariaLaura.png">
                         <div class="card-body membre__text"> 
                             <p class="card-text membre__role Maria">Rôle:Developper Back-end & DevOp</p>
                             <p class="card-text membre__nom Maria">Nom: Maria Laura Coronel</p>
@@ -145,7 +145,7 @@
 
                 <div class="col-sm-12 col-md-6 col-lg-3">
                     <div class="card membre__card"> 
-                            <img class="card-img-top membre__img" src="../medias/images_membres/florence.png">
+                            <img class="card-img-top membre__img" data-bs-toggle="modal" data-bs-target="#Florence" src="../medias/images_membres/florence.png">
                         <div class="card-body membre__text"> 
                             <p class="card-text membre__role Flo">Rôle: Designer et Assurance Qualité(QA)</p>                                    
                             <p class="card-text membre__nom Flo">Nom: Florence Lapierre</p>
@@ -155,7 +155,7 @@
                                 
                 <div class="col-sm-12 col-md-6 col-lg-3">
                     <div class="card membre__card"> 
-                        <img class="card-img-top membre__img" src="../medias/images_membres/natacha.png">
+                        <img class="card-img-top membre__img" data-bs-toggle="modal" data-bs-target="#Natacha" src="../medias/images_membres/natacha.png">
                         <div class="card-body membre__text"> 
                             <p class="card-text membre__role Nat">Rôle: Agent de promotion</p>
                             <p class="card-text membre__nom Nat">Nom: Natacha Abdallah</p>                            
@@ -224,56 +224,78 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 
 </body>
-<div class="modal" tabindex="-1">
-    <div class="modal-dialog">
+<div class="modal fade" id="Tracy" tabindex="-1">
+    <div class="modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
             <h2 class="modal-title">Titre de ma fenêtre</h2>
             <button class="btn-close" data-bs-dismiss="modal" aria-label="Fermer la fenêtre"></button>
           </div>
-
-
-      </div>
-    </div>
-  </div>
-
-  <div class="modal" tabindex="-1">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-            <h2 class="modal-title">Titre de ma fenêtre</h2>
-            <div class="modal-body">
-                <p>Message de ma fenêtre</p>
-              </div>
-              <div class="modal-footer">
-                <button class="btn" data-bs-dismiss="modal">Annuler</button>
-              </div>
-            <button class="btn-close" data-bs-dismiss="modal" aria-label="Fermer la fenêtre"></button>
+          <div class="modal-body">
+            <p>Message</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn" data-bs-dismiss="modal">Annuler</button>
           </div>
       </div>
     </div>
   </div>
 
-  <div class="modal" tabindex="-1">
-    <div class="modal-dialog">
+  <div class="modal fade" id="Maria" tabindex="-1">
+    <div class="modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
             <h2 class="modal-title">Titre de ma fenêtre</h2>
             <button class="btn-close" data-bs-dismiss="modal" aria-label="Fermer la fenêtre"></button>
+          </div>
+          <div class="modal-body">
+            <p>Message</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn" data-bs-dismiss="modal">Annuler</button>
           </div>
       </div>
     </div>
   </div>
 
-  <div class="modal" tabindex="-1">
-    <div class="modal-dialog">
+  <div class="modal fade" id="Florence" tabindex="-1">
+    <div class="modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
             <h2 class="modal-title">Titre de ma fenêtre</h2>
             <button class="btn-close" data-bs-dismiss="modal" aria-label="Fermer la fenêtre"></button>
           </div>
+          <div class="modal-body">
+            <p>Message</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn" data-bs-dismiss="modal">Annuler</button>
+          </div>
       </div>
     </div>
   </div>
+
+  <div class="modal fade" id="Natacha" tabindex="-1">
+    <div class="modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="modal-title">Titre de ma fenêtre</h2>
+            <button class="btn-close" data-bs-dismiss="modal" aria-label="Fermer la fenêtre"></button>
+          </div>
+          <div class="modal-body">
+            <p>Message</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn" data-bs-dismiss="modal">Annuler</button>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  
+
+  
 
 </html>
