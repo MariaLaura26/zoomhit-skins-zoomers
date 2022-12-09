@@ -686,7 +686,7 @@ a {
  }
 
  .heros .container {
-   top: 60%;
+   top:60%;
    position: absolute;
    z-index: 3;
    top: 60%;
@@ -696,12 +696,14 @@ a {
    height: 100%;
  }
 
- .contraste {
-    background: linear-gradient(
-       to top,
-      #ffffff, variables.$peche, #ffffff
-    );
- }
+//  .contraste {
+//     background: linear-gradient(
+//        to top,
+//       #ffffff, variables.$peche, #ffffff
+//     );
+//  }
+
+ 
 
 
 
