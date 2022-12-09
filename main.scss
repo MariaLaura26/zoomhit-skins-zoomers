@@ -215,6 +215,16 @@ main .row {
 .title-a{
   @include apropos.titre;
 }
+@media screen and (max-width: 992px) {
+  .titrea {
+    @include apropos.titrea;
+  }
+}
+@media screen and (max-width: 992px) {
+  .titreh{
+    @include apropos.titrea;
+  }
+}
 
 .contact__main {
   //Sauter une ligne quand il n'y a pas d'espace
