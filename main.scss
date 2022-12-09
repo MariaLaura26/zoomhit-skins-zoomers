@@ -534,6 +534,15 @@ ul {
   @include console.hero;
 }
 
+.accueilContraste {
+  @include nouvelles.accueilContraste;
+  background-color: variables.$pecheopacity;
+}
+
+.contraste {
+  @include nouvelles.contraste;
+}
+
 .section__nouvelles {
   @include nouvelles.sectionNouvelles;
 }
@@ -544,6 +553,7 @@ ul {
 
 .item__nouvelle {
   @include nouvelles.itemNouvelle;
+  transition: transform 0.5s;
 }
 
 .imgItem__nouvelle {
@@ -557,7 +567,6 @@ ul {
   color: variables.$blanc;
   font-weight: bold;
   background-color: variables.$pecheopacity;
-  transition: transform 0.5s;
 }
 
 .itemP__nouvelle p {
@@ -569,7 +578,7 @@ ul {
 //Diminuer l'img des produits sur le survole de la sourri
 .item__nouvelle:hover {
   //color: variables.$noir; //Hover text boutons produits
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: transform 0.5s;
 }
 
