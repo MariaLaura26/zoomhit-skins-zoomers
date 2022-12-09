@@ -783,9 +783,11 @@ a {
    justify-content: space-around;
 }
 ///temoignages
+
 .section__temoignages{
    margin-top: 200px;
    text-align: center;
+   margin-bottom: 100px;
 }
 
 .accueil__temoignages__nom{
@@ -804,4 +806,5 @@ a {
    margin-top: 10px;
    border: 1px solid variables.$peche;
    margin-left: 5px;
+   border-radius: 20px;
 }
