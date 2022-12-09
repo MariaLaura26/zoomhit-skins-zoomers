@@ -17,6 +17,7 @@
 </head>
 
 <body>
+    <div class="contraste">
     <!--Main-->
     <main class="container"> <!--Pourquoi le nav est dans le main? Le main c'est le héros dans ce cas-->
     <header class="row">
@@ -63,7 +64,29 @@
             </div>
         </nav>
     </header>
-    <article class="row">
+    
+    <section class="heros">
+      <div class="mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img class="img-fluid" src="medias/appareils/ipad/01_ipad.png"     alt="L'image est innaccessible"></div>
+          <div class="swiper-slide"><img class="img-fluid" src="medias/appareils/iphone/01_iphone.png" alt="L'image est innaccessible"></div>
+          <div class="swiper-slide"><img class="img-fluid" src="medias/appareils/iphone/03_iphone.png" alt="L'image est innaccessible"></div>
+          <!-- <source srcset="img/btr.jpg" media="(min-width: 1000px)">
+            <img  src="img/elevate.jpg" class="btr img-fluid"> -->
+        </div>
+      </div>
+      <div class="container">
+        <div class="row justify-content-start">
+          <div class="col-sm-8 col-lg-12">
+            <h1>Discographie</h1>
+            <p class="text-lg-start">Big Time Rush a jusqu'à présent 3 albums studio répartis entre 2009 et 2014.</p>
+            <a href="#main"><button type="button" class="btn">En savoir plus</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- <article class="row"> -->
         <!-- 
         <section class="heros__boite-description">
             <h1 class="heros__titre-1">Des skins pour tous vos appareils!</h1>
@@ -71,8 +94,8 @@
             </p>
         </section>
   
--->
-            <div class="swiper col-6">
+-->       
+            <!-- <div class="swiper col-6">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide no1"><img src="medias/appareils/ipad/01_ipad.webp" alt="L'image est innaccessible"></div>
                   <div class="swiper-slide no3"><img src="medias/appareils/iphone/01_iphone.webp" alt="L'image est innaccessible">    </div>
@@ -87,8 +110,7 @@
                 <div class="swiper-pagination"></div>
             </div>
 
-    </article>
-   
+    </article> -->
 </main>
 <footer>
     <div class="groupePied container mx-auto">
@@ -150,13 +172,13 @@
   
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script>
-      var swiper = new Swiper(".swiper", {
-        autoplay: {
+      var swiper = new Swiper(".mySwiper", {
+      autoplay: {
         delay: 2000,
-        },
-        direction: 'horizontal',
-        loop: 'true',
-        effect: 'slide',
+      },
+      direction: 'horizontal',
+      loop: 'true',
+      effect: 'flip',
     });
   </script>
   <script>
