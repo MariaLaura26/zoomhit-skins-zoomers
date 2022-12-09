@@ -49,7 +49,7 @@ body {
 //Ajouter les typos pour les titres de chaque page et afficher la sourri par défault
 h1 {
   font-family: variables.$titre;
-  font-size: 24px;
+ // font-size: 24px;
   cursor: default;
   text-decoration: underline;
 }
@@ -200,18 +200,19 @@ main .row {
 }
 
 //a propos
-.texteA{
+.Apropos{
   @include apropos.apercue;
 }
-.texteH{
-  @include apropos.histoire;
-}
-.Apropos{
-  @include apropos.histoire;
+.texteA{
+  @include apropos.apercue;
 }
 .Histoire{
   @include apropos.histoire;
 }
+.texteH{
+  @include apropos.histoire;
+}
+
 .contact__main {
   //Sauter une ligne quand il n'y a pas d'espace
   .row {
