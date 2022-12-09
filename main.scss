@@ -658,6 +658,11 @@ a {
    height: 100%;
    object-fit: contain;
  }
+ .heros{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
 
  .heros .container {
    top: 60%;
@@ -671,10 +676,12 @@ a {
  }
 
  .contraste {
-   background: linear-gradient(
-     to bottom,
-     rgba(0, 0, 0, 0),
-     rgb(168, 52, 62, 0.3)
-   );
+    background: linear-gradient(
+       to top,
+      #ffffff, variables.$peche, #ffffff
+    );
  }
+
+
+
 
