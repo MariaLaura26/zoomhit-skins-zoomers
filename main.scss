@@ -228,9 +228,20 @@ main .row {
       border: 2px solid variables.$peche;
     }
 
+    .membre__img:hover{
+     transition: 0.5s;
+     transform: scale(0.9);
+    }
+
     .membre__text {
       @include membres.membreText;
       background-color: variables.$peche;
+      transition: transform 0.5s;
+    }
+
+    .membre__text:hover {
+      transition: 0.5s;
+     transform: scale(0.9);
     }
 
     .membre__role {

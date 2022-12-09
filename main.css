@@ -238,6 +238,7 @@ main .row {
   max-height: 400px;
   margin-bottom: 200px;
   border: none;
+  transition: transform 0.5s;
 }
 .contact__main .section__membres .membre__img {
   width: 100%;
@@ -246,6 +247,10 @@ main .row {
   align-self: center;
   border-radius: 20px;
   border: 2px solid #FCC8B2;
+}
+.contact__main .section__membres .membre__img:hover {
+  transition: 0.5s;
+  transform: scale(0.9);
 }
 .contact__main .section__membres .membre__text {
   margin: 0 auto;
@@ -256,6 +261,11 @@ main .row {
   text-align: center;
   border-radius: 5px 5px 5px 5px;
   background-color: #FCC8B2;
+  transition: transform 0.5s;
+}
+.contact__main .section__membres .membre__text:hover {
+  transition: 0.5s;
+  transform: scale(0.9);
 }
 .contact__main .section__membres .membre__role {
   padding: 10px 0px;
@@ -846,11 +856,4 @@ a {
 
 .maps__titre1-carte {
   text-align: center;
-}
-
-.modal__modalbody {
-  width: 300px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
 }/*# sourceMappingURL=main.css.map */
