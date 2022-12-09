@@ -552,10 +552,9 @@ ul {
 .itemP__nouvelle {
   @include nouvelles.itemPNouvelle;
   color: variables.$blanc;
-  background-color: variables.$peche;
-  border: 2px solid variables.$peche;
+  font-weight: bold;
+  background-color: variables.$pecheopacity;
   transition: transform 0.5s;
-  opacity: 0.75;
 }
 
 .itemP__nouvelle p {
@@ -565,7 +564,7 @@ ul {
 }
 
 //Diminuer l'img des produits sur le survole de la sourri
-.imgItem__nouvelle:hover, .itemP__nouvelle:hover {
+.item__nouvelle:hover {
   //color: variables.$noir; //Hover text boutons produits
   transform: scale(1.2);
   transition: transform 0.5s;

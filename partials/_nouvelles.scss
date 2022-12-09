@@ -63,7 +63,7 @@
 @mixin imgNouvelle {
     width: 100%;
     height: 100%;
-    //object-fit: contain;
+    object-fit: cover;
     margin: auto;
     border-radius: 20px;
     overflow: hidden;
@@ -76,6 +76,6 @@
     width: 100%;
     height: 100%;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 20px;
     font-size: 18px;
 }
