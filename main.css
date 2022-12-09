@@ -986,8 +986,8 @@ a {
 }
 
 .mySwiper {
-  width: 50%;
-  height: 50%;
+  width: 60%;
+  height: 60%;
 }
 
 .swiper-slide .img {
@@ -1008,6 +1008,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
+  width: 100%;
 }
 
 .heros .container {
