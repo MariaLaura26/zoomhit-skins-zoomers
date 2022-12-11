@@ -1,9 +1,9 @@
 @mixin hero__nouvelles {
-    position: relative;
-    margin: 0px;
-    width: 100%;
-    //height: 100vh;
-  }
+  position: relative;
+  margin: 0px;
+  width: 100%;
+  //height: 100vh;
+}
 
 @mixin imgHero {
   width: 100%;
@@ -11,115 +11,115 @@
 }
 
 @mixin contraste {
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
 }
 
 /*Mettre le filtre de couleur par dessus de la balise picture*/
 @mixin accueilContraste {
-   // opacity: 50%;
+  // opacity: 50%;
   //  z-index: 1;
 }
-  
+
 /*Couvrir la section avec l'image en portrait sans la déformer et ajuster sa position*/
 @mixin imgPortrait {
-    object-fit: cover;
-    object-position: 0% 100%;
+  object-fit: cover;
+  object-position: 0% 100%;
 }
-  
+
 /*Cacher l'image landscape par défaut*/
 @mixin imgLandscape {
-    object-fit: cover;
-    object-position: 0% 100%;
+  object-fit: cover;
+  object-position: 0% 100%;
 }
 
 /*Centrer la colonne verticalement et horizontalement*/
 /*Aligner le title-1 et la présentation du groupe au milieu de la colonne*/
 @mixin h1Nouvelles {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: 1;
-    margin-top: 25px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 40px;
-    color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  margin-top: 25px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
 }
 
 @mixin sectionNouvelles {
-    display:grid;
-    grid-template-columns: repeat(auto-fit,300px);
-    grid-template-rows:repeat(auto-fit);
-    gap:50px;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  grid-template-rows: repeat(auto-fit);
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
 @mixin itemNouvelle {
-    position: relative;
-    margin-top:50px;
-    width:300px;
-    height:100%;
-    display:inline-block;
+  position: relative;
+  margin-top: 50px;
+  width: 300px;
+  height: 100%;
+  display: inline-block;
 }
 
 @mixin imgNouvelle {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    margin: auto;
-    border-radius: 20px;
-    overflow: hidden;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: auto;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 @mixin itemPNouvelle {
-    z-index: 1;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    border-radius: 20px;
-    font-size: 18px;
+  z-index: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 18px;
 }
 
 //Changer taille de la typo pour la première nouvelle
 @mixin itemPNouvelle01 {
-    z-index: 1;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    border-radius: 20px;
-    font-size: 20px;
+  z-index: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 20px;
 }
 
 @mixin nouvelleP {
-    cursor: pointer; //Style pour le text des produits
-    position: relative;
-    top: 35%;
+  cursor: pointer; //Style pour le text des produits
+  position: relative;
+  top: 35%;
 }
 
 @mixin titreNouvelle {
-    padding: 0px 15px;
+  padding: 0px 15px;
 }
 
 @mixin btnNouvelles {
-    text-decoration: none;
-    padding: 5px 25px;
-    align-self: center; //Aligner le bouton au centre
-    border-radius: 20px;
-    font-size: 20px;
-    border: none;
-    margin: 0px auto;
-    margin-bottom: 25px;
+  text-decoration: none;
+  padding: 5px 25px;
+  align-self: center; //Aligner le bouton au centre
+  border-radius: 20px;
+  font-size: 20px;
+  border: none;
+  margin: 0px auto;
+  margin-bottom: 25px;
 }

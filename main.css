@@ -53,12 +53,6 @@ body {
   font-family: "Ruda", SemiBold;
 }
 
-h1 {
-  font-family: "Roboto", Medium;
-  cursor: default;
-  text-decoration: underline;
-}
-
 .title-1 {
   position: absolute;
   top: 50%;
@@ -86,16 +80,119 @@ article {
   margin-bottom: 20px;
 }
 
-.heros__boite-description {
+main {
+  width: 100%;
+}
+
+.contraste-div {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 85%;
+  background-color: rgba(239, 164, 139, 0.5);
+  opacity: 20%;
+}
+
+.slogan {
   overflow: hidden;
   text-overflow: ellipsis;
-  padding: 30px;
-  margin-top: 60px;
-  height: 400px;
-  border: 1px solid #EFA48B;
+  padding: 20px;
   border-radius: 20px;
   text-align: center;
   height: 100%;
+  width: 70%;
+  margin: 0 auto;
+  color: #fff;
+  font-family: "Ruda", SemiBold;
+  z-index: 2;
+}
+
+.slogan h1 {
+  color: #fff;
+  text-shadow: 3px 3px 3px #000;
+}
+
+.slogan .description {
+  margin-top: 30px;
+  font-size: 25px;
+  text-shadow: 3px 3px 3px #000;
+}
+
+/**/
+.mySwiper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-slide img {
+  width: 100vw;
+  height: 85vh;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: 0% 70%;
+  object-position: 0% 70%;
+}
+
+.heros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-image: url("medias/icones/rectangle_backg.png");
+  border-bottom: 1px solid #efa48b;
+}
+
+.heros .container {
+  position: absolute;
+}
+
+.section__nouvelles.accueil__title {
+  margin-top: 60px;
+  font-size: 30px;
+  font-family: "Roboto", thin;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.section__nouvelles.accueil {
+  margin-top: 40px;
+}
+
+.section__temoignages {
+  margin-top: 200px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.accueil__temoignages__nom {
+  font-family: "Roboto", Medium;
+  font-size: 30px;
+  padding: 20px;
+}
+
+.section__temoignages__titre {
+  margin-top: 60px;
+  font-size: 30px;
+  font-family: "Roboto", thin;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.accueil__temoignages__text {
+  font-size: 18px;
+}
+
+.swiper-slide.temoignage {
+  width: 100%;
+  height: 150px;
+  margin-top: 20px;
+  border: 1px solid #fcc8b2;
+  margin-left: 5px;
+  border-radius: 20px;
 }
 
 .hero__nouvelles {
@@ -112,16 +209,16 @@ article {
 
 .imgPortrait {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: 0% 100%;
-     object-position: 0% 100%;
+  object-position: 0% 100%;
 }
 
 .imgLandscape {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: 0% 100%;
-     object-position: 0% 100%;
+  object-position: 0% 100%;
 }
 
 /*.contraste {
@@ -147,7 +244,7 @@ main .row {
 }
 
 .menu a:hover {
-  color: #EFA48B;
+  color: #efa48b;
 }
 
 .navbar-toggler-icon img {
@@ -171,18 +268,6 @@ main .row {
 .lang img:hover {
   transform: scale(1.1);
   transition: transform 0.5s;
-}
-
-/*Carousel*/
-.swiper {
-  width: 50%;
-  z-index: 3;
-}
-
-.swiper-slide img {
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 /* Menu hamburger*/
@@ -223,7 +308,7 @@ main .row {
   margin-top: 10%;
   margin-bottom: 5%;
   border-radius: 20px;
-  border: 2px solid #FCC8B2;
+  border: 2px solid #fcc8b2;
 }
 
 .Apropos:hover {
@@ -246,7 +331,7 @@ main .row {
   margin-top: 5%;
   margin-bottom: 5%;
   border-radius: 20px;
-  border: 2px solid #FCC8B2;
+  border: 2px solid #fcc8b2;
 }
 
 .Histoire:hover {
@@ -317,7 +402,7 @@ main .row {
   max-width: 400px;
   align-self: center;
   border-radius: 20px;
-  border: 2px solid #FCC8B2;
+  border: 2px solid #fcc8b2;
 }
 .section__membres .membre__img:hover {
   transition: 0.5s;
@@ -331,7 +416,7 @@ main .row {
   margin-top: 10px;
   text-align: center;
   border-radius: 5px 5px 5px 5px;
-  background-color: #FCC8B2;
+  background-color: #fcc8b2;
   transition: transform 0.5s;
 }
 .section__membres .membre__text:hover {
@@ -353,7 +438,7 @@ main .row {
 }*/
 .imgPortraitContain {
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   width: 100%;
 }
 
@@ -377,7 +462,7 @@ main .row {
     align-items: center;
     text-align: center;
     -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
   }
   .imageConsole {
     display: block;
@@ -388,10 +473,10 @@ main .row {
     position: absolute !important;
     transform: translate3d(55%, 120%, 0px) !important;
     flex-wrap: wrap;
-    color: #FCC8B2;
+    color: #fcc8b2;
     margin-left: 30px !important;
     -o-object-fit: contain !important;
-       object-fit: contain !important;
+    object-fit: contain !important;
   }
 }
 @media screen and (max-width: 900px) {
@@ -407,10 +492,10 @@ main .row {
     position: absolute !important;
     transform: translate3d(55%, 90%, 0px) !important;
     flex-wrap: wrap;
-    color: #FCC8B2;
+    color: #fcc8b2;
     margin-left: 30px !important;
     -o-object-fit: contain !important;
-       object-fit: contain !important;
+    object-fit: contain !important;
   }
 }
 @media screen and (min-width: 600px) {
@@ -424,12 +509,12 @@ main .row {
     align-items: center;
     text-align: center;
     -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
   }
   .enteteIcon a {
     list-style-type: none;
-    background-color: #EFA48B;
-    box-shadow: #EFA48B;
+    background-color: #efa48b;
+    box-shadow: #efa48b;
     display: block;
     text-align: center;
     padding: 10px;
@@ -445,19 +530,19 @@ main .row {
     position: absolute !important;
     transform: translate3d(55%, 90%, 0px) !important;
     flex-wrap: wrap;
-    color: #FCC8B2;
+    color: #fcc8b2;
     margin-left: 30px !important;
     -o-object-fit: contain !important;
-       object-fit: contain !important;
+    object-fit: contain !important;
   }
 }
 @media screen and (max-width: 600px) {
   .icon p {
     text-align: center;
-    color: #FCC8B2;
+    color: #fcc8b2;
     font-size: 18px;
     -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
   }
   .enteteIcon {
     display: grid;
@@ -469,12 +554,12 @@ main .row {
     align-items: center;
     text-align: center;
     -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
   }
   .enteteIcon a {
     list-style-type: none;
-    background-color: #EFA48B;
-    box-shadow: #EFA48B;
+    background-color: #efa48b;
+    box-shadow: #efa48b;
     display: block;
     text-align: center;
     padding: 10px;
@@ -494,10 +579,10 @@ main .row {
     margin-left: 20px;
     position: absolute !important;
     transform: translate3d(0%, 90%, 0px) !important;
-    color: #FCC8B2;
+    color: #fcc8b2;
     margin-left: 30px !important;
     -o-object-fit: contain !important;
-       object-fit: contain !important;
+    object-fit: contain !important;
   }
 }
 @media screen and (max-width: 375px) {
@@ -511,7 +596,7 @@ main .row {
     align-items: center;
     text-align: center;
     -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
   }
   .enteteIcon a {
     display: grid;
@@ -523,7 +608,7 @@ main .row {
     align-items: center;
     text-align: center;
     -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     width: 90% !important;
     font-size: 12px !important;
   }
@@ -536,10 +621,10 @@ main .row {
     margin-left: 20px;
     position: absolute !important;
     transform: translate3d(0%, 90%, 0px) !important;
-    color: #FCC8B2;
+    color: #fcc8b2;
     margin-left: 30px !important;
     -o-object-fit: contain !important;
-       object-fit: contain !important;
+    object-fit: contain !important;
   }
 }
 .enteteIcon a:hover {
@@ -597,37 +682,37 @@ ul {
 @media screen and (min-width: 900px) {
   .icon p {
     text-align: center;
-    color: #FCC8B2;
+    color: #fcc8b2;
     font-size: 20px;
     width: 100%;
     -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
   }
 }
 @media screen and (min-width: 600px) {
   .icon p {
     text-align: center;
-    color: #FCC8B2;
+    color: #fcc8b2;
     font-size: 18px;
     -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
   }
 }
 @media screen and (max-width: 375px) {
   .icon p {
     text-align: center;
-    color: #FCC8B2;
+    color: #fcc8b2;
     font-size: 12px;
     width: 100%;
     -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
   }
 }
 .icon img {
   width: 100%;
   height: 10%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   margin-left: auto;
 }
 
@@ -652,12 +737,12 @@ ul {
 .imgItem {
   width: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   margin-left: auto;
   border-radius: 20px;
-  border: 2px solid #FCC8B2;
+  border: 2px solid #fcc8b2;
   overflow: hidden;
-  border: 2px solid #FCC8B2;
+  border: 2px solid #fcc8b2;
   transition: transform 0.5s;
 }
 
@@ -673,8 +758,8 @@ ul {
   padding: 3px;
   font-size: 18px;
   color: #fff;
-  background-color: #FCC8B2;
-  border: 2px solid #FCC8B2;
+  background-color: #fcc8b2;
+  border: 2px solid #fcc8b2;
   transition: transform 0.5s;
 }
 
@@ -733,9 +818,13 @@ ul {
   border-radius: 25px;
   padding: 5px 100px;
   text-align: center;
-  border: solid 2px #FCC8B2;
+  border: solid 2px #fcc8b2;
 }
-.contact__main .section__contact .contact__form .form__nom, .contact__main .section__contact .contact__form .form__prenom, .contact__main .section__contact .contact__form .form__courriel, .contact__main .section__contact .contact__form .form__sujet, .contact__main .section__contact .contact__form .form__message {
+.contact__main .section__contact .contact__form .form__nom,
+.contact__main .section__contact .contact__form .form__prenom,
+.contact__main .section__contact .contact__form .form__courriel,
+.contact__main .section__contact .contact__form .form__sujet,
+.contact__main .section__contact .contact__form .form__message {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -744,10 +833,14 @@ ul {
          text-align: center;
       }*/
 }
-.contact__main .section__contact .contact__form .form__nom input, .contact__main .section__contact .contact__form .form__prenom input, .contact__main .section__contact .contact__form .form__courriel input, .contact__main .section__contact .contact__form .form__sujet input {
+.contact__main .section__contact .contact__form .form__nom input,
+.contact__main .section__contact .contact__form .form__prenom input,
+.contact__main .section__contact .contact__form .form__courriel input,
+.contact__main .section__contact .contact__form .form__sujet input {
   width: 100%;
 }
-.contact__main .section__contact .contact__form .form__prenom label, .contact__main .section__contact .contact__form .form__courriel label {
+.contact__main .section__contact .contact__form .form__prenom label,
+.contact__main .section__contact .contact__form .form__courriel label {
   margin-right: 25px;
 }
 .contact__main .section__contact .contact__form .form__message {
@@ -761,16 +854,16 @@ ul {
   border-radius: 25px;
   padding: 5px 100px;
   width: 100%;
-  border: solid 2px #FCC8B2;
+  border: solid 2px #fcc8b2;
 }
 .contact__main .section__contact .contact__form .btn__envoyer {
   text-decoration: none;
   padding: 5px 25px;
   align-self: center;
-  background-color: #FCC8B2;
+  background-color: #fcc8b2;
 }
 .contact__main .section__contact .contact__form .btn__envoyer:hover {
-  background-color: #EFA48B;
+  background-color: #efa48b;
 }
 
 .hero__nouvelles {
@@ -809,15 +902,25 @@ ul {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin: auto;
   border-radius: 20px;
   overflow: hidden;
-  border: 2px solid #FCC8B2;
+  border: 2px solid #fcc8b2;
   transition: transform 0.5s;
 }
 .section__nouvelles .item__nouvelle .lienItemP__nouvelle {
   text-decoration: none;
+  /*
+  .item__nouvelle:first-child {
+    @include nouvelles.itemPNouvelle01;
+    color: variables.$blanc;
+    background-color: none;
+
+    .titre__nouvelle {
+      @include nouvelles.titreNouvelle;
+    }
+  }*/
 }
 .section__nouvelles .item__nouvelle .lienItemP__nouvelle .itemP__nouvelle {
   z-index: 1;
@@ -832,27 +935,16 @@ ul {
   color: #fff;
   background-color: rgba(239, 164, 139, 0.5);
 }
-.section__nouvelles .item__nouvelle .lienItemP__nouvelle .itemP__nouvelle .titre__nouvelle {
-  padding: 0px 15px;
-}
-.section__nouvelles .item__nouvelle .lienItemP__nouvelle .itemP__nouvelle__01 {
-  z-index: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  border-radius: 20px;
-  font-size: 20px;
-  color: #fff;
-  background-color: rgba(233, 116, 77, 0.5);
-}
-.section__nouvelles .item__nouvelle .lienItemP__nouvelle .itemP__nouvelle__01 .titre__nouvelle {
+.section__nouvelles
+  .item__nouvelle
+  .lienItemP__nouvelle
+  .itemP__nouvelle
+  .titre__nouvelle {
   padding: 0px 15px;
 }
 
-.itemP__nouvelle p, .itemP__nouvelle__01 p {
+.itemP__nouvelle p,
+.itemP__nouvelle__01 p {
   cursor: pointer;
   position: relative;
   top: 35%;
@@ -872,13 +964,13 @@ ul {
   border: none;
   margin: 0px auto;
   margin-bottom: 25px;
-  background-color: #FCC8B2;
+  background-color: #fcc8b2;
   transition: transform 0.5s;
 }
 
 .btnNouvelles:hover {
-  background-color: #EFA48B;
-  border: solid 2px #FCC8B2;
+  background-color: #efa48b;
+  border: solid 2px #fcc8b2;
   transform: scale(1.1);
   transition: transform 0.5s;
 }
@@ -987,7 +1079,7 @@ a {
 }
 
 .section__erreur404 {
-  background-color: #EFA48B;
+  background-color: #efa48b;
   height: 700px;
   display: flex;
   align-items: center;
@@ -1038,72 +1130,40 @@ a {
   text-align: center;
 }
 
-.mySwiper {
-  width: 60%;
-  height: 60%;
-}
-
-.swiper-slide .img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  height: 100%;
-  width: 100%;
-}
-
-.img-fluid {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
-.heros {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-}
-
-.heros .container {
-  top: 40%;
-  position: absolute;
-  z-index: 3;
-  top: 40%;
-}
-
-.heros .row {
-  height: 100%;
-}
-
-.accueil__nouvelles {
-  display: flex;
-  justify-content: space-around;
-}
-
-.section__temoignages {
-  margin-top: 200px;
-  text-align: center;
-  margin-bottom: 100px;
-}
-
-.accueil__temoignages__nom {
-  font-family: "Roboto", Medium;
-  font-size: 30px;
-}
-
-.section__temoignages__titre {
-  text-align: center;
-  font-family: "Roboto", Medium;
-  font-size: 30px;
-  text-decoration: underline;
-}
-
-.swiper-slide.temoignage {
-  width: 100%;
-  height: 200px;
-  margin-top: 10px;
-  border: 1px solid #FCC8B2;
-  margin-left: 5px;
+/* single product */
+.single-product__boite {
+  z-index: 10;
+  border: 2px solid #fcc8b2;
+  margin-bottom: 30px;
   border-radius: 20px;
-}/*# sourceMappingURL=main.css.map */
+}
+.single-product__boite-image {
+  width: 400px;
+}
+.single-product__image {
+  width: 100%;
+}
+.single-product__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 6px solid white;
+  border-radius: 20px;
+}
+.single-product__nom {
+  font-size: 25px;
+  padding: 10px;
+  font-weight: bold;
+}
+.single-product__prix {
+  width: 50%;
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 27px;
+}
+.single-product__description {
+  padding: 10px;
+  border-radius: 20px;
+}
+/*# sourceMappingURL=main.css.map */

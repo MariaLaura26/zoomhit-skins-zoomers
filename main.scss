@@ -6,7 +6,6 @@
 @use "partials/apropos";
 @use "partials/variables";
 
-
 @use "partials/header";
 @use "partials/footer";
 @use "partials/console";
@@ -28,7 +27,6 @@ body {
 //Ajouter la fonte pour tout le text dans la page
 body {
   font-family: variables.$text;
-  
 }
 
 //inclure le mixin de la navigation dans le partials header
@@ -47,14 +45,6 @@ body {
   font-family: variables.$menu; //Vérifier que c'est la bonne
 }
 
-//Ajouter les typos pour les titres de chaque page et afficher la sourri par défault
-h1 {
-  font-family: variables.$titre;
- // font-size: 24px;
-  cursor: default;
-  text-decoration: underline;
-}
-
 .title-1 {
   @include nouvelles.h1Nouvelles;
 }
@@ -69,21 +59,116 @@ p {
   cursor: default;
 }
 
-//Aligner les liens des menus au centre
-//Header
+//heros accueil
 article {
   margin-bottom: 20px;
 }
-.heros__boite-description {
+main {
+  width: 100%;
+}
+.contraste-div {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 85%;
+  background-color: variables.$pecheopacity;
+  opacity: 20%;
+}
+.slogan {
   overflow: hidden;
   text-overflow: ellipsis;
-  padding: 30px;
-  margin-top: 60px;
-  height: 400px;
-  border: 1px solid variables.$pechehover;
+  // border: 1px solid variables.$pechehover;
+  //background-color: variables.$noiropacity;
+  padding: 20px;
   border-radius: 20px;
   text-align: center;
   height: 100%;
+  width: 70%;
+  margin: 0 auto;
+  color: variables.$blanc;
+  font-family: variables.$menu;
+  // box-shadow: 0 0 10px 10px variables.$noiropacity;
+  z-index: 2;
+}
+.slogan h1 {
+  color: variables.$blanc;
+  text-shadow: 3px 3px 3px variables.$noir;
+}
+.slogan .description {
+  margin-top: 30px;
+  font-size: 25px;
+  text-shadow: 3px 3px 3px variables.$noir;
+}
+//hero-swiper carousel
+/**/
+.mySwiper {
+  width: 100%;
+  overflow: hidden;
+}
+.swiper-slide img {
+  width: 100vw;
+  height: 85vh;
+  object-fit: cover;
+  object-position: 0% 70%;
+}
+.heros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-image: url("medias/icones/rectangle_backg.png");
+  border-bottom: 1px solid variables.$pechehover;
+}
+
+.heros .container {
+  position: absolute;
+}
+
+///nouvelles dans accueil
+.section__nouvelles.accueil__title {
+  margin-top: 60px;
+  font-size: 30px;
+  font-family: variables.$text;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.section__nouvelles.accueil {
+  margin-top: 40px;
+}
+
+///temoignages
+.section__temoignages {
+  margin-top: 200px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.accueil__temoignages__nom {
+  font-family: variables.$titre;
+  font-size: 30px;
+  padding: 20px;
+}
+.section__temoignages__titre {
+  margin-top: 60px;
+  font-size: 30px;
+  font-family: variables.$text;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.accueil__temoignages__text {
+  font-size: 18px;
+}
+.swiper-slide.temoignage {
+  width: 100%;
+  height: 150px;
+  margin-top: 20px;
+  border: 1px solid variables.$peche;
+  margin-left: 5px;
+  border-radius: 20px;
 }
 
 //Hero nouvelle
@@ -111,7 +196,7 @@ article {
 
 @media (orientation: landscape) {
   .hero__nouvelles {
-   height: 100vh !important;
+    height: 100vh !important;
   }
 }
 
@@ -119,7 +204,7 @@ main .row {
   display: flex;
   flex-wrap: nowrap;
 }
-
+//
 //Cibler tous les liens du menus
 .menu a {
   color: variables.$blanc;
@@ -158,15 +243,6 @@ main .row {
   @include footer.transition;
 }
 
-/*Carousel*/
-.swiper {
-  width: 50%;
-  z-index: 3;
-}
-.swiper-slide img {
-  width: 100%;
-  object-fit: contain;
-}
 /* Menu hamburger*/
 @media screen and (max-width: 992px) {
   .menu-header {
@@ -201,38 +277,37 @@ main .row {
 }
 
 //a propos
-.Apropos{
+.Apropos {
   @include apropos.apercueT;
 }
-.Apropos:hover{
+.Apropos:hover {
   transform: scale(0.9);
   transition: transform 0.5s;
 }
-.texteA{
+.texteA {
   @include apropos.apercue;
 }
-.Histoire{
+.Histoire {
   @include apropos.histoireT;
 }
-.Histoire:hover{ 
+.Histoire:hover {
   transform: scale(0.9);
   transition: transform 0.5s;
 }
-.texteH{
+.texteH {
   @include apropos.histoire;
 }
-.title-a{
+.title-a {
   @include apropos.titre;
 }
 
 .titrea {
-    @include apropos.titrea;
-  }
+  @include apropos.titrea;
+}
 
-.titreh{
-    @include apropos.titrea;
-  }
-
+.titreh {
+  @include apropos.titrea;
+}
 
 .contact__main {
   //Sauter une ligne quand il n'y a pas d'espace
@@ -244,55 +319,54 @@ main .row {
 }
 
 //membres
-  //Indentation du code des membres
-  .section__membres {
-   @include membres.sectionMembres;
-
+//Indentation du code des membres
+.section__membres {
+  @include membres.sectionMembres;
 
   // background-color: tomato;
-   .membres__cartes {
-     display: flex;
-     justify-content: space-evenly;
-     width: 1000px;
-   }
+  .membres__cartes {
+    display: flex;
+    justify-content: space-evenly;
+    width: 1000px;
+  }
 
-   .membre__titre {
-     @include membres.membreTitre;
-   }
+  .membre__titre {
+    @include membres.membreTitre;
+  }
 
-   .membre__card {
-     @include membres.membreCard;
-   }
+  .membre__card {
+    @include membres.membreCard;
+  }
 
-   .membre__img {
-     @include membres.membreImg;
-     border: 2px solid variables.$peche;
-   }
+  .membre__img {
+    @include membres.membreImg;
+    border: 2px solid variables.$peche;
+  }
 
-   .membre__img:hover{
+  .membre__img:hover {
     transition: 0.5s;
     transform: scale(0.9);
-   }
+  }
 
-   .membre__text {
-     @include membres.membreText;
-     background-color: variables.$peche;
-     transition: transform 0.5s;
-   }
+  .membre__text {
+    @include membres.membreText;
+    background-color: variables.$peche;
+    transition: transform 0.5s;
+  }
 
-   .membre__text:hover {
-     transition: 0.5s;
+  .membre__text:hover {
+    transition: 0.5s;
     transform: scale(0.9);
-   }
+  }
 
-   .membre__role {
-     @include membres.membreRole;
-   }
+  .membre__role {
+    @include membres.membreRole;
+  }
 
-   .membre__nom {
-     @include membres.membreNom;
-   }
- }
+  .membre__nom {
+    @include membres.membreNom;
+  }
+}
 
 //Changer la hauteur du text des membres pour qu'ils soient tous aligné.
 /*
@@ -336,20 +410,20 @@ main .row {
     @include console.imageConsole9;
   }
 }
-@media screen and (max-width: 600px){
-   .icon p{
-      @include console.pmoyen;
-   }
-   .enteteIcon{
-      @include console.enteteIcon;
-   }  
-   .enteteIcon a{
-      @include console.sm;
-      @include console.telephoneC;
-   }
-   .imageConsole{
-      @include console.imageConsole6;
-   }
+@media screen and (max-width: 600px) {
+  .icon p {
+    @include console.pmoyen;
+  }
+  .enteteIcon {
+    @include console.enteteIcon;
+  }
+  .enteteIcon a {
+    @include console.sm;
+    @include console.telephoneC;
+  }
+  .imageConsole {
+    @include console.imageConsole6;
+  }
 }
 @media screen and (max-width: 375px) {
   .enteteIcon {
@@ -593,20 +667,22 @@ ul {
       }
 
       //Changer la couleur de fond de la première nouvelle
-      .itemP__nouvelle__01 {
+      /*
+      .item__nouvelle:first-child {
         @include nouvelles.itemPNouvelle01;
         color: variables.$blanc;
-        background-color: variables.$pecheopacity01;
+        background-color: none;
 
         .titre__nouvelle {
           @include nouvelles.titreNouvelle;
         }
-      }
+      }*/
     }
   }
 }
 
-.itemP__nouvelle p, .itemP__nouvelle__01 p   {
+.itemP__nouvelle p,
+.itemP__nouvelle__01 p {
   @include nouvelles.nouvelleP;
 }
 
@@ -754,84 +830,4 @@ a {
 
 .maps__titre1-carte {
   @include membres.maps__titre1-carte;
-}
-
-//hero-swiper
-.mySwiper {
-   width: 60%;
-   height: 60%;
- }
-
- .swiper-slide .img {
-   object-fit: contain;
-   height: 100%;
-   width: 100%;
- }
-
- .img-fluid{
-   width: 100%;
-   height: 100%;
-   object-fit: contain;
- }
- .heros{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   height: 100%;
-   width: 100%;
- }
-
- .heros .container {
-   top:40%;
-   position: absolute;
-   z-index: 3;
-   top: 40%;
- }
-
- .heros .row {
-   height: 100%;
- }
-
-//  .contraste {
-//     background: linear-gradient(
-//        to top,
-//       #ffffff, variables.$peche, #ffffff
-//     );
-//  }
-
- 
-
-
-///nouvelles dans accueil
-
-
-.accueil__nouvelles{
-   display: flex;
-   justify-content: space-around;
-}
-///temoignages
-
-.section__temoignages{
-   margin-top: 200px;
-   text-align: center;
-   margin-bottom: 100px;
-}
-
-.accueil__temoignages__nom{
-   font-family: variables.$titre;
-   font-size: 30px;
-}
-.section__temoignages__titre{
-   text-align: center;
-   font-family: variables.$titre;
-   font-size: 30px;
-   text-decoration: underline;
-}
-.swiper-slide.temoignage{
-   width: 100%;
-   height: 200px;
-   margin-top: 10px;
-   border: 1px solid variables.$peche;
-   margin-left: 5px;
-   border-radius: 20px;
 }
