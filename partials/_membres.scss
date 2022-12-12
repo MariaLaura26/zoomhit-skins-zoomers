@@ -61,6 +61,7 @@
     justify-content: center;
 }
 @mixin maps__titre-carte {
+    text-decoration: underline;
     text-align: center
 }
 @mixin maps__titre2-carte {
@@ -71,5 +72,6 @@
 }
 
 @mixin maps__titre1-carte {
- text-align: center;   
+    text-decoration: underline;
+    text-align: center;   
 }

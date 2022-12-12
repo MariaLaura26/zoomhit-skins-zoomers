@@ -128,9 +128,9 @@ main {
   width: 100vw;
   height: 85vh;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   -o-object-position: 0% 70%;
-  object-position: 0% 70%;
+     object-position: 0% 70%;
 }
 
 .heros {
@@ -159,11 +159,7 @@ main {
 .section__nouvelles.accueil {
   margin-top: 40px;
 }
-.accueil__temoignages {
-  padding: 20px;
-  border: 1px solid #fcc8b2;
-  border-radius: 20px;
-}
+
 .section__temoignages {
   margin-top: 200px;
   text-align: center;
@@ -194,7 +190,9 @@ main {
   width: 100%;
   height: 150px;
   margin-top: 20px;
+  border: 1px solid #fcc8b2;
   margin-left: 5px;
+  border-radius: 20px;
 }
 
 .hero__nouvelles {
@@ -211,16 +209,16 @@ main {
 
 .imgPortrait {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   -o-object-position: 0% 100%;
-  object-position: 0% 100%;
+     object-position: 0% 100%;
 }
 
 .imgLandscape {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   -o-object-position: 0% 100%;
-  object-position: 0% 100%;
+     object-position: 0% 100%;
 }
 
 /*.contraste {
@@ -310,7 +308,7 @@ main .row {
   margin-top: 10%;
   margin-bottom: 5%;
   border-radius: 20px;
-  border: 2px solid #fcc8b2;
+  border: 2px solid #FCC8B2;
 }
 
 .Apropos:hover {
@@ -333,7 +331,7 @@ main .row {
   margin-top: 5%;
   margin-bottom: 5%;
   border-radius: 20px;
-  border: 2px solid #fcc8b2;
+  border: 2px solid #FCC8B2;
 }
 
 .Histoire:hover {
@@ -440,7 +438,7 @@ main .row {
 }*/
 .imgPortraitContain {
   -o-object-fit: contain;
-  object-fit: contain;
+     object-fit: contain;
   width: 100%;
 }
 
@@ -464,7 +462,7 @@ main .row {
     align-items: center;
     text-align: center;
     -o-object-fit: contain;
-    object-fit: contain;
+       object-fit: contain;
   }
   .imageConsole {
     display: block;
@@ -478,7 +476,7 @@ main .row {
     color: #fcc8b2;
     margin-left: 30px !important;
     -o-object-fit: contain !important;
-    object-fit: contain !important;
+       object-fit: contain !important;
   }
 }
 @media screen and (max-width: 900px) {
@@ -497,7 +495,7 @@ main .row {
     color: #fcc8b2;
     margin-left: 30px !important;
     -o-object-fit: contain !important;
-    object-fit: contain !important;
+       object-fit: contain !important;
   }
 }
 @media screen and (min-width: 600px) {
@@ -511,12 +509,12 @@ main .row {
     align-items: center;
     text-align: center;
     -o-object-fit: contain;
-    object-fit: contain;
+       object-fit: contain;
   }
   .enteteIcon a {
     list-style-type: none;
-    background-color: #efa48b;
-    box-shadow: #efa48b;
+    background-color: #EFA48B;
+    box-shadow: #EFA48B;
     display: block;
     text-align: center;
     padding: 10px;
@@ -535,7 +533,7 @@ main .row {
     color: #fcc8b2;
     margin-left: 30px !important;
     -o-object-fit: contain !important;
-    object-fit: contain !important;
+       object-fit: contain !important;
   }
 }
 @media screen and (max-width: 600px) {
@@ -544,7 +542,7 @@ main .row {
     color: #fcc8b2;
     font-size: 18px;
     -o-object-fit: contain;
-    object-fit: contain;
+       object-fit: contain;
   }
   .enteteIcon {
     display: grid;
@@ -556,12 +554,12 @@ main .row {
     align-items: center;
     text-align: center;
     -o-object-fit: contain;
-    object-fit: contain;
+       object-fit: contain;
   }
   .enteteIcon a {
     list-style-type: none;
-    background-color: #efa48b;
-    box-shadow: #efa48b;
+    background-color: #EFA48B;
+    box-shadow: #EFA48B;
     display: block;
     text-align: center;
     padding: 10px;
@@ -584,7 +582,7 @@ main .row {
     color: #fcc8b2;
     margin-left: 30px !important;
     -o-object-fit: contain !important;
-    object-fit: contain !important;
+       object-fit: contain !important;
   }
 }
 @media screen and (max-width: 375px) {
@@ -598,7 +596,7 @@ main .row {
     align-items: center;
     text-align: center;
     -o-object-fit: contain;
-    object-fit: contain;
+       object-fit: contain;
   }
   .enteteIcon a {
     display: grid;
@@ -610,7 +608,7 @@ main .row {
     align-items: center;
     text-align: center;
     -o-object-fit: contain;
-    object-fit: contain;
+       object-fit: contain;
     width: 90% !important;
     font-size: 12px !important;
   }
@@ -626,7 +624,7 @@ main .row {
     color: #fcc8b2;
     margin-left: 30px !important;
     -o-object-fit: contain !important;
-    object-fit: contain !important;
+       object-fit: contain !important;
   }
 }
 .enteteIcon a:hover {
@@ -688,7 +686,7 @@ ul {
     font-size: 20px;
     width: 100%;
     -o-object-fit: contain;
-    object-fit: contain;
+       object-fit: contain;
   }
 }
 @media screen and (min-width: 600px) {
@@ -697,7 +695,7 @@ ul {
     color: #fcc8b2;
     font-size: 18px;
     -o-object-fit: contain;
-    object-fit: contain;
+       object-fit: contain;
   }
 }
 @media screen and (max-width: 375px) {
@@ -707,14 +705,14 @@ ul {
     font-size: 12px;
     width: 100%;
     -o-object-fit: contain;
-    object-fit: contain;
+       object-fit: contain;
   }
 }
 .icon img {
   width: 100%;
   height: 10%;
   -o-object-fit: contain;
-  object-fit: contain;
+     object-fit: contain;
   margin-left: auto;
 }
 
@@ -739,7 +737,7 @@ ul {
 .imgItem {
   width: 100%;
   -o-object-fit: contain;
-  object-fit: contain;
+     object-fit: contain;
   margin-left: auto;
   border-radius: 20px;
   border: 2px solid #fcc8b2;
@@ -822,11 +820,7 @@ ul {
   text-align: center;
   border: solid 2px #fcc8b2;
 }
-.contact__main .section__contact .contact__form .form__nom,
-.contact__main .section__contact .contact__form .form__prenom,
-.contact__main .section__contact .contact__form .form__courriel,
-.contact__main .section__contact .contact__form .form__sujet,
-.contact__main .section__contact .contact__form .form__message {
+.contact__main .section__contact .contact__form .form__nom, .contact__main .section__contact .contact__form .form__prenom, .contact__main .section__contact .contact__form .form__courriel, .contact__main .section__contact .contact__form .form__sujet, .contact__main .section__contact .contact__form .form__message {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -835,14 +829,10 @@ ul {
          text-align: center;
       }*/
 }
-.contact__main .section__contact .contact__form .form__nom input,
-.contact__main .section__contact .contact__form .form__prenom input,
-.contact__main .section__contact .contact__form .form__courriel input,
-.contact__main .section__contact .contact__form .form__sujet input {
+.contact__main .section__contact .contact__form .form__nom input, .contact__main .section__contact .contact__form .form__prenom input, .contact__main .section__contact .contact__form .form__courriel input, .contact__main .section__contact .contact__form .form__sujet input {
   width: 100%;
 }
-.contact__main .section__contact .contact__form .form__prenom label,
-.contact__main .section__contact .contact__form .form__courriel label {
+.contact__main .section__contact .contact__form .form__prenom label, .contact__main .section__contact .contact__form .form__courriel label {
   margin-right: 25px;
 }
 .contact__main .section__contact .contact__form .form__message {
@@ -904,7 +894,7 @@ ul {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   margin: auto;
   border-radius: 20px;
   overflow: hidden;
@@ -937,11 +927,7 @@ ul {
   color: #fff;
   background-color: rgba(239, 164, 139, 0.5);
 }
-.section__nouvelles
-  .item__nouvelle
-  .lienItemP__nouvelle
-  .itemP__nouvelle
-  .titre__nouvelle {
+.section__nouvelles .item__nouvelle .lienItemP__nouvelle .itemP__nouvelle .titre__nouvelle {
   padding: 0px 15px;
 }
 
@@ -1081,7 +1067,7 @@ a {
 }
 
 .section__erreur404 {
-  background-color: #efa48b;
+  background-color: #EFA48B;
   height: 700px;
   display: flex;
   align-items: center;
@@ -1117,6 +1103,7 @@ a {
 }
 
 .maps__titre-carte {
+  text-decoration: underline;
   text-align: center;
 }
 
@@ -1129,5 +1116,6 @@ a {
 }
 
 .maps__titre1-carte {
+  text-decoration: underline;
   text-align: center;
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
