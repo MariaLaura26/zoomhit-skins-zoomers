@@ -1,11 +1,14 @@
 @mixin apercueT{
-width:70%;
-text-align: justify;
-margin:auto;
-margin-top:10%;
-margin-bottom:5%;
-border-radius:20px;
-border: 2px solid #FCC8B2;
+    width:70%;
+    text-align: justify;
+    margin:auto;
+    margin-top:10%;
+    margin-bottom:5%;
+    border-radius:20px;
+    border: 2px solid #FCC8B2;
+    background-image: url("../medias/images_apropos/bg01.png");
+    background-size: cover;
+    color: white;
 }
 @mixin apercue{
     width:70%;
@@ -13,7 +16,7 @@ border: 2px solid #FCC8B2;
     margin:auto;
     margin-top:5%;
     margin-bottom:5%;
-    }
+}
 
 @mixin histoireT{
     width:70%;
@@ -23,6 +26,9 @@ border: 2px solid #FCC8B2;
     margin-bottom:5%;
     border-radius:20px;
     border: 2px solid #FCC8B2;
+    background-image: url("../medias/images_apropos/bg01.png");
+    background-size: cover;
+    color: white;
 }
 @mixin histoire{
     width:70%;
