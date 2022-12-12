@@ -159,7 +159,11 @@ main {
 .section__nouvelles.accueil {
   margin-top: 40px;
 }
-
+.accueil__temoignages {
+  padding: 20px;
+  border: 1px solid #fcc8b2;
+  border-radius: 20px;
+}
 .section__temoignages {
   margin-top: 200px;
   text-align: center;
@@ -190,9 +194,7 @@ main {
   width: 100%;
   height: 150px;
   margin-top: 20px;
-  border: 1px solid #fcc8b2;
   margin-left: 5px;
-  border-radius: 20px;
 }
 
 .hero__nouvelles {
@@ -1128,42 +1130,4 @@ a {
 
 .maps__titre1-carte {
   text-align: center;
-}
-
-/* single product */
-.single-product__boite {
-  z-index: 10;
-  border: 2px solid #fcc8b2;
-  margin-bottom: 30px;
-  border-radius: 20px;
-}
-.single-product__boite-image {
-  width: 400px;
-}
-.single-product__image {
-  width: 100%;
-}
-.single-product__text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  border: 6px solid white;
-  border-radius: 20px;
-}
-.single-product__nom {
-  font-size: 25px;
-  padding: 10px;
-  font-weight: bold;
-}
-.single-product__prix {
-  width: 50%;
-  padding: 10px;
-  border-radius: 20px;
-  font-weight: bold;
-  font-size: 27px;
-}
-.single-product__description {
-  padding: 10px;
-  border-radius: 20px;
-}
-/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
