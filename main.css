@@ -799,7 +799,7 @@ ul {
   text-align: center;
   text-decoration: underline;
   font-size: 25px;
-  margin-bottom: 90px;
+  margin-bottom: 50px;
   font-family: "Roboto", Medium;
 }
 .contact__main .section__contact .contact__form {
@@ -1103,6 +1103,7 @@ a {
 }
 
 .maps__titre-carte {
+  margin-top: 50px;
   text-decoration: underline;
   text-align: center;
 }
