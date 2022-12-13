@@ -1,78 +1,76 @@
-
 @mixin sectionMembres {
-    margin-top: 150px; //Enlever la marge qui sépare la section contact du titre contact
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  margin-top: 150px; //Enlever la marge qui sépare la section contact du titre contact
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 //Style et alignement pour le titre de la section membres
-@mixin membreTitre {  
-     text-align: center;
- //   text-decoration: underline;
-    font-size: 25px;
-    margin-bottom: 25px;
+@mixin membreTitre {
+  text-align: center;
+  //   text-decoration: underline;
+  font-size: 25px;
+  margin-bottom: 25px;
+  text-decoration: underline;
 }
 
-@mixin membreCard{
-   width: 100%;
-   height: 100%; //Donner une taille fixe aux cartes
-   max-height: 400px;
-   margin-bottom: 200px;
-   border: none; //Retirer la bordure gris
-   
+@mixin membreCard {
+  width: 100%;
+  height: 100%; //Donner une taille fixe aux cartes
+  max-height: 400px;
+  margin-bottom: 200px;
+  border: none; //Retirer la bordure gris
 }
 
 @mixin membreImg {
-    width: 100%;
-    height: 100%;
-    max-width: 400px;
-    align-self: center;
-    border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+  align-self: center;
+  border-radius: 20px;
 }
 
 @mixin membreText {
-    margin: 0 auto;
-    width: 100%;
-    height: 100%;
-    max-width: 400px;
-    margin-top: 10px;
-    text-align: center;
-    border-radius: 5px 5px 5px 5px;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+  margin-top: 10px;
+  text-align: center;
+  border-radius: 5px 5px 5px 5px;
 }
 
 //Centrer le text
 @mixin membreRole {
-    padding: 10px 0px;
+  padding: 10px 0px;
+  text-decoration: underline;
 }
 
 @mixin membreNom {
-    padding: 10px 0px;
+  padding: 10px 0px;
 }
-
 
 @mixin maps__carte {
-    
-    margin-bottom: 100px;
-    border-radius:20px;
-   
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  margin-bottom: 100px;
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @mixin maps__titre-carte {
-    margin-top: 50px;
-    text-decoration: underline;
-    text-align: center
+  margin-top: 50px;
+  text-decoration: underline;
+  text-align: center;
 }
 @mixin maps__titre2-carte {
-    text-align: center;
+  text-align: center;
 }
 @mixin maps__titre3-carte {
-    text-align: center;
+  text-align: center;
 }
 
 @mixin maps__titre1-carte {
-    text-decoration: underline;
-    text-align: center;   
+  text-decoration: underline;
+  text-align: center;
 }

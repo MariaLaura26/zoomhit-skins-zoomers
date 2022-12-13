@@ -1,53 +1,51 @@
-@mixin apercueT{
-    width:70%;
-    text-align: justify;
-    margin:auto;
-    margin-top:10%;
-    margin-bottom:5%;
-    border-radius:20px;
-    border: 2px solid #FCC8B2;
-    background-image: url("../medias/images_apropos/bg01.png");
-    background-size: cover;
-    color: white;
+@mixin apercueT {
+  width: 70%;
+  text-align: justify;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  border-radius: 20px;
+  border: 2px solid #efa48b;
+  background-color: black;
+  color: white;
 }
-@mixin apercue{
-    width:70%;
-    text-align: justify;
-    margin:auto;
-    margin-top:5%;
-    margin-bottom:5%;
-}
-
-@mixin histoireT{
-    width:70%;
-    text-align: justify;
-    margin:auto;
-    margin-top:5%;
-    margin-bottom:5%;
-    border-radius:20px;
-    border: 2px solid #FCC8B2;
-    background-image: url("../medias/images_apropos/bg01.png");
-    background-size: cover;
-    color: white;
-}
-@mixin histoire{
-    width:70%;
-    text-align: justify;
-    margin:auto;
-    margin-top:5%;
-    margin-bottom:5%;
+@mixin apercue {
+  width: 70%;
+  text-align: justify;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
-@mixin titre{
-    margin: 0px auto;
-    margin-top: 25px;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    font-weight: bold;
-    font-size: 40px;
+@mixin histoireT {
+  width: 70%;
+  text-align: justify;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 20px;
+  border: 2px solid #efa48b;
+  background-color: white;
+  color: black;
 }
-@mixin titrea{
-    text-align:center;
-    margin-top:16px;
+@mixin histoire {
+  width: 70%;
+  text-align: justify;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+@mixin titre {
+  margin: 0px auto;
+  margin-top: 25px;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  font-weight: bold;
+  font-size: 40px;
+}
+@mixin titrea {
+  text-align: center;
+  margin-top: 16px;
 }

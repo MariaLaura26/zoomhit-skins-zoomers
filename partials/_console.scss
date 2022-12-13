@@ -1,252 +1,251 @@
+@use "variables";
 
-@use 'variables';
+@mixin contain {
+  object-fit: contain;
+  // object-position:0% 100%;
+  width: 100%;
+  //height: 130%;
+}
+@mixin hero {
+  height: 70%;
+}
+@mixin sousMenu {
+  //border:none;
+  border-width: 2px;
+  text-decoration: none;
+  margin-right: 20px;
+  margin-left: 20px;
+  height: 60px;
+  margin-top: 25%;
+  //display:flex;
+  // flex-direction:row;
 
-@mixin contain{
-    object-fit: contain;
-   // object-position:0% 100%;
-    width:100%;
-    //height: 130%;
+  //margin:0px;
+  //justify-content: center;
 }
-@mixin hero{
-    height:70%;
+@mixin btn {
+  background-color: variables.$blanc !important;
+  border-color: variables.$blanc !important;
+  width: 90% !important;
+  color: variables.$noir !important;
 }
-@mixin sousMenu{
-        //border:none;
-        border-width:2px;
-        text-decoration:none ;
-        margin-right: 20px;
-        margin-left: 20px;
-        height: 60px;
-        margin-top:25%;
-        //display:flex;
-       // flex-direction:row;
-       
-        //margin:0px;
-        //justify-content: center;
+@mixin sm {
+  list-style-type: none;
+  background-color: #efa48b;
+  box-shadow: #efa48b;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  padding-top: 17px;
+  width: 50% !important;
 }
-@mixin btn{
-    background-color:variables.$blanc !important;
-    border-color:variables.$blanc!important;
-    width:90% !important;
-    color:variables.$noir !important;
+@mixin smH {
+  list-style-type: none;
+  background-color: #efa48b;
+  box-shadow: #efa48b;
+  display: none;
+  text-align: center;
+  width: 100%;
+  padding: 0px;
 }
-@mixin sm{
-    list-style-type:none;
-    background-color:#EFA48B ;
-    box-shadow: #EFA48B;
-    display:block;
-    text-align: center;
-    padding:10px;
-    padding-top:17px;
-    width:50% !important;
+@mixin sousH {
+  display: block;
+  padding: 0px;
+  //list-style-type:none;
 }
-@mixin smH{
-    list-style-type:none;
-    background-color:#EFA48B ;
-    box-shadow: #EFA48B;
-    display:none;
-    text-align: center;
-    width:100%;
-    padding:0px;
+@mixin sous {
+  list-style-type: none;
+  display: inline-block;
+  background-color: variables.$blanc;
+  box-shadow: variables.$peche;
 }
-@mixin sousH{
-    display:block;
-    padding:0px;
-    //list-style-type:none;
+@mixin sousA {
+  display: table;
+  clear: both;
+  list-style-type: none;
 }
-@mixin sous{
-    list-style-type:none;
-    display:inline-block;
-    background-color: variables.$blanc;
-    box-shadow:variables.$peche;
+@mixin deroulant {
+  color: black !important;
+  list-style-type: none;
+  // border-bottom:3px solid variables.$peche;
+  display: block;
 }
-@mixin sousA{
-    display:table;
-    clear:both;
-    list-style-type:none;
+
+@mixin deroulantH {
+  color: variables.$peche;
+  border-bottom: 2px variables.$peche;
+  list-style-type: none;
+  text-decoration: none;
+  background-color: variables.$peche;
 }
-@mixin deroulant{
-    color:black !important;
-    list-style-type:none;
-   // border-bottom:3px solid variables.$peche;
-    display:block;
+@mixin enteteIcon {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2%;
+  align-items: center;
+  text-align: center;
+  object-fit: contain;
 }
-    
-@mixin deroulantH{
-    color:variables.$peche;
-    border-bottom:2px variables.$peche;
-    list-style-type:none;
-    text-decoration: none;
-    background-color: variables.$peche;
+@mixin enteteIcon3 {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2%;
+  align-items: center;
+  text-align: center;
+  object-fit: contain;
+  width: 90% !important;
+  font-size: 12px !important;
 }
-@mixin enteteIcon{
-    display:grid;
-    grid-template-columns:auto auto;
-    grid-template-rows:auto;
-    margin-left:10%;
-    margin-right:10%;
-    margin-top: 2%; 
-    align-items: center;
-    text-align: center;
-    object-fit:contain;
+@mixin entete6 {
+  width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
-@mixin enteteIcon3{
-    display:grid;
-    grid-template-columns:auto auto;
-    grid-template-rows:auto;
-    margin-left:10%;
-    margin-right:10%;
-    margin-top: 2%; 
-    align-items: center;
-    text-align: center;
-    object-fit:contain;
-    width:90% !important;
-    font-size:12px !important;
+@mixin telephoneC {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  flex-wrap: wrap;
 }
-@mixin entete6{
-    width:100%;
-    margin-left:5%;
-    margin-right:5%;
+@mixin imageConsole {
+  display: block;
+  align-items: center;
+  width: 60%;
+  border-color: variables.$blanc !important;
+  margin-left: 20px;
+  position: absolute !important;
+  transform: translate3d(55%, 120%, 0px) !important;
+  // display:flex;
+  //flex-direction:row;
+  flex-wrap: wrap;
+  color: variables.$peche;
+  margin-left: 30px !important;
+  object-fit: contain !important;
+  //flex-wrap: nowrap;
 }
-@mixin telephoneC{
-    display:grid;
-      grid-template-columns:auto;
-      grid-template-rows:auto;
-      flex-wrap: wrap;
+@mixin imageConsole9 {
+  display: block;
+  align-items: center;
+  width: 60%;
+  border-color: variables.$blanc !important;
+  margin-left: 20px;
+  position: absolute !important;
+  transform: translate3d(55%, 90%, 0px) !important;
+  // display:flex;
+  //flex-direction:row;
+  flex-wrap: wrap;
+  color: variables.$peche;
+  margin-left: 30px !important;
+  object-fit: contain !important;
+  //flex-wrap: nowrap;
 }
-@mixin imageConsole{
-    display:block;
-    align-items: center;
-    width:60%;
-    border-color:variables.$blanc !important;
-    margin-left: 20px;
-    position:absolute !important;
-    transform:translate3d(55%, 120%, 0px) !important;
-   // display:flex;
-    //flex-direction:row;
-    flex-wrap: wrap;
-    color: variables.$peche;
-    margin-left: 30px !important;
-    object-fit:contain !important;
-    //flex-wrap: nowrap;
+@mixin imageConsole6 {
+  display: block;
+  align-items: center;
+  text-align: center;
+  width: 60%;
+  border-color: variables.$blanc !important;
+  margin-left: 20px;
+  position: absolute !important;
+  transform: translate3d(0%, 90%, 0px) !important;
+  // display:flex;
+  //flex-direction:row;
+  // flex-wrap: wrap;
+  color: variables.$peche;
+  margin-left: 30px !important;
+  object-fit: contain !important;
 }
-@mixin imageConsole9{
-    display:block;
-    align-items: center;
-    width:60%;
-    border-color:variables.$blanc !important;
-    margin-left: 20px;
-    position:absolute !important;
-    transform:translate3d(55%, 90%, 0px) !important;
-   // display:flex;
-    //flex-direction:row;
-    flex-wrap: wrap;
-    color: variables.$peche;
-    margin-left: 30px !important;
-    object-fit:contain !important;
-    //flex-wrap: nowrap;
+@mixin marginImg {
+  margin: 5px;
 }
-@mixin imageConsole6{
-    display:block;
-    align-items: center;
-    text-align: center;
-    width:60%;
-    border-color:variables.$blanc !important;
-    margin-left: 20px;
-    position:absolute !important;
-    transform:translate3d(0%, 90%, 0px) !important;
-   // display:flex;
-    //flex-direction:row;
-   // flex-wrap: wrap;
-    color: variables.$peche;
-    margin-left: 30px !important;
-    object-fit:contain !important;
+@mixin icon {
+  width: 10%;
+  display: inline-block;
+  margin-left: 2%;
 }
-@mixin marginImg{
-    margin:5px;
+@mixin iconHover {
+  width: 10%;
+  display: inline-block;
+  margin-left: 2%;
+  transform: scale(0.8) !important;
+  transition: transform 0.7s;
 }
-@mixin icon{
-    width:10%;
-    display:inline-block;
-    margin-left:2%;
+@mixin produits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  grid-template-rows: repeat(auto-fit);
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
 }
-@mixin iconHover{
-    width:10%;
-    display:inline-block;
-    margin-left:2%;
-    transform: scale(0.8) !important;
-    transition: transform 0.7s;
-}
-@mixin produits{
-    display:grid;
-    grid-template-columns: repeat(auto-fit,300px);
-    grid-template-rows:repeat(auto-fit);
-    gap:50px;
-    justify-content: center;
-    align-items: center;
-}
-@mixin produits6{
-    display:grid;
+@mixin produits6 {
+  display: grid;
   // grid-template-columns: repeat(auto-fit,300px);
-    grid-template-rows:repeat(auto-fit);
-    gap:50px;
-    margin-left:20%;
-    align-items: center;
+  grid-template-rows: repeat(auto-fit);
+  gap: 50px;
+  margin-left: 20%;
+  align-items: center;
 }
-@mixin item{
-    position: relative;
-    margin-top:50px;
-    width:300px;
-    height:438px;
-    display:inline-block;
-    padding:20px;
+@mixin item {
+  position: relative;
+  margin-top: 50px;
+  width: 300px;
+  height: 438px;
+  display: inline-block;
+  padding: 20px;
 }
-@mixin img{
-    width:100%;
-    height:10%;
-    object-fit:contain;
-    margin-left:auto;
+@mixin img {
+  width: 100%;
+  height: 10%;
+  object-fit: contain;
+  margin-left: auto;
 }
-@mixin imgItem{
-    width: 100%;
-    //height: 100%;
-    object-fit:contain;
-    margin-left:auto;
-    border-radius: 20px;
-    border: 2px solid variables.$peche;
-    overflow: hidden;
+@mixin imgItem {
+  width: 100%;
+  //height: 100%;
+  object-fit: contain;
+  margin-left: auto;
+  border-radius: 20px;
+  border: 2px solid variables.$peche;
+  overflow: hidden;
 }
-@mixin p{
-   // display:flex;
-    text-align: center;
-    color: variables.$peche;
-    font-size: 20px;
-    width:100%;
-    object-fit: contain;
+@mixin p {
+  // display:flex;
+  text-align: center;
+  color: variables.$peche;
+  font-size: 20px;
+  width: 100%;
+  object-fit: contain;
 }
-@mixin pmoyen{
-    // display:flex;
-     text-align: center;
-     color: variables.$peche;
-     font-size: 18px;
-     //width:100%;
-     object-fit: contain;
- }
- @mixin petit{
-    // display:flex;
-     text-align: center;
-     color: variables.$peche;
-     font-size: 12px;
-     width:100%;
-     object-fit: contain;
- }
-@mixin pItem{
-    text-align: center;
-    border-radius: 10px;
-    margin:5px;
-    padding:3px;
-    font-size: 18px;
+@mixin pmoyen {
+  // display:flex;
+  text-align: center;
+  color: variables.$peche;
+  font-size: 18px;
+  //width:100%;
+  object-fit: contain;
 }
-@mixin pItemFirst{
-    margin-top:5px;
+@mixin petit {
+  // display:flex;
+  text-align: center;
+  color: variables.$peche;
+  font-size: 12px;
+  width: 100%;
+  object-fit: contain;
+}
+@mixin pItem {
+  text-align: center;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 3px;
+  font-size: 18px;
+}
+@mixin pItemFirst {
+  margin-top: 5px;
 }
