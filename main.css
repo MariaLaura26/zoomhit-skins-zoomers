@@ -215,8 +215,8 @@ main {
 .imgPortrait {
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: 0% 100%;
-     object-position: 0% 100%;
+  -o-object-position: 0% 50%;
+     object-position: 0% 50%;
 }
 
 .imgLandscape {

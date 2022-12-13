@@ -27,7 +27,7 @@
 /*Couvrir la section avec l'image en portrait sans la déformer et ajuster sa position*/
 @mixin imgPortrait {
   object-fit: cover;
-  object-position: 0% 100%;
+  object-position: 0% 50%;
 }
 
 /*Cacher l'image landscape par défaut*/
