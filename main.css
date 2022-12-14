@@ -980,6 +980,7 @@ ul {
   background-color: #fcc8b2;
   transition: transform 0.5s;
   cursor: pointer;
+  color: white;
 }
 
 .btnNouvelles:hover {
