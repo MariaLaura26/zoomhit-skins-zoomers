@@ -1,3 +1,5 @@
+const btnNouvelles = document.querySelector(".btnNouvelles");
+
 
 //code pour page console, single product
 //arrays
