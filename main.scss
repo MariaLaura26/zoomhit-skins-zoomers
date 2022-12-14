@@ -705,11 +705,13 @@ ul {
   @include nouvelles.btnNouvelles;
   background-color: variables.$peche;
   transition: transform 0.5s;
+  cursor: pointer;
 }
 
 .btnNouvelles:hover {
   background-color: variables.$pechehover;
   border: solid 2px variables.$peche;
+  color: black;
   transform: scale(1.1);
   transition: transform 0.5s;
 }
