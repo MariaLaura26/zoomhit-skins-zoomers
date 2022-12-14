@@ -156,11 +156,10 @@ main {
 
 .section__temoignages__titre {
   margin-top: 60px;
-  font-size: 30px;
-  font-family: "Roboto", thin;
+  font-size: 25px;
+  font-family: variables.$text;
   width: 100%;
   text-align: center;
-  font-weight: bold;
   text-decoration: underline;
 }
 
@@ -214,6 +213,7 @@ main .row {
 .menu a {
   color: variables.$blanc;
   text-decoration: none;
+  font-size: 21px;
 }
 
 //Effet de survole
@@ -266,18 +266,23 @@ main .row {
 
 /* Écran telephone*/
 @media screen and (max-width: 375px) {
-  .heros__boite-description {
-    margin: 0 5px;
-  }
-  .heros__boite-description .heros__desc {
-    display: none;
-  }
   main .row {
     display: flex;
     flex-wrap: wrap;
   }
   .swiper {
     width: 100%;
+  }
+  .swiper-slide img {
+    object-fit: cover;
+    object-position: 55% 0%;
+  }
+}
+/* Écran tablette*/
+@media screen and (max-width: 768px) {
+  .swiper-slide img {
+    object-fit: cover;
+    object-position: 55% 0%;
   }
 }
 
