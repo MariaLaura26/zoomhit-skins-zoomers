@@ -49,3 +49,30 @@
   text-align: center;
   margin-top: 16px;
 }
+
+@mixin modals__img {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+@mixin modals__role {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+@mixin modals__Lorem {
+  text-align: center;
+}
+
+@mixin modal__titre {
+  text-align: center;
+  font-size: 30px;
+}
+
+@mixin modal__content {
+  background-color:#fae3d9;
+}

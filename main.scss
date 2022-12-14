@@ -839,3 +839,23 @@ a {
 .maps__titre1-carte {
   @include membres.maps__titre1-carte;
 }
+//modals
+
+.modals__img{
+  @include apropos.modals__img;
+}
+
+.modals__role{
+  @include apropos.modals__role;
+}
+
+.modals__Lorem{
+  @include apropos.modals__Lorem;
+}
+
+#modal__titre{
+  @include apropos.modal__titre;
+}
+#modal__content{
+  @include apropos.modal__content;
+}
