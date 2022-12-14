@@ -47,8 +47,6 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            right: 0%;
-            bottom: 0%;
             transform: translate(-50%, -50%);
             text-align: center;
             padding: 10px;
@@ -57,6 +55,11 @@
             font-size: 27px;
             color: white;
             text-shadow: 3px 3px 3px black;
+        }
+        @media (max-width: 991px) {
+            .single-news__titre {
+                top: 40%;
+            }
         }
         .single-news__description{
             padding: 10px;
