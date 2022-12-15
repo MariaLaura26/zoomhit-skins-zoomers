@@ -687,40 +687,6 @@ ul {
       }
     }
   }
-  .item__nouvelle--hidden {
-    display: none;
-    @include nouvelles.itemNouvelle;
-    transition: transform 0.5s;
-
-    .lienItem__nouvelle {
-      text-decoration: none; //Retirer le underline du lien du text
-      display: none;
-
-      .imgItem__nouvelle {
-        @include nouvelles.imgNouvelle;
-        border: 2px solid variables.$peche;
-        transition: transform 0.5s; //Faire une transition entre l'état défault et le hover
-        display: none;
-      }
-    }
-
-    .lienItemP__nouvelle {
-      text-decoration: none; //Retirer le underline du lien du text
-      display: none;
-
-      .itemP__nouvelle {
-        @include nouvelles.itemPNouvelle;
-        color: variables.$blanc;
-        background-color: variables.$pecheopacity;
-        display: none;
-
-        .titre__nouvelle {
-          @include nouvelles.titreNouvelle;
-          display: none;
-        }
-      }
-    }
-  }
 }
 
 .itemP__nouvelle p,
@@ -749,6 +715,10 @@ ul {
   color: black;
   transform: scale(1.1);
   transition: transform 0.5s;
+}
+
+.hidden {
+  display: none;
 }
 
 //Mise en page du placeholder dans le champ de text

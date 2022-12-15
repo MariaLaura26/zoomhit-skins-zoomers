@@ -1,5 +1,19 @@
 const btnNouvelles = document.querySelector(".btnNouvelles");
+let nouvellesHidden = document.querySelector(".item__nouvelle.hidden");
+let lienItemNouvelle = document.querySelector(".lienItem__nouvelle.hidden");
+let lienItemPNouvelle = document.querySelector(".lienItemP__nouvelle.hidden");
+//let imgItemNouvelle = document.querySelector(".imgItem__nouvelle");
+// let itemPNouvelle = document.querySelector(".itemP__nouvelle");
 
+//Help, click bouton pour retirer la classe hidden et afficher les nouvelles avec la classe hidden par défaut.
+btnNouvelles.addEventListener('click', function () {
+  nouvellesHidden.classList.remove("hidden");
+  nouvellesHidden.style.display = "block";
+  lienItemNouvelle.classList.remove("hidden");
+  lienItemNouvelle.style.display = "block";
+  lienItemPNouvelle.classList.remove("hidden");
+  lienItemPNouvelle.style.display = "block";
+});
 
 //code pour page console, single product
 //arrays
