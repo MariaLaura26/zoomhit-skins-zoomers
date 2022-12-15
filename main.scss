@@ -675,7 +675,7 @@ ul {
       }
 
       //Changer la couleur de fond de la première nouvelle
-      /*
+      
       .item__nouvelle:first-child {
         @include nouvelles.itemPNouvelle01;
         color: variables.$blanc;
@@ -684,7 +684,7 @@ ul {
         .titre__nouvelle {
           @include nouvelles.titreNouvelle;
         }
-      }*/
+      }
     }
   }
 }
@@ -705,11 +705,14 @@ ul {
   @include nouvelles.btnNouvelles;
   background-color: variables.$peche;
   transition: transform 0.5s;
+  cursor: pointer;
+  color: white;
 }
 
 .btnNouvelles:hover {
   background-color: variables.$pechehover;
   border: solid 2px variables.$peche;
+  color: black;
   transform: scale(1.1);
   transition: transform 0.5s;
 }
