@@ -1,4 +1,5 @@
 const btnNouvelles = document.querySelector(".btnNouvelles");
+const btnRetour = document.querySelector(".btnNouvelles.hidden");
 let nouvellesHiddenArr = document.querySelectorAll(".item__nouvelle.hidden");
 let lienItemNouvelleArr = document.querySelectorAll(".lienItem__nouvelle.hidden");
 let lienItemPNouvelleArr = document.querySelectorAll(".lienItemP__nouvelle.hidden");
@@ -23,6 +24,10 @@ btnNouvelles.addEventListener('click', function () {
   lienItemPNouvelleArr.forEach(function (lienItemPNouvelle) {
     lienItemPNouvelle.classList.remove("hidden");
   });
+
+  //Cacher le bouton voir plus de nouvelles et montrer le bouton retour
+  btnNouvelles.classList.add("hidden");
+  btnRetour.classList.remove("hidden");
 });
 
 //code pour page console, single product
