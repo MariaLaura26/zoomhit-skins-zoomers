@@ -1,7 +1,7 @@
 const btnNouvelles = document.querySelector(".btnNouvelles");
-let nouvellesHidden = document.querySelector(".item__nouvelle.hidden");
-let lienItemNouvelle = document.querySelector(".lienItem__nouvelle.hidden");
-let lienItemPNouvelle = document.querySelector(".lienItemP__nouvelle.hidden");
+let nouvellesHiddenArr = document.querySelectorAll(".item__nouvelle.hidden");
+let lienItemNouvelleArr = document.querySelectorAll(".lienItem__nouvelle.hidden");
+let lienItemPNouvelleArr = document.querySelectorAll(".lienItemP__nouvelle.hidden");
 //let imgItemNouvelle = document.querySelector(".imgItem__nouvelle");
 // let itemPNouvelle = document.querySelector(".itemP__nouvelle");
 
@@ -9,9 +9,20 @@ let lienItemPNouvelle = document.querySelector(".lienItemP__nouvelle.hidden");
 btnNouvelles.addEventListener('click', function () {
   
   //Boucler sur les éléments pour afficher toutes les nouvelles cachés quand quelqu'un clique sur le bouton
-  nouvellesHidden.classList.remove("hidden");
-  lienItemNouvelle.classList.remove("hidden");
-  lienItemPNouvelle.classList.remove("hidden");
+  //Boucler sur les items Nouvelles avec la classe hidden en premier
+  nouvellesHiddenArr.forEach(function (itemNouvelle) {
+    itemNouvelle.classList.remove("hidden");
+  });
+
+  //Boucler sur tous les block avec l'image de la nouvelle qui ont la classe hidden en deuxième
+  lienItemNouvelleArr.forEach(function (lienItemNouvelle) {
+    lienItemNouvelle.classList.remove("hidden");
+  });
+
+  //Boucler sur les block avec le text et la couleur de fond transparente qui ont la classe hidden en troisième
+  lienItemPNouvelleArr.forEach(function (lienItemPNouvelle) {
+    lienItemPNouvelle.classList.remove("hidden");
+  });
 });
 
 //code pour page console, single product
