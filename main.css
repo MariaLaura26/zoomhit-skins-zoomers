@@ -966,54 +966,6 @@ ul {
 .section__nouvelles .item__nouvelle .lienItemP__nouvelle .item__nouvelle:first-child .titre__nouvelle {
   padding: 0px 15px;
 }
-.section__nouvelles .item__nouvelle--hidden {
-  display: none;
-  position: relative;
-  margin-top: 50px;
-  width: 300px;
-  height: 100%;
-  display: inline-block;
-  transition: transform 0.5s;
-}
-.section__nouvelles .item__nouvelle--hidden .lienItem__nouvelle {
-  text-decoration: none;
-  display: none;
-}
-.section__nouvelles .item__nouvelle--hidden .lienItem__nouvelle .imgItem__nouvelle {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin: auto;
-  border-radius: 20px;
-  overflow: hidden;
-  border: 2px solid #fcc8b2;
-  transition: transform 0.5s;
-  display: none;
-}
-.section__nouvelles .item__nouvelle--hidden .lienItemP__nouvelle {
-  text-decoration: none;
-  display: none;
-}
-.section__nouvelles .item__nouvelle--hidden .lienItemP__nouvelle .itemP__nouvelle {
-  z-index: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  border-radius: 20px;
-  font-size: 18px;
-  text-shadow: 3px 3px 3px black;
-  color: #fff;
-  background-color: rgba(239, 164, 139, 0.5);
-  display: none;
-}
-.section__nouvelles .item__nouvelle--hidden .lienItemP__nouvelle .itemP__nouvelle .titre__nouvelle {
-  padding: 0px 15px;
-  display: none;
-}
 
 .itemP__nouvelle p,
 .itemP__nouvelle__01 p {
@@ -1048,6 +1000,10 @@ ul {
   color: black;
   transform: scale(1.1);
   transition: transform 0.5s;
+}
+
+.hidden {
+  display: none;
 }
 
 /*.contact__form:placeholder {
